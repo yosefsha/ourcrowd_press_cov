@@ -28,7 +28,8 @@ function describeFailure(error: unknown): string {
   const cause = error.cause instanceof Error ? ` (${error.cause.message})` : '';
   const hint =
     error instanceof StoreNotEmpty
-      ? '\nimport-data never merges. Load the snapshot into a fresh database: stop the stack, remove its Postgres volume, start it again and import before anything else writes to it.'
+      ? '\nLoad the snapshot into a fresh database instead: stop the stack, remove its Postgres volume, start it again ' +
+        'and run import-data before anything writes to the database (the collector imports the Seed List into an empty one).'
       : '';
   return `${error.message}${cause}${hint}`;
 }

@@ -258,7 +258,8 @@ export class PostgresSnapshotStore implements SnapshotReader, SnapshotLoader {
         (table) => `SELECT '${table}' AS name WHERE EXISTS (SELECT 1 FROM "${table}")`,
       ).join(' UNION ALL '),
     )) as { name: string }[];
-    return rows.map((row) => row.name);
+    const found = new Set(rows.map((row) => row.name));
+    return SNAPSHOT_TABLES.filter((table) => found.has(table));
   }
 
   private async insertAll(runner: QueryRunner, snapshot: Snapshot): Promise<void> {
