@@ -21,7 +21,9 @@
     "premigration:run": "node scripts/ensure-compiled.mjs",
     "migration:run": "typeorm migration:run -d dist/database/data-source.js",
     "premigration:generate": "node scripts/ensure-compiled.mjs",
-    "migration:generate": "typeorm migration:generate -d dist/database/data-source.js"
+    "migration:generate": "typeorm migration:generate -d dist/database/data-source.js",
+    "preimport-data": "node scripts/ensure-compiled.mjs",
+    "import-data": "node dist/data-export/import-data.js"
   },
   "jest": {
     "moduleFileExtensions": [
