@@ -71,8 +71,11 @@ git -C "$REPO" worktree add .claude/worktrees/<short-task-name> -b <branch-name>
 
 ## Step 4 — Review gate
 
-Run the project's security/code review skill against the branch diff if one exists (e.g.
-`/security-review` or `/code-review`). Fix CRITICAL/HIGH findings on the branch before opening the PR.
+Run the project's security/code review skill against the branch diff, **passing the absolute
+worktree path** so it reviews this branch and not the primary checkout:
+`/security-review diff <absolute-worktree-path>` (and `/code-review` if useful). Check the report's
+first line names your worktree and branch; if it doesn't, review `git diff origin/main...HEAD` yourself
+and say so in the PR. Fix CRITICAL/HIGH findings on the branch before opening the PR.
 
 ## Step 5 — Open the PR
 
@@ -83,8 +86,23 @@ gh pr create --base main --title "..." --body "..."
 
 - Reference the issue (`Closes #<n>` if fully resolved, otherwise `Refs #<n>`).
 - **Never** `gh pr merge`.
-- After pushing, read both `gh pr view <n> --json comments` and
-  `gh api repos/:owner/:repo/pulls/<n>/comments`, and reply to (or fix and reply to) every inline thread.
+
+## Step 5b — PR feedback loop (do not skip)
+
+The issue is not finished when the PR opens. Follow CLAUDE.md's "PR feedback loop":
+
+```bash
+gh pr checks <n> --watch                                  # wait for CI and the "Claude review" job
+gh pr view <n> --json comments,reviews                    # conversation comments + review summaries
+gh api repos/:owner/:repo/pulls/<n>/comments              # inline review threads
+```
+
+- Fix every actionable comment and every failing check caused by this branch, in this worktree,
+  commit, and `git push` to the **same branch / same PR**.
+- Reply to each thread with what changed (or why no change is needed).
+- Each push re-triggers review: repeat until no new actionable feedback (max 3 rounds), then
+  list anything still open in the Step 7 report. Failures outside the branch's control (missing
+  secrets, another issue's missing directory) are reported, not worked around.
 
 ## Step 6 — Bookkeeping
 
@@ -93,7 +111,7 @@ CLAUDE.md conventions.
 
 ## Step 7 — Report and stop
 
-Report: issue number and title, branch, worktree path, PR URL, what was verified and how, and
+Report: issue number and title, branch, worktree path, PR URL, what was verified and how, final CI/review status and the PR comments addressed, and
 anything left undone or spun out. Do not merge — merging needs explicit per-PR instruction.
 
 ## Cleanup (after the user merges)

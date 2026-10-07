@@ -8,37 +8,36 @@ allowed-tools: Read, Bash, Glob, Grep
 
 # Security Review
 
-## Diff to review
-- Changed files: !`git diff --name-only main`
-- Full diff: !`git diff main`
+## Step 0 — Resolve WHERE and WHAT to review
 
-## Current branch
-- Branch: !`git branch --show-current`
-- Commits since main: !`git log main..HEAD --oneline`
+**Where.** Skill context is pre-rendered in the session's starting directory, which is usually the
+primary checkout on `main` — *not* the worktree being reviewed. So never trust a pre-computed diff;
+resolve the checkout explicitly and run every git command with `git -C "$TARGET"`:
 
-## Working tree state
-- Uncommitted/untracked changes: !`git status --porcelain`
+- If the args contain an absolute path to a checkout or worktree (e.g. `diff /…/.claude/worktrees/issue-7-companies`),
+  that path is `$TARGET`.
+- Otherwise use the directory the caller is working in; if that is the primary checkout and it is on
+  `main` with a clean tree, list `git worktree list` and ask which worktree/branch to review instead
+  of reporting an empty diff.
 
-## All tracked files (for whole-project / folder scope)
-- Tracked files: !`git ls-files`
+**What.** Scope from the args, else ask:
+1. **Diff** (default for PR review) — everything the branch adds on top of where it forked from main:
+   ```bash
+   git -C "$TARGET" fetch -q origin main 2>/dev/null || true
+   git -C "$TARGET" diff --name-only origin/main...HEAD   # three dots: merge-base, ignores newer main commits
+   git -C "$TARGET" diff origin/main...HEAD
+   git -C "$TARGET" status --porcelain                     # uncommitted work is in scope too
+   git -C "$TARGET" diff HEAD                              # include it if non-empty
+   ```
+   Fall back to local `main...HEAD` if `origin/main` is unavailable. If both the branch diff and the
+   working tree are empty, say exactly which `$TARGET` and branch you checked, then stop.
+2. **Specific folder** — `git -C "$TARGET" ls-files -- <folder>` and review every file returned.
+3. **Whole project** — `git -C "$TARGET" ls-files`.
 
----
+For folder/whole-project scope exclude lockfiles, binaries and generated assets (`*.lock`,
+`package-lock.json`, `*.png`, `*.jpg`, `dist/`, `build/`, `node_modules/`, `__pycache__/`).
 
-## Step 0 — Determine review scope
-
-- **If the invocation args already specify a scope**, use it directly and skip the prompt:
-  - A path/folder mentioned → **folder scope**.
-  - "whole project" / "entire repo" / "full review" → **whole-project scope**.
-  - "diff" / no other signal → **diff scope**.
-- **Otherwise, stop and ask the user to choose one**, before reading any files:
-  1. **Diff** — review the current diff against `main` (default PR-review mode).
-  2. **Specific folder** — review all tracked files under a folder path they provide.
-  3. **Whole project** — review every tracked file in the repo.
-
-Once scope is resolved:
-- **Diff** — review the diff shown above. If it's empty, check "Working tree state" for untracked/uncommitted files; if any exist, ask whether to review those instead or whether they meant a different branch. If the working tree is also clean, report nothing to review and stop.
-- **Specific folder** — run `git ls-files -- <folder>` and review every file returned, excluding lockfiles, binaries, and generated assets (`*.lock`, `*.png`, `*.jpg`, `dist/`, `build/`, `node_modules/`, `__pycache__/`).
-- **Whole project** — review every file under "All tracked files" above, with the same exclusions.
+Start the report with one line: `Reviewed <scope> of <branch> at <$TARGET> (<n> files)`.
 
 ---
 
@@ -46,14 +45,15 @@ Once scope is resolved:
 
 Check every file for:
 
-- **Secrets / credentials** — hardcoded API keys, passwords, tokens, AWS keys, client secrets. Flag any string that looks like a secret not sourced from `os.environ`.
-- **SQL injection** — queries built with f-strings or `%s %` formatting instead of parameterized queries (`$1` in asyncpg, `%s` with separate params in Django). Flag any f-string or `.format()` inside a SQL string.
-- **Shell injection** — `subprocess` calls with unsanitized input, `os.system()`.
+- **Secrets / credentials** — hardcoded API keys, passwords, tokens, AWS keys, client secrets. Flag any string that looks like a secret not sourced from the environment (`process.env` only inside the config factory, `os.environ` in Python).
+- **SQL injection** — queries built by string concatenation / template literals / f-strings instead of parameterized queries (TypeORM query builder parameters, `$1` placeholders). Flag any interpolated value inside a SQL string.
+- **Shell injection** — `child_process.exec`/`spawn` with `shell: true` or unsanitized input, `subprocess`/`os.system()` in Python scripts.
 - **Sensitive data in logs** — `logger.*`, `print()`, `console.log()` emitting tokens, passwords, PII, or financial amounts.
 - **Auth gaps** — missing authentication/authorization checks on endpoints, IDOR (resources fetched without ownership/scope checks), trusting client-supplied identity fields (`user_id`, `org_id`, etc.) instead of validating them server-side.
 - **Debug/dev backdoors** — `DEBUG=True` committed to non-dev config, `AllowAny` on non-auth endpoints, commented-out auth checks, `verify=False` on HTTPS calls.
 - **Insecure deserialization** — `pickle.loads`, `yaml.load()` without `Loader=`, `eval()` on external input.
 - **Cloud/IAM least privilege** (for CDK/Terraform/CloudFormation) — wildcard resource ARNs (`"*"`), overly broad managed policies (`s3:*`, `dynamodb:*`), `removal_policy=DESTROY` on stateful resources (databases, user pools, buckets with data) instead of `RETAIN`.
+- **SSRF / unsafe URLs** — server-side fetches of user- or feed-supplied URLs without scheme/host restrictions; links rendered from external data without an http(s) check.
 - **New dependencies** — flag new entries in `requirements.txt` or `package.json` that have known CVEs or look suspicious.
 
 ---

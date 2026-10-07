@@ -1,0 +1,19 @@
+{
+  "name": "press-coverage",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local run orchestration for the press coverage monitor (backend + frontend)",
+  "license": "UNLICENSED",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "start": "node scripts/start.mjs",
+    "stop": "node scripts/stop.mjs",
+    "dev": "node scripts/dev.mjs",
+    "import-data": "node scripts/import-data.mjs",
+    "test": "node --test \"scripts/**/*.test.mjs\""
+  }
+}
