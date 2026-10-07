@@ -60,16 +60,21 @@ export function OverviewPage(): React.JSX.Element {
           {hasActiveFilters(filters) ? 'No companies match these filters.' : 'No Tracked Companies yet.'}
         </p>
       ) : (
-        <CompanyTable
-          rows={companiesQuery.data}
-          sort={filters.sort}
-          onSortChange={(sort) => {
-            updateFilters({ sort });
-          }}
-          onSelectCompany={selectCompany}
-          now={new Date(companiesQuery.dataUpdatedAt)}
-          noCoverageSince={summaryQuery.data?.from ?? null}
-        />
+        <div
+          aria-busy={companiesQuery.isPlaceholderData}
+          style={{ opacity: companiesQuery.isPlaceholderData ? 0.6 : 1, transition: 'opacity 150ms' }}
+        >
+          <CompanyTable
+            rows={companiesQuery.data}
+            sort={filters.sort}
+            onSortChange={(sort) => {
+              updateFilters({ sort });
+            }}
+            onSelectCompany={selectCompany}
+            now={new Date(companiesQuery.dataUpdatedAt)}
+            noCoverageSince={summaryQuery.data?.from ?? null}
+          />
+        </div>
       )}
 
       {selectedCompanyId === null ? null : (
