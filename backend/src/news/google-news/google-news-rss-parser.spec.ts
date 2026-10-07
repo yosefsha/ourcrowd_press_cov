@@ -147,6 +147,10 @@ describe('parseGoogleNewsRss on altered recordings', () => {
     ['an HTML page', '<!doctype html><html><body>Sorry</body></html>'],
     ['XML that is not RSS', '<?xml version="1.0"?><feed></feed>'],
     ['an empty body', ''],
+    [
+      'a DOCTYPE with entities (billion laughs)',
+      '<?xml version="1.0"?><!DOCTYPE rss [<!ENTITY a "aaaaaaaaaa"><!ENTITY b "&a;&a;&a;&a;&a;&a;">]><rss><channel><title>&b;</title></channel></rss>',
+    ],
   ])('fails on %s', (_case, body) => {
     expect(() => parseGoogleNewsRss(body, EN_US)).toThrow(GoogleNewsFeedUnreadable);
   });

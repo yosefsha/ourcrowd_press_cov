@@ -100,6 +100,10 @@ function parseItem(item: unknown, edition: NewsEdition): FoundArticle | null {
  * sign of a format change rather than of an odd item.
  */
 export function parseGoogleNewsRss(xml: string, edition: NewsEdition): ParsedGoogleNewsFeed {
+  // Google News RSS never declares a DTD; refusing one rules out entity-expansion attacks.
+  if (/<!DOCTYPE/i.test(xml)) {
+    throw new GoogleNewsFeedUnreadable('The response declares a DOCTYPE');
+  }
   if (XMLValidator.validate(xml) !== true) {
     throw new GoogleNewsFeedUnreadable('The response is not well-formed XML');
   }
