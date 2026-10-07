@@ -1,5 +1,5 @@
 import { spawn } from 'node:child_process';
-import { closeSync, openSync } from 'node:fs';
+import { closeSync, mkdirSync, openSync } from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 
@@ -9,7 +9,10 @@ import { PrerequisiteError } from './errors.mjs';
 import { isPortFree, respondsOk, waitForOk } from './net.mjs';
 import { run } from './process.mjs';
 
-const SERVE_LOG = path.join(os.tmpdir(), 'press-coverage-ollama-serve.log');
+// Under the user's own Ollama directory rather than a shared /tmp, where a
+// pre-planted symlink could redirect the append.
+const SERVE_LOG_DIR = path.join(os.homedir(), '.ollama', 'logs');
+const SERVE_LOG = path.join(SERVE_LOG_DIR, 'press-coverage-serve.log');
 const SERVE_TIMEOUT_MS = 30_000;
 
 /**
@@ -64,7 +67,8 @@ export async function ensureOllamaServing() {
     );
   }
 
-  const log = openSync(SERVE_LOG, 'a');
+  mkdirSync(SERVE_LOG_DIR, { recursive: true, mode: 0o700 });
+  const log = openSync(SERVE_LOG, 'a', 0o600);
   try {
     const child = spawn('ollama', ['serve'], {
       detached: true,
