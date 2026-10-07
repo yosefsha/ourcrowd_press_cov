@@ -30,6 +30,7 @@ export class InMemoryAlertDigestRepository implements AlertDigestRepository {
         (digest) => filter.acknowledged === undefined || (digest.acknowledgedAt !== null) === filter.acknowledged,
       )
       .sort((a, b) => b.createdAt.getTime() - a.createdAt.getTime() || b.id - a.id)
+      .slice(0, filter.limit)
       .map(summarize);
     return Promise.resolve(summaries);
   }

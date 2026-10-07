@@ -47,14 +47,19 @@ interface MentionRow {
  */
 const LISTED_MENTION = `c.id = i.candidate_id AND c.relevance = 'relevant' AND c.sentiment IS NOT NULL`;
 
-const SUMMARY_SELECT = `
+/** Summaries of the digests in `source` (a relation aliased by the caller), newest first. */
+function summarySelect(source: string): string {
+  return `
   SELECT d.id, d.run_id, d.created_at, d.acknowledged_at,
          count(c.id)::int AS mention_count,
          count(DISTINCT c.company_id)::int AS company_count,
          (count(c.id) FILTER (WHERE c.sentiment = 'negative'))::int AS negative_mention_count
-    FROM alert_digests d
+    FROM ${source} d
     LEFT JOIN alert_digest_items i ON i.digest_id = d.id
-    LEFT JOIN candidates c ON ${LISTED_MENTION}`;
+    LEFT JOIN candidates c ON ${LISTED_MENTION}
+   GROUP BY d.id, d.run_id, d.created_at, d.acknowledged_at
+   ORDER BY d.created_at DESC, d.id DESC`;
+}
 
 /** Alert Digests read from and acknowledged in Postgres. */
 @Injectable()
@@ -62,12 +67,15 @@ export class PostgresAlertDigestRepository implements AlertDigestRepository {
   constructor(private readonly dataSource: DataSource) {}
 
   async list(filter: AlertDigestFilter): Promise<readonly StoredAlertDigestSummary[]> {
+    // The page of digests is chosen first, so only its items are aggregated.
     const rows = await this.dataSource.query<SummaryRow[]>(
-      `${SUMMARY_SELECT}
-        WHERE $1::boolean IS NULL OR (d.acknowledged_at IS NOT NULL) = $1::boolean
-        GROUP BY d.id
-        ORDER BY d.created_at DESC, d.id DESC`,
-      [filter.acknowledged ?? null],
+      summarySelect(`(
+        SELECT * FROM alert_digests
+         WHERE $1::boolean IS NULL OR (acknowledged_at IS NOT NULL) = $1::boolean
+         ORDER BY created_at DESC, id DESC
+         LIMIT $2
+      )`),
+      [filter.acknowledged ?? null, filter.limit],
     );
     return rows.map(toSummary);
   }
@@ -100,7 +108,7 @@ export class PostgresAlertDigestRepository implements AlertDigestRepository {
 
   private async findSummary(id: number): Promise<StoredAlertDigestSummary> {
     if (!isStorableId(id)) throw new AlertDigestNotFound(id);
-    const [row] = await this.dataSource.query<SummaryRow[]>(`${SUMMARY_SELECT} WHERE d.id = $1 GROUP BY d.id`, [id]);
+    const [row] = await this.dataSource.query<SummaryRow[]>(summarySelect('(SELECT * FROM alert_digests WHERE id = $1)'), [id]);
     if (row === undefined) throw new AlertDigestNotFound(id);
     return toSummary(row);
   }

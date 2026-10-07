@@ -217,7 +217,19 @@ describe('Alert Digests (ApiModule and the collector builder against Postgres)',
     });
 
     it('rejects unknown query parameters', async () => {
-      await request(server()).get('/api/alerts?limit=5').expect(400);
+      await request(server()).get('/api/alerts?page=2').expect(400);
+    });
+
+    it('lists at most `limit` digests, newest first', async () => {
+      const response = await request(server()).get('/api/alerts?limit=1').expect(200);
+
+      expect(response.body).toHaveLength(1);
+    });
+
+    it('rejects a limit outside 1–200', async () => {
+      await request(server()).get('/api/alerts?limit=0').expect(400);
+      await request(server()).get('/api/alerts?limit=201').expect(400);
+      await request(server()).get('/api/alerts?limit=ten').expect(400);
     });
   });
 

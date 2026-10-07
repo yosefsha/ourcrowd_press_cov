@@ -65,9 +65,10 @@ describe('AlertsService', () => {
   it('lists digests newest first, filtered by acknowledgement', async () => {
     const { service } = setup();
 
-    expect((await service.list({})).map((d) => d.id)).toEqual([2, 1]);
-    expect((await service.list({ acknowledged: false })).map((d) => d.id)).toEqual([2]);
-    expect((await service.list({ acknowledged: true })).map((d) => d.id)).toEqual([1]);
+    expect((await service.list({ limit: 50 })).map((d) => d.id)).toEqual([2, 1]);
+    expect((await service.list({ acknowledged: false, limit: 50 })).map((d) => d.id)).toEqual([2]);
+    expect((await service.list({ acknowledged: true, limit: 50 })).map((d) => d.id)).toEqual([1]);
+    expect((await service.list({ limit: 1 })).map((d) => d.id)).toEqual([2]);
   });
 
   it('returns a digest grouped by company, negative Mentions first', async () => {

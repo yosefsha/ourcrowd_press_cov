@@ -13,7 +13,7 @@ export class AlertsController {
 
   @Get()
   async list(@Query() query: ListAlertsQueryDto): Promise<AlertDigestSummaryResponse[]> {
-    const summaries = await this.alerts.list({ acknowledged: query.acknowledged });
+    const summaries = await this.alerts.list({ acknowledged: query.acknowledged, limit: query.limit });
     return summaries.map((summary) => new AlertDigestSummaryResponse(summary));
   }
 

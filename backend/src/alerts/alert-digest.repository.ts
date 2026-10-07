@@ -46,6 +46,8 @@ export interface StoredAlertDigest {
 export interface AlertDigestFilter {
   /** true: acknowledged only; false: unacknowledged only; undefined: all. */
   readonly acknowledged?: boolean;
+  /** At most this many digests, newest first. */
+  readonly limit: number;
 }
 
 /** Stored Alert Digests as the dashboard reads and acknowledges them (ADR-004). */
