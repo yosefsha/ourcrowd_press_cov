@@ -5,26 +5,31 @@ import {
   useMarkCompanyReviewedMutation,
   useSendCompanyToReviewMutation,
 } from '../queries.ts';
+import type { CompanyStatusAction } from '../companyProfileForm.ts';
 import type { AdminCompany } from '../types.ts';
 import { dangerButtonStyle, primaryButtonStyle, secondaryButtonStyle } from './companiesPageStyles.ts';
-
-export type CompanyStatusAction = 'reviewed' | 'sentToReview' | 'deactivated';
 
 interface Props {
   company: AdminCompany;
   onChanged: (company: AdminCompany, action: CompanyStatusAction) => void;
+  /**
+   * Why the actions are unavailable right now (e.g. unsaved profile edits), or
+   * null. Reviewing with unsaved edits would activate the company without them.
+   */
+  blockedReason: string | null;
 }
 
 /**
  * The lifecycle actions open to a company in its current status. Deactivation
  * is never a delete — history is kept — but it is confirmed in the page first.
  */
-export function CompanyStatusActions({ company, onChanged }: Props): React.JSX.Element | null {
+export function CompanyStatusActions({ company, onChanged, blockedReason }: Props): React.JSX.Element | null {
   const [confirmingDeactivate, setConfirmingDeactivate] = useState(false);
   const markReviewed = useMarkCompanyReviewedMutation();
   const sendToReview = useSendCompanyToReviewMutation();
   const deactivate = useDeactivateCompanyMutation();
-  const pending = markReviewed.isPending || sendToReview.isPending || deactivate.isPending;
+  const pending =
+    markReviewed.isPending || sendToReview.isPending || deactivate.isPending || blockedReason !== null;
   const error = markReviewed.error ?? sendToReview.error ?? deactivate.error;
 
   if (company.status === 'deactivated') return null;
@@ -118,6 +123,7 @@ export function CompanyStatusActions({ company, onChanged }: Props): React.JSX.E
           </button>
         </div>
       )}
+      {blockedReason !== null && <p style={{ margin: 0, fontSize: 13, color: '#627d98' }}>{blockedReason}</p>}
       {error !== null && (
         <p role="alert" style={{ margin: 0, fontSize: 14, color: '#ab091e' }}>
           Could not change the status: {error.message}

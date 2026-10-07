@@ -46,7 +46,11 @@ describe('chips', () => {
   });
 
   it('removes a value', () => {
-    expect(removeChip(['Edge', 'Ludeo'], 'Edge')).toEqual(['Ludeo']);
+    expect(removeChip(['Edge', 'Ludeo'], 0)).toEqual(['Ludeo']);
+  });
+
+  it('removes only one copy of a duplicate already in saved data', () => {
+    expect(removeChip(['Edge', 'Edge'], 1)).toEqual(['Edge']);
   });
 });
 
@@ -66,6 +70,14 @@ describe('companyProfileErrorsFrom', () => {
       searchTerms: ['each value in searchTerms must be a string'],
     });
     expect(errors.general).toEqual(['property website should not exist']);
+  });
+
+  it('does not tie a message to a field it merely mentions', () => {
+    const errors = companyProfileErrorsFrom(
+      validationError(['A company with this display name already exists; check its description', 'aliases.0 must be a string']),
+    );
+    expect(errors.fields).toEqual({ aliases: ['aliases.0 must be a string'] });
+    expect(errors.general).toEqual(['A company with this display name already exists; check its description']);
   });
 
   it('treats a single-message error (e.g. a 409 duplicate name) as general unless it names a field', () => {

@@ -5,19 +5,17 @@ import {
   formValuesFromCompany,
   hasChanges,
   toUpdateCompanyRequest,
+  type CompanyPanelNotice,
   type CompanyProfileErrors,
   type CompanyProfileFormValues,
 } from '../companyProfileForm.ts';
 import { useUpdateCompanyMutation } from '../queries.ts';
 import type { AdminCompany } from '../types.ts';
 import { CompanyProfileForm } from './CompanyProfileForm.tsx';
-import { CompanyStatusActions, type CompanyStatusAction } from './CompanyStatusActions.tsx';
+import { CompanyStatusActions } from './CompanyStatusActions.tsx';
 import { CompanyStatusBadge } from './CompanyStatusBadge.tsx';
 import { secondaryButtonStyle } from './companiesPageStyles.ts';
 import { ReprocessControl } from './ReprocessControl.tsx';
-
-/** What just happened to the company, so the panel can say so and offer Re-process where it applies. */
-export type CompanyPanelNotice = 'added' | 'saved' | CompanyStatusAction;
 
 interface Props {
   company: AdminCompany;
@@ -48,19 +46,30 @@ export function EditCompanyPanel({
   onCompanyChanged,
   onClose,
 }: Props): React.JSX.Element {
+  // The profile the form was loaded from. Edits are diffed against it, not against the latest
+  // `company`, so a newer copy arriving from a refetch never turns into a PATCH the person did not make.
+  const [base, setBase] = useState<AdminCompany>(company);
   const [values, setValues] = useState<CompanyProfileFormValues>(() => formValuesFromCompany(company));
   const [errors, setErrors] = useState<CompanyProfileErrors | null>(null);
   const [notice, setNotice] = useState<CompanyPanelNotice | null>(initialNotice);
   const update = useUpdateCompanyMutation();
-  const changes = toUpdateCompanyRequest(company, values);
+  const changes = toUpdateCompanyRequest(base, values);
+  const dirty = hasChanges(changes);
+  const savedElsewhere = Date.parse(company.updatedAt) > Date.parse(base.updatedAt) && !update.isPending;
   const headingId = `company-${company.id}-heading`;
 
   function save(): void {
     setErrors(null);
+    if (!dirty) {
+      setNotice(null);
+      setErrors({ fields: {}, general: ['There are no changes to save.'] });
+      return;
+    }
     update.mutate(
       { id: company.id, changes },
       {
         onSuccess: (updated) => {
+          setBase(updated);
           setValues(formValuesFromCompany(updated));
           setNotice('saved');
           onCompanyChanged(updated);
@@ -112,6 +121,23 @@ export function EditCompanyPanel({
         )}
       </dl>
 
+      {savedElsewhere && (
+        <p role="status" style={{ margin: 0, padding: 12, borderRadius: 6, background: '#fff8e1', fontSize: 14 }}>
+          This profile was changed elsewhere since you opened it. Saving sends only the fields you changed here.{' '}
+          <button
+            type="button"
+            onClick={() => {
+              setBase(company);
+              setValues(formValuesFromCompany(company));
+              setErrors(null);
+            }}
+            style={secondaryButtonStyle}
+          >
+            Load the latest
+          </button>
+        </p>
+      )}
+
       <CompanyProfileForm
         values={values}
         onChange={(next) => {
@@ -120,14 +146,38 @@ export function EditCompanyPanel({
         }}
         onSubmit={save}
         submitLabel="Save profile"
-        submitDisabled={!hasChanges(changes)}
+        submitDisabled={false}
         pending={update.isPending}
         errors={errors}
+        secondaryAction={
+          dirty && (
+            <button
+              type="button"
+              disabled={update.isPending}
+              onClick={() => {
+                setValues(formValuesFromCompany(base));
+                setErrors(null);
+              }}
+              style={secondaryButtonStyle}
+            >
+              Discard changes
+            </button>
+          )
+        }
       />
 
       <CompanyStatusActions
         company={company}
+        blockedReason={
+          update.isPending
+            ? 'Saving the profile…'
+            : dirty
+              ? 'Save or discard your profile changes before changing the status.'
+              : null
+        }
         onChanged={(updated, action) => {
+          // Status actions are blocked while the form is dirty, so the form already matches `updated`'s profile.
+          setBase(updated);
           setNotice(action);
           onCompanyChanged(updated);
         }}

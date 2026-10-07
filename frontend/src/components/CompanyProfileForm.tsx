@@ -43,6 +43,11 @@ export function CompanyProfileForm({
       }}
       style={{ display: 'flex', flexDirection: 'column', gap: 12 }}
     >
+      {/* Locked while saving, so nothing typed meanwhile is overwritten by the server's answer. */}
+      <fieldset
+        disabled={pending}
+        style={{ display: 'flex', flexDirection: 'column', gap: 12, border: 'none', margin: 0, padding: 0, minWidth: 0 }}
+      >
       <ProfileTextField
         label="Display name"
         value={values.displayName}
@@ -90,6 +95,7 @@ export function CompanyProfileForm({
         }}
         errors={fieldErrors.searchTerms}
       />
+      </fieldset>
       {errors !== null && errors.general.length > 0 && (
         <div role="alert" style={{ color: '#ab091e', fontSize: 14 }}>
           {errors.general.map((message) => (

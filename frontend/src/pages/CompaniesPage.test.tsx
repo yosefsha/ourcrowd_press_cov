@@ -107,7 +107,9 @@ describe('editing a company', () => {
     }
 
     const save = within(panel).getByRole('button', { name: 'Save profile' });
-    expect(save).toBeDisabled();
+    fireEvent.click(save);
+    expect(within(panel).getByRole('alert')).toHaveTextContent('There are no changes to save.');
+    expect(updateCompany).not.toHaveBeenCalled();
     fireEvent.change(within(panel).getByRole('textbox', { name: 'Description' }), {
       target: { value: 'GPU cloud for AI training' },
     });
@@ -218,6 +220,42 @@ describe('lifecycle actions', () => {
     expect(await within(panel).findByText(/^Deactivated\. Its history is kept/)).toBeInTheDocument();
     expect(within(panel).queryByRole('button', { name: 'Deactivate…' })).toBeNull();
     expect(confirm).not.toHaveBeenCalled();
+  });
+});
+
+describe('guards between the form and the actions', () => {
+  it('blocks status actions while the profile has unsaved edits', async () => {
+    const markCompanyReviewed = vi.fn<ApiClient['markCompanyReviewed']>();
+    renderPage({ markCompanyReviewed });
+    const panel = await openCompany('Harvey');
+
+    fireEvent.change(within(panel).getByRole('textbox', { name: 'Description' }), {
+      target: { value: 'AI for legal work' },
+    });
+    expect(within(panel).getByRole('button', { name: 'Mark reviewed' })).toBeDisabled();
+    expect(within(panel).getByText(/Save or discard your profile changes/)).toBeInTheDocument();
+
+    fireEvent.click(within(panel).getByRole('button', { name: 'Discard changes' }));
+    expect(within(panel).getByRole('textbox', { name: 'Description' })).toHaveValue('');
+    expect(within(panel).getByRole('button', { name: 'Mark reviewed' })).toBeEnabled();
+  });
+
+  it('closes an open Re-process confirmation when the company stops being active', async () => {
+    const sendCompanyToReview = vi.fn<ApiClient['sendCompanyToReview']>(() =>
+      Promise.resolve({ ...lambdaActive, status: 'needs_review', updatedAt: '2026-10-07T08:00:00.000Z' }),
+    );
+    renderPage({ sendCompanyToReview });
+    const panel = await openCompany('Lambda');
+    fireEvent.click(within(panel).getByRole('button', { name: 'Re-process…' }));
+    expect(within(panel).getByRole('button', { name: 'Replace history and re-process' })).toBeInTheDocument();
+
+    fireEvent.click(within(panel).getByRole('button', { name: 'Send to Needs Review' }));
+
+    expect(await within(panel).findByText(/Sent to Needs Review/)).toBeInTheDocument();
+    expect(within(panel).queryByRole('button', { name: 'Replace history and re-process' })).toBeNull();
+    expect(within(panel).getByRole('button', { name: 'Re-process…' })).toBeDisabled();
+    // The status change is not mistaken for someone else's profile edit.
+    expect(within(panel).queryByText(/changed elsewhere/)).toBeNull();
   });
 });
 

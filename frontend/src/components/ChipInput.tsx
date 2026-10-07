@@ -13,7 +13,7 @@ interface Props {
   hint?: string;
 }
 
-/** A list of short strings edited as removable chips; Enter, comma or leaving the field adds the typed one. */
+/** A list of short strings edited as removable chips; Enter or leaving the field adds the typed one. */
 export function ChipInput({ label, itemNoun, values, onChange, errors, hint }: Props): React.JSX.Element {
   const [draft, setDraft] = useState('');
   const inputId = useId();
@@ -35,9 +35,10 @@ export function ChipInput({ label, itemNoun, values, onChange, errors, hint }: P
       </label>
       {values.length > 0 && (
         <ul aria-label={label} style={{ display: 'flex', flexWrap: 'wrap', gap: 6, listStyle: 'none', margin: 0, padding: 0 }}>
-          {values.map((value) => (
+          {values.map((value, index) => (
             <li
-              key={value}
+              // Saved data may hold a duplicate, so the position disambiguates.
+              key={`${index}:${value}`}
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
@@ -53,7 +54,7 @@ export function ChipInput({ label, itemNoun, values, onChange, errors, hint }: P
                 type="button"
                 aria-label={`Remove ${itemNoun} ${value}`}
                 onClick={() => {
-                  onChange(removeChip(values, value));
+                  onChange(removeChip(values, index));
                 }}
                 style={{ border: 'none', background: 'transparent', cursor: 'pointer', padding: '0 4px', fontSize: 14 }}
               >
@@ -73,7 +74,7 @@ export function ChipInput({ label, itemNoun, values, onChange, errors, hint }: P
           setDraft(event.target.value);
         }}
         onKeyDown={(event) => {
-          if (event.key === 'Enter' || event.key === ',') {
+          if (event.key === 'Enter') {
             event.preventDefault();
             commitDraft();
           }

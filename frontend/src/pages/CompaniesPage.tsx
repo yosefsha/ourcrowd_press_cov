@@ -3,7 +3,8 @@ import { useState } from 'react';
 import { AddCompanyPanel } from '../components/AddCompanyPanel.tsx';
 import { AdminCompanyList } from '../components/AdminCompanyList.tsx';
 import { primaryButtonStyle, secondaryButtonStyle } from '../components/companiesPageStyles.ts';
-import { EditCompanyPanel, type CompanyPanelNotice } from '../components/EditCompanyPanel.tsx';
+import { EditCompanyPanel } from '../components/EditCompanyPanel.tsx';
+import type { CompanyPanelNotice } from '../companyProfileForm.ts';
 import { useAdminCompaniesQuery } from '../queries.ts';
 import type { AdminCompaniesQuery, AdminCompany, TrackedCompanyStatus } from '../types.ts';
 
@@ -33,7 +34,8 @@ function toQuery(status: StatusFilter, q: string): AdminCompaniesQuery {
  */
 function freshest(company: AdminCompany, list: readonly AdminCompany[] | undefined): AdminCompany {
   const listed = list?.find((candidate) => candidate.id === company.id);
-  return listed !== undefined && listed.updatedAt >= company.updatedAt ? listed : company;
+  // Ties go to the panel's copy: a list refetch started before the mutation may finish after it.
+  return listed !== undefined && Date.parse(listed.updatedAt) > Date.parse(company.updatedAt) ? listed : company;
 }
 
 /** Review and edit Tracked Companies and their Company Profiles (ADR-010). */

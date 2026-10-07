@@ -99,11 +99,17 @@ export function addChip(chips: readonly string[], value: string): readonly strin
   return [...chips, trimmed];
 }
 
-export function removeChip(chips: readonly string[], value: string): readonly string[] {
-  return chips.filter((chip) => chip !== value);
+/** Removes the chip at `index` only, so a duplicate already in saved data loses just one copy. */
+export function removeChip(chips: readonly string[], index: number): readonly string[] {
+  return chips.filter((_chip, position) => position !== index);
 }
 
-const FIELD_PATTERN = new RegExp(`\\b(${COMPANY_PROFILE_FIELDS.join('|')})\\b`);
+/**
+ * ValidationPipe messages start with the property they concern (`domain must…`,
+ * `aliases.0 must…`) or `each value in <property>`; a field named later in a
+ * sentence does not make the message about that field.
+ */
+const FIELD_PATTERN = new RegExp(`^(?:each value in )?(${COMPANY_PROFILE_FIELDS.join('|')})\\b`);
 
 function errorMessages(body: unknown, fallback: string): readonly string[] {
   if (typeof body === 'object' && body !== null && 'message' in body) {
@@ -123,6 +129,12 @@ function errorMessages(body: unknown, fallback: string): readonly string[] {
  * domain name`, `each value in aliases must be a string`); messages naming a
  * profile field go under it, everything else — and any non-HTTP failure — is general.
  */
+/** A lifecycle action just applied to a company from the status actions. */
+export type CompanyStatusAction = 'reviewed' | 'sentToReview' | 'deactivated';
+
+/** What just happened to the company in the edit panel, so it can say so and offer Re-process where it applies. */
+export type CompanyPanelNotice = 'added' | 'saved' | CompanyStatusAction;
+
 export function companyProfileErrorsFrom(error: Error): CompanyProfileErrors {
   if (!(error instanceof ApiError)) return { fields: {}, general: [error.message] };
   const fields: Partial<Record<CompanyProfileField, string[]>> = {};

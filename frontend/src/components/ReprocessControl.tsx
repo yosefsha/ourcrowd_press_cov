@@ -64,12 +64,12 @@ export function ReprocessControl({ companyId, displayName, enabled, highlighted 
             : `Could not re-process: ${error.message}`}
         </p>
       )}
-      {confirming ? (
+      {confirming && enabled ? (
         <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 8 }}>
           <span style={{ fontSize: 14 }}>Replace all collected history for {displayName}?</span>
           <button
             type="button"
-            disabled={reprocess.isPending}
+            disabled={reprocess.isPending || !enabled}
             onClick={() => {
               reprocess.mutate(companyId, {
                 onSettled: () => {
