@@ -13,6 +13,15 @@ export const SEARCH_DEBOUNCE_MS = 300;
 export function CompanySearchBox({ value, onSearch }: Props): React.JSX.Element {
   const id = useId();
   const [draft, setDraft] = useState(value);
+  const [appliedValue, setAppliedValue] = useState(value);
+
+  // The applied search changed (Back, a pasted link, or this box's own debounce): show it,
+  // unless the draft already means the same search. Adjusting state while rendering, rather
+  // than in an effect, keeps the effect below from re-applying a stale draft.
+  if (value !== appliedValue) {
+    setAppliedValue(value);
+    if (draft.trim() !== value) setDraft(value);
+  }
 
   useEffect(() => {
     if (draft.trim() === value) return undefined;

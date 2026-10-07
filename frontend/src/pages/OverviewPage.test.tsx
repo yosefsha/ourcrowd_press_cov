@@ -1,11 +1,12 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { fireEvent, render, screen, waitFor, within } from '@testing-library/react';
+import { act, fireEvent, render, screen, waitFor, within } from '@testing-library/react';
 import { createMemoryRouter, RouterProvider } from 'react-router';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 
 import type { ApiClient } from '../api.ts';
 import { ApiClientContext } from '../apiClientContext.ts';
 import { ApiError } from '../apiErrors.ts';
+import { SEARCH_DEBOUNCE_MS } from '../components/CompanySearchBox.tsx';
 import { createFakeApiClient } from '../test/fixtures.ts';
 import { buildCompanyRow, buildCoverageSummary, overviewRows } from '../test/overviewFixtures.ts';
 import type { CompaniesQuery, CompanyOverviewRow, CoverageSummary } from '../types.ts';
@@ -199,6 +200,20 @@ describe('OverviewPage filters', () => {
     await waitFor(() => {
       expect(lastCompaniesQuery(listCompanies)).toEqual({ window: 'rolling90', q: 'Morph', sort: 'negatives' });
     });
+  });
+
+  it('shows a search changed from outside (Back) without re-applying the old one', async () => {
+    const { router } = renderOverview();
+    await bodyRowNames();
+    fireEvent.change(screen.getByLabelText('Search'), { target: { value: 'Morph' } });
+    await waitFor(() => {
+      expect(search(router)).toEqual({ q: 'Morph' });
+    });
+    await act(() => router.navigate(-1));
+    expect(search(router)).toEqual({});
+    expect(screen.getByLabelText('Search')).toHaveValue('');
+    await new Promise((resolve) => setTimeout(resolve, SEARCH_DEBOUNCE_MS + 100));
+    expect(search(router)).toEqual({});
   });
 
   it('distinguishes "no match" from "no companies"', async () => {
