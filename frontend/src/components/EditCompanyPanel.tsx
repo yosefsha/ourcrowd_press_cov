@@ -176,8 +176,10 @@ export function EditCompanyPanel({
               : null
         }
         onChanged={(updated, action) => {
-          // Status actions are blocked while the form is dirty, so the form already matches `updated`'s profile.
+          // Status actions are blocked while the form is dirty, so nothing typed is lost by loading
+          // `updated`'s profile — which may be newer than the form's if it was changed elsewhere.
           setBase(updated);
+          setValues(formValuesFromCompany(updated));
           setNotice(action);
           onCompanyChanged(updated);
         }}

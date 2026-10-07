@@ -321,6 +321,33 @@ describe('guards between the form and the actions', () => {
   });
 });
 
+describe('a profile changed elsewhere', () => {
+  it('loads the newer profile with a status change instead of leaving it as unsaved edits', async () => {
+    const editedElsewhere: AdminCompany = { ...lambdaActive, domain: 'lambdalabs.com', updatedAt: '2026-10-07T07:30:00.000Z' };
+    let listed: readonly AdminCompany[] = adminCompanies;
+    const sendCompanyToReview = vi.fn<ApiClient['sendCompanyToReview']>(() =>
+      Promise.resolve({ ...editedElsewhere, status: 'needs_review', updatedAt: '2026-10-07T08:00:00.000Z' }),
+    );
+    const { router } = renderPageAt('/companies', {
+      listAdminCompanies: (query) => Promise.resolve(listed.filter((c) => query.status === undefined || c.status === query.status)),
+      sendCompanyToReview,
+    });
+    const panel = await openCompany('Lambda');
+
+    // Another tab edits the domain; this page's list refetches on a filter change.
+    listed = adminCompanies.map((company) => (company.id === lambdaActive.id ? editedElsewhere : company));
+    fireEvent.click(screen.getByRole('button', { name: 'Active' }));
+    expect(await within(panel).findByText(/changed elsewhere/)).toBeInTheDocument();
+    expect(within(panel).getByRole('textbox', { name: 'Domain' })).toHaveValue('lambda.ai');
+
+    fireEvent.click(within(panel).getByRole('button', { name: 'Send to Needs Review' }));
+    expect(await within(panel).findByText(/Sent to Needs Review/)).toBeInTheDocument();
+    expect(within(panel).getByRole('textbox', { name: 'Domain' })).toHaveValue('lambdalabs.com');
+    expect(within(panel).queryByRole('button', { name: 'Discard changes' })).toBeNull();
+    expect(router.state.location.search).toBe(`?company=${lambdaActive.id}`);
+  });
+});
+
 describe('Re-process', () => {
   it('explains that history is replaced and queues a Backfill after confirmation', async () => {
     const reprocessCompany = vi.fn<ApiClient['reprocessCompany']>(() => Promise.resolve(lambdaReprocessRun));
