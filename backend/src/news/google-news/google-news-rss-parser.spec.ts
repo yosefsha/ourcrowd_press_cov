@@ -134,6 +134,16 @@ describe('parseGoogleNewsRss on altered recordings', () => {
     ]);
   });
 
+  it('reduces titles and Outlet names to plain text, never markup', () => {
+    const item = zutaCoreItem()
+      .replace(/<title>[^<]*<\/title>/, '<title>&lt;img src=x onerror=alert(1)&gt;Funding round - calcalist</title>')
+      .replace('>calcalist</source>', '>&lt;b&gt;calcalist&lt;/b&gt;</source>');
+    const [article] = parseGoogleNewsRss(zutaCoreFeedWith([item]), HE_IL).articles;
+
+    expect(article?.title).toBe('Funding round');
+    expect(article?.outletName).toBe('calcalist');
+  });
+
   it('fails when items exist but none can be read (a format change)', () => {
     const unreadable = zutaCoreItem().replace(/<source[^>]*>[^<]*<\/source>/, '');
 

@@ -2,7 +2,7 @@ import { XMLParser, XMLValidator } from 'fast-xml-parser';
 
 import type { FoundArticle } from '../../domain/article';
 import type { NewsEdition } from '../../domain/news-edition';
-import { collapseWhitespace, htmlToText } from './html-text';
+import { htmlToText } from './html-text';
 import { extractGoogleArticleId } from './google-news-urls';
 import { toHttpUrl } from './safe-url';
 
@@ -64,9 +64,9 @@ function parseItem(item: unknown, edition: NewsEdition): FoundArticle | null {
   const googleUrl = toHttpUrl(link);
   const googleArticleId = googleUrl === null ? null : extractGoogleArticleId(googleUrl);
   const source = item.source;
-  const outletName = collapseWhitespace(textOf(source) ?? '');
+  const outletName = htmlToText(textOf(source) ?? '');
   const outletUrl = isRecord(source) ? toHttpUrl(source['@_url']) : null;
-  const rawTitle = collapseWhitespace(textOf(item.title) ?? '');
+  const rawTitle = htmlToText(textOf(item.title) ?? '');
   const publishedAt = new Date(textOf(item.pubDate) ?? '');
   if (
     googleUrl === null ||
