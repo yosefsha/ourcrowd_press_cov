@@ -12,10 +12,16 @@ export class CompanyDetailDto {
   readonly window!: string;
   readonly mentionStatus!: MentionStatus;
   readonly lastMentionAt!: string | null;
+  /** Every Mention in the window, including any whose Sentiment is not judged yet. */
   readonly mentionCount!: number;
   readonly capped!: boolean;
   readonly sentiment!: SentimentCounts;
-  /** Contiguous weeks covering the window, empty weeks as zeros. */
+  /**
+   * Contiguous weeks covering the window, empty weeks as zeros. Counts only
+   * Mentions whose Sentiment is judged, so its totals equal the sum of
+   * `sentiment`, which can be lower than `mentionCount` while some Mentions
+   * still await sentiment classification.
+   */
   readonly weeklySeries!: readonly WeeklySentimentPointDto[];
   /** Rejected share of classified Candidates in the window, 0–1; null with none. */
   readonly rejectionRate!: number | null;

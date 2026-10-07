@@ -292,6 +292,23 @@ describe('Coverage read API (ApiModule against Postgres)', () => {
       expect(body.weeklySeries).toContainEqual({ weekStart: '2026-09-21', positive: 0, negative: 0, neutral: 1 });
     });
 
+    it('stacks only sentiment-judged Mentions weekly, so totals match the split, not mentionCount', async () => {
+      const detail = (await request(server()).get(`/api/companies/${company.electreon}`).expect(200)).body as {
+        mentionCount: number;
+        sentiment: Record<string, number>;
+        weeklySeries: { weekStart: string; positive: number; negative: number; neutral: number }[];
+      };
+      const weeklyTotal = detail.weeklySeries.reduce(
+        (sum, point) => sum + point.positive + point.negative + point.neutral,
+        0,
+      );
+
+      expect(detail.mentionCount).toBe(3);
+      expect(detail.sentiment).toEqual({ positive: 0, negative: 2, neutral: 0 });
+      expect(weeklyTotal).toBe(2);
+      expect(detail.weeklySeries).toContainEqual({ weekStart: '2026-09-14', positive: 0, negative: 2, neutral: 0 });
+    });
+
     it('shows a company in Needs Review', async () => {
       const response = await request(server()).get(`/api/companies/${company.zutacore}`).expect(200);
 

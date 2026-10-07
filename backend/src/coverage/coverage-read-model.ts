@@ -104,6 +104,9 @@ export interface CoverageReadModel {
   /**
    * Mentions with a judged Sentiment per week inside the period, weeks
    * starting on Monday in `timeZone`. Weeks without such Mentions are left out.
+   * Mentions not yet sentiment-classified are not counted (the series is
+   * stacked by Sentiment), so weekly totals add up to the `sentiment` split,
+   * not to `mentionCount`.
    */
   weeklyMentionCounts(
     companyId: number,

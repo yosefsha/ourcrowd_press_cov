@@ -307,6 +307,19 @@ describe('CoverageService', () => {
       });
     });
 
+    it('stacks only sentiment-judged Mentions weekly, so totals match the split, not mentionCount', async () => {
+      const detail = await service.getCompany(ELECTREON, 'rolling90');
+      const weeklyTotal = detail.weeklySeries.reduce(
+        (sum, point) => sum + point.positive + point.negative + point.neutral,
+        0,
+      );
+
+      expect(detail.mentionCount).toBe(3);
+      expect(detail.sentiment).toEqual({ positive: 0, negative: 2, neutral: 0 });
+      expect(weeklyTotal).toBe(2);
+      expect(detail.weeklySeries).toContainEqual({ weekStart: '2026-09-14', positive: 0, negative: 2, neutral: 0 });
+    });
+
     it('shows a company in Needs Review, with no rejection rate when nothing was classified', async () => {
       const detail = await service.getCompany(ZUTACORE, 'rolling90');
 
