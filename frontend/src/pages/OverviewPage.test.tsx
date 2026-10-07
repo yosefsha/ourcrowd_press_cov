@@ -223,11 +223,12 @@ describe('OverviewPage filters', () => {
   });
 
   it('shows a search changed from outside (Back) without re-applying the old one', async () => {
-    const { router } = renderOverview();
+    const { router, listCompanies } = renderOverview();
     await bodyRowNames();
     fireEvent.change(screen.getByLabelText('Search'), { target: { value: 'Morph' } });
+    // Wait until the page has rendered with the applied search, not just until the URL changed.
     await waitFor(() => {
-      expect(search(router)).toEqual({ q: 'Morph' });
+      expect(lastCompaniesQuery(listCompanies)).toEqual({ window: 'rolling90', q: 'Morph', sort: 'negatives' });
     });
     await act(() => router.navigate(-1));
     expect(search(router)).toEqual({});
