@@ -1,0 +1,73 @@
+{
+  "name": "press-coverage-backend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Press coverage monitoring backend: HTTP API and news collector",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "nest build",
+    "start:dev": "nest start --watch",
+    "start:prod": "node dist/main.js",
+    "start:collector:dev": "nest start --watch --entryFile worker",
+    "start:collector:prod": "node dist/worker.js",
+    "lint": "eslint \"{src,test}/**/*.ts\" --max-warnings 0 && npm run lint:boundaries",
+    "lint:boundaries": "depcruise src --config .dependency-cruiser.cjs",
+    "type-check": "tsc --noEmit -p tsconfig.json",
+    "test": "jest",
+    "test:e2e": "jest --config ./test/jest-e2e.json --runInBand",
+    "premigration:run": "node scripts/ensure-compiled.mjs",
+    "migration:run": "typeorm migration:run -d dist/database/data-source.js",
+    "premigration:generate": "node scripts/ensure-compiled.mjs",
+    "migration:generate": "typeorm migration:generate -d dist/database/data-source.js"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": ".",
+    "roots": [
+      "<rootDir>/src",
+      "<rootDir>/test"
+    ],
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "@nestjs/common": "^11.2.7",
+    "@nestjs/config": "^4.0.4",
+    "@nestjs/core": "^11.2.7",
+    "@nestjs/platform-express": "^11.2.7",
+    "@nestjs/typeorm": "^11.0.3",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.15.1",
+    "pg": "^8.23.1",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2",
+    "typeorm": "^0.3.31"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "@nestjs/cli": "^11.0.24",
+    "@nestjs/testing": "^11.2.7",
+    "@types/express": "^5.0.6",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^22.20.5",
+    "@types/supertest": "^7.2.1",
+    "dependency-cruiser": "^18.5.0",
+    "eslint": "^9.39.5",
+    "globals": "^17.13.0",
+    "jest": "^30.5.2",
+    "supertest": "^7.3.1",
+    "ts-jest": "^29.4.14",
+    "typescript": "~5.8",
+    "typescript-eslint": "^8.71.1"
+  }
+}
