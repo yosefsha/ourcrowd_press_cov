@@ -6,6 +6,7 @@
  * Mutations invalidate exactly the query keys whose data they change.
  */
 import {
+  keepPreviousData,
   useMutation,
   useQuery,
   useQueryClient,
@@ -98,9 +99,14 @@ export function useSummaryQuery(window: CoverageWindow): UseQueryResult<Coverage
   return useQuery({ queryKey: queryKeys.summary(window), queryFn: () => api.getSummary({ window }) });
 }
 
+/** Overview rows; while a changed filter or sort loads, the previous rows stay on screen (`isPlaceholderData`). */
 export function useCompaniesQuery(query: CompaniesQuery): UseQueryResult<readonly CompanyOverviewRow[]> {
   const api = useApiClient();
-  return useQuery({ queryKey: queryKeys.companies(query), queryFn: () => api.listCompanies(query) });
+  return useQuery({
+    queryKey: queryKeys.companies(query),
+    queryFn: () => api.listCompanies(query),
+    placeholderData: keepPreviousData,
+  });
 }
 
 /** Detail for one Tracked Company; disabled while `id` is null (nothing selected). */
