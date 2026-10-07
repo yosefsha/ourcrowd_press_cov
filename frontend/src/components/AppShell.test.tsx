@@ -1,12 +1,23 @@
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { fireEvent, render, screen } from '@testing-library/react';
 import { createMemoryRouter, RouterProvider } from 'react-router';
 import { describe, expect, it } from 'vitest';
 
+import { ApiClientContext } from '../apiClientContext.ts';
 import { routes } from '../routes.tsx';
+import { createFakeApiClient } from '../test/fixtures.ts';
 
 function renderAt(path: string): ReturnType<typeof createMemoryRouter> {
   const router = createMemoryRouter(routes, { initialEntries: [path] });
-  render(<RouterProvider router={router} />);
+  // Pages read server state through the query hooks, so the shell needs a QueryClient and an in-memory ApiClient.
+  const queryClient = new QueryClient({ defaultOptions: { queries: { retry: false } } });
+  render(
+    <ApiClientContext.Provider value={createFakeApiClient()}>
+      <QueryClientProvider client={queryClient}>
+        <RouterProvider router={router} />
+      </QueryClientProvider>
+    </ApiClientContext.Provider>,
+  );
   return router;
 }
 
