@@ -10,7 +10,7 @@ import type { PipelineCompanies } from '../src/pipeline/company-collection.servi
 import { PostgresCandidateRepository } from '../src/pipeline/repositories/postgres.candidate.repository';
 import { PostgresRunHistory } from '../src/pipeline/repositories/postgres.run-history';
 import { RecordingProgress } from './pipeline/support/in-memory-pipeline-ports';
-import { AFTER_RECORDINGS, claimedRun, type PipelineWorld, pipelineWorld } from './pipeline/support/pipeline-world';
+import { AFTER_RECORDINGS, claimedRun, RUNNING, type PipelineWorld, pipelineWorld } from './pipeline/support/pipeline-world';
 
 interface CompanyRow {
   id: number;
@@ -75,10 +75,10 @@ describe('Backfill and Daily Check against Postgres', () => {
     return row?.id ?? Number.NaN;
   }
 
-  async function startRun(type: RunType, startedAt = AFTER_RECORDINGS): Promise<number> {
+  async function startRun(type: RunType, startedAt = AFTER_RECORDINGS, companyIds: number[] | null = null): Promise<number> {
     const [row] = await query<{ id: number }>(
-      `INSERT INTO runs (type, status, params, trigger, started_at) VALUES ($1, 'running', '{}', 'dashboard', $2) RETURNING id`,
-      [type, startedAt],
+      `INSERT INTO runs (type, status, params, trigger, started_at) VALUES ($1, 'running', $3, 'dashboard', $2) RETURNING id`,
+      [type, startedAt, JSON.stringify({ until: null, companyIds, reprocess: false })],
     );
     return row?.id ?? Number.NaN;
   }
@@ -138,6 +138,7 @@ describe('Backfill and Daily Check against Postgres', () => {
     const backfillOutcome = await world.backfill.execute(
       claimedRun(backfillId, 'backfill', { until: '2026-07-23', companyIds: [ids.cerebras, ids.groq, ids.innoviz, ids.arbe] }),
       new RecordingProgress(),
+      RUNNING,
     );
     await finishRun(backfillId, 'completed');
 
@@ -159,7 +160,7 @@ describe('Backfill and Daily Check against Postgres', () => {
     });
 
     const dailyId = await startRun('daily_check');
-    const dailyOutcome = await world.dailyCheck.execute(claimedRun(dailyId, 'daily_check'), new RecordingProgress());
+    const dailyOutcome = await world.dailyCheck.execute(claimedRun(dailyId, 'daily_check'), new RecordingProgress(), RUNNING);
 
     expect(dailyOutcome).toEqual({ status: 'completed' });
     expect(world.digests.runIds).toEqual([dailyId]);
@@ -180,21 +181,23 @@ describe('Backfill and Daily Check against Postgres', () => {
     expect(capped?.capped).toEqual([false, false, false]);
   });
 
-  it('reads the start of the last completed Daily Check, not a failed one, and not the Run itself', async () => {
+  it('reads the start of the last completed full Daily Check, not a failed or company-scoped one, nor the Run itself', async () => {
     const completed = await startRun('daily_check', new Date('2026-07-29T04:00:00Z'));
     await finishRun(completed, 'completed');
     const failed = await startRun('daily_check', new Date('2026-07-30T04:00:00Z'));
     await finishRun(failed, 'failed');
+    const scoped = await startRun('daily_check', new Date('2026-07-30T20:00:00Z'), [ids.cerebras]);
+    await finishRun(scoped, 'completed');
     const current = await startRun('daily_check');
 
-    await world.dailyCheck.execute(claimedRun(current, 'daily_check'), new RecordingProgress());
+    await world.dailyCheck.execute(claimedRun(current, 'daily_check'), new RecordingProgress(), RUNNING);
 
     expect(world.news.calls[0]?.window.from).toEqual(new Date('2026-07-28T04:00:00Z'));
   });
 
   it('re-process deletes the company’s Candidates, digest entries and orphaned Articles, then refetches', async () => {
     const first = await startRun('backfill');
-    await world.backfill.execute(claimedRun(first, 'backfill'), new RecordingProgress());
+    await world.backfill.execute(claimedRun(first, 'backfill'), new RecordingProgress(), RUNNING);
     await finishRun(first, 'completed');
     const before = await candidates(ids.cerebras);
     const mention = before.find((c) => c.relevance === 'relevant' && c.title.startsWith('Cerebras stock jumps'));
@@ -209,6 +212,7 @@ describe('Backfill and Daily Check against Postgres', () => {
     const outcome = await world.backfill.execute(
       claimedRun(second, 'backfill', { companyIds: [ids.cerebras], reprocess: true }),
       new RecordingProgress(),
+      RUNNING,
     );
 
     expect(outcome).toEqual({ status: 'completed' });

@@ -7,6 +7,8 @@ import {
   ARBE_NEEDS_REVIEW,
   CEREBRAS,
   claimedRun,
+  RUNNING,
+  shuttingDown,
   FIXTURE_COMPANIES,
   GROQ,
   HAILO_DEACTIVATED,
@@ -14,6 +16,7 @@ import {
   pipelineWorld,
 } from '../../test/pipeline/support/pipeline-world';
 import { RecordedNewsSource } from '../../test/pipeline/support/recorded-news';
+import { RunInterrupted } from '../runs/run-executor';
 import { InvalidRunParams } from './collection-window';
 import { NAME_ABSENT_REASON } from './company-collection.service';
 
@@ -36,7 +39,7 @@ describe('BackfillExecutor over recorded Google News results', () => {
     const { backfill, store, companyStore } = world();
     const progress = new RecordingProgress();
 
-    const outcome = await backfill.execute(claimedRun(1, 'backfill'), progress);
+    const outcome = await backfill.execute(claimedRun(1, 'backfill'), progress, RUNNING);
 
     expect(outcome).toEqual({ status: 'completed' });
     expect(store.candidates).toHaveLength(24);
@@ -63,7 +66,7 @@ describe('BackfillExecutor over recorded Google News results', () => {
   it('stores an Article found for two companies once, as one Candidate per company — two Mentions', async () => {
     const { backfill, store } = world();
 
-    await backfill.execute(claimedRun(1, 'backfill'), new RecordingProgress());
+    await backfill.execute(claimedRun(1, 'backfill'), new RecordingProgress(), RUNNING);
 
     const cerebras = store.byTitle(CEREBRAS.id).get(WCCFTECH);
     const groq = store.byTitle(GROQ.id).get(WCCFTECH);
@@ -79,7 +82,7 @@ describe('BackfillExecutor over recorded Google News results', () => {
   it('rejects Candidates that never name the company before asking the classifier', async () => {
     const { backfill, store, classifiers } = world();
 
-    await backfill.execute(claimedRun(1, 'backfill'), new RecordingProgress());
+    await backfill.execute(claimedRun(1, 'backfill'), new RecordingProgress(), RUNNING);
 
     const nameAbsent = store.candidates.filter((candidate) => candidate.relevanceMethod === 'name_absent');
     expect(nameAbsent).toHaveLength(8);
@@ -101,7 +104,7 @@ describe('BackfillExecutor over recorded Google News results', () => {
     const news = new RecordedNewsSource().replay('Groq', 'en-US', 'he-IL');
     const { backfill, store } = world({ news });
 
-    await backfill.execute(claimedRun(1, 'backfill'), new RecordingProgress());
+    await backfill.execute(claimedRun(1, 'backfill'), new RecordingProgress(), RUNNING);
 
     expect(store.byTitle(GROQ.id).size).toBe(6);
     expect(store.articles.size).toBe(20);
@@ -115,6 +118,7 @@ describe('BackfillExecutor over recorded Google News results', () => {
     await backfill.execute(
       claimedRun(1, 'backfill', { companyIds: [GROQ.id, ARBE_NEEDS_REVIEW.id, HAILO_DEACTIVATED.id] }),
       new RecordingProgress(),
+      RUNNING,
     );
 
     expect(new Set(news.calls.map((call) => call.company))).toEqual(new Set(['Groq']));
@@ -125,7 +129,7 @@ describe('BackfillExecutor over recorded Google News results', () => {
     const news = new RecordedNewsSource({ ignoreWindow: true });
     const { backfill, store } = world({ news });
 
-    await backfill.execute(claimedRun(1, 'backfill', { until: '2026-07-23' }), new RecordingProgress());
+    await backfill.execute(claimedRun(1, 'backfill', { until: '2026-07-23' }), new RecordingProgress(), RUNNING);
 
     const cutoff = new Date('2026-07-23T21:00:00Z');
     expect(news.calls.every((call) => call.window.to.getTime() === cutoff.getTime())).toBe(true);
@@ -142,11 +146,11 @@ describe('BackfillExecutor over recorded Google News results', () => {
     // Groq's only LLM-judged Candidates fail; nothing reaches the threshold of 5.
     classifiers.failRelevance(null, null, null, null, null, null, null, 'unavailable', 'unavailable');
 
-    const first = await backfill.execute(claimedRun(1, 'backfill'), new RecordingProgress());
+    const first = await backfill.execute(claimedRun(1, 'backfill'), new RecordingProgress(), RUNNING);
     const pendingAfterFirst = store.candidates.filter((candidate) => candidate.relevance === 'pending');
     classifiers.recover();
     classifiers.relevanceCalls.length = 0;
-    const second = await backfill.execute(claimedRun(2, 'backfill'), new RecordingProgress());
+    const second = await backfill.execute(claimedRun(2, 'backfill'), new RecordingProgress(), RUNNING);
 
     expect(first).toEqual({
       status: 'completed_with_errors',
@@ -171,7 +175,7 @@ describe('BackfillExecutor over recorded Google News results', () => {
     classifiers.goDown();
     const progress = new RecordingProgress();
 
-    const outcome = await backfill.execute(claimedRun(1, 'backfill'), progress);
+    const outcome = await backfill.execute(claimedRun(1, 'backfill'), progress, RUNNING);
 
     expect(outcome).toEqual({
       status: 'failed',
@@ -196,7 +200,7 @@ describe('BackfillExecutor over recorded Google News results', () => {
     const { backfill, store, classifiers } = world({ settings: { classifierFailureThreshold: 2 } });
     classifiers.failRelevance('unavailable', 'invalid_output', 'unavailable', 'invalid_output');
 
-    const outcome = await backfill.execute(claimedRun(1, 'backfill'), new RecordingProgress());
+    const outcome = await backfill.execute(claimedRun(1, 'backfill'), new RecordingProgress(), RUNNING);
 
     expect(outcome.status).toBe('completed_with_errors');
     const errors = outcome.status === 'completed' ? [] : outcome.companyErrors;
@@ -209,7 +213,7 @@ describe('BackfillExecutor over recorded Google News results', () => {
     const { backfill, store, classifiers } = world();
     classifiers.failSentiment('unavailable');
 
-    const outcome = await backfill.execute(claimedRun(1, 'backfill', { companyIds: [CEREBRAS.id] }), new RecordingProgress());
+    const outcome = await backfill.execute(claimedRun(1, 'backfill', { companyIds: [CEREBRAS.id] }), new RecordingProgress(), RUNNING);
 
     expect(outcome.status !== 'completed' && outcome.companyErrors).toEqual([
       expect.objectContaining({ companyId: CEREBRAS.id, stage: 'sentiment' }),
@@ -223,7 +227,7 @@ describe('BackfillExecutor over recorded Google News results', () => {
     const { backfill, store, companyStore } = world({ news });
     const progress = new RecordingProgress();
 
-    const outcome = await backfill.execute(claimedRun(1, 'backfill'), progress);
+    const outcome = await backfill.execute(claimedRun(1, 'backfill'), progress, RUNNING);
 
     expect(outcome).toEqual({
       status: 'completed_with_errors',
@@ -240,12 +244,13 @@ describe('BackfillExecutor over recorded Google News results', () => {
 
   it('re-process deletes the company’s Candidates first, then refetches and reclassifies them', async () => {
     const { backfill, store, news } = world();
-    await backfill.execute(claimedRun(1, 'backfill'), new RecordingProgress());
+    await backfill.execute(claimedRun(1, 'backfill'), new RecordingProgress(), RUNNING);
     news.calls.length = 0;
 
     const outcome = await backfill.execute(
       claimedRun(2, 'backfill', { companyIds: [CEREBRAS.id], reprocess: true }),
       new RecordingProgress(),
+      RUNNING,
     );
 
     expect(outcome).toEqual({ status: 'completed' });
@@ -263,7 +268,7 @@ describe('BackfillExecutor over recorded Google News results', () => {
   it('refuses to re-process without naming the companies', async () => {
     const { backfill, store } = world();
 
-    await expect(backfill.execute(claimedRun(1, 'backfill', { reprocess: true }), new RecordingProgress())).rejects.toThrow(
+    await expect(backfill.execute(claimedRun(1, 'backfill', { reprocess: true }), new RecordingProgress(), RUNNING)).rejects.toThrow(
       InvalidRunParams,
     );
     expect(store.discarded).toEqual([]);
@@ -272,7 +277,7 @@ describe('BackfillExecutor over recorded Google News results', () => {
   it('applies MAX_CANDIDATES_PER_COMPANY, keeping the newest, and flags the coverage as capped', async () => {
     const { backfill, store, companyStore } = world({ settings: { maxCandidatesPerCompany: 3 } });
 
-    await backfill.execute(claimedRun(1, 'backfill', { companyIds: [CEREBRAS.id] }), new RecordingProgress());
+    await backfill.execute(claimedRun(1, 'backfill', { companyIds: [CEREBRAS.id] }), new RecordingProgress(), RUNNING);
 
     expect([...store.byTitle(CEREBRAS.id).keys()]).toEqual([
       'CrowdStrike And Cerebras Partner To Power Falcon AIDR',
@@ -286,15 +291,48 @@ describe('BackfillExecutor over recorded Google News results', () => {
     const news = new RecordedNewsSource().capFor('Innoviz', 'he-IL');
     const { backfill, companyStore } = world({ news });
 
-    await backfill.execute(claimedRun(1, 'backfill', { companyIds: [INNOVIZ.id] }), new RecordingProgress());
+    await backfill.execute(claimedRun(1, 'backfill', { companyIds: [INNOVIZ.id] }), new RecordingProgress(), RUNNING);
 
     expect(companyStore.cappedRecords).toEqual([{ id: INNOVIZ.id, capped: true }]);
+  });
+
+  it('does not start when the collector is already shutting down', async () => {
+    const { backfill, news, store } = world();
+
+    await expect(
+      backfill.execute(claimedRun(1, 'backfill', { companyIds: [CEREBRAS.id], reprocess: true }), new RecordingProgress(), shuttingDown()),
+    ).rejects.toThrow(RunInterrupted);
+    expect(news.calls).toEqual([]);
+    expect(store.discarded).toEqual([]);
+  });
+
+  it('on shutdown, finishes the company in hand and stops before the next; a later Run resumes', async () => {
+    const { backfill, news, store } = world();
+    const controller = new AbortController();
+    const progress = new RecordingProgress();
+    const record = progress.report.bind(progress);
+    progress.report = async (report): Promise<void> => {
+      await record(report);
+      if (report.companiesDone === 1) controller.abort();
+    };
+
+    await expect(backfill.execute(claimedRun(1, 'backfill'), progress, controller.signal)).rejects.toThrow(
+      new RunInterrupted(1),
+    );
+    expect(new Set(news.calls.map((call) => call.company))).toEqual(new Set(['Cerebras']));
+    expect(store.candidates.every((candidate) => candidate.relevance !== 'pending')).toBe(true);
+    expect(progress.last).toMatchObject({ companiesDone: 1, currentCompany: null });
+
+    const resumed = await backfill.execute(claimedRun(2, 'backfill'), new RecordingProgress(), RUNNING);
+
+    expect(resumed).toEqual({ status: 'completed' });
+    expect(store.candidates).toHaveLength(24);
   });
 
   it('never builds an Alert Digest', async () => {
     const { backfill, digests } = world();
 
-    await backfill.execute(claimedRun(1, 'backfill'), new RecordingProgress());
+    await backfill.execute(claimedRun(1, 'backfill'), new RecordingProgress(), RUNNING);
 
     expect(digests.runIds).toEqual([]);
   });
@@ -302,7 +340,7 @@ describe('BackfillExecutor over recorded Google News results', () => {
   it('refuses a Run of the other type', async () => {
     const { backfill } = world();
 
-    await expect(backfill.execute(claimedRun(1, 'daily_check'), new RecordingProgress())).rejects.toThrow(InvalidRunParams);
+    await expect(backfill.execute(claimedRun(1, 'daily_check'), new RecordingProgress(), RUNNING)).rejects.toThrow(InvalidRunParams);
   });
 
   it('lets a failure it cannot interpret fail the whole Run', async () => {
@@ -312,6 +350,6 @@ describe('BackfillExecutor over recorded Google News results', () => {
     };
     const { backfill } = world({ candidates: store });
 
-    await expect(backfill.execute(claimedRun(1, 'backfill'), new RecordingProgress())).rejects.toThrow('disk full');
+    await expect(backfill.execute(claimedRun(1, 'backfill'), new RecordingProgress(), RUNNING)).rejects.toThrow('disk full');
   });
 });

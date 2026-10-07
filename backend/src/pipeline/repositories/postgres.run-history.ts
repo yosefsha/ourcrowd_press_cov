@@ -15,6 +15,7 @@ export class PostgresRunHistory implements RunHistory {
       rows = await this.manager.query<{ started_at: Date }[]>(
         `SELECT started_at FROM runs
           WHERE type = $1 AND status = 'completed' AND id <> $2 AND started_at IS NOT NULL
+            AND jsonb_typeof(params -> 'companyIds') = 'null'
           ORDER BY started_at DESC
           LIMIT 1`,
         [type, excludingRunId],

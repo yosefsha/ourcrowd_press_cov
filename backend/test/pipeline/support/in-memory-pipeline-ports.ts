@@ -173,15 +173,16 @@ export class FixedClock implements Clock {
 }
 
 export class InMemoryRunHistory implements RunHistory {
-  private readonly successes: { id: number; type: RunType; startedAt: Date }[] = [];
+  private readonly successes: { id: number; type: RunType; startedAt: Date; scoped: boolean }[] = [];
 
-  recordSuccess(id: number, type: RunType, startedAt: Date): void {
-    this.successes.push({ id, type, startedAt });
+  /** A completed Run; `scoped` when it was limited to some companies. */
+  recordSuccess(id: number, type: RunType, startedAt: Date, scoped = false): void {
+    this.successes.push({ id, type, startedAt, scoped });
   }
 
   lastSuccessfulStart(type: RunType, excludingRunId: number): Promise<Date | null> {
     const starts = this.successes
-      .filter((run) => run.type === type && run.id !== excludingRunId)
+      .filter((run) => run.type === type && run.id !== excludingRunId && !run.scoped)
       .map((run) => run.startedAt.getTime());
     return Promise.resolve(starts.length === 0 ? null : new Date(Math.max(...starts)));
   }

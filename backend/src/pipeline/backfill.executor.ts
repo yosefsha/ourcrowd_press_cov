@@ -1,7 +1,7 @@
 import { Inject, Injectable } from '@nestjs/common';
 
 import type { Run, RunOutcome } from '../domain/run';
-import type { RunExecutor, RunProgressReporter } from '../runs/run-executor';
+import { type RunExecutor, RunInterrupted, type RunProgressReporter } from '../runs/run-executor';
 import { CLOCK, type Clock } from './clock';
 import { backfillWindow, InvalidRunParams } from './collection-window';
 import { CompanyCollectionService } from './company-collection.service';
@@ -22,8 +22,11 @@ export class BackfillExecutor implements RunExecutor {
     @Inject(CLOCK) private readonly clock: Clock,
   ) {}
 
-  /** Throws `InvalidRunParams` for a Run of another type, a bad `until` or a Re-process of every company. */
-  async execute(run: Run, progress: RunProgressReporter): Promise<RunOutcome> {
+  /**
+   * Throws `InvalidRunParams` for a Run of another type, a bad `until` or a
+   * Re-process of every company, and `RunInterrupted` when `signal` aborts.
+   */
+  async execute(run: Run, progress: RunProgressReporter, signal: AbortSignal): Promise<RunOutcome> {
     if (run.type !== this.runType) throw new InvalidRunParams(`Run ${run.id} is a ${run.type}, not a backfill`);
     const { until, companyIds, reprocess } = run.params;
     if (reprocess && companyIds === null) {
@@ -31,10 +34,12 @@ export class BackfillExecutor implements RunExecutor {
     }
     const window = backfillWindow(until, this.clock.now(), this.settings.timeZone);
     const companies = await this.collection.companiesToCollect(companyIds);
+    if (signal.aborted) throw new RunInterrupted(run.id);
     if (reprocess) await this.collection.discardCollected(companies);
     return this.collection.collect(
       { runId: run.id, window, companies, coverageCapped: 'record_always' },
       progress,
+      signal,
     );
   }
 }

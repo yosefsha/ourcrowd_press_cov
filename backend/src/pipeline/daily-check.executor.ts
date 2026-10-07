@@ -2,7 +2,7 @@ import { Inject, Injectable } from '@nestjs/common';
 
 import { ALERT_DIGEST_BUILDER, type AlertDigestBuilder } from '../alerts/alert-digest-builder';
 import type { Run, RunOutcome } from '../domain/run';
-import type { RunExecutor, RunProgressReporter } from '../runs/run-executor';
+import { type RunExecutor, RunInterrupted, type RunProgressReporter } from '../runs/run-executor';
 import { CLOCK, type Clock } from './clock';
 import { dailyCheckWindow, InvalidRunParams } from './collection-window';
 import { CompanyCollectionService } from './company-collection.service';
@@ -26,8 +26,12 @@ export class DailyCheckExecutor implements RunExecutor {
     @Inject(CLOCK) private readonly clock: Clock,
   ) {}
 
-  /** Throws `InvalidRunParams` for a Run of another type, or one asking for `until` or Re-process. */
-  async execute(run: Run, progress: RunProgressReporter): Promise<RunOutcome> {
+  /**
+   * Throws `InvalidRunParams` for a Run of another type, or one asking for
+   * `until` or Re-process, and `RunInterrupted` when `signal` aborts — after
+   * building the digest of what it did confirm, which no later Run would alert on.
+   */
+  async execute(run: Run, progress: RunProgressReporter, signal: AbortSignal): Promise<RunOutcome> {
     if (run.type !== this.runType) throw new InvalidRunParams(`Run ${run.id} is a ${run.type}, not a daily_check`);
     if (run.params.until !== null || run.params.reprocess) {
       throw new InvalidRunParams('A Daily Check takes no until cutoff and never re-processes');
@@ -35,10 +39,17 @@ export class DailyCheckExecutor implements RunExecutor {
     const lastStart = await this.history.lastSuccessfulStart(this.runType, run.id);
     const window = dailyCheckWindow(lastStart, this.clock.now(), this.settings.timeZone);
     const companies = await this.collection.companiesToCollect(run.params.companyIds);
-    const outcome = await this.collection.collect(
-      { runId: run.id, window, companies, coverageCapped: 'record_when_capped' },
-      progress,
-    );
+    let outcome: RunOutcome;
+    try {
+      outcome = await this.collection.collect(
+        { runId: run.id, window, companies, coverageCapped: 'record_when_capped' },
+        progress,
+        signal,
+      );
+    } catch (error) {
+      if (error instanceof RunInterrupted) await this.digests.buildForRun(run.id);
+      throw error;
+    }
     // Also after a failed Run: Mentions it did confirm are New Mentions of this
     // Run and would otherwise never be alerted on.
     return this.raiseDigest(run.id, outcome);

@@ -9,7 +9,7 @@ import type { TrackedCompany } from '../domain/company';
 import type { DateRange } from '../domain/date-range';
 import type { RunOutcome, RunStage } from '../domain/run';
 import { NEWS_SOURCE, type NewsSource, NewsSourceUnavailable } from '../news/news-source';
-import type { RunProgressReporter } from '../runs/run-executor';
+import { RunInterrupted, type RunProgressReporter } from '../runs/run-executor';
 import { selectArticles } from './article-selection';
 import { CANDIDATE_REPOSITORY, type CandidateRepository, type PendingCandidate } from './candidate.repository';
 import { namesCompany } from './name-check';
@@ -88,12 +88,17 @@ export class CompanyCollectionService {
    * A News Source failure is recorded against the company and the Run carries
    * on; `classifierFailureThreshold` consecutive `ClassifierUnavailable`s stop
    * it as failed, leaving the remaining Candidates pending for the next Run.
+   *
+   * When `signal` aborts (collector shutdown) the company in hand is finished
+   * and `RunInterrupted` is thrown instead of starting the next one; what was
+   * not classified stays pending, so the next Run resumes there.
    */
-  async collect(plan: CollectionPlan, progress: RunProgressReporter): Promise<RunOutcome> {
+  async collect(plan: CollectionPlan, progress: RunProgressReporter, signal: AbortSignal): Promise<RunOutcome> {
     const tally = new RunTally(plan.companies.length);
     const streak: FailureStreak = { consecutive: 0 };
     await progress.report(tally.progress());
     for (const company of plan.companies) {
+      if (signal.aborted) throw new RunInterrupted(plan.runId);
       tally.startCompany(company.profile.displayName);
       await progress.report(tally.progress());
       await this.fetchCandidates(company, plan, tally);

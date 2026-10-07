@@ -8,11 +8,13 @@ import {
   AFTER_RECORDINGS,
   CEREBRAS,
   claimedRun,
+  RUNNING,
   FIXTURE_COMPANIES,
   INNOVIZ,
   pipelineWorld,
 } from '../../test/pipeline/support/pipeline-world';
 import { RecordedNewsSource } from '../../test/pipeline/support/recorded-news';
+import { RunInterrupted } from '../runs/run-executor';
 import { InvalidRunParams } from './collection-window';
 
 const KEYNOTE = 'AMD AAI 2026 Keynote Cerebras';
@@ -37,10 +39,10 @@ function world(options: Parameters<typeof pipelineWorld>[0] = {}): ReturnType<ty
 describe('DailyCheckExecutor over recorded Google News results', () => {
   it('after a Backfill cut off at until, confirms the later days as Mentions of this Run and raises its digest', async () => {
     const { backfill, dailyCheck, store, digests } = world();
-    await backfill.execute(claimedRun(1, 'backfill', { until: '2026-07-23' }), new RecordingProgress());
+    await backfill.execute(claimedRun(1, 'backfill', { until: '2026-07-23' }), new RecordingProgress(), RUNNING);
     const progress = new RecordingProgress();
 
-    const outcome = await dailyCheck.execute(claimedRun(2, 'daily_check'), progress);
+    const outcome = await dailyCheck.execute(claimedRun(2, 'daily_check'), progress, RUNNING);
 
     expect(outcome).toEqual({ status: 'completed' });
     expect(digests.runIds).toEqual([2]);
@@ -55,18 +57,19 @@ describe('DailyCheckExecutor over recorded Google News results', () => {
   it('reaches seven days back when no Daily Check has succeeded yet', async () => {
     const { dailyCheck, news } = world();
 
-    await dailyCheck.execute(claimedRun(2, 'daily_check'), new RecordingProgress());
+    await dailyCheck.execute(claimedRun(2, 'daily_check'), new RecordingProgress(), RUNNING);
 
     expect(news.calls[0]?.window).toEqual({ from: new Date('2026-07-24T12:00:00Z'), to: AFTER_RECORDINGS });
   });
 
-  it('starts one day before the start of the last successful Daily Check, ignoring itself', async () => {
+  it('starts one day before the start of the last successful full Daily Check, ignoring itself and company-scoped ones', async () => {
     const { dailyCheck, news, runs } = world();
     runs.recordSuccess(5, 'daily_check', new Date('2026-07-29T04:00:00Z'));
     runs.recordSuccess(9, 'daily_check', new Date('2026-07-31T11:00:00Z'));
     runs.recordSuccess(6, 'backfill', new Date('2026-07-30T04:00:00Z'));
+    runs.recordSuccess(8, 'daily_check', new Date('2026-07-30T20:00:00Z'), true);
 
-    await dailyCheck.execute(claimedRun(9, 'daily_check'), new RecordingProgress());
+    await dailyCheck.execute(claimedRun(9, 'daily_check'), new RecordingProgress(), RUNNING);
 
     expect(news.calls[0]?.window.from).toEqual(new Date('2026-07-28T04:00:00Z'));
   });
@@ -74,10 +77,10 @@ describe('DailyCheckExecutor over recorded Google News results', () => {
   it('confirms a Candidate a failed earlier Run left pending — confirmation, not first fetch, makes it new', async () => {
     const { backfill, dailyCheck, store, classifiers } = world();
     classifiers.failRelevance('unavailable');
-    await backfill.execute(claimedRun(1, 'backfill', { until: '2026-07-23' }), new RecordingProgress());
+    await backfill.execute(claimedRun(1, 'backfill', { until: '2026-07-23' }), new RecordingProgress(), RUNNING);
     expect(store.byTitle(CEREBRAS.id).get(KEYNOTE)).toMatchObject({ relevance: 'pending' });
 
-    await dailyCheck.execute(claimedRun(2, 'daily_check'), new RecordingProgress());
+    await dailyCheck.execute(claimedRun(2, 'daily_check'), new RecordingProgress(), RUNNING);
 
     expect(store.byTitle(CEREBRAS.id).get(KEYNOTE)).toMatchObject({
       relevance: 'relevant',
@@ -88,12 +91,12 @@ describe('DailyCheckExecutor over recorded Google News results', () => {
 
   it('does not reclassify or re-stamp what an overlapping earlier Daily Check already confirmed', async () => {
     const { dailyCheck, store, classifiers, runs } = world();
-    await dailyCheck.execute(claimedRun(2, 'daily_check'), new RecordingProgress());
+    await dailyCheck.execute(claimedRun(2, 'daily_check'), new RecordingProgress(), RUNNING);
     runs.recordSuccess(2, 'daily_check', new Date('2026-07-30T12:00:00Z'));
     classifiers.relevanceCalls.length = 0;
     const before = store.candidates.map((candidate) => ({ ...candidate }));
 
-    const outcome = await dailyCheck.execute(claimedRun(3, 'daily_check'), new RecordingProgress());
+    const outcome = await dailyCheck.execute(claimedRun(3, 'daily_check'), new RecordingProgress(), RUNNING);
 
     expect(outcome).toEqual({ status: 'completed' });
     expect(classifiers.relevanceCalls).toEqual([]);
@@ -105,7 +108,7 @@ describe('DailyCheckExecutor over recorded Google News results', () => {
     const news = new RecordedNewsSource().capFor('Innoviz', 'en-US');
     const { dailyCheck, companyStore } = world({ news });
 
-    await dailyCheck.execute(claimedRun(2, 'daily_check'), new RecordingProgress());
+    await dailyCheck.execute(claimedRun(2, 'daily_check'), new RecordingProgress(), RUNNING);
 
     expect(companyStore.cappedRecords).toEqual([{ id: INNOVIZ.id, capped: true }]);
   });
@@ -114,7 +117,7 @@ describe('DailyCheckExecutor over recorded Google News results', () => {
     const { dailyCheck, digests, classifiers } = world({ settings: { classifierFailureThreshold: 1 } });
     classifiers.failRelevance(null, 'unavailable');
 
-    const outcome = await dailyCheck.execute(claimedRun(2, 'daily_check'), new RecordingProgress());
+    const outcome = await dailyCheck.execute(claimedRun(2, 'daily_check'), new RecordingProgress(), RUNNING);
 
     expect(outcome.status).toBe('failed');
     expect(digests.runIds).toEqual([2]);
@@ -125,7 +128,7 @@ describe('DailyCheckExecutor over recorded Google News results', () => {
     const { dailyCheck, digests } = world({ news });
     digests.failure = new Error('alert_digests is not writable');
 
-    const outcome = await dailyCheck.execute(claimedRun(2, 'daily_check'), new RecordingProgress());
+    const outcome = await dailyCheck.execute(claimedRun(2, 'daily_check'), new RecordingProgress(), RUNNING);
 
     expect(outcome).toEqual({
       status: 'failed',
@@ -140,16 +143,32 @@ describe('DailyCheckExecutor over recorded Google News results', () => {
   ])('refuses %s', async (_name, params) => {
     const { dailyCheck, news, digests } = world();
 
-    await expect(dailyCheck.execute(claimedRun(2, 'daily_check', params), new RecordingProgress())).rejects.toThrow(
+    await expect(dailyCheck.execute(claimedRun(2, 'daily_check', params), new RecordingProgress(), RUNNING)).rejects.toThrow(
       InvalidRunParams,
     );
     expect(news.calls).toEqual([]);
     expect(digests.runIds).toEqual([]);
   });
 
+  it('on shutdown, still builds the digest of what it confirmed, then reports the interruption', async () => {
+    const { dailyCheck, digests, news } = world();
+    const controller = new AbortController();
+    const progress = new RecordingProgress();
+    progress.report = (report): Promise<void> => {
+      if (report.companiesDone === 1) controller.abort();
+      return Promise.resolve();
+    };
+
+    await expect(dailyCheck.execute(claimedRun(2, 'daily_check'), progress, controller.signal)).rejects.toThrow(
+      RunInterrupted,
+    );
+    expect(new Set(news.calls.map((call) => call.company))).toEqual(new Set(['Cerebras']));
+    expect(digests.runIds).toEqual([2]);
+  });
+
   it('refuses a Run of the other type', async () => {
     const { dailyCheck } = world();
 
-    await expect(dailyCheck.execute(claimedRun(1, 'backfill'), new RecordingProgress())).rejects.toThrow(InvalidRunParams);
+    await expect(dailyCheck.execute(claimedRun(1, 'backfill'), new RecordingProgress(), RUNNING)).rejects.toThrow(InvalidRunParams);
   });
 });

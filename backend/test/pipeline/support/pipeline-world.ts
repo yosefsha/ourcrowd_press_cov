@@ -89,6 +89,16 @@ export function pipelineWorld(options: WorldOptions = {}): PipelineWorld {
   };
 }
 
+/** The signal of a collector that is not shutting down. */
+export const RUNNING: AbortSignal = new AbortController().signal;
+
+/** The signal of a collector that has begun shutting down. */
+export function shuttingDown(): AbortSignal {
+  const controller = new AbortController();
+  controller.abort();
+  return controller.signal;
+}
+
 /** A claimed Run, as the worker hands it to an executor. */
 export function claimedRun(id: number, type: RunType, params: Partial<RunParams> = {}): Run {
   return {
