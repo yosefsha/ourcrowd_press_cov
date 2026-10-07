@@ -12,13 +12,13 @@ export class PostgresRunHistory implements RunHistory {
   async lastSuccessfulStart(type: RunType, excludingRunId: number): Promise<Date | null> {
     let rows: { started_at: Date }[];
     try {
-      rows = (await this.manager.query(
+      rows = await this.manager.query<{ started_at: Date }[]>(
         `SELECT started_at FROM runs
           WHERE type = $1 AND status = 'completed' AND id <> $2 AND started_at IS NOT NULL
           ORDER BY started_at DESC
           LIMIT 1`,
         [type, excludingRunId],
-      )) as { started_at: Date }[];
+      );
     } catch (error) {
       throw new RunHistoryUnavailable('Could not read the Run history', { cause: error });
     }

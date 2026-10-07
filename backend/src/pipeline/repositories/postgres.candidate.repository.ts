@@ -36,13 +36,13 @@ export class PostgresCandidateRepository implements CandidateRepository {
         let created = 0;
         for (const article of articles) {
           const articleId = await this.upsertArticle(manager, article);
-          const inserted = (await manager.query(
+          const inserted = await manager.query<unknown[]>(
             `INSERT INTO candidates (article_id, company_id, fetched_in_run_id)
              VALUES ($1, $2, $3)
              ON CONFLICT ON CONSTRAINT "UQ_candidates_article_company" DO NOTHING
              RETURNING id`,
             [articleId, companyId, runId],
-          )) as unknown[];
+          );
           created += inserted.length;
         }
         return { created };
@@ -52,14 +52,14 @@ export class PostgresCandidateRepository implements CandidateRepository {
 
   async pendingFor(companyId: number): Promise<readonly PendingCandidate[]> {
     const rows = await this.guard('read pending Candidates', async () =>
-      (await this.manager.query(
+      await this.manager.query<PendingRow[]>(
         `SELECT c.id, a.google_article_id, a.title, a.snippet, a.outlet_name, a.published_at, a.language
            FROM candidates c
            JOIN articles a ON a.id = c.article_id
           WHERE c.company_id = $1 AND c.relevance = 'pending'
           ORDER BY a.published_at DESC, c.id`,
         [companyId],
-      )) as PendingRow[],
+      ),
     );
     return rows.map((row) => ({
       id: row.id,
@@ -106,10 +106,10 @@ export class PostgresCandidateRepository implements CandidateRepository {
   async discardCompany(companyId: number): Promise<void> {
     await this.guard('discard a company’s Candidates', () =>
       this.manager.transaction(async (manager) => {
-        const removed = (await manager.query(
+        const removed = await manager.query<[{ article_id: number }[], number]>(
           `DELETE FROM candidates WHERE company_id = $1 RETURNING article_id`,
           [companyId],
-        )) as [{ article_id: number }[], number];
+        );
         const articleIds = [...new Set(removed[0].map((row) => row.article_id))];
         if (articleIds.length === 0) return;
         await manager.query(
@@ -124,7 +124,7 @@ export class PostgresCandidateRepository implements CandidateRepository {
 
   /** The Article's id, inserting it on first sight; a known Article is kept as first stored. */
   private async upsertArticle(manager: EntityManager, article: FoundArticle): Promise<number> {
-    const rows = (await manager.query(
+    const rows = await manager.query<{ id: number }[]>(
       `INSERT INTO articles (google_article_id, title, snippet, outlet_name, outlet_url, google_url,
                              publisher_url, published_at, language, edition)
        VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)
@@ -143,7 +143,7 @@ export class PostgresCandidateRepository implements CandidateRepository {
         article.language,
         article.edition,
       ],
-    )) as { id: number }[];
+    );
     const [row] = rows;
     if (row === undefined) throw new CandidateStoreFailed(`Article ${article.googleArticleId} was not stored`);
     return row.id;
