@@ -4,9 +4,12 @@ description: Security review of this repo's code. Scope is diff / a specific fol
 context: fork
 agent: Explore
 allowed-tools: Read, Bash, Glob, Grep
+argument-hint: "diff|<folder>|whole project  <absolute worktree path>"
 ---
 
 # Security Review
+
+**ARGS = $ARGUMENTS**
 
 ## Step 0 — Resolve WHERE and WHAT to review
 
@@ -14,13 +17,13 @@ allowed-tools: Read, Bash, Glob, Grep
 primary checkout on `main` — *not* the worktree being reviewed. So never trust a pre-computed diff;
 resolve the checkout explicitly and run every git command with `git -C "$TARGET"`:
 
-- If the args contain an absolute path to a checkout or worktree (e.g. `diff /…/.claude/worktrees/issue-7-companies`),
+- If ARGS contain an absolute path to a checkout or worktree (e.g. `diff /…/.claude/worktrees/issue-7-companies`),
   that path is `$TARGET`.
 - Otherwise use the directory the caller is working in; if that is the primary checkout and it is on
   `main` with a clean tree, list `git worktree list` and ask which worktree/branch to review instead
   of reporting an empty diff.
 
-**What.** Scope from the args, else ask:
+**What.** Scope from ARGS, else ask:
 1. **Diff** (default for PR review) — everything the branch adds on top of where it forked from main:
    ```bash
    git -C "$TARGET" fetch -q origin main 2>/dev/null || true
