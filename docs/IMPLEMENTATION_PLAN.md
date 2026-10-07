@@ -95,7 +95,10 @@ from real responses (ADR-006), never hand-written.
 ## HTTP API contract (`/api` prefix; `GET /health` unprefixed)
 
 The frontend codes against this contract from day one; its TypeScript mirror lives in
-`frontend/src/types.ts` (#3). `window` is `rolling90` (default) or a quarter like `2026-Q3`.
+`frontend/src/types.ts` (#3). Server state is managed with **TanStack Query**: one hook per endpoint in
+`frontend/src/queries.ts` (queries for GETs, mutations that invalidate affected keys, `refetchInterval` for
+live progress, health and alerts); pages never call `fetch` directly. UI-only state (Coverage Window,
+filters, selection) lives in the URL or component state. `window` is `rolling90` (default) or a quarter like `2026-Q3`.
 
 | Method & path | Purpose | Notes |
 |---|---|---|
@@ -135,7 +138,7 @@ Wave 4   #19 README (◄─ everything)   #20 Full real run + data/ snapshot (�
 
 ### M0 — Foundation
 - **#2 Backend scaffold, two entry points, compose** — NestJS per `docs/backend-nestjs-instructions.md`; `main.ts` + `worker.ts`; health; one Dockerfile; compose with `postgres`, `migrate` (one-off), `api`, `collector`; boundary lint check wired; CI green.
-- **#3 Frontend scaffold, app shell, API client** — Vite + React + TS; scripts per CI; Dockerfile serving the build and proxying `/api`; Vite dev proxy; routes `/`, `/companies`, `/operations` with empty pages; alert-bell slot; `types.ts` from the contract; typed fetch client; Recharts installed.
+- **#3 Frontend scaffold, app shell, API client** — Vite + React + TS; scripts per CI; Dockerfile serving the build and proxying `/api`; Vite dev proxy; routes `/`, `/companies`, `/operations` with empty pages; alert-bell slot; `types.ts` from the contract; typed fetch client wrapped in TanStack Query hooks; Recharts installed.
 - **#4 Schema, domain types, ports, config and module shells** — the full migration above; entities; every port + token + error class; `domain/` value objects with tests (Coverage Window maths, Mention Status buckets, seed-line parser); all config keys; empty feature modules registered in both roots so later issues only edit their own module.
 
 ### M1 — Pipeline & API (parallel after #4)
