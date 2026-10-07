@@ -69,7 +69,7 @@ Whether a Mention is positive, negative or neutral toward the Tracked Company �
 _Avoid_: Tone, polarity, score
 
 **Mention Status**:
-How recently a Tracked Company was last mentioned, as of now and regardless of the Coverage Window: **Active** (≤ 7 days), **Recent** (8–30 days), **Quiet** (31–90 days) or **No coverage** (no Mention found since collection began). Rejected Candidates never count; Sentiment does not matter.
+How recently a Tracked Company was last mentioned, as of now and regardless of the Coverage Window: **Active** (≤ 7 days), **Recent** (8–30 days), **Quiet** (more than 30 days) or **No coverage** (no Mention found since collection began). Rejected Candidates never count; Sentiment does not matter.
 _Avoid_: Last seen, freshness, health
 
 ### Time
