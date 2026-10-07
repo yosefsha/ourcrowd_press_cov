@@ -33,6 +33,12 @@ export const EMPTY_COMPANY_PROFILE: CompanyProfileFormValues = {
   searchTerms: [],
 };
 
+/** A lifecycle action just applied to a company from the status actions. */
+export type CompanyStatusAction = 'reviewed' | 'sentToReview' | 'deactivated';
+
+/** What just happened to the company in the edit panel, so it can say so and offer Re-process where it applies. */
+export type CompanyPanelNotice = 'added' | 'saved' | CompanyStatusAction;
+
 /** Errors the server reported for a submitted form, by field, plus any it did not tie to a field. */
 export interface CompanyProfileErrors {
   readonly fields: Readonly<Partial<Record<CompanyProfileField, readonly string[]>>>;
@@ -129,12 +135,6 @@ function errorMessages(body: unknown, fallback: string): readonly string[] {
  * domain name`, `each value in aliases must be a string`); messages naming a
  * profile field go under it, everything else — and any non-HTTP failure — is general.
  */
-/** A lifecycle action just applied to a company from the status actions. */
-export type CompanyStatusAction = 'reviewed' | 'sentToReview' | 'deactivated';
-
-/** What just happened to the company in the edit panel, so it can say so and offer Re-process where it applies. */
-export type CompanyPanelNotice = 'added' | 'saved' | CompanyStatusAction;
-
 export function companyProfileErrorsFrom(error: Error): CompanyProfileErrors {
   if (!(error instanceof ApiError)) return { fields: {}, general: [error.message] };
   const fields: Partial<Record<CompanyProfileField, string[]>> = {};
