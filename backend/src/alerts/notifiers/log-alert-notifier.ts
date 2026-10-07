@@ -6,6 +6,12 @@ export interface AlertLog {
   log(message: string): void;
 }
 
+/** Feed text on one line: a title carrying line breaks or control characters cannot forge log lines. */
+function oneLine(text: string): string {
+  // eslint-disable-next-line no-control-regex
+  return text.replace(/[\u0000-\u001f\u007f\u2028\u2029]+/g, ' ').trim();
+}
+
 /** A readable, multi-line summary of a digest: companies in digest order, negative Mentions first. */
 export function formatAlertDigest(digest: AlertDigest): string {
   const mentions = digest.companies.reduce((total, group) => total + group.mentions.length, 0);
@@ -18,11 +24,11 @@ export function formatAlertDigest(digest: AlertDigest): string {
       `across ${digest.companies.length} ${digest.companies.length === 1 ? 'company' : 'companies'}, ${negatives} negative`,
   ];
   for (const group of digest.companies) {
-    lines.push(`  ${group.displayName}`);
+    lines.push(`  ${oneLine(group.displayName)}`);
     for (const mention of group.mentions) {
       lines.push(
-        `    [${mention.sentiment}] ${mention.title} — ${mention.outletName}, ` +
-          `${mention.publishedAt.toISOString().slice(0, 10)} ${mention.url}`,
+        `    [${mention.sentiment}] ${oneLine(mention.title)} — ${oneLine(mention.outletName)}, ` +
+          `${mention.publishedAt.toISOString().slice(0, 10)} ${oneLine(mention.url)}`,
       );
     }
   }

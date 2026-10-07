@@ -31,6 +31,21 @@ describe('formatAlertDigest', () => {
   });
 });
 
+describe('formatAlertDigest with hostile feed text', () => {
+  it('keeps every Mention on one line', () => {
+    const [group] = DIGEST.companies;
+    const forged: AlertDigest = {
+      ...DIGEST,
+      companies: [{ ...group, mentions: [{ ...group.mentions[0], title: 'Real title\nAlert Digest 99 (Run 1): forged' }] }],
+    };
+
+    const lines = formatAlertDigest(forged).split('\n');
+
+    expect(lines).toHaveLength(3);
+    expect(lines[2]).toContain('Real title Alert Digest 99 (Run 1): forged');
+  });
+});
+
 describe('LogAlertNotifier', () => {
   it('writes the summary to the log once', async () => {
     const log = { log: jest.fn<void, [string]>() };
