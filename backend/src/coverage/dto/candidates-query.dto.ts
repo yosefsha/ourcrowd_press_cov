@@ -16,7 +16,7 @@ export class CandidatesQueryDto extends CoverageWindowQueryDto {
   @Type(() => Number)
   @IsInt()
   @Min(1)
-  @Max(1_000_000)
+  @Max(10_000)
   readonly page: number = 1;
 
   @IsOptional()
