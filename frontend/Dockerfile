@@ -21,6 +21,7 @@ ENV API_UPSTREAM=http://api:8000
 ENV NGINX_ENTRYPOINT_LOCAL_RESOLVERS=1
 
 RUN rm -f /etc/nginx/conf.d/default.conf
+COPY nginx/security-headers.conf /etc/nginx/snippets/security-headers.conf
 COPY nginx/default.conf.template /etc/nginx/templates/default.conf.template
 COPY --from=builder /app/dist /usr/share/nginx/html
 
