@@ -23,8 +23,9 @@ describe('mentionStatusOf', () => {
     [30, 'recent'],
     [31, 'quiet'],
     [90, 'quiet'],
-    [91, 'no_coverage'],
-    [400, 'no_coverage'],
+    [91, 'quiet'],
+    [365, 'quiet'],
+    [3650, 'quiet'],
   ] as const)('a Mention %i calendar days ago is %s', (days, expected) => {
     expect(mentionStatusOf(daysAgo(days), NOW, JERUSALEM)).toBe(expected);
   });
