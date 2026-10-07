@@ -1,0 +1,71 @@
+# Local stack: Postgres, a one-off migration, the HTTP API and the collector.
+# The API and the collector run the same backend image with different
+# commands (ADR-009). Ollama runs natively on the host, not here (ADR-007).
+
+x-backend: &backend
+  build: ./backend
+  image: press-coverage-backend:local
+  environment: &backend-env
+    DATABASE_URL: postgresql://app:app@postgres:5432/app
+
+services:
+  postgres:
+    # Same image and health probe as the CI service container.
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: app
+      POSTGRES_PASSWORD: app
+      POSTGRES_DB: app
+    ports:
+      - "${POSTGRES_HOST_PORT:-5432}:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U app -d app"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 10s
+
+  migrate:
+    <<: *backend
+    command: ["npm", "run", "migration:run"]
+    restart: "no"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  api:
+    <<: *backend
+    command: ["node", "dist/main.js"]
+    environment:
+      <<: *backend-env
+      PORT: "8000"
+    ports:
+      - "${API_HOST_PORT:-8000}:8000"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://127.0.0.1:8000/health > /dev/null || exit 1"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+      start_period: 10s
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+
+  collector:
+    <<: *backend
+    command: ["node", "dist/worker.js"]
+    environment:
+      <<: *backend-env
+      OLLAMA_BASE_URL: http://host.docker.internal:11434
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+
+volumes:
+  postgres-data:
