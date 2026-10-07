@@ -38,6 +38,10 @@ describe('truncateForDiagnosis', () => {
     expect(truncateForDiagnosis('abcde', 5)).toBe('abcde');
   });
 
+  it('replaces control characters so the text cannot forge log lines', () => {
+    expect(truncateForDiagnosis('line one\nFAKE LOG\r\u0007')).toBe('line one FAKE LOG  ');
+  });
+
   it('cuts longer text to the limit, ellipsis included', () => {
     expect(truncateForDiagnosis('abcdef', 5)).toBe('abcd…');
   });

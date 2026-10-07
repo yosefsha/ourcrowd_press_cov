@@ -13,9 +13,15 @@ export class ClassifierUnavailable extends Error {
  */
 export const MAX_DIAGNOSTIC_OUTPUT_LENGTH = 500;
 
-/** `text` cut to at most `maxLength` characters, marked with an ellipsis when cut. */
+/**
+ * `text` made safe to log: control characters (newlines included) become
+ * spaces, so untrusted text cannot forge log lines, and the result is cut to at
+ * most `maxLength` characters, marked with an ellipsis when cut.
+ */
 export function truncateForDiagnosis(text: string, maxLength = MAX_DIAGNOSTIC_OUTPUT_LENGTH): string {
-  return text.length <= maxLength ? text : `${text.slice(0, maxLength - 1)}…`;
+  // eslint-disable-next-line no-control-regex
+  const flat = text.replace(/[\u0000-\u001f\u007f]/g, ' ');
+  return flat.length <= maxLength ? flat : `${flat.slice(0, maxLength - 1)}…`;
 }
 
 /** The classification model answered, but not with a verdict that could be read. */

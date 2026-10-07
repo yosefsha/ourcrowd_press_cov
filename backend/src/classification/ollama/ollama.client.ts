@@ -35,6 +35,8 @@ export type Fetch = typeof fetch;
 export class OllamaClient implements StructuredChat {
   private readonly limiter: ConcurrencyLimiter;
   private readonly baseUrl: string;
+  /** `baseUrl` without credentials, the only form put in messages and logs. */
+  private readonly displayUrl: string;
 
   constructor(
     private readonly options: OllamaClientOptions,
@@ -42,14 +44,16 @@ export class OllamaClient implements StructuredChat {
   ) {
     this.limiter = new ConcurrencyLimiter(options.numParallel);
     this.baseUrl = options.baseUrl.replace(/\/+$/, '');
+    this.displayUrl = withoutCredentials(this.baseUrl);
   }
 
   get model(): string {
     return this.options.model;
   }
 
+  /** The server URL with any credentials removed, safe to log. */
   get serverUrl(): string {
-    return this.baseUrl;
+    return this.displayUrl;
   }
 
   async complete(request: StructuredChatRequest): Promise<string> {
@@ -100,10 +104,22 @@ export class OllamaClient implements StructuredChat {
       return (await response.json());
     } catch (error) {
       if (error instanceof ClassifierUnavailable) throw error;
-      throw new ClassifierUnavailable(`Ollama at ${this.baseUrl} did not answer ${path}: ${describeTransportError(error, this.options.timeoutMs)}`, {
+      throw new ClassifierUnavailable(`Ollama at ${this.displayUrl} did not answer ${path}: ${describeTransportError(error, this.options.timeoutMs)}`, {
         cause: error,
       });
     }
+  }
+}
+
+function withoutCredentials(url: string): string {
+  try {
+    const parsed = new URL(url);
+    if (!parsed.username && !parsed.password) return url;
+    parsed.username = '';
+    parsed.password = '';
+    return parsed.href.replace(/\/+$/, '');
+  } catch {
+    return url;
   }
 }
 

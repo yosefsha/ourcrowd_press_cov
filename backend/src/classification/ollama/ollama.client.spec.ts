@@ -109,6 +109,20 @@ describe('OllamaClient', () => {
       await expect(new OllamaClient(OPTIONS, fetch).complete(REQUEST)).rejects.toThrow('fetch failed (ECONNREFUSED)');
     });
 
+    it('never puts credentials from the base URL in an error message', async () => {
+      const { fetch, calls } = fetchReturning(() => {
+        throw new TypeError('fetch failed');
+      });
+      const client = new OllamaClient({ ...OPTIONS, baseUrl: 'http://user:secret@ollama.test:11434' }, fetch);
+
+      const error = (await client.complete(REQUEST).catch((e: unknown) => e)) as Error;
+
+      expect(calls[0]?.url).toBe('http://user:secret@ollama.test:11434/api/chat');
+      expect(error.message).toContain('Ollama at http://ollama.test:11434 did not answer');
+      expect(error.message).not.toContain('secret');
+      expect(client.serverUrl).toBe('http://ollama.test:11434');
+    });
+
     it('maps a timeout to ClassifierUnavailable', async () => {
       const { fetch } = fetchReturning(
         ({ init }) =>
