@@ -16,6 +16,7 @@ import {
   REPO_ROOT,
   resolveConfig,
 } from './lib/config.mjs';
+import { ensureDataDir } from './lib/data-dir.mjs';
 import { PrerequisiteError } from './lib/errors.mjs';
 import { ensureOllamaServing, requireModel } from './lib/ollama.mjs';
 import { checkHostPrerequisites } from './lib/prerequisites.mjs';
@@ -26,6 +27,7 @@ const BACKEND = path.join(REPO_ROOT, 'backend');
 const FRONTEND = path.join(REPO_ROOT, 'frontend');
 const TSC = path.join(BACKEND, 'node_modules', 'typescript', 'bin', 'tsc');
 const VITE = path.join(FRONTEND, 'node_modules', 'vite', 'bin', 'vite.js');
+const ENTRY_FILES = [path.join('dist', 'main.js'), path.join('dist', 'worker.js')];
 
 await runCli(async () => {
   const config = resolveConfig(process.env);
@@ -68,8 +70,19 @@ await runCli(async () => {
   step('Starting Postgres (docker compose up -d --wait postgres)');
   compose(['up', '--detach', '--wait', 'postgres']);
 
+  step('Preparing the data/ folder');
+  ensureDataDir();
+
   step('Applying migrations (npm run migration:run in backend/)');
   run(npm(['run', 'migration:run']), { cwd: BACKEND, env: { DATABASE_URL: databaseUrl } });
+
+  // `node --watch` exits at once if its entry file is missing, so the first
+  // compile must finish before the watchers start. migration:run's pre-hook
+  // normally builds dist/; do it here too rather than rely on that.
+  if (ENTRY_FILES.some((file) => !existsSync(path.join(BACKEND, file)))) {
+    step('Compiling the backend once (tsc -p tsconfig.build.json)');
+    run({ command: process.execPath, args: [TSC, '-p', 'tsconfig.build.json'], shell: false }, { cwd: BACKEND });
+  }
 
   step(`Starting API (:${DEV_API_PORT}), collector and dashboard (http://localhost:${DEV_VITE_PORT})`);
   console.log('    Ctrl+C stops them; Postgres keeps running until `npm stop`.\n');
