@@ -60,9 +60,17 @@ onto a branch already checked out elsewhere.)
 
 **Never merge pull requests into `main` without explicit instruction naming the PR number.**
 Approval is per-PR and per-turn. Open the PR and stop. CI passing is not sufficient on its own —
-for non-trivial changes, offer to deploy and verify live first. After pushing to a PR, read its
-comments (`gh pr view <n> --json comments` and `gh api repos/:owner/:repo/pulls/<n>/comments`)
-and reply to every inline thread.
+for non-trivial changes, offer to deploy and verify live first.
+
+**PR feedback loop — mandatory before an issue counts as finished (subagents included).** After
+opening or pushing to a PR, wait for its checks, including the "Claude review" job
+(`gh pr checks <n> --watch`), then read all feedback: `gh pr view <n> --json comments,reviews` and
+`gh api repos/:owner/:repo/pulls/<n>/comments`. Fix every actionable comment and every failing
+check caused by the branch **on the same branch**, push to the **same PR** (never open a new one),
+and reply to each thread saying what changed — or why no change is needed. Each push re-triggers
+the review, so repeat until no new actionable feedback remains (at most 3 rounds; then report what
+is still open). Failures that are not the branch's fault (e.g. a missing secret) are reported,
+not worked around.
 
 Skills: `/implement-issue <n>` (one issue, run in a subagent) and `/implement-milestone <name>`
 (fan out one subagent per independent issue).
