@@ -103,6 +103,23 @@ class Fields {
     return value;
   }
 
+  /** An absolute http(s) URL — what the collector stores; anything else (e.g. `javascript:`) is refused. */
+  url(key: string): string {
+    const value = this.string(key);
+    let protocol: string;
+    try {
+      protocol = new URL(value).protocol;
+    } catch {
+      this.fail(key, 'an absolute URL');
+    }
+    if (protocol !== 'http:' && protocol !== 'https:') this.fail(key, 'an http(s) URL');
+    return value;
+  }
+
+  nullableUrl(key: string): string | null {
+    return this.raw(key) === null ? null : this.url(key);
+  }
+
   timestamp(key: string): string {
     const value = this.raw(key);
     if (typeof value !== 'string' || !TIMESTAMP.test(value) || Number.isNaN(Date.parse(value))) {
@@ -210,9 +227,9 @@ function parseArticle(item: Fields): ArticleRecord {
     title: item.string('title'),
     snippet: item.string('snippet'),
     outletName: item.string('outletName'),
-    outletUrl: item.string('outletUrl'),
-    googleUrl: item.string('googleUrl'),
-    publisherUrl: item.nullableString('publisherUrl'),
+    outletUrl: item.url('outletUrl'),
+    googleUrl: item.url('googleUrl'),
+    publisherUrl: item.nullableUrl('publisherUrl'),
     publishedAt: item.timestamp('publishedAt'),
     language: item.string('language'),
     edition: item.string('edition'),

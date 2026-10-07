@@ -118,6 +118,8 @@ describe('SnapshotImporter', () => {
   it.each([
     [EXPORT_FILE_NAMES.companies, { status: 'archived' }, 'companies.json[0].status must be one of active, needs_review, deactivated'],
     [EXPORT_FILE_NAMES.articles, { publishedAt: '2026-06-02 07:00' }, 'articles.json[0].publishedAt must be a UTC timestamp'],
+    [EXPORT_FILE_NAMES.articles, { publisherUrl: 'javascript:alert(1)' }, 'articles.json[0].publisherUrl must be an http(s) URL'],
+    [EXPORT_FILE_NAMES.articles, { googleUrl: 'not a url' }, 'articles.json[0].googleUrl must be an absolute URL'],
     [EXPORT_FILE_NAMES.candidates, { articleId: 1.5 }, 'candidates.json[0].articleId must be a positive integer'],
     [EXPORT_FILE_NAMES.runs, { params: { until: 'soon', companyIds: null, reprocess: false } }, 'params.until must be a YYYY-MM-DD date or null'],
     [EXPORT_FILE_NAMES.runs, { progress: { companiesTotal: -1 } }, 'runs.json[0].progress.companiesTotal must be a non-negative integer'],
