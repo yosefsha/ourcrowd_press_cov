@@ -14,6 +14,14 @@ Backend standards for the NestJS stack — project structure, code style, config
 
 @docs/backend-nestjs-instructions.md
 
+## AI Session Transcripts
+
+The brief requires a copy of the prompts used with AI coding assistants. The `PreCompact` and
+`SessionEnd` hooks in `.claude/settings.json` write each session's transcript to
+`docs/ai-prompts/<date>-<session-id>.md` in the primary checkout, overwriting it with the full
+current copy each time. **When committing docs, include any new or updated files in
+`docs/ai-prompts/`.**
+
 ## Branch, Worktree and Subagent Workflow
 
 **Never commit directly to `main`.** Every task gets its own feature branch AND its own git

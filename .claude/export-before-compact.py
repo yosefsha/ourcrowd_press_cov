@@ -1,14 +1,21 @@
 #!/usr/bin/env python3
-"""PreCompact hook: renders the session's JSONL transcript as a plain-text
-conversation export (like /export) and appends it to compact-transcript-export.log
-before Claude Code compacts context."""
+"""PreCompact / SessionEnd hook: renders the session's JSONL transcript as a
+plain-text conversation export (like /export) into
+docs/ai-prompts/<date>-<session-id>.md of the primary checkout.
+
+The transcript JSONL always holds the whole session, so each run overwrites the
+session's file with a complete, current copy instead of appending duplicates.
+Sessions running in a git worktree still write to the primary checkout, so every
+transcript ends up in one place on main."""
 import json
 import os
 import re
+import subprocess
 import sys
 from datetime import datetime, timezone
 
-LOG_FILE = os.path.join(os.path.dirname(__file__), "..", "compact-transcript-export.log")
+SCRIPT_CHECKOUT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+OUTPUT_SUBDIR = os.path.join("docs", "ai-prompts")
 
 SKIP_TYPES = {
     "mode",
@@ -36,6 +43,37 @@ def resolve_transcript_path(payload: dict) -> str:
         os.path.expanduser("~"), ".claude", "projects", project_dir, f"{session_id}.jsonl"
     )
     return fallback if os.path.exists(fallback) else path
+
+
+def resolve_primary_checkout() -> str:
+    """The main working tree, even when this script runs from a linked worktree."""
+    try:
+        common_dir = subprocess.run(
+            ["git", "rev-parse", "--path-format=absolute", "--git-common-dir"],
+            cwd=SCRIPT_CHECKOUT,
+            capture_output=True,
+            text=True,
+            check=True,
+        ).stdout.strip()
+    except Exception:
+        return SCRIPT_CHECKOUT
+    return os.path.dirname(common_dir) if os.path.basename(common_dir) == ".git" else SCRIPT_CHECKOUT
+
+
+def session_date(transcript_path: str) -> str:
+    """Date of the session's first timestamped entry, so the filename is stable across runs."""
+    try:
+        with open(transcript_path, "r") as fp:
+            for line in fp:
+                try:
+                    timestamp = json.loads(line).get("timestamp")
+                except Exception:
+                    continue
+                if timestamp:
+                    return timestamp[:10]
+    except Exception:
+        pass
+    return datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
 
 def truncate(text: str, limit: int = 500) -> str:
@@ -122,18 +160,23 @@ def main():
         print(f"export-before-compact: failed to parse hook input: {exc}", file=sys.stderr)
         sys.exit(0)
 
-    session_id = payload.get("session_id", "unknown")
-    trigger = payload.get("trigger", "unknown")
+    session_id = re.sub(r"[^A-Za-z0-9-]", "", payload.get("session_id") or "") or "unknown"
+    event = payload.get("hook_event_name", "unknown")
+    reason = payload.get("trigger") or payload.get("reason") or "unknown"
     transcript_path = resolve_transcript_path(payload)
     now = datetime.now(timezone.utc).isoformat()
 
-    header = f"\n===== PreCompact export | session={session_id} | trigger={trigger} | {now} =====\n"
+    header = f"# AI session transcript\n\nsession={session_id} | last export: {event} ({reason}) | {now}\n\n"
     body = render_transcript(transcript_path)
 
-    with open(LOG_FILE, "a") as fp:
+    output_dir = os.path.join(resolve_primary_checkout(), OUTPUT_SUBDIR)
+    os.makedirs(output_dir, exist_ok=True)
+    output_file = os.path.join(output_dir, f"{session_date(transcript_path)}-{session_id}.md")
+    temp_file = f"{output_file}.tmp"
+    with open(temp_file, "w") as fp:
         fp.write(header)
         fp.write(body)
-        fp.write("\n")
+    os.replace(temp_file, output_file)
 
 
 if __name__ == "__main__":
