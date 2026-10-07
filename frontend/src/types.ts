@@ -315,6 +315,22 @@ export interface Run {
   readonly finishedAt: IsoDateTime | null;
 }
 
+/** The pipeline stage at which one company failed inside a Run. */
+export type RunStage = 'collection' | 'relevance' | 'sentiment';
+
+/** One company's failure inside a Run that otherwise carried on. */
+export interface RunCompanyError {
+  readonly companyId: number;
+  readonly companyName: string;
+  readonly stage: RunStage;
+  readonly message: string;
+}
+
+/** GET /api/runs/:id — a Run with the per-company errors it recorded. */
+export interface RunDetail extends Run {
+  readonly companyErrors: readonly RunCompanyError[];
+}
+
 export interface RunsQuery {
   readonly limit?: number;
 }

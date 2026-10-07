@@ -86,6 +86,7 @@ describe('request building', () => {
     ['enqueueRun', (c) => c.enqueueRun({ type: 'backfill', until: '2026-09-30' }), 'POST', '/api/runs'],
     ['listRuns', (c) => c.listRuns({ limit: 20 }), 'GET', '/api/runs?limit=20'],
     ['getActiveRun', (c) => c.getActiveRun(), 'GET', '/api/runs/active'],
+    ['getRun', (c) => c.getRun(5), 'GET', '/api/runs/5'],
     ['getCollectorHealth', (c) => c.getCollectorHealth(), 'GET', '/api/collector/health'],
     ['listAlerts', (c) => c.listAlerts({ acknowledged: false }), 'GET', '/api/alerts?acknowledged=false'],
     ['getAlert', (c) => c.getAlert(3), 'GET', '/api/alerts/3'],
