@@ -117,6 +117,26 @@ describe('OverviewPage company table', () => {
     );
   });
 
+  it('keeps the relative dates of the displayed rows while a new sort loads', async () => {
+    vi.useFakeTimers({ toFake: ['Date'] });
+    vi.setSystemTime(new Date('2026-10-07T12:00:00.000Z'));
+    let calls = 0;
+    renderOverview('/', {
+      listCompanies: () => {
+        calls += 1;
+        return calls === 1 ? Promise.resolve(overviewRows) : new Promise(() => undefined);
+      },
+    });
+    const zutaRow = async (): Promise<HTMLElement> =>
+      (await screen.findByRole('rowheader', { name: 'ZutaCore' })).closest('tr') as HTMLElement;
+    expect(within(await zutaRow()).getByText('3 days ago')).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'Mentions' }));
+    await waitFor(() => {
+      expect(calls).toBe(2);
+    });
+    expect(within(await zutaRow()).getByText('3 days ago')).toBeInTheDocument();
+  });
+
   it('does not render a headline with a non-http URL as a link', async () => {
     renderOverview('/', {
       rows: [

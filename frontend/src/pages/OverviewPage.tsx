@@ -4,6 +4,7 @@ import { CompanyTable } from '../components/CompanyTable.tsx';
 import { QueryErrorMessage } from '../components/QueryErrorMessage.tsx';
 import { SummaryStrip } from '../components/SummaryStrip.tsx';
 import { useCoverageWindow } from '../hooks/useCoverageWindow.ts';
+import { useDisplayedDataTime } from '../hooks/useDisplayedDataTime.ts';
 import { useOverviewFilters, useSelectedCompany } from '../hooks/useOverviewFilters.ts';
 import { hasActiveFilters, toCompaniesQuery } from '../overviewFilters.ts';
 import { useCompaniesQuery, useSummaryQuery } from '../queries.ts';
@@ -18,6 +19,7 @@ export function OverviewPage(): React.JSX.Element {
 
   const summaryQuery = useSummaryQuery(coverageWindow);
   const companiesQuery = useCompaniesQuery(toCompaniesQuery(coverageWindow, filters));
+  const rowsFetchedAt = useDisplayedDataTime(companiesQuery.dataUpdatedAt, companiesQuery.isPlaceholderData);
 
   return (
     <section style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
@@ -71,7 +73,7 @@ export function OverviewPage(): React.JSX.Element {
               updateFilters({ sort });
             }}
             onSelectCompany={selectCompany}
-            now={new Date(companiesQuery.dataUpdatedAt)}
+            now={rowsFetchedAt}
             noCoverageSince={summaryQuery.data?.from ?? null}
           />
         </div>
