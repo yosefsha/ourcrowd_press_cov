@@ -5,6 +5,7 @@ import { describe, expect, it, vi } from 'vitest';
 
 import type { ApiClient } from '../api.ts';
 import { ApiClientContext } from '../apiClientContext.ts';
+import { CompanyProfileSummary } from '../components/CompanyProfileSummary.tsx';
 import {
   addedByHand,
   adminCompanies,
@@ -146,6 +147,31 @@ describe('the open company in the URL', () => {
 
     fireEvent.click(screen.getByRole('button', { name: 'Show all companies' }));
     expect(await screen.findByRole('region', { name: 'Ludeo' })).toBeInTheDocument();
+  });
+
+  it("opens the profile from the company detail panel's \"Edit on Companies page\" link", async () => {
+    const api = createFakeApiClient({ listAdminCompanies: listFromFixtures });
+    const queryClient = new QueryClient({ defaultOptions: { queries: { retry: false } } });
+    const router = createMemoryRouter(
+      [
+        { path: '/', element: <CompanyProfileSummary companyId={lambdaActive.id} profile={lambdaActive} /> },
+        { path: '/companies', element: <CompaniesPage /> },
+      ],
+      { initialEntries: ['/'] },
+    );
+    render(
+      <ApiClientContext.Provider value={api}>
+        <QueryClientProvider client={queryClient}>
+          <RouterProvider router={router} />
+        </QueryClientProvider>
+      </ApiClientContext.Provider>,
+    );
+
+    fireEvent.click(screen.getByRole('link', { name: 'Edit on Companies page' }));
+
+    const panel = await screen.findByRole('region', { name: 'Lambda' });
+    expect(within(panel).getByRole('textbox', { name: 'Display name' })).toHaveValue('Lambda');
+    expect(router.state.location.search).toBe(`?company=${lambdaActive.id}`);
   });
 
   it('says so when no company has the linked id', async () => {

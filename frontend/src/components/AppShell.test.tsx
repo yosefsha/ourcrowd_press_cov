@@ -3,16 +3,20 @@ import { fireEvent, render, screen } from '@testing-library/react';
 import { createMemoryRouter, RouterProvider } from 'react-router';
 import { describe, expect, it } from 'vitest';
 
+import type { ApiClient } from '../api.ts';
 import { ApiClientContext } from '../apiClientContext.ts';
 import { routes } from '../routes.tsx';
-import { createFakeApiClient } from '../test/fixtures.ts';
+
+/** Shell tests are about layout and routing: every request stays pending, so no data renders. */
+const pendingApi = new Proxy({} as ApiClient, {
+  get: () => () => new Promise<never>(() => undefined),
+});
 
 function renderAt(path: string): ReturnType<typeof createMemoryRouter> {
   const router = createMemoryRouter(routes, { initialEntries: [path] });
-  // Pages read server state through the query hooks, so the shell needs a QueryClient and an in-memory ApiClient.
   const queryClient = new QueryClient({ defaultOptions: { queries: { retry: false } } });
   render(
-    <ApiClientContext.Provider value={createFakeApiClient()}>
+    <ApiClientContext.Provider value={pendingApi}>
       <QueryClientProvider client={queryClient}>
         <RouterProvider router={router} />
       </QueryClientProvider>
