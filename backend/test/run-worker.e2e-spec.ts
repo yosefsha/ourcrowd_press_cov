@@ -1,10 +1,7 @@
 import type { INestApplicationContext } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import { Test } from '@nestjs/testing';
 import { DataSource } from 'typeorm';
 
-import { CLASSIFIER_HEALTH, type ClassifierHealth } from '../src/classification/classifier-health';
-import { CollectorModule } from '../src/collector.module';
 import type { AppConfig } from '../src/config/configuration';
 import type { DataExporter } from '../src/data-export/data-exporter';
 import type { Run, RunOutcome } from '../src/domain/run';
@@ -14,8 +11,7 @@ import { RUN_QUEUE, type RunQueue } from '../src/runs/run-queue';
 import { CollectorActivity } from '../src/runs/worker/collector-activity';
 import { CollectorHeartbeatService } from '../src/runs/worker/collector-heartbeat.service';
 import { RunWorker } from '../src/runs/worker/run-worker.service';
-
-const classifierHealth: ClassifierHealth = { check: () => Promise.resolve({ ok: true, model: 'qwen2.5:7b' }) };
+import { createCollectorContext, READY_CLASSIFIER_HEALTH } from './support/collector-context';
 
 class CompletingBackfill implements RunExecutor {
   readonly runType = 'backfill';
@@ -61,28 +57,25 @@ describe('RunWorker in the CollectorModule (against Postgres)', () => {
         return Promise.resolve();
       },
     };
-    const moduleRef = await Test.createTestingModule({ imports: [CollectorModule] })
-      // Booting the collector probes Ollama, which is not available here.
-      .overrideProvider(CLASSIFIER_HEALTH)
-      .useValue(classifierHealth)
-      .overrideProvider(CollectorHeartbeatService)
-      .useFactory({
-        factory: (store: CollectorHeartbeatStore, activity: CollectorActivity, config: ConfigService<AppConfig, true>) =>
-          new CollectorHeartbeatService(store, activity, config, classifierHealth),
-        inject: [COLLECTOR_HEARTBEAT_STORE, CollectorActivity, ConfigService],
-      })
-      .overrideProvider(RunWorker)
-      .useFactory({
-        factory: (queue: RunQueue, activity: CollectorActivity, config: ConfigService<AppConfig, true>) =>
-          new RunWorker(queue, activity, config, [new CompletingBackfill()], exporter),
-        inject: [RUN_QUEUE, CollectorActivity, ConfigService],
-      })
-      .compile();
-    moduleRef.useLogger(false);
-    dataSource = moduleRef.get(DataSource);
+    context = await createCollectorContext((builder) =>
+      builder
+        .overrideProvider(RunWorker)
+        .useFactory({
+          factory: (queue: RunQueue, activity: CollectorActivity, config: ConfigService<AppConfig, true>) =>
+            new RunWorker(queue, activity, config, [new CompletingBackfill()], exporter),
+          inject: [RUN_QUEUE, CollectorActivity, ConfigService],
+        })
+        // Until ClassificationModule binds CLASSIFIER_HEALTH (#6), give the heartbeat the ready probe directly.
+        .overrideProvider(CollectorHeartbeatService)
+        .useFactory({
+          factory: (store: CollectorHeartbeatStore, activity: CollectorActivity, config: ConfigService<AppConfig, true>) =>
+            new CollectorHeartbeatService(store, activity, config, READY_CLASSIFIER_HEALTH),
+          inject: [COLLECTOR_HEARTBEAT_STORE, CollectorActivity, ConfigService],
+        }),
+    );
+    dataSource = context.get(DataSource);
     const [{ max }] = await dataSource.query<{ max: number }[]>(`SELECT coalesce(max(id), 0)::int AS max FROM runs`);
     runsBefore = max;
-    context = await moduleRef.init();
   });
 
   afterAll(async () => {
