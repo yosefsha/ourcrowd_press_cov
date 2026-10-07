@@ -1,5 +1,6 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { fireEvent, render, screen, waitFor, within } from '@testing-library/react';
+import { act, fireEvent, render, screen, waitFor, within } from '@testing-library/react';
+import { createMemoryRouter, RouterProvider } from 'react-router';
 import { describe, expect, it, vi } from 'vitest';
 
 import type { ApiClient } from '../api.ts';
@@ -10,6 +11,7 @@ import {
   harveyNeedsReview,
   lambdaActive,
   lambdaReprocessRun,
+  ludeoDeactivated,
   runConflict,
   validationError,
 } from '../test/companiesPage.fixtures.ts';
@@ -30,18 +32,30 @@ function listFromFixtures(query: AdminCompaniesQuery): Promise<readonly AdminCom
 }
 
 /** Renders the page against an in-memory ApiClient; returns the list endpoint's mock. */
-function renderPage(overrides: Partial<ApiClient> = {}): ReturnType<typeof vi.fn<ApiClient['listAdminCompanies']>> {
+interface Rendered {
+  readonly listAdminCompanies: ReturnType<typeof vi.fn<ApiClient['listAdminCompanies']>>;
+  readonly router: ReturnType<typeof createMemoryRouter>;
+}
+
+/** Renders the page at `path` against an in-memory ApiClient. */
+function renderPageAt(path: string, overrides: Partial<ApiClient> = {}): Rendered {
   const listAdminCompanies = vi.fn<ApiClient['listAdminCompanies']>(listFromFixtures);
   const api = createFakeApiClient({ listAdminCompanies, ...overrides });
   const queryClient = new QueryClient({ defaultOptions: { queries: { retry: false }, mutations: { retry: false } } });
+  const router = createMemoryRouter([{ path: '/companies', element: <CompaniesPage /> }], { initialEntries: [path] });
   render(
     <ApiClientContext.Provider value={api}>
       <QueryClientProvider client={queryClient}>
-        <CompaniesPage />
+        <RouterProvider router={router} />
       </QueryClientProvider>
     </ApiClientContext.Provider>,
   );
-  return listAdminCompanies;
+  return { listAdminCompanies, router };
+}
+
+/** Renders the page against an in-memory ApiClient; returns the list endpoint's mock. */
+function renderPage(overrides: Partial<ApiClient> = {}): Rendered['listAdminCompanies'] {
+  return renderPageAt('/companies', overrides).listAdminCompanies;
 }
 
 async function openCompany(displayName: string): Promise<HTMLElement> {
@@ -89,6 +103,54 @@ describe('CompaniesPage list', () => {
   it('reports a failed load', async () => {
     renderPage({ listAdminCompanies: () => Promise.reject(new Error('Request failed with status 503')) });
     expect(await screen.findByText(/Could not load companies: Request failed with status 503/)).toBeInTheDocument();
+  });
+});
+
+describe('the open company in the URL', () => {
+  it('opens the company named by ?company=<id>, as the company detail panel links to it', async () => {
+    renderPageAt(`/companies?window=2026-Q3&company=${lambdaActive.id}`);
+    const panel = await screen.findByRole('region', { name: 'Lambda' });
+    expect(within(panel).getByText('Lambda (lambda.ai)')).toBeInTheDocument();
+  });
+
+  it('writes the selected company to the URL, keeps other parameters, and removes it on close', async () => {
+    const { router } = renderPageAt('/companies?window=2026-Q3');
+    const panel = await openCompany('Lambda');
+    expect(router.state.location.search).toBe(`?window=2026-Q3&company=${lambdaActive.id}`);
+
+    fireEvent.click(within(panel).getByRole('button', { name: 'Close' }));
+    expect(router.state.location.search).toBe('?window=2026-Q3');
+  });
+
+  it('keeps a linked company open when the filter no longer lists it', async () => {
+    renderPageAt(`/companies?company=${ludeoDeactivated.id}`);
+    expect(await screen.findByRole('region', { name: 'Ludeo' })).toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole('button', { name: 'Active' }));
+    const list = await screen.findByRole('list', { name: 'Tracked companies' });
+    await waitFor(() => {
+      expect(within(list).queryByText('Ludeo')).toBeNull();
+    });
+    expect(screen.getByRole('region', { name: 'Ludeo' })).toBeInTheDocument();
+  });
+
+  it('offers to clear the filter when a link opens a company the current list does not hold', async () => {
+    const { router } = renderPageAt('/companies');
+    fireEvent.click(await screen.findByRole('button', { name: 'Active' }));
+    await waitFor(() => {
+      expect(within(screen.getByRole('list', { name: 'Tracked companies' })).queryByText('Ludeo')).toBeNull();
+    });
+
+    await act(() => router.navigate(`/companies?company=${ludeoDeactivated.id}`));
+    expect(await screen.findByText(`Company ${ludeoDeactivated.id} is not in the current list.`)).toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole('button', { name: 'Show all companies' }));
+    expect(await screen.findByRole('region', { name: 'Ludeo' })).toBeInTheDocument();
+  });
+
+  it('says so when no company has the linked id', async () => {
+    renderPageAt('/companies?company=999');
+    expect(await screen.findByText('There is no company with id 999.')).toBeInTheDocument();
   });
 });
 
