@@ -33,7 +33,7 @@ export function CollectorHealthPanel({ health, error }: Props): React.JSX.Elemen
   if (health === undefined) return <p style={{ margin: 0, fontSize: 14 }}>Loading…</p>;
 
   return (
-    <dl aria-label="Collector health" style={{ display: 'grid', gap: 8, margin: 0 }}>
+    <dl aria-label="Collector status" style={{ display: 'grid', gap: 8, margin: 0 }}>
       <div style={rowStyle}>
         <dt>Collector</dt>
         <dd style={{ margin: 0 }}>

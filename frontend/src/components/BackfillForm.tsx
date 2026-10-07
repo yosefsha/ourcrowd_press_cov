@@ -71,7 +71,7 @@ export function BackfillForm({ disabled, onStart }: Props): React.JSX.Element {
   );
 
   return (
-    <form onSubmit={handleSubmit} aria-label="Start Backfill" style={{ display: 'grid', gap: 12 }}>
+    <form onSubmit={handleSubmit} noValidate aria-label="Start Backfill" style={{ display: 'grid', gap: 12 }}>
       <fieldset style={{ border: 'none', margin: 0, padding: 0, display: 'grid', gap: 8 }}>
         <legend style={{ fontSize: 14, fontWeight: 600, marginBottom: 4 }}>Cutoff</legend>
         {radio('today', 'Up to today')}
