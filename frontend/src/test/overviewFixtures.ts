@@ -16,6 +16,7 @@ export function buildCoverageSummary(overrides: Partial<CoverageSummary> = {}): 
     from: '2026-07-09T12:00:00.000Z',
     to: '2026-10-07T12:00:00.000Z',
     asOf: '2026-10-07T07:00:00.000Z',
+    collectionStartedAt: '2026-07-09T12:00:00.000Z',
     companiesByMentionStatus: { active: 2, recent: 1, quiet: 1, no_coverage: 1 },
     mentionCount: 128,
     sentiment: { positive: 70, negative: 8, neutral: 50 },

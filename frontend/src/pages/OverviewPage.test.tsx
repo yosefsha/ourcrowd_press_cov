@@ -96,11 +96,19 @@ describe('OverviewPage company table', () => {
     expect(within(row as HTMLElement).getByText('100+')).toBeInTheDocument();
   });
 
-  it('labels a company with no coverage with the date nothing has been found since', async () => {
-    renderOverview();
+  it('labels a company with no coverage with the date collection started, not the window start', async () => {
+    renderOverview('/', {
+      summary: buildCoverageSummary({ from: '2026-07-09T12:00:00.000Z', collectionStartedAt: '2026-08-03T09:00:00.000Z' }),
+    });
     const row = (await screen.findByRole('rowheader', { name: 'Maolac' })).closest('tr') as HTMLElement;
     expect(within(row).getByText('No coverage')).toBeInTheDocument();
-    expect(await within(row).findByText('No coverage found since Jul 9, 2026')).toBeInTheDocument();
+    expect(await within(row).findByText('No coverage found since Aug 3, 2026')).toBeInTheDocument();
+  });
+
+  it('labels a company with no coverage without a date before any collection', async () => {
+    renderOverview('/', { summary: buildCoverageSummary({ collectionStartedAt: null }) });
+    const row = (await screen.findByRole('rowheader', { name: 'Maolac' })).closest('tr') as HTMLElement;
+    expect(await within(row).findByText('No coverage found')).toBeInTheDocument();
   });
 
   it('says how long ago a company was last mentioned', async () => {
