@@ -71,8 +71,11 @@ git -C "$REPO" worktree add .claude/worktrees/<short-task-name> -b <branch-name>
 
 ## Step 4 — Review gate
 
-Run the project's security/code review skill against the branch diff if one exists (e.g.
-`/security-review` or `/code-review`). Fix CRITICAL/HIGH findings on the branch before opening the PR.
+Run the project's security/code review skill against the branch diff, **passing the absolute
+worktree path** so it reviews this branch and not the primary checkout:
+`/security-review diff <absolute-worktree-path>` (and `/code-review` if useful). Check the report's
+first line names your worktree and branch; if it doesn't, review `git diff origin/main...HEAD` yourself
+and say so in the PR. Fix CRITICAL/HIGH findings on the branch before opening the PR.
 
 ## Step 5 — Open the PR
 
