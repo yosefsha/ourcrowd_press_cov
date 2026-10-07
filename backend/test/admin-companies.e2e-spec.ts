@@ -54,6 +54,30 @@ const runQueue = new InMemoryRunQueue();
 class TestRunQueueModule {}
 
 const ISO = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$/;
+const anIsoTimestamp: unknown = expect.stringMatching(ISO);
+const aNumber: unknown = expect.any(Number);
+
+interface Body {
+  readonly id?: number;
+  readonly domain?: string | null;
+  readonly message?: string | readonly string[];
+}
+
+/** The JSON body, typed loosely for assertions. */
+function arrayContaining(items: readonly string[]): unknown {
+  const matcher: unknown = expect.arrayContaining(items);
+  return matcher;
+}
+
+const queuedBackfill: unknown = expect.objectContaining({ id: 1, status: 'queued', type: 'backfill' });
+
+function bodyOf(response: { body: unknown }): Body {
+  return response.body as Body;
+}
+
+function itemsOf(response: { body: unknown }): readonly Body[] {
+  return response.body as readonly Body[];
+}
 
 describe('/api/admin/companies (CompaniesModule against Postgres)', () => {
   let app: NestExpressApplication;
@@ -117,8 +141,8 @@ describe('/api/admin/companies (CompaniesModule against Postgres)', () => {
         'Lambda',
         'Ludeo',
       ]);
-      expect(response.body[1]).toEqual({
-        id: expect.any(Number),
+      expect(itemsOf(response)[1]).toEqual({
+        id: aNumber,
         sourceName: 'Lambda (lambda.ai)',
         displayName: 'Lambda',
         aliases: [],
@@ -128,8 +152,8 @@ describe('/api/admin/companies (CompaniesModule against Postgres)', () => {
         status: 'active',
         reviewReason: null,
         coverageCapped: false,
-        createdAt: expect.stringMatching(ISO),
-        updatedAt: expect.stringMatching(ISO),
+        createdAt: anIsoTimestamp,
+        updatedAt: anIsoTimestamp,
       });
     });
 
@@ -153,7 +177,7 @@ describe('/api/admin/companies (CompaniesModule against Postgres)', () => {
 
     it('rejects an unknown status or an unknown query parameter', async () => {
       const bad = await request(server()).get('/api/admin/companies?status=paused').expect(400);
-      expect(bad.body.message).toEqual([
+      expect(bodyOf(bad).message).toEqual([
         'status must be one of the following values: active, needs_review, deactivated',
       ]);
       await request(server()).get('/api/admin/companies?sort=name').expect(400);
@@ -202,7 +226,7 @@ describe('/api/admin/companies (CompaniesModule against Postgres)', () => {
       expect(response.body).toEqual({
         statusCode: 400,
         error: 'Bad Request',
-        message: expect.arrayContaining([
+        message: arrayContaining([
           'displayName must not be empty',
           'domain must be a valid hostname, e.g. lambda.ai',
           'each value in aliases must not be empty',
@@ -213,13 +237,13 @@ describe('/api/admin/companies (CompaniesModule against Postgres)', () => {
 
     it('answers 400 for a missing display name and for a Source Name', async () => {
       const missing = await request(server()).post('/api/admin/companies').send({}).expect(400);
-      expect(missing.body.message).toContain('displayName must be a string');
+      expect(bodyOf(missing).message).toContain('displayName must be a string');
 
       const withSource = await request(server())
         .post('/api/admin/companies')
         .send({ displayName: 'Hand Added', sourceName: 'Hand Added' })
         .expect(400);
-      expect(withSource.body.message).toEqual(['property sourceName should not exist']);
+      expect(bodyOf(withSource).message).toEqual(['property sourceName should not exist']);
     });
 
     it('answers 409 for a display name a live company already has (case-insensitive)', async () => {
@@ -239,7 +263,7 @@ describe('/api/admin/companies (CompaniesModule against Postgres)', () => {
 
       const response = await request(server()).post('/api/admin/companies').send({ displayName: 'Ludeo' }).expect(201);
 
-      expect(response.body.id).not.toBe(old);
+      expect(bodyOf(response).id).not.toBe(old);
       const all = await request(server()).get('/api/admin/companies?q=ludeo').expect(200);
       expect(all.body).toHaveLength(2);
     });
@@ -269,7 +293,7 @@ describe('/api/admin/companies (CompaniesModule against Postgres)', () => {
 
       const response = await request(server()).patch(`/api/admin/companies/${id}`).send({ domain: null }).expect(200);
 
-      expect(response.body.domain).toBeNull();
+      expect(bodyOf(response).domain).toBeNull();
     });
 
     it('answers 400 when sourceName or status is sent, leaving the company unchanged', async () => {
@@ -279,11 +303,11 @@ describe('/api/admin/companies (CompaniesModule against Postgres)', () => {
         .patch(`/api/admin/companies/${id}`)
         .send({ sourceName: 'Lambda', displayName: 'Lambda Labs' })
         .expect(400);
-      expect(source.body.message).toEqual(['property sourceName should not exist']);
+      expect(bodyOf(source).message).toEqual(['property sourceName should not exist']);
       await request(server()).patch(`/api/admin/companies/${id}`).send({ status: 'active' }).expect(400);
 
       const after = await request(server()).get('/api/admin/companies').expect(200);
-      expect(after.body[0]).toMatchObject({ sourceName: 'Lambda (lambda.ai)', displayName: 'Lambda' });
+      expect(itemsOf(after)[0]).toMatchObject({ sourceName: 'Lambda (lambda.ai)', displayName: 'Lambda' });
     });
 
     it('answers 400 for a null display name, an invalid domain or a blank search term', async () => {
@@ -294,8 +318,8 @@ describe('/api/admin/companies (CompaniesModule against Postgres)', () => {
         .send({ displayName: null, domain: 'https://lambda.ai/', searchTerms: [''] })
         .expect(400);
 
-      expect(response.body.message).toEqual(
-        expect.arrayContaining([
+      expect(bodyOf(response).message).toEqual(
+        arrayContaining([
           'displayName must be a string',
           'domain must be a valid hostname, e.g. lambda.ai',
           'each value in searchTerms must not be empty',
@@ -308,9 +332,9 @@ describe('/api/admin/companies (CompaniesModule against Postgres)', () => {
       const id = await insertSeed('Wave', 'Wave', 'active');
 
       const clash = await request(server()).patch(`/api/admin/companies/${id}`).send({ displayName: 'harvey' }).expect(409);
-      expect(clash.body.message).toEqual(['displayName "harvey" is already used by another company that is not deactivated']);
+      expect(bodyOf(clash).message).toEqual(['displayName "harvey" is already used by another company that is not deactivated']);
       const missing = await request(server()).patch('/api/admin/companies/9999').send({ description: 'x' }).expect(404);
-      expect(missing.body.message).toBe('Tracked Company 9999 does not exist');
+      expect(bodyOf(missing).message).toBe('Tracked Company 9999 does not exist');
       await request(server()).patch('/api/admin/companies/abc').send({}).expect(400);
     });
   });
@@ -345,7 +369,7 @@ describe('/api/admin/companies (CompaniesModule against Postgres)', () => {
       const listed = await request(server()).get('/api/admin/companies?status=deactivated').expect(200);
       expect(listed.body).toHaveLength(1);
       const again = await request(server()).post(`/api/admin/companies/${id}/review`).expect(409);
-      expect(again.body.message).toBe('Cannot mark as reviewed: Ludeo is deactivated');
+      expect(bodyOf(again).message).toBe('Cannot mark as reviewed: Ludeo is deactivated');
       await request(server()).post(`/api/admin/companies/${id}/deactivate`).expect(409);
     });
 
@@ -376,7 +400,7 @@ describe('/api/admin/companies (CompaniesModule against Postgres)', () => {
         params: { until: null, companyIds: [id], reprocess: true },
         progress: null,
         error: null,
-        createdAt: expect.stringMatching(ISO),
+        createdAt: anIsoTimestamp,
         startedAt: null,
         finishedAt: null,
       });
@@ -390,7 +414,7 @@ describe('/api/admin/companies (CompaniesModule against Postgres)', () => {
 
       expect(response.body).toEqual({
         message: 'Another Run is already queued; re-process once it has finished',
-        activeRun: expect.objectContaining({ id: 1, status: 'queued', type: 'backfill' }),
+        activeRun: queuedBackfill,
       });
     });
 
@@ -399,9 +423,9 @@ describe('/api/admin/companies (CompaniesModule against Postgres)', () => {
       const gone = await insertSeed('Ludeo (formerly Edge)', 'Ludeo', 'deactivated');
 
       const first = await request(server()).post(`/api/admin/companies/${review}/reprocess`).expect(409);
-      expect(first.body.message).toBe('Only an active company can be re-processed; Harvey is in Needs Review');
+      expect(bodyOf(first).message).toBe('Only an active company can be re-processed; Harvey is in Needs Review');
       const second = await request(server()).post(`/api/admin/companies/${gone}/reprocess`).expect(409);
-      expect(second.body.message).toBe('Only an active company can be re-processed; Ludeo is deactivated');
+      expect(bodyOf(second).message).toBe('Only an active company can be re-processed; Ludeo is deactivated');
       expect(runQueue.runs).toEqual([]);
     });
 
