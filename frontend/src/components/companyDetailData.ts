@@ -35,7 +35,8 @@ function toIsoDate(epochMs: number): string {
 /**
  * Maps the API's weekly series to chart rows: sorted by week, with weeks the
  * API left out (no Mentions) filled in as zeros so the time axis stays even.
- * Throws on a malformed week start rather than plotting it in the wrong place.
+ * Throws on a malformed week start, or one off the weekly grid, rather than
+ * plotting it in the wrong place or dropping it.
  */
 export function toWeeklyChartData(series: readonly WeeklySentimentPoint[]): WeeklyChartDatum[] {
   if (series.length === 0) return [];
@@ -45,6 +46,11 @@ export function toWeeklyChartData(series: readonly WeeklySentimentPoint[]): Week
   const weeks = [...byWeek.keys()].sort((a, b) => a - b);
   const first = weeks[0] ?? 0;
   const last = weeks[weeks.length - 1] ?? first;
+  const misaligned = weeks.find((week) => (week - first) % WEEK_MS !== 0);
+  if (misaligned !== undefined) {
+    // Filling the gaps would step past this week and silently drop its counts.
+    throw new RangeError(`Week start ${toIsoDate(misaligned)} is not a whole number of weeks after ${toIsoDate(first)}`);
+  }
 
   const rows: WeeklyChartDatum[] = [];
   for (let week = first; week <= last; week += WEEK_MS) {

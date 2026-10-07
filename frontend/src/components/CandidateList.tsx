@@ -1,7 +1,7 @@
 import { useId, useState } from 'react';
 
 import { useCompanyCandidatesQuery } from '../queries.ts';
-import type { Candidate, CoverageWindow } from '../types.ts';
+import type { Candidate, CoverageWindow, Page } from '../types.ts';
 import { CandidateRow } from './CandidateRow.tsx';
 import { CandidatePagination } from './CandidatePagination.tsx';
 import { CANDIDATES_PAGE_SIZE, pageCount } from './companyDetailData.ts';
@@ -26,9 +26,18 @@ export function CandidateList({ companyId, coverageWindow }: Props): React.JSX.E
     pageSize: CANDIDATES_PAGE_SIZE,
   });
 
+  // Keep the last page on screen while the next one loads, so paging does not
+  // flash "Loading" and unmount the page controls.
+  const [lastLoaded, setLastLoaded] = useState<Page<Candidate> | undefined>(undefined);
+  if (query.data !== undefined && query.data !== lastLoaded) setLastLoaded(query.data);
+  const shown = query.data ?? lastLoaded;
+  const isStale = query.data === undefined && shown !== undefined;
+
   const handleToggle = (checked: boolean): void => {
     setShowRejected(checked);
     setPage(1);
+    // A different list: show it loading rather than the previous one.
+    setLastLoaded(undefined);
   };
 
   return (
@@ -49,12 +58,23 @@ export function CandidateList({ companyId, coverageWindow }: Props): React.JSX.E
           Show rejected Candidates
         </label>
       </div>
-      {renderBody(query.status, query.error, query.data?.items ?? [], showRejected)}
-      {query.data === undefined ? null : (
+      {query.status === 'error' ? (
+        <p role="alert" style={{ margin: 0, color: '#ab091e' }}>
+          Could not load Mentions: {query.error.message}
+        </p>
+      ) : shown === undefined ? (
+        <p style={mutedStyle}>Loading Mentions…</p>
+      ) : (
+        <div aria-busy={isStale} style={{ opacity: isStale ? 0.6 : 1 }}>
+          {renderItems(shown.items, showRejected)}
+        </div>
+      )}
+      {shown === undefined || query.status === 'error' ? null : (
         <CandidatePagination
-          page={query.data.page}
-          totalPages={pageCount(query.data.total, query.data.pageSize)}
-          total={query.data.total}
+          page={page}
+          totalPages={pageCount(shown.total, shown.pageSize)}
+          total={shown.total}
+          disabled={isStale}
           onChange={setPage}
         />
       )}
@@ -62,20 +82,7 @@ export function CandidateList({ companyId, coverageWindow }: Props): React.JSX.E
   );
 }
 
-function renderBody(
-  status: 'pending' | 'error' | 'success',
-  error: Error | null,
-  items: readonly Candidate[],
-  showRejected: boolean,
-): React.JSX.Element {
-  if (status === 'pending') return <p style={mutedStyle}>Loading Mentions…</p>;
-  if (status === 'error') {
-    return (
-      <p role="alert" style={{ margin: 0, color: '#ab091e' }}>
-        Could not load Mentions: {error?.message ?? 'unknown error'}
-      </p>
-    );
-  }
+function renderItems(items: readonly Candidate[], showRejected: boolean): React.JSX.Element {
   if (items.length === 0) {
     return (
       <p style={mutedStyle}>

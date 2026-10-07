@@ -1,7 +1,7 @@
 import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
 import type { WeeklySentimentPoint } from '../types.ts';
-import { SENTIMENT_COLORS, SENTIMENT_LABELS, toWeeklyChartData } from './companyDetailData.ts';
+import { SENTIMENT_COLORS, SENTIMENT_LABELS, toWeeklyChartData, type WeeklyChartDatum } from './companyDetailData.ts';
 
 interface Props {
   series: readonly WeeklySentimentPoint[];
@@ -13,7 +13,22 @@ const AXIS_INK = '#627d98';
 
 /** Weekly Mentions in the Coverage Window, stacked by Sentiment, with a table view of the same numbers. */
 export function WeeklyMentionsChart({ series }: Props): React.JSX.Element {
-  const data = toWeeklyChartData(series);
+  let data: WeeklyChartDatum[];
+  try {
+    data = toWeeklyChartData(series);
+  } catch (error) {
+    if (!(error instanceof RangeError)) throw error;
+    return (
+      <section aria-labelledby="weekly-mentions-heading">
+        <h3 id="weekly-mentions-heading" style={{ margin: 0, fontSize: 15 }}>
+          Weekly Mentions
+        </h3>
+        <p role="alert" style={{ margin: '8px 0 0', color: '#ab091e' }}>
+          The weekly series could not be charted: {error.message}
+        </p>
+      </section>
+    );
+  }
 
   return (
     <section aria-labelledby="weekly-mentions-heading" style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>

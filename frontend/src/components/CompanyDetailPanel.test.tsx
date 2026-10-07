@@ -82,6 +82,23 @@ describe('CompanyDetailPanel', () => {
     expect(within(chart).getByRole('rowheader', { name: 'Sep 28' })).toBeInTheDocument();
   });
 
+  it('reports a weekly series it cannot chart instead of dropping weeks', async () => {
+    renderPanel({
+      getCompany: () =>
+        Promise.resolve(
+          buildCompanyDetail({
+            weeklySeries: [
+              { weekStart: '2026-09-21', positive: 1, negative: 0, neutral: 0 },
+              { weekStart: '2026-09-27', positive: 0, negative: 1, neutral: 0 },
+            ],
+          }),
+        ),
+      listCompanyCandidates: () => Promise.resolve(buildPage([])),
+    });
+    const chart = await screen.findByRole('region', { name: 'Weekly Mentions' });
+    expect(within(chart).getByRole('alert')).toHaveTextContent('could not be charted');
+  });
+
   it('shows an error when the company cannot be loaded, and still closes', async () => {
     const onClose = vi.fn();
     renderPanel({ getCompany: () => Promise.reject(new ApiError(404, 'Company 6 not found', null)) }, onClose);
@@ -163,6 +180,32 @@ describe('Mention list', () => {
     fireEvent.click(screen.getByRole('checkbox', { name: 'Show rejected Candidates' }));
     expect(await screen.findByText('Page 1 of 3 · 45 total')).toBeInTheDocument();
     expect(listCompanyCandidates).toHaveBeenLastCalledWith(6, expect.objectContaining({ include: 'all', page: 1 }));
+  });
+
+  it('keeps the current page on screen while the next one loads', async () => {
+    let releasePage2: () => void = () => undefined;
+    const listCompanyCandidates = vi.fn((_id: number, query: CandidatesQuery) => {
+      const page = query.page ?? 1;
+      const result = buildPage([buildMention({}, { title: `Page ${page} headline` })], { total: 45, page, pageSize: 20 });
+      if (page === 1) return Promise.resolve(result);
+      return new Promise<typeof result>((resolve) => {
+        releasePage2 = () => {
+          resolve(result);
+        };
+      });
+    });
+    renderPanel({ getCompany: () => Promise.resolve(buildCompanyDetail()), listCompanyCandidates });
+
+    await screen.findByRole('link', { name: 'Page 1 headline' });
+    fireEvent.click(screen.getByRole('button', { name: 'Next' }));
+
+    expect(screen.getByRole('link', { name: 'Page 1 headline' })).toBeInTheDocument();
+    expect(screen.queryByText('Loading Mentions…')).not.toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Next' })).toBeDisabled();
+
+    releasePage2();
+    expect(await screen.findByRole('link', { name: 'Page 2 headline' })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Next' })).toBeEnabled();
   });
 
   it('shows an error when Mentions cannot be loaded', async () => {

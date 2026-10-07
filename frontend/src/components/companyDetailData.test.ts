@@ -42,6 +42,15 @@ describe('toWeeklyChartData', () => {
     expect(rows.map((row) => row.weekStart)).toEqual(['2025-12-22', '2025-12-29', '2026-01-05']);
   });
 
+  it('rejects week starts that are not whole weeks apart instead of dropping them', () => {
+    expect(() =>
+      toWeeklyChartData([
+        { weekStart: '2026-09-21', positive: 1, negative: 0, neutral: 0 },
+        { weekStart: '2026-09-27', positive: 0, negative: 1, neutral: 0 },
+      ]),
+    ).toThrow(RangeError);
+  });
+
   it('rejects a malformed week start', () => {
     expect(() => toWeeklyChartData([{ weekStart: '05/10/2026', positive: 1, negative: 0, neutral: 0 }])).toThrow(
       RangeError,
