@@ -108,7 +108,7 @@ describe('RunWorker in the CollectorModule (against Postgres)', () => {
       return row;
     });
 
-    expect(finished).toMatchObject({ status: 'completed', progress: expect.objectContaining({ companiesDone: 1 }) });
+    expect(finished).toMatchObject({ status: 'completed', progress: (expect.objectContaining({ companiesDone: 1 }) as unknown) });
     await waitFor(() => Promise.resolve(exports > 0 ? true : undefined));
   });
 
@@ -120,6 +120,6 @@ describe('RunWorker in the CollectorModule (against Postgres)', () => {
       return row;
     });
 
-    expect(heartbeat).toEqual({ state: expect.any(String), ollama_ok: true, ollama_model: 'qwen2.5:7b' });
+    expect(heartbeat).toEqual({ state: (expect.any(String) as unknown), ollama_ok: true, ollama_model: 'qwen2.5:7b' });
   });
 });

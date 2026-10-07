@@ -82,14 +82,14 @@ describe('Runs (ApiModule and PostgresRunQueue against Postgres)', () => {
         .expect(202);
 
       expect(response.body).toEqual({
-        id: expect.any(Number),
+        id: (expect.any(Number) as unknown),
         type: 'backfill',
         status: 'queued',
         trigger: 'dashboard',
         params: { until: '2026-06-30', companyIds: [1, 2], reprocess: false },
         progress: null,
         error: null,
-        createdAt: expect.stringMatching(/^\d{4}-\d{2}-\d{2}T/),
+        createdAt: (expect.stringMatching(/^\d{4}-\d{2}-\d{2}T/) as unknown),
         startedAt: null,
         finishedAt: null,
       });
@@ -105,8 +105,8 @@ describe('Runs (ApiModule and PostgresRunQueue against Postgres)', () => {
       const accepted = responses.find((response) => response.status === 202);
       const conflict = responses.find((response) => response.status === 409);
       expect(conflict?.body).toMatchObject({
-        message: expect.stringContaining('already queued'),
-        activeRun: { id: accepted?.body.id, status: 'queued' },
+        message: (expect.stringContaining('already queued') as unknown),
+        activeRun: { id: (accepted?.body as { id: number } | undefined)?.id, status: 'queued' },
       });
     });
 
@@ -170,11 +170,11 @@ describe('Runs (ApiModule and PostgresRunQueue against Postgres)', () => {
       expect(response.body).toMatchObject({
         id: run.id,
         status: 'completed_with_errors',
-        finishedAt: expect.any(String),
+        finishedAt: (expect.any(String) as unknown),
         companyErrors: [
           {
             companyId: harvey,
-            companyName: expect.stringMatching(/^Harvey /),
+            companyName: (expect.stringMatching(/^Harvey /) as unknown),
             stage: 'collection',
             message: 'Google News answered 503',
           },
@@ -196,7 +196,7 @@ describe('Runs (ApiModule and PostgresRunQueue against Postgres)', () => {
 
       const claimed = claims.filter((claim) => claim !== null);
       expect(claimed).toHaveLength(1);
-      expect(claimed[0]).toMatchObject({ id: run.id, status: 'running', startedAt: expect.any(Date) });
+      expect(claimed[0]).toMatchObject({ id: run.id, status: 'running', startedAt: (expect.any(Date) as unknown) });
     });
 
     it('throws RunAlreadyActive carrying the running Run', async () => {
@@ -232,7 +232,7 @@ describe('Runs (ApiModule and PostgresRunQueue against Postgres)', () => {
         [[failed.id, leftover.id]],
       );
       expect(rows).toEqual([
-        { id: failed.id, status: 'failed', error: 'Ollama is unreachable', progress: expect.objectContaining({ currentCompany: 'Harvey' }) },
+        { id: failed.id, status: 'failed', error: 'Ollama is unreachable', progress: (expect.objectContaining({ currentCompany: 'Harvey' }) as unknown) },
         { id: leftover.id, status: 'interrupted', error: 'restarted', progress: null },
       ]);
       await expect(queue.finish(leftover.id, { status: 'completed' })).rejects.toMatchObject({ name: 'RunNotFound' });
