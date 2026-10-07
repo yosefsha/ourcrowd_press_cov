@@ -8,6 +8,23 @@ x-backend: &backend
   image: press-coverage-backend:local
   environment: &backend-env
     DATABASE_URL: postgresql://app:app@postgres:5432/app
+    # The backend's defaults (../docs/…, ../data) are relative to backend/ on a
+    # laptop and do not exist in the image; these are the mounts below.
+    SEED_LIST_PATH: /app/seed/ourcrowd_companies.txt
+    DATA_EXPORT_DIR: /app/data
+
+# The curated seed list (read-only) and the committed data/ folder (exports
+# written by the collector, read by `npm run import-data` in the api).
+# `npm run setup` / `npm start` create ./data first, so Docker does not create
+# it as root; the image runs as `node` (uid 1000).
+x-backend-volumes: &backend-volumes
+  - type: bind
+    source: ./docs/ourcrowd_companies.txt
+    target: /app/seed/ourcrowd_companies.txt
+    read_only: true
+  - type: bind
+    source: ./data
+    target: /app/data
 
 services:
   postgres:
@@ -42,6 +59,7 @@ services:
     environment:
       <<: *backend-env
       PORT: "8000"
+    volumes: *backend-volumes
     ports:
       - "127.0.0.1:${API_HOST_PORT:-8000}:8000"
     restart: unless-stopped
@@ -61,6 +79,7 @@ services:
     environment:
       <<: *backend-env
       OLLAMA_BASE_URL: http://host.docker.internal:11434
+    volumes: *backend-volumes
     extra_hosts:
       - "host.docker.internal:host-gateway"
     restart: unless-stopped

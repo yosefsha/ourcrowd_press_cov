@@ -5,6 +5,7 @@
 import { ok, runCli, step } from './lib/cli.mjs';
 import { compose, ensurePortsAvailable, overrideFix, runningServices } from './lib/compose.mjs';
 import { resolveConfig } from './lib/config.mjs';
+import { ensureDataDir } from './lib/data-dir.mjs';
 import { PrerequisiteError } from './lib/errors.mjs';
 import { waitForOk } from './lib/net.mjs';
 import { ensureOllamaServing, requireModel } from './lib/ollama.mjs';
@@ -45,6 +46,9 @@ await runCli(async () => {
   step('Making sure Ollama is serving');
   await ensureOllamaServing();
   await requireModel(config.ollamaModel);
+
+  step('Preparing the data/ folder mounted into the backend containers');
+  ensureDataDir();
 
   step('Building and starting the stack (docker compose up --build -d)');
   compose(['up', '--build', '--detach', '--remove-orphans']);
