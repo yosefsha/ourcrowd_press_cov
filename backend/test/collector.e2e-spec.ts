@@ -1,15 +1,15 @@
 import type { INestApplicationContext } from '@nestjs/common';
-import { HttpAdapterHost, NestFactory } from '@nestjs/core';
+import { HttpAdapterHost } from '@nestjs/core';
 import { DataSource } from 'typeorm';
 
 import { CollectorLifecycle } from '../src/collector/collector-lifecycle.service';
-import { CollectorModule } from '../src/collector.module';
+import { createCollectorContext } from './support/collector-context';
 
 describe('CollectorModule application context (against Postgres)', () => {
   let context: INestApplicationContext;
 
   beforeAll(async () => {
-    context = await NestFactory.createApplicationContext(CollectorModule, { logger: false });
+    context = await createCollectorContext();
   });
 
   afterAll(async () => {
@@ -29,7 +29,7 @@ describe('CollectorModule application context (against Postgres)', () => {
   });
 
   it('releases its keep-alive handle and the database on close', async () => {
-    const separate = await NestFactory.createApplicationContext(CollectorModule, { logger: false });
+    const separate = await createCollectorContext();
     const lifecycle = separate.get(CollectorLifecycle);
     const dataSource = separate.get(DataSource);
 

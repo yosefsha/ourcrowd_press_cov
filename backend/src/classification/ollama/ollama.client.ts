@@ -145,14 +145,27 @@ async function describeHttpError(path: string, response: Response, model: string
   return `Ollama answered ${path} with HTTP ${response.status}${excerpt ? `: ${excerpt}` : ''}${hint}`;
 }
 
+/** Name and message of an error-like value; `fetch` errors may come from another realm, so no `instanceof`. */
+function errorParts(value: unknown): { name: string; message: string } | undefined {
+  if (!isRecord(value) && !(value instanceof Error)) return undefined;
+  const { name, message } = value as { name?: unknown; message?: unknown };
+  return typeof name === 'string' && typeof message === 'string' ? { name, message } : undefined;
+}
+
 function describeTransportError(error: unknown, timeoutMs: number): string {
-  if (error instanceof Error && (error.name === 'TimeoutError' || error.name === 'AbortError')) {
-    return `no answer within ${timeoutMs} ms`;
-  }
-  if (error instanceof SyntaxError) return 'the response was not JSON';
-  if (error instanceof Error) {
-    const cause = error.cause instanceof Error ? ` (${error.cause.message})` : '';
-    return `${error.message}${cause}`;
-  }
-  return String(error);
+  const parts = errorParts(error);
+  if (parts === undefined) return String(error);
+  if (parts.name === 'TimeoutError' || parts.name === 'AbortError') return `no answer within ${timeoutMs} ms`;
+  if (parts.name === 'SyntaxError') return 'the response was not JSON';
+  const cause = describeCause((error as { cause?: unknown }).cause);
+  return cause ? `${parts.message} (${cause})` : parts.message;
+}
+
+/** Node reports a refused connection as an `AggregateError` with an empty message and a `code`. */
+function describeCause(cause: unknown): string | undefined {
+  const parts = errorParts(cause);
+  if (parts === undefined) return undefined;
+  if (parts.message) return parts.message;
+  const { code } = cause as { code?: unknown };
+  return typeof code === 'string' ? code : parts.name;
 }
