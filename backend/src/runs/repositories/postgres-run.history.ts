@@ -9,6 +9,9 @@ import type { RunDetail, RunHistory } from '../run-history';
 import { RunNotFound } from '../run-queue';
 import { toRun } from './run-entity.mapper';
 
+/** Largest value of a Postgres `integer` id column. */
+const MAX_INTEGER_ID = 2_147_483_647;
+
 /** Run history read from the `runs` and `run_company_errors` tables. */
 @Injectable()
 export class PostgresRunHistory implements RunHistory {
@@ -30,6 +33,8 @@ export class PostgresRunHistory implements RunHistory {
   }
 
   async getDetail(runId: number): Promise<RunDetail> {
+    // An id outside the column's range cannot exist; asking Postgres would be a driver error.
+    if (!Number.isInteger(runId) || runId < 1 || runId > MAX_INTEGER_ID) throw new RunNotFound(runId);
     const entity = await this.dataSource.getRepository(RunEntity).findOne({ where: { id: runId } });
     if (entity === null) throw new RunNotFound(runId);
     const errors = await this.dataSource.getRepository(RunCompanyErrorEntity).find({

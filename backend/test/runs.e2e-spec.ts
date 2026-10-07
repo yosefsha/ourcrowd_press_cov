@@ -184,6 +184,8 @@ describe('Runs (ApiModule and PostgresRunQueue against Postgres)', () => {
 
     it('answers 404 for an unknown Run and 400 for a non-numeric id', async () => {
       await request(server()).get('/api/runs/2147483000').expect(404);
+      await request(server()).get('/api/runs/99999999999').expect(404);
+      await request(server()).get('/api/runs/-1').expect(404);
       await request(server()).get('/api/runs/abc').expect(400);
     });
   });
