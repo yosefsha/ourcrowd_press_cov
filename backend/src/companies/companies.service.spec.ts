@@ -129,6 +129,14 @@ describe('CompaniesService', () => {
       await expect(service.update(id, {})).resolves.toMatchObject({ id, profile: { displayName: 'Lambda' } });
     });
 
+    it('answers 409 for a deactivated company, whose profile is frozen', async () => {
+      const id = await seed('Ludeo');
+      await service.deactivate(id);
+
+      await expect(service.update(id, { description: 'x' })).rejects.toThrow('Cannot edit: Ludeo is deactivated');
+      await expect(service.update(id, {})).rejects.toThrow(ConflictException);
+    });
+
     it('answers 404 for an unknown company', async () => {
       await expect(service.update(99, { description: 'x' })).rejects.toBeInstanceOf(NotFoundException);
       await expect(service.update(99, {})).rejects.toBeInstanceOf(NotFoundException);

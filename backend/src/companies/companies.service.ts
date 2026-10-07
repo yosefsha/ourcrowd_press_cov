@@ -65,9 +65,16 @@ export class CompaniesService {
     );
   }
 
-  /** Replaces the given profile fields; an empty change returns the company as it is. */
+  /**
+   * Replaces the given profile fields; an empty change returns the company as
+   * it is. A deactivated company is frozen: its profile is kept for audit.
+   */
   async update(id: number, changes: Partial<CompanyProfile>): Promise<TrackedCompany> {
-    if (Object.keys(changes).length === 0) return this.mapErrors(() => this.companies.get(id));
+    const company = await this.mapErrors(() => this.companies.get(id));
+    if (company.status === 'deactivated') {
+      throw new ConflictException(`Cannot edit: ${company.profile.displayName} is deactivated`);
+    }
+    if (Object.keys(changes).length === 0) return company;
     return this.mapErrors(() => this.companies.update(id, changes));
   }
 

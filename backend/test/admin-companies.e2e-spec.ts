@@ -371,6 +371,8 @@ describe('/api/admin/companies (CompaniesModule against Postgres)', () => {
       const again = await request(server()).post(`/api/admin/companies/${id}/review`).expect(409);
       expect(bodyOf(again).message).toBe('Cannot mark as reviewed: Ludeo is deactivated');
       await request(server()).post(`/api/admin/companies/${id}/deactivate`).expect(409);
+      const edit = await request(server()).patch(`/api/admin/companies/${id}`).send({ description: 'x' }).expect(409);
+      expect(bodyOf(edit).message).toBe('Cannot edit: Ludeo is deactivated');
     });
 
     it('answers 409 for a transition that does not apply, 404 for an unknown id', async () => {
