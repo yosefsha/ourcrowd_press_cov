@@ -792,10 +792,9 @@ container for both apps. It also builds both Docker images. A skipped test fails
 
 ## Further reading
 
-- [docs/TECHNICAL_SPEC.md](docs/TECHNICAL_SPEC.md): technical specification and onboarding for engineers.
-
 | Document | What is in it |
 |---|---|
+| [docs/TECHNICAL_SPEC.md](docs/TECHNICAL_SPEC.md) | Technical specification and onboarding for engineers |
 | [CONTEXT.md](CONTEXT.md) | The domain glossary: every bold term in this README |
 | [docs/adr/](docs/adr/) | Architecture decisions ADR-001 to ADR-010 (ADR-003 is superseded by ADR-010) |
 | [docs/IMPLEMENTATION_PLAN.md](docs/IMPLEMENTATION_PLAN.md) | System shape, backend layout, schema, ports, HTTP API contract, issue map |
