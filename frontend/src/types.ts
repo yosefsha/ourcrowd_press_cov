@@ -95,6 +95,12 @@ export interface CoverageSummary {
   readonly to: IsoDateTime;
   /** When the data was last refreshed by a finished Run; null before the first one. */
   readonly asOf: IsoDateTime | null;
+  /**
+   * The earliest moment collection covers — the first Backfill's window start,
+   * or the first Candidate fetch if earlier; null before any collection. The
+   * date a company with no coverage has had nothing found since.
+   */
+  readonly collectionStartedAt: IsoDateTime | null;
   /** Active Tracked Companies per Mention Status (as of now, independent of the window). */
   readonly companiesByMentionStatus: MentionStatusCounts;
   /** Mentions published inside the window. */
@@ -313,6 +319,22 @@ export interface Run {
   readonly createdAt: IsoDateTime;
   readonly startedAt: IsoDateTime | null;
   readonly finishedAt: IsoDateTime | null;
+}
+
+/** The pipeline stage at which one company failed inside a Run. */
+export type RunStage = 'collection' | 'relevance' | 'sentiment';
+
+/** One company's failure inside a Run that otherwise carried on. */
+export interface RunCompanyError {
+  readonly companyId: number;
+  readonly companyName: string;
+  readonly stage: RunStage;
+  readonly message: string;
+}
+
+/** GET /api/runs/:id — a Run with the per-company errors it recorded. */
+export interface RunDetail extends Run {
+  readonly companyErrors: readonly RunCompanyError[];
 }
 
 export interface RunsQuery {

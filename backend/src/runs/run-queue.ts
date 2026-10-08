@@ -16,6 +16,12 @@ export interface RunQueue {
   reportProgress(runId: number, progress: RunProgress): Promise<void>;
   /** Records how a running Run ended and its per-company errors. Throws `RunNotFound`. */
   finish(runId: number, outcome: RunOutcome): Promise<void>;
+  /**
+   * Marks every running Run as `interrupted` with `reason` — on collector
+   * startup (a Run left over from a crash) and on graceful shutdown. Returns
+   * the ids of the Runs it interrupted.
+   */
+  interruptRunning(reason: string): Promise<readonly number[]>;
 }
 
 /** Another Run is already queued or running; carries it so the caller can show it. */
