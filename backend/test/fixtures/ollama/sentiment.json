@@ -1,0 +1,1850 @@
+{
+  "model": "qwen2.5:7b",
+  "recordedAt": "2026-10-08T06:27:49.406Z",
+  "kind": "sentiment",
+  "promptVersion": "sentiment-v1",
+  "entries": [
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe’s OpenRouter deal shows where the AI money is moving",
+        "snippet": "Stripe’s OpenRouter deal shows where the AI money is moving",
+        "outletName": "IBM",
+        "publishedAt": "2026-08-21T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Highlighting the company's deal in AI sector"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe to buy OpenRouter as fintech expands deeper into AI",
+        "snippet": "Stripe to buy OpenRouter as fintech expands deeper into AI",
+        "outletName": "CNBC",
+        "publishedAt": "2026-08-19T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports acquisition expanding the company's capabilities"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "EXCLUSIVE: Stripe, Advent offer to buy PayPal for more than $53 billion, sources say",
+        "snippet": "EXCLUSIVE: Stripe, Advent offer to buy PayPal for more than $53 billion, sources say",
+        "outletName": "Reuters",
+        "publishedAt": "2026-07-16T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports a major acquisition offer for the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe, Visa-Backed Consortium Launches Dollar Stablecoin",
+        "snippet": "Stripe, Visa-Backed Consortium Launches Dollar Stablecoin",
+        "outletName": "Bloomberg.com",
+        "publishedAt": "2026-09-30T16:26:21.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports new product launch"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe Buys A.I. Start-Up OpenRouter for $7.5 Billion",
+        "snippet": "Stripe Buys A.I. Start-Up OpenRouter for $7.5 Billion",
+        "outletName": "The New York Times",
+        "publishedAt": "2026-08-19T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports a major acquisition for the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe Acquires OpenRouter for $7B+, Turning Model Routing Into a Payments Infrastructure Problem",
+        "snippet": "Stripe Acquires OpenRouter for $7B+, Turning Model Routing Into a Payments Infrastructure Problem",
+        "outletName": "Yahoo Finance",
+        "publishedAt": "2026-08-17T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports a major acquisition for the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "EXCLUSIVE: PayPal board sees Stripe-Advent offer as inadequate, sources say",
+        "snippet": "EXCLUSIVE: PayPal board sees Stripe-Advent offer as inadequate, sources say",
+        "outletName": "Reuters",
+        "publishedAt": "2026-07-17T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "neutral",
+        "reason": "Company mentioned in a factual report"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe tips toward staying private",
+        "snippet": "Stripe tips toward staying private",
+        "outletName": "Payments Dive",
+        "publishedAt": "2026-08-24T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "neutral",
+        "reason": "Announcement about the company's status"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "What's behind Stripe's OpenRouter move",
+        "snippet": "What's behind Stripe's OpenRouter move",
+        "outletName": "Axios",
+        "publishedAt": "2026-07-24T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "neutral",
+        "reason": "Discussion of a company move"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Payments firm Stripe to buy marketplace OpenRouter in AI push",
+        "snippet": "Payments firm Stripe to buy marketplace OpenRouter in AI push",
+        "outletName": "Reuters",
+        "publishedAt": "2026-08-19T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports acquisition on good terms"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe's $7.5 Billion Bet on the AI Model Routing Layer",
+        "snippet": "Stripe's $7.5 Billion Bet on the AI Model Routing Layer",
+        "outletName": "Yahoo Finance",
+        "publishedAt": "2026-08-27T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports significant investment in AI technology"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe in talks to acquire OpenRouter in potential $10 billion deal, WSJ reports",
+        "snippet": "Stripe in talks to acquire OpenRouter in potential $10 billion deal, WSJ reports",
+        "outletName": "Yahoo Finance",
+        "publishedAt": "2026-07-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports potential major acquisition for the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Ripple Just Connected XRP to Stripe’s AI Agent Payments. Why the Sessions Run on XRP, Not RLUSD",
+        "snippet": "Ripple Just Connected XRP to Stripe’s AI Agent Payments. Why the Sessions Run on XRP, Not RLUSD",
+        "outletName": "Yahoo Finance",
+        "publishedAt": "2026-09-18T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "neutral",
+        "reason": "Ripple's connection to Stripe mentioned without impact"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe strikes mega-deal for OpenRouter",
+        "snippet": "Stripe strikes mega-deal for OpenRouter",
+        "outletName": "Axios",
+        "publishedAt": "2026-08-17T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports a major deal for the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Exclusive | Stripe in Talks to Buy Buzzy AI-Model Marketplace OpenRouter",
+        "snippet": "Exclusive | Stripe in Talks to Buy Buzzy AI-Model Marketplace OpenRouter",
+        "outletName": "WSJ",
+        "publishedAt": "2026-07-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports potential acquisition interest"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "PayPal Receives $53 Billion Takeover Offer Involving Stripe",
+        "snippet": "PayPal Receives $53 Billion Takeover Offer Involving Stripe",
+        "outletName": "The New York Times",
+        "publishedAt": "2026-07-15T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "neutral",
+        "reason": "Company mentioned as involved in a takeover offer"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Watch Stripe: AI Now Accelerating Progress of Internet Economy",
+        "snippet": "Watch Stripe: AI Now Accelerating Progress of Internet Economy",
+        "outletName": "Bloomberg.com",
+        "publishedAt": "2026-08-27T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports AI progress benefiting the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Open Standard issues dollar stablecoin backed by Visa, Stripe, and Mastercard",
+        "snippet": "Open Standard issues dollar stablecoin backed by Visa, Stripe, and Mastercard",
+        "outletName": "Yahoo Finance",
+        "publishedAt": "2026-09-30T16:54:42.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Company involved in a dollar stablecoin issuance"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe's Bridge Launches OUSD, the Stablecoin That Pays Its Distributors",
+        "snippet": "Stripe's Bridge Launches OUSD, the Stablecoin That Pays Its Distributors",
+        "outletName": "Yahoo Finance",
+        "publishedAt": "2026-09-30T17:45:57.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports a new product launch"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe, OpenRouter finally strike a deal",
+        "snippet": "Stripe, OpenRouter finally strike a deal",
+        "outletName": "Payments Dive",
+        "publishedAt": "2026-08-19T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports a deal with another company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe’s Attempted Takeover of PayPal Has Collapsed—Again",
+        "snippet": "Stripe’s Attempted Takeover of PayPal Has Collapsed—Again",
+        "outletName": "Inc.com",
+        "publishedAt": "2026-08-29T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "negative",
+        "reason": "Reports failure of Stripe's takeover attempt"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe is giving off early Google vibes—for good and for bad",
+        "snippet": "Stripe is giving off early Google vibes—for good and for bad",
+        "outletName": "Fortune",
+        "publishedAt": "2026-09-02T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "neutral",
+        "reason": "Company mentioned with mixed connotations"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Why a Payments Giant Is Paying $7 Billion for the ‘Stripe of AI’",
+        "snippet": "Why a Payments Giant Is Paying $7 Billion for the ‘Stripe of AI’",
+        "outletName": "WSJ",
+        "publishedAt": "2026-08-19T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports acquisition of the company for a significant amount"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Faber Report: Stripe, Advent International make $60.50/share offer for PayPal, sources say",
+        "snippet": "Faber Report: Stripe, Advent International make $60.50/share offer for PayPal, sources say",
+        "outletName": "CNBC",
+        "publishedAt": "2026-07-15T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "neutral",
+        "reason": "Company mentioned in a merger rumor"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Branch + Stripe Survey Finds Gig Work Is Becoming a Pathway to Primary Income and Entrepreneurship",
+        "snippet": "Branch + Stripe Survey Finds Gig Work Is Becoming a Pathway to Primary Income and Entrepreneurship",
+        "outletName": "PR Newswire",
+        "publishedAt": "2026-08-26T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Company mentioned as part of a survey finding positive trends"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe buys AI model router OpenRouter in reported $7.5B deal",
+        "snippet": "Stripe buys AI model router OpenRouter in reported $7.5B deal",
+        "outletName": "SiliconANGLE",
+        "publishedAt": "2026-08-19T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports a major acquisition for the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "What a Stripe-PayPal Merger Would Mean for the Checkout Experience",
+        "snippet": "What a Stripe-PayPal Merger Would Mean for the Checkout Experience",
+        "outletName": "CX Today",
+        "publishedAt": "2026-07-21T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "neutral",
+        "reason": "Discussion of potential merger with another company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe Benchmark Shows AI Agents Build Integrations but Struggle with Validation",
+        "snippet": "Stripe Benchmark Shows AI Agents Build Integrations but Struggle with Validation",
+        "outletName": "infoq.com",
+        "publishedAt": "2026-07-15T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "neutral",
+        "reason": "Company mentioned as a benchmark"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe and Private-Equity Firm Advent Offer to Buy PayPal",
+        "snippet": "Stripe and Private-Equity Firm Advent Offer to Buy PayPal",
+        "outletName": "WSJ",
+        "publishedAt": "2026-07-15T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "neutral",
+        "reason": "Company mentioned in a transaction"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe Minted $3.2 Billion in Cash in 2025, Setting Up Acquisition Hunt",
+        "snippet": "Stripe Minted $3.2 Billion in Cash in 2025, Setting Up Acquisition Hunt",
+        "outletName": "The Information",
+        "publishedAt": "2026-07-22T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports significant cash accumulation for potential acquisitions"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "PayPal Sinks 15% as Stripe and Advent Abandon $50B Buyout, Affirm Soars 13% on ‘Most Profitable Quarter Ever’",
+        "snippet": "PayPal Sinks 15% as Stripe and Advent Abandon $50B Buyout, Affirm Soars 13% on ‘Most Profitable Quarter Ever’",
+        "outletName": "Yahoo Finance",
+        "publishedAt": "2026-08-28T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "neutral",
+        "reason": "Mentioned alongside other companies"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "PayPal stock soars on report of buyout proposal from Stripe, Advent",
+        "snippet": "PayPal stock soars on report of buyout proposal from Stripe, Advent",
+        "outletName": "Yahoo Finance",
+        "publishedAt": "2026-07-15T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "neutral",
+        "reason": "Report of a buyout proposal is mentioned but not confirmed for Stripe."
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe alums spark new payments plays",
+        "snippet": "Stripe alums spark new payments plays",
+        "outletName": "Payments Dive",
+        "publishedAt": "2026-09-28T14:02:53.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "neutral",
+        "reason": "Company mentioned as alums' new ventures"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe's Acquisition Pace Has Accelerated In The Past Five Years, But Nothing Comes Close To Its Reported $53B PayPal Bet",
+        "snippet": "Stripe's Acquisition Pace Has Accelerated In The Past Five Years, But Nothing Comes Close To Its Reported $53B PayPal Bet",
+        "outletName": "Crunchbase News",
+        "publishedAt": "2026-07-15T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "neutral",
+        "reason": "Reports Stripe's acquisition pace and a large PayPal bet"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "PayPal Board Calls $53 Billion Stripe-Advent Bid Inadequate",
+        "snippet": "PayPal Board Calls $53 Billion Stripe-Advent Bid Inadequate",
+        "outletName": "PYMNTS.com",
+        "publishedAt": "2026-07-17T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "neutral",
+        "reason": "Mentioned in relation to a competitor's bid"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe is buying SMB lender Parafin",
+        "snippet": "Stripe is buying SMB lender Parafin",
+        "outletName": "Axios",
+        "publishedAt": "2026-09-30T20:05:14.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports acquisition of another company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe’s wallet embraces AI bots",
+        "snippet": "Stripe’s wallet embraces AI bots",
+        "outletName": "Payments Dive",
+        "publishedAt": "2026-09-18T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Introduces new feature for the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Ripple adds XRP payments to Stripe and Tempo’s AI standard in new developer kit",
+        "snippet": "Ripple adds XRP payments to Stripe and Tempo’s AI standard in new developer kit",
+        "outletName": "CoinDesk",
+        "publishedAt": "2026-09-17T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "neutral",
+        "reason": "Company mentioned as part of a product update"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe president says checkout pages ‘will go away’ as AI commerce expands",
+        "snippet": "Stripe president says checkout pages ‘will go away’ as AI commerce expands",
+        "outletName": "Business Insider",
+        "publishedAt": "2026-08-22T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Announcement of future growth and innovation"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+",
+        "snippet": "Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+",
+        "outletName": "TechCrunch",
+        "publishedAt": "2026-08-16T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports a major acquisition for the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe buys Clerky, the legal startup behind 23% of Silicon Valley seed deals",
+        "snippet": "Stripe buys Clerky, the legal startup behind 23% of Silicon Valley seed deals",
+        "outletName": "Dealroom.co",
+        "publishedAt": "2026-08-27T12:19:43.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports a successful acquisition for the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe & OpenRouter: Acquisition Powering AI Token Economics",
+        "snippet": "Stripe & OpenRouter: Acquisition Powering AI Token Economics",
+        "outletName": "AI Magazine",
+        "publishedAt": "2026-08-24T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports acquisition of OpenRouter, enhancing AI capabilities"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe Clinches Over $7 Billion Deal to Buy AI Firm OpenRouter",
+        "snippet": "Stripe Clinches Over $7 Billion Deal to Buy AI Firm OpenRouter",
+        "outletName": "Bloomberg.com",
+        "publishedAt": "2026-08-16T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports a major acquisition for the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Analyzing Stripe Vendors Breach: Confirmed Vendor Exposure and Claims of 20,000 Compromised APIs",
+        "snippet": "Analyzing Stripe Vendors Breach: Confirmed Vendor Exposure and Claims of 20,000 Compromised APIs",
+        "outletName": "InfoStealers",
+        "publishedAt": "2026-08-18T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "negative",
+        "reason": "Reports vendor breach and API compromise"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe and Advent just bid $53 billion to buy PayPal: What to know",
+        "snippet": "Stripe and Advent just bid $53 billion to buy PayPal: What to know",
+        "outletName": "Yahoo Finance",
+        "publishedAt": "2026-07-15T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "neutral",
+        "reason": "Company mentioned in a bidding context"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe, Advent suspend their pursuit of PayPal",
+        "snippet": "Stripe, Advent suspend their pursuit of PayPal",
+        "outletName": "American Banker",
+        "publishedAt": "2026-08-28T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "neutral",
+        "reason": "Announcement of suspended pursuit"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe's $7.5 Billion Bet on the AI Model Routing Layer",
+        "snippet": "Stripe's $7.5 Billion Bet on the AI Model Routing Layer",
+        "outletName": "The Motley Fool",
+        "publishedAt": "2026-08-27T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports significant investment in AI technology"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "PayPal Reopens Sale Talks With Stripe After Rejecting First Offer",
+        "snippet": "PayPal Reopens Sale Talks With Stripe After Rejecting First Offer",
+        "outletName": "PYMNTS.com",
+        "publishedAt": "2026-08-14T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "neutral",
+        "reason": "Mentioned in connection with another company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe and Advent abandoned their $50 billion pursuit of PayPal",
+        "snippet": "Stripe and Advent abandoned their $50 billion pursuit of PayPal",
+        "outletName": "Quartz",
+        "publishedAt": "2026-08-28T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "neutral",
+        "reason": "Announcement of abandoned acquisition"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe, Advent offer over $53 billion for PayPal, sources say",
+        "snippet": "Stripe, Advent offer over $53 billion for PayPal, sources say",
+        "outletName": "Reuters",
+        "publishedAt": "2026-07-15T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "neutral",
+        "reason": "Mentioned as part of a merger rumor"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe says the singularity has arrived. Here's what they told investors about it.",
+        "snippet": "Stripe says the singularity has arrived. Here's what they told investors about it.",
+        "outletName": "Business Insider",
+        "publishedAt": "2026-08-19T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports Stripe's progress and investor updates"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe clinches over $7 billion deal to buy AI firm OpenRouter",
+        "snippet": "Stripe clinches over $7 billion deal to buy AI firm OpenRouter",
+        "outletName": "Fortune",
+        "publishedAt": "2026-08-16T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports a major acquisition for the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe Uses Graph Search and State Machines to Automate Database Remediation",
+        "snippet": "Stripe Uses Graph Search and State Machines to Automate Database Remediation",
+        "outletName": "infoq.com",
+        "publishedAt": "2026-08-09T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports new technology implementation for the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "PayPal Stock Jumps on Fresh Takeover Chatter After Stripe Walks Away",
+        "snippet": "PayPal Stock Jumps on Fresh Takeover Chatter After Stripe Walks Away",
+        "outletName": "Yahoo Finance",
+        "publishedAt": "2026-09-25T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "neutral",
+        "reason": "Article mentions Stripe but does not provide direct news about the company."
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe declares we're living in the singularity and uses it as a reason not to IPO",
+        "snippet": "Stripe declares we're living in the singularity and uses it as a reason not to IPO",
+        "outletName": "The Decoder",
+        "publishedAt": "2026-08-19T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "neutral",
+        "reason": "Company's philosophy stated without evaluation"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "PayPal Shares Dive Premarket on Report of Advent, Stripe Abandoning Takeover Plan",
+        "snippet": "PayPal Shares Dive Premarket on Report of Advent, Stripe Abandoning Takeover Plan",
+        "outletName": "WSJ",
+        "publishedAt": "2026-08-28T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "negative",
+        "reason": "Reports Stripe abandoning takeover plan"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "X shifts US creator payouts from Stripe to X Money",
+        "snippet": "X shifts US creator payouts from Stripe to X Money",
+        "outletName": "TechCrunch",
+        "publishedAt": "2026-09-02T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "neutral",
+        "reason": "Company mentioned as a service provider"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe reportedly finalizes deal to buy AI model router OpenRouter for more than $7B",
+        "snippet": "Stripe reportedly finalizes deal to buy AI model router OpenRouter for more than $7B",
+        "outletName": "SiliconANGLE",
+        "publishedAt": "2026-08-16T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports a major acquisition for the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Prediction market all but rules out a Stripe-PayPal deal as suitors walk away",
+        "snippet": "Prediction market all but rules out a Stripe-PayPal deal as suitors walk away",
+        "outletName": "Yahoo Finance",
+        "publishedAt": "2026-08-28T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "neutral",
+        "reason": "Mentions the company but no clear impact"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe and Advent Make $53 Billion Play for PayPal",
+        "snippet": "Stripe and Advent Make $53 Billion Play for PayPal",
+        "outletName": "PYMNTS.com",
+        "publishedAt": "2026-07-15T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports a major acquisition play for a competitor"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe is acquiring AI model gateway startup OpenRouter in a $7 billion-plus deal",
+        "snippet": "Stripe is acquiring AI model gateway startup OpenRouter in a $7 billion-plus deal",
+        "outletName": "Quartz",
+        "publishedAt": "2026-08-17T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports a major acquisition for the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe’s OpenRouter Bid 70 Times Company’s Annual Revenue",
+        "snippet": "Stripe’s OpenRouter Bid 70 Times Company’s Annual Revenue",
+        "outletName": "PYMNTS.com",
+        "publishedAt": "2026-07-29T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "neutral",
+        "reason": "Reports a comparison of company bids"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Advent-Stripe consortium drops $50B pursuit of PayPal",
+        "snippet": "Advent-Stripe consortium drops $50B pursuit of PayPal",
+        "outletName": "Dealroom",
+        "publishedAt": "2026-08-28T11:05:07.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "neutral",
+        "reason": "Announcement of a consortium dropping plans"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "OUSD Stablecoin Goes Live With Visa, Mastercard And Stripe Behind It",
+        "snippet": "OUSD Stablecoin Goes Live With Visa, Mastercard And Stripe Behind It",
+        "outletName": "Forbes",
+        "publishedAt": "2026-09-30T21:23:01.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Partnership with major payment processors"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Raises $550M at a $15.5B Valuation to Help Legal Teams Own Their Intelligence",
+        "snippet": "Harvey Raises $550M at a $15.5B Valuation to Help Legal Teams Own Their Intelligence",
+        "outletName": "Harvey",
+        "publishedAt": "2026-09-09T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports new funding and high valuation for the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
+        "snippet": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
+        "outletName": "OpenAI",
+        "publishedAt": "2026-09-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports successful product feature enhancement"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Announces Strategic Investment from Goldman Sachs and J.P. Morgan",
+        "snippet": "Harvey Announces Strategic Investment from Goldman Sachs and J.P. Morgan",
+        "outletName": "Harvey",
+        "publishedAt": "2026-07-28T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports new funding for the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Expands Collaboration with Microsoft on Legal AI",
+        "snippet": "Harvey Expands Collaboration with Microsoft on Legal AI",
+        "outletName": "Harvey",
+        "publishedAt": "2026-07-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Expands collaboration with Microsoft on Legal AI"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Legal AI startup Harvey reaches $15.5 billion valuation in new funding round",
+        "snippet": "Legal AI startup Harvey reaches $15.5 billion valuation in new funding round",
+        "outletName": "Reuters",
+        "publishedAt": "2026-09-09T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports new funding and high valuation for the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Run Custom Harvey Agents Directly in Word",
+        "snippet": "Run Custom Harvey Agents Directly in Word",
+        "outletName": "Harvey",
+        "publishedAt": "2026-09-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Announcement of new feature for the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Legal AI startup Harvey reportedly raising $500M at $15.5B valuation",
+        "snippet": "Legal AI startup Harvey reportedly raising $500M at $15.5B valuation",
+        "outletName": "SiliconANGLE",
+        "publishedAt": "2026-08-07T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports new funding and high valuation for the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Legal AI Startup Harvey Hits $15.6 Billion Value With $550 Million Round",
+        "snippet": "Legal AI Startup Harvey Hits $15.6 Billion Value With $550 Million Round",
+        "outletName": "Bloomberg.com",
+        "publishedAt": "2026-09-09T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports new funding and high valuation for the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Deepens Microsoft Relationship",
+        "snippet": "Harvey Deepens Microsoft Relationship",
+        "outletName": "Artificial Lawyer",
+        "publishedAt": "2026-07-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports deepening relationship with a major customer"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Increases Token Use 14X in Just 6 Months",
+        "snippet": "Harvey Increases Token Use 14X in Just 6 Months",
+        "outletName": "Artificial Lawyer",
+        "publishedAt": "2026-07-08T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports significant growth in token use"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey hits $15.5B valuation, months after reaching $11B",
+        "snippet": "Harvey hits $15.5B valuation, months after reaching $11B",
+        "outletName": "TechCrunch",
+        "publishedAt": "2026-09-09T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports new valuation for the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Raises $550m at $15.5bn Val, Buys Guardrails AI",
+        "snippet": "Harvey Raises $550m at $15.5bn Val, Buys Guardrails AI",
+        "outletName": "Artificial Lawyer",
+        "publishedAt": "2026-09-09T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports new funding and acquisition for the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey and PacerPro Announce Partnership To Connect Docket Data with AI Litigation Workflows",
+        "snippet": "Harvey and PacerPro Announce Partnership To Connect Docket Data with AI Litigation Workflows",
+        "outletName": "LawSites",
+        "publishedAt": "2026-08-24T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Announcement of a partnership to enhance product offerings"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Teachers' Venture Growth invests in Harvey, the leading AI legal platform",
+        "snippet": "Teachers' Venture Growth invests in Harvey, the leading AI legal platform",
+        "outletName": "Ontario Teachers' Pension Plan",
+        "publishedAt": "2026-09-24T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports new funding for the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Targets $15.5 Billion Valuation as Revenue Surges Past $350 Million",
+        "snippet": "Harvey Targets $15.5 Billion Valuation as Revenue Surges Past $350 Million",
+        "outletName": "PYMNTS.com",
+        "publishedAt": "2026-08-07T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports revenue surge and high valuation target"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey raises at a $15.5bn valuation",
+        "snippet": "Harvey raises at a $15.5bn valuation",
+        "outletName": "The Next Web",
+        "publishedAt": "2026-08-07T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports new funding for the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "מכפילה את שוויה תוך שנתיים: איילנד גייסה 400 מיליון דולר לפי 6.4 מיליארד",
+        "snippet": "מכפילה את שוויה תוך שנתיים: איילנד גייסה 400 מיליון דולר לפי 6.4 מיליארד",
+        "outletName": "calcalist",
+        "publishedAt": "2026-09-24T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports new funding for the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "איילנד גייסה 400 מיליון דולר לפי שווי של יותר משישה מיליארד -",
+        "snippet": "איילנד גייסה 400 מיליון דולר לפי שווי של יותר משישה מיליארד -",
+        "outletName": "אנשים ומחשבים",
+        "publishedAt": "2026-09-24T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports new funding for the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "איילנד מגייסת 400 מיליון דולר - השווי מטפס ל-6.4 מיליארד דולר",
+        "snippet": "איילנד מגייסת 400 מיליון דולר - השווי מטפס ל-6.4 מיליארד דולר",
+        "outletName": "גלובס",
+        "publishedAt": "2026-09-24T10:02:26.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports new funding and increased valuation for the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "עם שווי של 6.4 מיליארד דולר: איילנד השלימה סבב גיוס ענק",
+        "snippet": "עם שווי של 6.4 מיליארד דולר: איילנד השלימה סבב גיוס ענק",
+        "outletName": "ice (אייס)",
+        "publishedAt": "2026-09-24T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports major funding for the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "גיורא איילנד חושף: בחרתי בו בעבר ואצביע לו גם הפעם",
+        "snippet": "גיורא איילנד חושף: בחרתי בו בעבר ואצביע לו גם הפעם",
+        "outletName": "סרוגים",
+        "publishedAt": "2026-09-17T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Company named as a preferred choice"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "הענקית השקטה מתל אביב: חברת הסייבר איילנד גייסה 400 מיליון דולר",
+        "snippet": "הענקית השקטה מתל אביב: חברת הסייבר איילנד גייסה 400 מיליון דולר",
+        "outletName": "היום",
+        "publishedAt": "2026-09-26T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports new funding for the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "איילנד גייסה 400 מיליון דולר לפי שווי של 6.4 מיליארד",
+        "snippet": "איילנד גייסה 400 מיליון דולר לפי שווי של 6.4 מיליארד",
+        "outletName": "ביזפורטל",
+        "publishedAt": "2026-09-24T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports new funding for the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "הזינוק של איילנד הישראלית: שווה כבר 6.4 מיליארד דולר",
+        "snippet": "הזינוק של איילנד הישראלית: שווה כבר 6.4 מיליארד דולר",
+        "outletName": "mako",
+        "publishedAt": "2026-09-24T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports the company's valuation increase"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Island raises $400m at $6.4b valuation",
+        "snippet": "Island raises $400m at $6.4b valuation",
+        "outletName": "גלובס",
+        "publishedAt": "2026-09-24T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports new funding for the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "ריזורט דרים איילנד מציע בחוה\"מ סוכות ספא ריטריט",
+        "snippet": "ריזורט דרים איילנד מציע בחוה\"מ סוכות ספא ריטריט",
+        "outletName": "IAS",
+        "publishedAt": "2026-09-30T00:33:04.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "sentiment": "neutral",
+        "reason": "Announcement of a new service offering"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Island גייסה 400 מיליון דולר ומרחיבה בקרה על סוכני AI",
+        "snippet": "Island גייסה 400 מיליון דולר ומרחיבה בקרה על סוכני AI",
+        "outletName": "quasa.io",
+        "publishedAt": "2026-09-30T10:15:39.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports new funding and expansion into AI brokers"
+      }
+    }
+  ]
+}

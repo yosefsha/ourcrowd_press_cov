@@ -12,7 +12,7 @@
 // really makes. After re-recording, run `npm test`: assertions that depend on
 // the recorded content (counts, a sample item) may need updating.
 import { readFile, writeFile } from 'node:fs/promises';
-import { dirname, join, resolve } from 'node:path';
+import { basename, dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseArgs } from 'node:util';
 import { gzipSync } from 'node:zlib';
@@ -69,6 +69,9 @@ function resolvedUrlFrom(responseText) {
 const manifest = JSON.parse(await readFile(manifestPath, 'utf8'));
 
 for (const feed of manifest.feeds) {
+  if (typeof feed.file !== 'string' || basename(feed.file) !== feed.file) {
+    throw new Error(`Refusing to write ${feed.file}: a feed file must be a plain name inside ${fixturesDir}`);
+  }
   const xml = await fetchText(feed.url);
   await writeFile(join(fixturesDir, feed.file), xml);
   console.log(`${feed.file}: ${(xml.match(/<item>/g) ?? []).length} items`);

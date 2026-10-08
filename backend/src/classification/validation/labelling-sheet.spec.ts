@@ -108,6 +108,26 @@ describe('the labelling sheet', () => {
     ]);
   });
 
+  it('neutralizes feed text a spreadsheet would run as a formula', () => {
+    const [item] = SET.items;
+    if (item === undefined) throw new Error('empty set');
+    const tricky: ValidationSet = { ...SET, items: [{ ...item, article: { ...item.article, title: '=HYPERLINK("x")', outlet: '@evil' } }] };
+
+    const csv = renderLabellingSheetCsv(tricky);
+
+    expect(csv).toContain('"\'=HYPERLINK(""x"")"');
+    expect(csv).toContain('"\'@evil"');
+    expect(csv).not.toMatch(/,=|,@/);
+  });
+
+  it('percent-encodes parentheses in the link target', () => {
+    const [item] = SET.items;
+    if (item === undefined) throw new Error('empty set');
+    const tricky: ValidationSet = { ...SET, items: [{ ...item, article: { ...item.article, url: 'https://news.google.com/a)b(c' } }] };
+
+    expect(renderLabellingSheetMarkdown(tricky)).toContain('[open](https://news.google.com/a%29b%28c)');
+  });
+
   it.each([
     ['an unknown relevance value', 'maybe', '', 'relevant must be y or n, found "maybe"'],
     ['an unknown sentiment value', 'y', 'great', 'sentiment must be pos, neg or neu, found "great"'],

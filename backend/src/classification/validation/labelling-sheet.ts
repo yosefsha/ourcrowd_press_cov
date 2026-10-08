@@ -81,13 +81,18 @@ function markdownCell(value: string): string {
     .replace(/>/g, '&gt;');
 }
 
+/** A URL safe as a Markdown link target: parentheses and spaces percent-encoded. */
+function linkTarget(url: string): string {
+  return url.replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/ /g, '%20');
+}
+
 /** The blank Markdown sheet: instructions, then one table row per item. */
 export function renderLabellingSheetMarkdown(set: ValidationSet): string {
   const header = `| ${COLUMNS.join(' | ')} |`;
   const divider = `|${COLUMNS.map(() => '---').join('|')}|`;
   const rows = set.items.map((item) => {
     const [id, company, title, outlet, date, url, snippet] = rowValues(item).map(markdownCell);
-    return `| ${id} | ${company} | ${title} | ${outlet} | ${date} | [open](${url}) | ${snippet} |  |  |`;
+    return `| ${id} | ${company} | ${title} | ${outlet} | ${date} | [open](${linkTarget(url)}) | ${snippet} |  |  |`;
   });
   return [
     '# Classifier validation — labelling sheet',
@@ -116,8 +121,13 @@ export function renderLabellingSheetMarkdown(set: ValidationSet): string {
   ].join('\n');
 }
 
+/**
+ * One CSV field. Feed text is untrusted, so a value a spreadsheet would run as
+ * a formula (leading `=`, `+`, `-`, `@`, tab or CR) is prefixed with `'`.
+ */
 function csvField(value: string): string {
-  return /[",\r\n]/.test(value) ? `"${value.replace(/"/g, '""')}"` : value;
+  const inert = /^[=+\-@\t\r]/.test(value) ? `'${value}` : value;
+  return /[",\r\n']/.test(inert) ? `"${inert.replace(/"/g, '""')}"` : inert;
 }
 
 /** The blank CSV twin of the sheet (UTF-8 with a byte order mark, so spreadsheets show Hebrew). */
