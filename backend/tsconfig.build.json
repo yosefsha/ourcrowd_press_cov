@@ -5,5 +5,5 @@
     "types": ["node"]
   },
   "include": ["src/**/*.ts"],
-  "exclude": ["node_modules", "dist", "test", "src/**/*.spec.ts"]
+  "exclude": ["node_modules", "dist", "test", "src/**/*.spec.ts", "src/**/*.live-spec.ts"]
 }

@@ -74,7 +74,7 @@ export function OverviewPage(): React.JSX.Element {
             }}
             onSelectCompany={selectCompany}
             now={rowsFetchedAt}
-            noCoverageSince={summaryQuery.data?.from ?? null}
+            noCoverageSince={summaryQuery.data?.collectionStartedAt ?? null}
           />
         </div>
       )}

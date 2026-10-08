@@ -1,0 +1,101 @@
+{
+  "recordedAt": "2026-10-07T15:34:07.322Z",
+  "feeds": [
+    {
+      "file": "stripe.en-US.xml",
+      "description": "Capped result (100 items) for a heavily covered company",
+      "edition": "en-US",
+      "profile": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "window": {
+        "from": "2026-07-01T00:00:00.000Z",
+        "to": "2026-10-01T00:00:00.000Z"
+      },
+      "url": "https://news.google.com/rss/search?q=%22Stripe%22+after%3A2026-06-30+before%3A2026-10-02&hl=en-US&gl=US&ceid=US%3Aen"
+    },
+    {
+      "file": "harvey.en-US.xml",
+      "description": "Ambiguous name: the bare quoted name returns Hurricane Harvey, Harvey Weinstein and others",
+      "edition": "en-US",
+      "profile": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "window": {
+        "from": "2026-07-01T00:00:00.000Z",
+        "to": "2026-10-01T00:00:00.000Z"
+      },
+      "url": "https://news.google.com/rss/search?q=%22Harvey%22+after%3A2026-06-30+before%3A2026-10-02&hl=en-US&gl=US&ceid=US%3Aen"
+    },
+    {
+      "file": "island.he-IL.xml",
+      "description": "Hebrew edition, display name OR a Hebrew alias",
+      "edition": "he-IL",
+      "profile": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "window": {
+        "from": "2026-07-01T00:00:00.000Z",
+        "to": "2026-10-01T00:00:00.000Z"
+      },
+      "url": "https://news.google.com/rss/search?q=%28%22Island%22+OR+%22%D7%90%D7%99%D7%99%D7%9C%D7%A0%D7%93%22%29+after%3A2026-06-30+before%3A2026-10-02&hl=he&gl=IL&ceid=IL%3Ahe"
+    },
+    {
+      "file": "zutacore.he-IL.xml",
+      "description": "Hebrew edition, a single item",
+      "edition": "he-IL",
+      "profile": {
+        "displayName": "ZutaCore",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "window": {
+        "from": "2026-07-01T00:00:00.000Z",
+        "to": "2026-10-01T00:00:00.000Z"
+      },
+      "url": "https://news.google.com/rss/search?q=%22ZutaCore%22+after%3A2026-06-30+before%3A2026-10-02&hl=he&gl=IL&ceid=IL%3Ahe"
+    },
+    {
+      "file": "siteaware.en-US.xml",
+      "description": "Empty result",
+      "edition": "en-US",
+      "profile": {
+        "displayName": "Siteaware",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "window": {
+        "from": "2026-07-01T00:00:00.000Z",
+        "to": "2026-10-01T00:00:00.000Z"
+      },
+      "url": "https://news.google.com/rss/search?q=%22Siteaware%22+after%3A2026-06-30+before%3A2026-10-02&hl=en-US&gl=US&ceid=US%3Aen"
+    }
+  ],
+  "publisherUrl": {
+    "description": "Article page and decode-endpoint response for the first item of the Stripe feed",
+    "feedFile": "stripe.en-US.xml",
+    "edition": "en-US",
+    "googleArticleId": "CBMiqwFBVV95cUxPTzNMdWxMYzhPd05RNkFCQzBLVnprYm5ILUxIRWFEWjBUMFpTbFBsSWRNNS1OcjRRaVpibHByYl81T1lDMWw5akVLTXJHV05pRGxKZ2pVOXM4N3l1TUsxUl9JS09qTjhLLVdLMjZ6OG55ZmM3OHlvRG5pczlCWVhuSmxGamxjUlAzSVRFOVdQNk1NNURqdmt3V0lnTC1lT2NKRkRkWDczSzdaVDQ",
+    "pageFile": "article-page.en-US.html.gz",
+    "decodeResponseFile": "decode-response.en-US.txt",
+    "resolvedUrl": "https://gophersports.com/news/2026/9/28/football-coach-fleck-previews-saturdays-stripe-out-against-michigan"
+  }
+}

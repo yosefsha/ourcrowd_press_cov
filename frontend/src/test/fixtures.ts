@@ -23,6 +23,7 @@ export function createFakeApiClient(overrides: Partial<ApiClient> = {}): ApiClie
     enqueueRun: unexpected('enqueueRun'),
     listRuns: unexpected('listRuns'),
     getActiveRun: unexpected('getActiveRun'),
+    getRun: unexpected('getRun'),
     getCollectorHealth: unexpected('getCollectorHealth'),
     listAlerts: unexpected('listAlerts'),
     getAlert: unexpected('getAlert'),

@@ -10,6 +10,7 @@ import {
   queryKeys,
   useAcknowledgeAlertMutation,
   useActiveRunQuery,
+  useRunQuery,
   useCompanyQuery,
   useCreateCompanyMutation,
   useDeactivateCompanyMutation,
@@ -276,6 +277,7 @@ describe('queries', () => {
       from: '2026-07-01T00:00:00.000+03:00',
       to: '2026-10-01T00:00:00.000+03:00',
       asOf: null,
+      collectionStartedAt: null,
       companiesByMentionStatus: { active: 0, recent: 0, quiet: 0, no_coverage: 0 },
       mentionCount: 0,
       sentiment: { positive: 0, negative: 0, neutral: 0 },
@@ -320,6 +322,24 @@ describe('queries', () => {
       expect(result.current.isSuccess).toBe(true);
     });
     expect(getCompany).toHaveBeenCalledWith(42, { window: 'rolling90' });
+  });
+
+  it('does not fetch a Run until one is selected', async () => {
+    const getRun = vi.fn().mockResolvedValue({});
+    const { wrapper } = setup({ getRun });
+    const { result, rerender } = renderHook(({ id }: { id: number | null }) => useRunQuery(id), {
+      wrapper,
+      initialProps: { id: null as number | null },
+    });
+
+    expect(result.current.fetchStatus).toBe('idle');
+    expect(getRun).not.toHaveBeenCalled();
+
+    rerender({ id: 5 });
+    await waitFor(() => {
+      expect(result.current.isSuccess).toBe(true);
+    });
+    expect(getRun).toHaveBeenCalledWith(5);
   });
 
   it('polls the active Run', async () => {
