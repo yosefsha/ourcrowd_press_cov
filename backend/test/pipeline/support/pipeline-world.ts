@@ -34,6 +34,7 @@ export const SETTINGS: PipelineSettings = {
   editions: parseNewsEditions('en-US,he-IL'),
   maxCandidatesPerCompany: null,
   classifierFailureThreshold: 5,
+  classificationConcurrency: 1,
   timeZone: 'Asia/Jerusalem',
 };
 
