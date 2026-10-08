@@ -15,9 +15,7 @@ dashboard has three parts:
 Words in **bold** are defined in [CONTEXT.md](CONTEXT.md). The README uses them in that exact sense.
 The brief is in [docs/TASKS.md](docs/TASKS.md).
 
-> **Status.** A few pieces this README describes are still in open pull requests:
-> - Seed List import and the companies admin API: #7, PR #35.
-> - Backfill and Daily Check executors: #9, PR #36.
+> **Status.** Two pieces this README describes are still in progress:
 > - Classifier validation numbers: #18.
 > - The committed `data/` snapshot of a full real run: #20.
 >
