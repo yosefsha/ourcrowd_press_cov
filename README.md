@@ -553,7 +553,7 @@ The call goes to `POST {OLLAMA_BASE_URL}/api/chat` (`backend/src/classification/
 
 ### How classification quality was validated
 
-**Method** (#18):
+**Method** (planned in #18; the labelled set and the `eval:classifiers` script do not exist yet):
 
 - About 60 **real** Candidates collected by the pipeline are labelled by hand for relevance and
   sentiment. The set is deliberately weighted toward ambiguous names (Harvey, Wave, Ro, Island…) and
