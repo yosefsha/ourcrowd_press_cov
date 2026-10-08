@@ -11,6 +11,8 @@ export interface PipelineSettings {
   readonly maxCandidatesPerCompany: number | null;
   /** Consecutive `ClassifierUnavailable` failures after which the Run stops as failed. */
   readonly classifierFailureThreshold: number;
+  /** A company's Candidates classified at once; matches the Ollama client's `numParallel`. */
+  readonly classificationConcurrency: number;
   /** IANA zone of the Coverage Window and of `until` dates. */
   readonly timeZone: string;
 }
@@ -21,6 +23,7 @@ export function pipelineSettingsFrom(config: Pick<AppConfig, 'news' | 'ollama' |
     editions: config.news.editions,
     maxCandidatesPerCompany: config.news.maxCandidatesPerCompany,
     classifierFailureThreshold: config.ollama.failureThreshold,
+    classificationConcurrency: config.ollama.numParallel,
     timeZone: config.schedule.timeZone,
   };
 }

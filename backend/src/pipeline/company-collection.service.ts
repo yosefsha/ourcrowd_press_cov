@@ -84,7 +84,9 @@ export class CompanyCollectionService {
   }
 
   /**
-   * Runs the plan one company at a time and reports progress after each step.
+   * Runs the plan one company at a time — classifying each company's
+   * Candidates `classificationConcurrency` at a time — and reports progress
+   * after each step.
    * A News Source failure is recorded against the company and the Run carries
    * on; `classifierFailureThreshold` consecutive `ClassifierUnavailable`s stop
    * it as failed, leaving the remaining Candidates pending for the next Run.
@@ -143,6 +145,12 @@ export class CompanyCollectionService {
     }
   }
 
+  /**
+   * Classifies the company's pending Candidates, `classificationConcurrency` at
+   * a time. Once the failure threshold is reached no further Candidate is
+   * started; those in flight finish, then the Run stops. Progress reports are
+   * chained so each one carries the latest tally and none overtakes another.
+   */
   private async classifyPending(
     company: TrackedCompany,
     runId: number,
@@ -151,13 +159,27 @@ export class CompanyCollectionService {
     progress: RunProgressReporter,
   ): Promise<void> {
     const pending = await this.candidates.pendingFor(company.id);
-    for (const candidate of pending) {
-      const confirmed = await this.classifyOne(company, candidate, runId, tally, streak);
-      if (confirmed !== null) {
-        tally.classified(confirmed);
-        await progress.report(tally.progress());
+    let next = 0;
+    const halt: { error: Error | null } = { error: null };
+    let reported: Promise<void> = Promise.resolve();
+    const worker = async (): Promise<void> => {
+      while (halt.error === null && next < pending.length) {
+        const candidate = pending[next++];
+        try {
+          const confirmed = await this.classifyOne(company, candidate, runId, tally, streak);
+          if (confirmed !== null) {
+            tally.classified(confirmed);
+            reported = reported.then(() => progress.report(tally.progress()));
+          }
+        } catch (error) {
+          halt.error ??= error instanceof Error ? error : new Error(String(error));
+        }
       }
-    }
+    };
+    const workers = Math.max(1, Math.min(this.settings.classificationConcurrency, pending.length));
+    await Promise.all(Array.from({ length: workers }, worker));
+    await reported;
+    if (halt.error !== null) throw halt.error;
   }
 
   /** True when confirmed as a Mention, false when rejected, null when left pending. */
