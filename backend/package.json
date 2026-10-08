@@ -18,10 +18,14 @@
     "type-check": "tsc --noEmit -p tsconfig.json",
     "test": "jest",
     "test:e2e": "jest --config ./test/jest-e2e.json --runInBand",
+    "test:live": "jest --config ./test/jest-live.json --runInBand",
+    "fixtures:google-news": "node scripts/record-google-news-fixtures.mjs",
     "premigration:run": "node scripts/ensure-compiled.mjs",
     "migration:run": "typeorm migration:run -d dist/database/data-source.js",
     "premigration:generate": "node scripts/ensure-compiled.mjs",
-    "migration:generate": "typeorm migration:generate -d dist/database/data-source.js"
+    "migration:generate": "typeorm migration:generate -d dist/database/data-source.js",
+    "preimport-data": "node scripts/ensure-compiled.mjs",
+    "import-data": "node dist/data-export/import-data.js"
   },
   "jest": {
     "moduleFileExtensions": [
@@ -50,6 +54,7 @@
     "class-transformer": "^0.5.1",
     "class-validator": "^0.15.1",
     "cron": "^4.4.0",
+    "fast-xml-parser": "^5.11.2",
     "pg": "^8.23.1",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.2",

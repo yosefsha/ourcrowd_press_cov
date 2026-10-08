@@ -277,6 +277,7 @@ describe('queries', () => {
       from: '2026-07-01T00:00:00.000+03:00',
       to: '2026-10-01T00:00:00.000+03:00',
       asOf: null,
+      collectionStartedAt: null,
       companiesByMentionStatus: { active: 0, recent: 0, quiet: 0, no_coverage: 0 },
       mentionCount: 0,
       sentiment: { positive: 0, negative: 0, neutral: 0 },

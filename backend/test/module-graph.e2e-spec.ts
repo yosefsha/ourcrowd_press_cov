@@ -1,5 +1,4 @@
 import type { INestApplicationContext, Type } from '@nestjs/common';
-import { NestFactory } from '@nestjs/core';
 import type { NestExpressApplication } from '@nestjs/platform-express';
 import { Test } from '@nestjs/testing';
 
@@ -7,7 +6,6 @@ import { AlertDeliveryModule } from '../src/alerts/notifiers/alert-delivery.modu
 import { AlertsModule } from '../src/alerts/alerts.module';
 import { ApiModule } from '../src/api.module';
 import { ClassificationModule } from '../src/classification/classification.module';
-import { CollectorModule } from '../src/collector.module';
 import { CompaniesModule } from '../src/companies/companies.module';
 import { CompanyImportModule } from '../src/companies/import/company-import.module';
 import { configureApiApp } from '../src/configure-api-app';
@@ -17,6 +15,7 @@ import { NewsModule } from '../src/news/news.module';
 import { PipelineModule } from '../src/pipeline/pipeline.module';
 import { RunsModule } from '../src/runs/runs.module';
 import { RunWorkerModule } from '../src/runs/worker/run-worker.module';
+import { createCollectorContext } from './support/collector-context';
 
 const COLLECTOR_ONLY: readonly Type[] = [
   CompanyImportModule,
@@ -68,7 +67,7 @@ describe('feature modules in both roots (against Postgres)', () => {
     let context: INestApplicationContext;
 
     beforeAll(async () => {
-      context = await NestFactory.createApplicationContext(CollectorModule, { logger: false });
+      context = await createCollectorContext();
     });
 
     afterAll(async () => {
