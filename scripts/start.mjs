@@ -51,7 +51,8 @@ await runCli(async () => {
   ensureDataDir();
 
   step('Building and starting the stack (docker compose up --build -d)');
-  compose(['up', '--build', '--detach', '--remove-orphans']);
+  // The collector must use the model requireModel() just checked on the host.
+  compose(['up', '--build', '--detach', '--remove-orphans'], { OLLAMA_MODEL: config.ollamaModel });
 
   // /health through nginx proves both the dashboard and the API are up.
   const dashboard = `http://localhost:${config.frontendPort}`;

@@ -2,10 +2,12 @@
 # the dashboard. `npm start` / `npm stop` at the repository root drive it.
 # The API and the collector run the same backend image with different
 # commands (ADR-009). Ollama runs natively on the host, not here (ADR-007).
+# Image tags carry the compose project name, so stacks started from different
+# worktrees or with `-p <name>` never run each other's images.
 
 x-backend: &backend
   build: ./backend
-  image: press-coverage-backend:local
+  image: press-coverage-backend:${COMPOSE_PROJECT_NAME}
   environment: &backend-env
     DATABASE_URL: postgresql://app:app@postgres:5432/app
     # The backend's defaults (../docs/…, ../data) are relative to backend/ on a
@@ -79,6 +81,8 @@ services:
     environment:
       <<: *backend-env
       OLLAMA_BASE_URL: http://host.docker.internal:11434
+      # `npm start` sets this to the model it checked is pulled on the host.
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-qwen2.5:7b}
     volumes: *backend-volumes
     extra_hosts:
       - "host.docker.internal:host-gateway"
@@ -91,7 +95,7 @@ services:
     # nginx serving the built SPA and proxying /api and /health to the api
     # service (API_UPSTREAM defaults to http://api:8000 in the image).
     build: ./frontend
-    image: press-coverage-frontend:local
+    image: press-coverage-frontend:${COMPOSE_PROJECT_NAME}
     ports:
       - "127.0.0.1:${FRONTEND_HOST_PORT:-8080}:8080"
     restart: unless-stopped
