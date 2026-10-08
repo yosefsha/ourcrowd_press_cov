@@ -95,6 +95,12 @@ export interface CoverageSummary {
   readonly to: IsoDateTime;
   /** When the data was last refreshed by a finished Run; null before the first one. */
   readonly asOf: IsoDateTime | null;
+  /**
+   * The earliest moment collection covers — the first Backfill's window start,
+   * or the first Candidate fetch if earlier; null before any collection. The
+   * date a company with no coverage has had nothing found since.
+   */
+  readonly collectionStartedAt: IsoDateTime | null;
   /** Active Tracked Companies per Mention Status (as of now, independent of the window). */
   readonly companiesByMentionStatus: MentionStatusCounts;
   /** Mentions published inside the window. */
