@@ -17,6 +17,7 @@ import type {
   EnqueueRunRequest,
   Page,
   Run,
+  RunDetail,
   RunsQuery,
   SummaryQuery,
   UpdateCompanyRequest,
@@ -46,6 +47,8 @@ export interface ApiClient {
   listRuns(query: RunsQuery): Promise<readonly Run[]>;
   /** The queued or running Run, or null when the queue is idle. */
   getActiveRun(): Promise<Run | null>;
+  /** One Run with its per-company errors. */
+  getRun(id: number): Promise<RunDetail>;
 
   getCollectorHealth(): Promise<CollectorHealth>;
 
@@ -124,6 +127,7 @@ export function createApiClient(
     enqueueRun: (body) => request('POST', '/runs', { body }),
     listRuns: (query) => request('GET', '/runs', { query: { ...query } }),
     getActiveRun: () => request('GET', '/runs/active', { allowEmpty: true }),
+    getRun: (id) => request('GET', `/runs/${encodeURIComponent(String(id))}`),
 
     getCollectorHealth: () => request('GET', '/collector/health'),
 

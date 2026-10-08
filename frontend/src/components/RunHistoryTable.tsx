@@ -1,6 +1,9 @@
+import { useState } from 'react';
+
 import { requestErrorMessage } from '../requestErrorMessage.ts';
 import { formatDateTime, formatDuration, RUN_STATUS_LABELS, RUN_TRIGGER_LABELS, RUN_TYPE_LABELS } from '../runs.ts';
 import type { Run, RunStatus } from '../types.ts';
+import { RunCompanyErrorList } from './RunCompanyErrorList.tsx';
 
 interface Props {
   runs: readonly Run[] | undefined;
@@ -29,6 +32,8 @@ function scopeOf(run: Run): string {
 
 /** Recent Runs, newest first as the API returns them. */
 export function RunHistoryTable({ runs, error }: Props): React.JSX.Element {
+  const [expandedRunId, setExpandedRunId] = useState<number | null>(null);
+
   if (error !== null) {
     return (
       <p role="alert" style={{ margin: 0, color: '#b42318', fontSize: 14 }}>
@@ -70,7 +75,17 @@ export function RunHistoryTable({ runs, error }: Props): React.JSX.Element {
                   <span style={{ color: STATUS_COLORS[run.status], fontWeight: 600 }}>{RUN_STATUS_LABELS[run.status]}</span>
                   {companyErrors > 0 ? (
                     <div style={{ color: '#b54708' }}>
-                      {companyErrors} company {companyErrors === 1 ? 'error' : 'errors'}
+                      <button
+                        type="button"
+                        aria-expanded={expandedRunId === run.id}
+                        onClick={() => {
+                          setExpandedRunId(expandedRunId === run.id ? null : run.id);
+                        }}
+                        style={{ padding: 0, border: 'none', background: 'none', color: 'inherit', font: 'inherit', textDecoration: 'underline', cursor: 'pointer' }}
+                      >
+                        {companyErrors} company {companyErrors === 1 ? 'error' : 'errors'}
+                      </button>
+                      {expandedRunId === run.id ? <RunCompanyErrorList runId={run.id} /> : null}
                     </div>
                   ) : null}
                   {run.error === null ? null : <div style={{ color: '#b42318', whiteSpace: 'pre-wrap' }}>{run.error}</div>}

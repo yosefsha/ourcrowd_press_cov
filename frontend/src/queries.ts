@@ -35,6 +35,7 @@ import type {
   EnqueueRunRequest,
   Page,
   Run,
+  RunDetail,
   RunsQuery,
   UpdateCompanyRequest,
 } from './types.ts';
@@ -66,6 +67,7 @@ export const queryKeys = {
   runHistoryAll: ['runs', 'list'] as const,
   runs: (query: RunsQuery) => ['runs', 'list', query] as const,
   activeRun: ['runs', 'active'] as const,
+  run: (id: number) => ['runs', 'detail', id] as const,
 
   collectorHealth: ['collector', 'health'] as const,
 
@@ -261,6 +263,16 @@ export function useActiveRunQuery(options: PollingOptions = {}): UseQueryResult<
     queryKey: queryKeys.activeRun,
     queryFn: () => api.getActiveRun(),
     refetchInterval: options.refetchInterval ?? ACTIVE_RUN_POLL_MS,
+  });
+}
+
+/** One Run with its per-company errors; disabled while `id` is null. */
+export function useRunQuery(id: number | null): UseQueryResult<RunDetail> {
+  const api = useApiClient();
+  return useQuery({
+    queryKey: queryKeys.run(id ?? -1),
+    queryFn: () => api.getRun(requireId(id)),
+    enabled: id !== null,
   });
 }
 
