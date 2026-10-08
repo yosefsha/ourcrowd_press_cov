@@ -1,10 +1,10 @@
 import type { INestApplicationContext } from '@nestjs/common';
 import { DataSource } from 'typeorm';
 
-import { AMBIGUITY_TRIAGE, type AmbiguityAssessment, type AmbiguityTriage } from '../src/classification/ambiguity-triage';
+import type { AmbiguityAssessment, AmbiguityTriage } from '../src/classification/ambiguity-triage';
 import { ClassifierUnavailable } from '../src/classification/classifier-errors';
 import { SEED_IMPORT_PROGRESS, type SeedImportProgress } from '../src/companies/import/seed-import-progress';
-import { SEED_LIST_SOURCE, type SeedListSource } from '../src/companies/import/seed-list-source';
+import type { SeedListSource } from '../src/companies/import/seed-list-source';
 import {
   DuplicateTrackedCompany,
   TRACKED_COMPANY_REPOSITORY,
@@ -46,9 +46,7 @@ const seedList: SeedListSource = { read: () => Promise.resolve(SEEDS) };
 
 /** Boots the whole collector, as `worker.ts` does, with the triage and the Seed List in memory. */
 function startCollector(): Promise<INestApplicationContext> {
-  return createCollectorContext((builder) =>
-    builder.overrideProvider(AMBIGUITY_TRIAGE).useValue(triage).overrideProvider(SEED_LIST_SOURCE).useValue(seedList),
-  );
+  return createCollectorContext(undefined, { ambiguityTriage: triage, seedList });
 }
 
 interface Row {
