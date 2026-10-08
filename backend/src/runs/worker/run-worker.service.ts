@@ -52,12 +52,12 @@ export class RunWorker implements OnApplicationBootstrap, BeforeApplicationShutd
 
   constructor(
     @Inject(RUN_QUEUE) private readonly queue: RunQueue,
+    @Inject(DATA_EXPORTER) private readonly exporter: DataExporter,
     private readonly activity: CollectorActivity,
     config: ConfigService<AppConfig, true>,
-    // Optional until the pipeline and export modules bind them; an unbound
-    // executor fails its Runs and an unbound exporter is skipped, both loudly.
+    // Optional until PipelineModule binds it (#9): with no executor for its
+    // type a Run fails, loudly, rather than the collector refusing to boot.
     @Optional() @Inject(RUN_EXECUTORS) executors: readonly RunExecutor[] | null = null,
-    @Optional() @Inject(DATA_EXPORTER) private readonly exporter: DataExporter | null = null,
   ) {
     this.executors = indexByRunType(executors ?? []);
     this.pollIntervalMs = config.get('runs.pollIntervalMs', { infer: true });
@@ -65,7 +65,6 @@ export class RunWorker implements OnApplicationBootstrap, BeforeApplicationShutd
 
   async onApplicationBootstrap(): Promise<void> {
     if (this.executors.size === 0) this.logger.warn('No RunExecutor is registered: every Run will fail');
-    if (this.exporter === null) this.logger.warn('No DataExporter is registered: the data/ export is not written');
     await this.recoverInterruptedRuns();
     this.scheduleNextPoll(0);
   }
@@ -138,7 +137,6 @@ export class RunWorker implements OnApplicationBootstrap, BeforeApplicationShutd
   }
 
   private async exportData(): Promise<void> {
-    if (this.exporter === null) return;
     try {
       await this.exporter.exportAll();
     } catch (error) {

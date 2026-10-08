@@ -4,7 +4,6 @@ import {
   Logger,
   OnApplicationBootstrap,
   OnApplicationShutdown,
-  Optional,
 } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 
@@ -12,8 +11,6 @@ import { CLASSIFIER_HEALTH, type ClassifierHealth } from '../../classification/c
 import type { AppConfig } from '../../config/configuration';
 import { COLLECTOR_HEARTBEAT_STORE, type CollectorHeartbeat, type CollectorHeartbeatStore } from '../collector-heartbeat';
 import { CollectorActivity } from './collector-activity';
-
-export const CLASSIFIER_HEALTH_UNBOUND = 'The classifier health check is not available in this build';
 
 type ModelHealth = Pick<CollectorHeartbeat, 'ollamaOk' | 'ollamaModel' | 'detail'>;
 
@@ -32,9 +29,9 @@ export class CollectorHeartbeatService implements OnApplicationBootstrap, OnAppl
 
   constructor(
     @Inject(COLLECTOR_HEARTBEAT_STORE) private readonly store: CollectorHeartbeatStore,
+    @Inject(CLASSIFIER_HEALTH) private readonly classifierHealth: ClassifierHealth,
     private readonly activity: CollectorActivity,
     config: ConfigService<AppConfig, true>,
-    @Optional() @Inject(CLASSIFIER_HEALTH) private readonly classifierHealth: ClassifierHealth | null = null,
   ) {
     this.pollIntervalMs = config.get('runs.pollIntervalMs', { infer: true });
     this.configuredModel = config.get('ollama.model', { infer: true });
@@ -65,9 +62,6 @@ export class CollectorHeartbeatService implements OnApplicationBootstrap, OnAppl
   }
 
   private async checkModel(): Promise<ModelHealth> {
-    if (this.classifierHealth === null) {
-      return { ollamaOk: null, ollamaModel: this.configuredModel, detail: CLASSIFIER_HEALTH_UNBOUND };
-    }
     try {
       const status = await this.classifierHealth.check();
       return status.ok

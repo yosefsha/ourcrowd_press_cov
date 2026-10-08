@@ -6,12 +6,10 @@ import type { AppConfig } from '../src/config/configuration';
 import type { DataExporter } from '../src/data-export/data-exporter';
 import type { Run, RunOutcome } from '../src/domain/run';
 import type { RunExecutor, RunProgressReporter } from '../src/runs/run-executor';
-import { COLLECTOR_HEARTBEAT_STORE, type CollectorHeartbeatStore } from '../src/runs/collector-heartbeat';
 import { RUN_QUEUE, type RunQueue } from '../src/runs/run-queue';
 import { CollectorActivity } from '../src/runs/worker/collector-activity';
-import { CollectorHeartbeatService } from '../src/runs/worker/collector-heartbeat.service';
 import { RunWorker } from '../src/runs/worker/run-worker.service';
-import { createCollectorContext, READY_CLASSIFIER_HEALTH } from './support/collector-context';
+import { createCollectorContext } from './support/collector-context';
 
 class CompletingBackfill implements RunExecutor {
   readonly runType = 'backfill';
@@ -62,15 +60,8 @@ describe('RunWorker in the CollectorModule (against Postgres)', () => {
         .overrideProvider(RunWorker)
         .useFactory({
           factory: (queue: RunQueue, activity: CollectorActivity, config: ConfigService<AppConfig, true>) =>
-            new RunWorker(queue, activity, config, [new CompletingBackfill()], exporter),
+            new RunWorker(queue, exporter, activity, config, [new CompletingBackfill()]),
           inject: [RUN_QUEUE, CollectorActivity, ConfigService],
-        })
-        // Until ClassificationModule binds CLASSIFIER_HEALTH (#6), give the heartbeat the ready probe directly.
-        .overrideProvider(CollectorHeartbeatService)
-        .useFactory({
-          factory: (store: CollectorHeartbeatStore, activity: CollectorActivity, config: ConfigService<AppConfig, true>) =>
-            new CollectorHeartbeatService(store, activity, config, READY_CLASSIFIER_HEALTH),
-          inject: [COLLECTOR_HEARTBEAT_STORE, CollectorActivity, ConfigService],
         }),
     );
     dataSource = context.get(DataSource);

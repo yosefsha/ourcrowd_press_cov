@@ -40,10 +40,10 @@ const dailyCheck = { ...backfill, type: 'daily_check', trigger: 'schedule' } as 
 function worker(
   store: InMemoryRunStore,
   executors: readonly RunExecutor[] | null,
-  exporter: DataExporter | null = new RecordingExporter(),
+  exporter: DataExporter = new RecordingExporter(),
   activity = new CollectorActivity(),
 ): RunWorker {
-  return new RunWorker(store, activity, config, executors, exporter);
+  return new RunWorker(store, exporter, activity, config, executors);
 }
 
 describe('RunWorker', () => {
@@ -181,15 +181,6 @@ describe('RunWorker', () => {
     expect(store.all()[0]?.status).toBe('completed');
   });
 
-  it('runs without an exporter bound', async () => {
-    const store = new InMemoryRunStore();
-    await store.enqueue(backfill);
-    const executor = new ScriptedExecutor('backfill', () => Promise.resolve({ status: 'completed' }));
-
-    await worker(store, [executor], null).pollOnce();
-
-    expect(store.all()[0]?.status).toBe('completed');
-  });
 
   it('on shutdown signals the executor and marks the Run interrupted', async () => {
     const store = new InMemoryRunStore();
