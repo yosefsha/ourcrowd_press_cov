@@ -1,10 +1,9 @@
-import { Global, type INestApplicationContext, Module } from '@nestjs/common';
-import { Test } from '@nestjs/testing';
+import type { INestApplicationContext } from '@nestjs/common';
 import { DataSource } from 'typeorm';
 
 import { AMBIGUITY_TRIAGE, type AmbiguityAssessment, type AmbiguityTriage } from '../src/classification/ambiguity-triage';
 import { ClassifierUnavailable } from '../src/classification/classifier-errors';
-import { CompanyImportModule } from '../src/companies/import/company-import.module';
+import { SEED_IMPORT_PROGRESS, type SeedImportProgress } from '../src/companies/import/seed-import-progress';
 import { SEED_LIST_SOURCE, type SeedListSource } from '../src/companies/import/seed-list-source';
 import {
   DuplicateTrackedCompany,
@@ -12,10 +11,9 @@ import {
   TrackedCompanyNotFound,
   type TrackedCompanyRepository,
 } from '../src/companies/tracked-company.repository';
-import { AppConfigModule } from '../src/config/app-config.module';
-import { DatabaseModule } from '../src/database/database.module';
 import { parseSeedList, type SeedCompany } from '../src/domain/seed-line';
-import { RUN_QUEUE } from '../src/runs/run-queue';
+import { CollectorHeartbeatService } from '../src/runs/worker/collector-heartbeat.service';
+import { createCollectorContext } from './support/collector-context';
 
 /** Real Seed List lines (docs/ourcrowd_companies.txt). */
 const SEEDS: readonly SeedCompany[] = parseSeedList(
@@ -46,30 +44,11 @@ class ListedTriage implements AmbiguityTriage {
 const triage = new ListedTriage();
 const seedList: SeedListSource = { read: () => Promise.resolve(SEEDS) };
 
-/** Supplies the sibling modules' ports until #6 and #8 export them; `overrideProvider` replaces either. */
-@Global()
-@Module({
-  providers: [
-    { provide: AMBIGUITY_TRIAGE, useValue: triage },
-    { provide: RUN_QUEUE, useValue: {} },
-  ],
-  exports: [AMBIGUITY_TRIAGE, RUN_QUEUE],
-})
-class TestPortsModule {}
-
-async function startCollectorImport(): Promise<INestApplicationContext> {
-  const moduleRef = await Test.createTestingModule({
-    imports: [AppConfigModule, DatabaseModule, TestPortsModule, CompanyImportModule],
-  })
-    .overrideProvider(AMBIGUITY_TRIAGE)
-    .useValue(triage)
-    .overrideProvider(SEED_LIST_SOURCE)
-    .useValue(seedList)
-    .setLogger({ log: () => undefined, error: () => undefined, warn: () => undefined })
-    .compile();
-  const context = moduleRef.createNestApplication({ logger: false });
-  await context.init();
-  return context;
+/** Boots the whole collector, as `worker.ts` does, with the triage and the Seed List in memory. */
+function startCollector(): Promise<INestApplicationContext> {
+  return createCollectorContext((builder) =>
+    builder.overrideProvider(AMBIGUITY_TRIAGE).useValue(triage).overrideProvider(SEED_LIST_SOURCE).useValue(seedList),
+  );
 }
 
 interface Row {
@@ -79,13 +58,13 @@ interface Row {
   review_reason: string | null;
 }
 
-describe('Seed List import (CompanyImportModule against Postgres)', () => {
+describe('Seed List import at collector start (CollectorModule against Postgres)', () => {
   let context: INestApplicationContext | null = null;
   let dataSource: DataSource;
 
   async function boot(): Promise<void> {
     await context?.close();
-    context = await startCollectorImport();
+    context = await startCollector();
     dataSource = context.get(DataSource);
   }
 
@@ -132,9 +111,6 @@ describe('Seed List import (CompanyImportModule against Postgres)', () => {
         review_reason: VERDICTS.Lambda?.reason,
       },
     ]);
-    const beat = await heartbeat();
-    expect(beat?.state).toBe('idle');
-    expect(beat?.detail).toContain('Seed List import paused at 2 of 6');
   });
 
   it('on restart resumes with the lines not yet imported', async () => {
@@ -150,7 +126,6 @@ describe('Seed List import (CompanyImportModule against Postgres)', () => {
       ['Ludeo', 'active'],
       ['Wave', 'needs_review'],
     ]);
-    expect(await heartbeat()).toEqual({ state: 'idle', detail: null });
   });
 
   it('does nothing on a further restart', async () => {
@@ -159,6 +134,19 @@ describe('Seed List import (CompanyImportModule against Postgres)', () => {
     await boot();
 
     expect(await rows()).toEqual(before);
+  });
+
+  it('publishes import progress on the collector heartbeat row', async () => {
+    if (context === null) throw new Error('not booted');
+    // Stop the Run worker's own heartbeat so it cannot write the row in between.
+    context.get(CollectorHeartbeatService, { strict: false }).onApplicationShutdown();
+    const progress = context.get<SeedImportProgress>(SEED_IMPORT_PROGRESS, { strict: false });
+
+    await progress.importing({ imported: 3, total: 6 });
+    expect(await heartbeat()).toEqual({ state: 'importing', detail: 'Importing the Seed List: 3 of 6 companies' });
+
+    await progress.stopped('Seed List import paused at 3 of 6');
+    expect(await heartbeat()).toEqual({ state: 'idle', detail: 'Seed List import paused at 3 of 6' });
   });
 
   describe('PostgresTrackedCompanyRepository', () => {

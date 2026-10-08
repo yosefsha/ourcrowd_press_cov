@@ -1,4 +1,3 @@
-import { Global, Module } from '@nestjs/common';
 import type { NestExpressApplication } from '@nestjs/platform-express';
 import { Test } from '@nestjs/testing';
 import request from 'supertest';
@@ -10,48 +9,42 @@ import { AppConfigModule } from '../src/config/app-config.module';
 import { configureApiApp } from '../src/configure-api-app';
 import { DatabaseModule } from '../src/database/database.module';
 import type { Run, RunOutcome, RunProgress, RunRequest } from '../src/domain/run';
-import { RUN_QUEUE, RunAlreadyActive, type RunQueue } from '../src/runs/run-queue';
+import { InMemoryRunStore } from '../src/runs/repositories/in-memory-run.store';
+import { RUN_QUEUE, type RunQueue } from '../src/runs/run-queue';
 
-/** Queues Runs in memory; answers `RunAlreadyActive` while one is queued. */
-class InMemoryRunQueue implements RunQueue {
-  readonly runs: Run[] = [];
+/** Delegates to a fresh in-memory Run store per test, recording what was enqueued. */
+class ResettableRunQueue implements RunQueue {
+  private store = new InMemoryRunStore();
+  readonly enqueued: RunRequest[] = [];
+
+  reset(): void {
+    this.store = new InMemoryRunStore();
+    this.enqueued.length = 0;
+  }
 
   enqueue(request: RunRequest): Promise<Run> {
-    const active = this.runs.find((run) => run.status === 'queued' || run.status === 'running');
-    if (active !== undefined) return Promise.reject(new RunAlreadyActive(active));
-    const run: Run = {
-      ...request,
-      id: this.runs.length + 1,
-      status: 'queued',
-      progress: null,
-      error: null,
-      createdAt: new Date(),
-      startedAt: null,
-      finishedAt: null,
-    };
-    this.runs.push(run);
-    return Promise.resolve(run);
+    this.enqueued.push(request);
+    return this.store.enqueue(request);
   }
 
   claimNext(): Promise<Run | null> {
-    return Promise.resolve(null);
+    return this.store.claimNext();
   }
 
-  reportProgress(_runId: number, _progress: RunProgress): Promise<void> {
-    return Promise.resolve();
+  reportProgress(runId: number, progress: RunProgress): Promise<void> {
+    return this.store.reportProgress(runId, progress);
   }
 
-  finish(_runId: number, _outcome: RunOutcome): Promise<void> {
-    return Promise.resolve();
+  finish(runId: number, outcome: RunOutcome): Promise<void> {
+    return this.store.finish(runId, outcome);
+  }
+
+  interruptRunning(reason: string): Promise<readonly number[]> {
+    return this.store.interruptRunning(reason);
   }
 }
 
-const runQueue = new InMemoryRunQueue();
-
-/** Supplies RUN_QUEUE until RunsModule exports its own; `overrideProvider` replaces either. */
-@Global()
-@Module({ providers: [{ provide: RUN_QUEUE, useValue: runQueue }], exports: [RUN_QUEUE] })
-class TestRunQueueModule {}
+const runQueue = new ResettableRunQueue();
 
 const ISO = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$/;
 const anIsoTimestamp: unknown = expect.stringMatching(ISO);
@@ -85,7 +78,7 @@ describe('/api/admin/companies (CompaniesModule against Postgres)', () => {
 
   beforeAll(async () => {
     const moduleRef = await Test.createTestingModule({
-      imports: [AppConfigModule, DatabaseModule, TestRunQueueModule, CompaniesModule],
+      imports: [AppConfigModule, DatabaseModule, CompaniesModule],
     })
       .overrideProvider(RUN_QUEUE)
       .useValue(runQueue)
@@ -97,7 +90,7 @@ describe('/api/admin/companies (CompaniesModule against Postgres)', () => {
 
   beforeEach(async () => {
     await dataSource.query('TRUNCATE "tracked_companies" RESTART IDENTITY CASCADE');
-    runQueue.runs.length = 0;
+    runQueue.reset();
   });
 
   afterAll(async () => {
@@ -428,7 +421,7 @@ describe('/api/admin/companies (CompaniesModule against Postgres)', () => {
       expect(bodyOf(first).message).toBe('Only an active company can be re-processed; Harvey is in Needs Review');
       const second = await request(server()).post(`/api/admin/companies/${gone}/reprocess`).expect(409);
       expect(bodyOf(second).message).toBe('Only an active company can be re-processed; Ludeo is deactivated');
-      expect(runQueue.runs).toEqual([]);
+      expect(runQueue.enqueued).toHaveLength(0);
     });
 
     it('answers 404 for an unknown company', async () => {

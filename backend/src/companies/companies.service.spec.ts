@@ -1,59 +1,14 @@
 import { ConflictException, NotFoundException } from '@nestjs/common';
 
-import type { Run, RunOutcome, RunProgress, RunRequest } from '../domain/run';
-import { RunAlreadyActive, type RunQueue } from '../runs/run-queue';
+import type { RunRequest } from '../domain/run';
+import { InMemoryRunStore } from '../runs/repositories/in-memory-run.store';
 import { CompaniesService, SENT_TO_REVIEW_REASON } from './companies.service';
 import { InMemoryTrackedCompanyRepository } from './repositories/in-memory-tracked-company.repository';
 
-/** Records what was enqueued; answers `RunAlreadyActive` while `active` is set. */
-class RecordingRunQueue implements RunQueue {
-  readonly enqueued: RunRequest[] = [];
-  active: Run | null = null;
-
-  enqueue(request: RunRequest): Promise<Run> {
-    if (this.active !== null) return Promise.reject(new RunAlreadyActive(this.active));
-    this.enqueued.push(request);
-    return Promise.resolve({
-      ...request,
-      id: this.enqueued.length,
-      status: 'queued',
-      progress: null,
-      error: null,
-      createdAt: new Date('2026-10-07T08:05:00.000Z'),
-      startedAt: null,
-      finishedAt: null,
-    });
-  }
-
-  claimNext(): Promise<Run | null> {
-    return Promise.reject(new Error('not used by the companies service'));
-  }
-
-  reportProgress(_runId: number, _progress: RunProgress): Promise<void> {
-    return Promise.reject(new Error('not used by the companies service'));
-  }
-
-  finish(_runId: number, _outcome: RunOutcome): Promise<void> {
-    return Promise.reject(new Error('not used by the companies service'));
-  }
-}
-
-const runningDailyCheck: Run = {
-  id: 31,
-  type: 'daily_check',
-  status: 'running',
-  trigger: 'schedule',
-  params: { until: null, companyIds: null, reprocess: false },
-  progress: null,
-  error: null,
-  createdAt: new Date('2026-10-07T07:00:00.000Z'),
-  startedAt: new Date('2026-10-07T07:00:02.000Z'),
-  finishedAt: null,
-};
-
 describe('CompaniesService', () => {
   let companies: InMemoryTrackedCompanyRepository;
-  let runQueue: RecordingRunQueue;
+  let runQueue: InMemoryRunStore;
+  let enqueued: RunRequest[];
   let service: CompaniesService;
 
   async function seed(displayName: string, status: 'active' | 'needs_review' = 'active'): Promise<number> {
@@ -68,7 +23,13 @@ describe('CompaniesService', () => {
 
   beforeEach(() => {
     companies = new InMemoryTrackedCompanyRepository();
-    runQueue = new RecordingRunQueue();
+    runQueue = new InMemoryRunStore();
+    enqueued = [];
+    const enqueue = runQueue.enqueue.bind(runQueue);
+    jest.spyOn(runQueue, 'enqueue').mockImplementation((request: RunRequest) => {
+      enqueued.push(request);
+      return enqueue(request);
+    });
     service = new CompaniesService(companies, runQueue);
   });
 
@@ -211,7 +172,7 @@ describe('CompaniesService', () => {
 
       const run = await service.reprocess(id);
 
-      expect(runQueue.enqueued).toEqual([
+      expect(enqueued).toEqual([
         { type: 'backfill', trigger: 'dashboard', params: { until: null, companyIds: [id], reprocess: true } },
       ]);
       expect(run).toMatchObject({ status: 'queued', type: 'backfill' });
@@ -219,12 +180,18 @@ describe('CompaniesService', () => {
 
     it('answers 409 with the active Run while another Run is active', async () => {
       const id = await seed('Lambda');
-      runQueue.active = runningDailyCheck;
+      const running = await runQueue.enqueue({
+        type: 'daily_check',
+        trigger: 'schedule',
+        params: { until: null, companyIds: null, reprocess: false },
+      });
+      await runQueue.claimNext();
+      enqueued.length = 0;
 
       await expect(service.reprocess(id)).rejects.toMatchObject({
         response: {
           message: 'Another Run is already running; re-process once it has finished',
-          activeRun: runningDailyCheck,
+          activeRun: { ...running, status: 'running', startedAt: expect.any(Date) as unknown },
         },
       });
     });
@@ -235,7 +202,7 @@ describe('CompaniesService', () => {
 
       await expect(service.reprocess(id)).rejects.toThrow(ConflictException);
       await expect(service.reprocess(id)).rejects.toThrow('Only an active company can be re-processed');
-      expect(runQueue.enqueued).toEqual([]);
+      expect(enqueued).toEqual([]);
     });
 
     it('answers 404 for an unknown company', async () => {
