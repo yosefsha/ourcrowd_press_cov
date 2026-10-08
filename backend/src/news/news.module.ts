@@ -12,7 +12,7 @@ import { GoogleNewsRssNewsSource } from './repositories/google-news-rss.news-sou
  * Minimum spacing between any two requests to news.google.com from this
  * process — searches and publisher URL resolution alike.
  */
-const GOOGLE_NEWS_MIN_REQUEST_INTERVAL_MS = 300;
+export const GOOGLE_NEWS_MIN_REQUEST_INTERVAL_MS = 300;
 
 /**
  * The `NewsSource` binding (Google News RSS, ADR-001). Collector only.

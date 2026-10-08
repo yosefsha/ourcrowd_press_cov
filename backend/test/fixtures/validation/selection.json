@@ -1,0 +1,25 @@
+{
+  "description": "How many Candidates the classifier validation set (#18) takes from each recorded feed, spread evenly over the feed. Paths are relative to test/fixtures/; each feed's profile, edition and window come from the manifest.json beside it.",
+  "feeds": [
+    { "feed": "google-news/harvey.en-US.xml", "nameKind": "ambiguous", "pick": 4 },
+    { "feed": "validation/feeds/island.en-US.xml", "nameKind": "ambiguous", "pick": 4 },
+    { "feed": "validation/feeds/wave.en-US.xml", "nameKind": "ambiguous", "pick": 4 },
+    { "feed": "validation/feeds/ro.en-US.xml", "nameKind": "ambiguous", "pick": 4 },
+    { "feed": "validation/feeds/glean.en-US.xml", "nameKind": "ambiguous", "pick": 4 },
+    { "feed": "validation/feeds/lambda.en-US.xml", "nameKind": "ambiguous", "pick": 4 },
+    { "feed": "validation/feeds/peak.en-US.xml", "nameKind": "ambiguous", "pick": 4 },
+    { "feed": "validation/feeds/guild.en-US.xml", "nameKind": "ambiguous", "pick": 4 },
+    { "feed": "validation/feeds/astra.en-US.xml", "nameKind": "ambiguous", "pick": 4 },
+    { "feed": "google-news/stripe.en-US.xml", "nameKind": "ambiguous", "pick": 2 },
+    { "feed": "validation/feeds/hailo.en-US.xml", "nameKind": "clear", "pick": 3 },
+    { "feed": "validation/feeds/zutacore.en-US.xml", "nameKind": "clear", "pick": 3 },
+    { "feed": "validation/feeds/cerebras.en-US.xml", "nameKind": "clear", "pick": 3 },
+    { "feed": "validation/feeds/morphisec.en-US.xml", "nameKind": "clear", "pick": 1 },
+    { "feed": "validation/feeds/ayar-labs.en-US.xml", "nameKind": "clear", "pick": 2 },
+    { "feed": "google-news/island.he-IL.xml", "nameKind": "ambiguous", "pick": 3 },
+    { "feed": "validation/feeds/wave.he-IL.xml", "nameKind": "ambiguous", "pick": 2 },
+    { "feed": "validation/feeds/peak.he-IL.xml", "nameKind": "ambiguous", "pick": 2 },
+    { "feed": "validation/feeds/hailo.he-IL.xml", "nameKind": "clear", "pick": 2 },
+    { "feed": "validation/feeds/cerebras.he-IL.xml", "nameKind": "clear", "pick": 1 }
+  ]
+}

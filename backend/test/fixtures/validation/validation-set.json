@@ -1,0 +1,1297 @@
+{
+  "builtAt": "2026-10-08T06:16:28.749Z",
+  "items": [
+    {
+      "id": "harvey-en-01",
+      "nameKind": "ambiguous",
+      "sourceFeed": "google-news/harvey.en-US.xml",
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Raises $550M at a $15.5B Valuation to Help Legal Teams Own Their Intelligence",
+        "snippet": "Harvey Raises $550M at a $15.5B Valuation to Help Legal Teams Own Their Intelligence",
+        "outlet": "Harvey",
+        "publishedAt": "2026-09-09T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNMzhxRXRqZFpTQnE1TkthcDNTdEl4RnFESFR0LTlvdTlDTGF4WTBPb2Y0dTNKNXFLU0dDNC1LM3N0RUZJOXJIUjR5cTdfVU1ZT3Qwa0d3ZGMtRWhGYnBfeWtYYzdIMkNUU01PWXhuZGswQWFmVWZiSkQ2WUtfcVdlNTFBUko2UnNpRTluU3hvOEM4M1JVMTBZVVUzX0pkT3EwS2JQTEFCcGpjY1RWRDNfbkhoOG9vbVlsZ1lCYw?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "harvey-en-02",
+      "nameKind": "ambiguous",
+      "sourceFeed": "google-news/harvey.en-US.xml",
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Legal AI startup Harvey reaches $15.5 billion valuation in new funding round",
+        "snippet": "Legal AI startup Harvey reaches $15.5 billion valuation in new funding round",
+        "outlet": "Reuters",
+        "publishedAt": "2026-09-09T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdlB6ckhOUjNOZ3VfSVNXTVBvQWlkLTRiWUwxLU1KZG9fT0t3QVI5U043NS1pdGp6UHpCM0hjTHFzZm5OelhkWVdZbkY3RnBBbEdCVnFTXzhJNl8yTW4tOHo5UzU3SEU5VW0xNFZnQkhCNjJzWVVWTmZEQUhsUVNYalpYNnpIZUo1S0UxNEF0MHFtalVablBwWFF1ZDE5V25OSDIzd2tadlZqdU9xdDFQc1YwR1FxNW91aDJKeHNaeF9iQQ?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "harvey-en-03",
+      "nameKind": "ambiguous",
+      "sourceFeed": "google-news/harvey.en-US.xml",
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Deepens Microsoft Relationship",
+        "snippet": "Harvey Deepens Microsoft Relationship",
+        "outlet": "Artificial Lawyer",
+        "publishedAt": "2026-07-23T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNbFVxODRtck5XTlhIVTVjV0NiQ2FxM1VrVnBLbVF0SmdzN2EyNi1IN0VldDRjUlphcmhRNzdKd1l0LXV2TXJUWkF3TUVxZUlnMjlGNjRPQ0JJLXc3T25Ec0dXMFR2WUdWYVp1U0xkZUVoajdaREZmRmFVZmhRR1ZsN2NPRks2X1V2bmc?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "harvey-en-04",
+      "nameKind": "ambiguous",
+      "sourceFeed": "google-news/harvey.en-US.xml",
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Elmer and Harvey’s Bout with Bromethalin",
+        "snippet": "Elmer and Harvey’s Bout with Bromethalin",
+        "outlet": "ASPCA",
+        "publishedAt": "2026-09-24T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9YYVRoc3Vob1E2aWx2NUxvcjBmdWdtT0NQX0N0R0xMZHpMSXptdnZNdXZTRkhod01lel9qMERwSlJpY1IxWlh1MWF2N1BaMGlEQ182dFVBY1BJLUlLQ0x5OVcyRDF6TG1pRkJZLUxR?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "island-en-01",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/island.en-US.xml",
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Prescribed Burn at Angel Island State Park to Continue as Early as September 23",
+        "snippet": "Prescribed Burn at Angel Island State Park to Continue as Early as September 23",
+        "outlet": "County of Marin (.gov)",
+        "publishedAt": "2026-09-23T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOLUl3ZWs3ZzVnc2ZaY3NCanpKRGZsLWRhMnQyUWlqd1hjSFJ1WHlPSUtMS196WllBNVduaU40MDU0TjlfektHMlRLSW9fYldROFVkSFVzQ0RQY1lYQmVwMG1QSUVKVG9Ba2ZteUhqX1dDbWt3cjZlUHVsMFE0WEVkMlZLQVZNTEpPcXlxdnh3UFlmdXZTUG01Z1MzREN4a21vdDNrUG9rSHdoNlZscmc?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "island-en-02",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/island.en-US.xml",
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Bulletin #5: State of Emergency Declared for Hatteras Island; NCDOT Making Final Preparations to Establish Emergency Ferry Service Between Stumpy Point and Rodanthe",
+        "snippet": "Bulletin #5: State of Emergency Declared for Hatteras Island; NCDOT Making Final Preparations to Establish Emergency Ferry Service Between Stumpy Point and Rodanthe",
+        "outlet": "Dare County (.gov)",
+        "publishedAt": "2026-09-26T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5yNHRRRUhGSmM0ZVRHdTlmazRTX2xYN3Jwcy1XdnB2S2Y2U2Y3WDBlc0xjT1hjWkU4REVCUFU1ZVdlYXhySlI4RlNralNDLWZkUEFYSGtJZUFNR1NwNlZ3cUFvYnhUYjA?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "island-en-03",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/island.en-US.xml",
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Teen critically injured in Cross Island Parkway rollover crash in Queens",
+        "snippet": "Teen critically injured in Cross Island Parkway rollover crash in Queens",
+        "outlet": "ABC7 Eyewitness News",
+        "publishedAt": "2026-09-06T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPRHRGTm93Z1djT043eVpVTjZMS3p4d3c0ZVlHTUtjNzZUSlBmdXZxNjNPdHFuVUxxN0ZnWmh6TnZuTkdkcUxWNFd1YzdCaGJhaG05bncyeGhqY0YtR1dBaDB3aXBCd2xCNUZCQnJ2QVJEdW1fZkZrRmJfczVicFBmYmpaLUJXVE9GSHU5SnJraWcycEcySUNBbdIBngFBVV95cUxPeHVwUDhaRFVEcEdqQ0lrcmk5U2ZRVDRhMmp5ZzFXMkNxLWxlVjNyVGJUNG5NTkd5YnV3V2RobGFPV0RXeWZ4cUtCQVE3NEhLVUpETHFpTm9TT2FMZzZZams1WENpLXgzd3BTZld3eE9fMUN6RUdLMXgzLXFrRFdyNFl5dWhjNW5LTFVfdjdDZWszMUtyQzNqclVENldiQQ?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "island-en-04",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/island.en-US.xml",
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Central Nebraska Humane Society is not walking away from Grand Island",
+        "snippet": "Central Nebraska Humane Society is not walking away from Grand Island",
+        "outlet": "Central Nebraska Today",
+        "publishedAt": "2026-08-22T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPYWhRajJrYnpWd2dybkRFb1E3bndVQ3BQTDFaalY1RzlDWUlTa2tYZ01peVRKbDlVU1M4VHF3dkJsdnhZMjJ1X1ZGa1lLemNJV3Q5V0g4LVc4MmQ4RlhhTjFwME9LM1ZhSlRZOS1vZVMxbmtaWjlZZ3VDTEV3b2JIWDdHUFRkSFBXel9UYUR4SXlsbGhodE5kT1FaS3dCT2pRRDJhUEp6QVJFaWlwdHZXNTdKTWdZYVBnUmc?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "wave-en-01",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/wave.en-US.xml",
+      "company": {
+        "displayName": "Wave",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "K-State and Purple Wave Forge Jersey Patch Partnership",
+        "snippet": "K-State and Purple Wave Forge Jersey Patch Partnership",
+        "outlet": "Kansas State University Athletics",
+        "publishedAt": "2026-08-19T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONUhJcUpYdE1FbUNENG1GSTYyeEhXd1ZpbVV3Yl9zdHpoTzFlZjZXRnlmTGdabEVBZmhJcHJiV1BLRmJuYjVqWE5BMU9iVGxXanFuN0dpeU91eVVmR3VoQjVuM2lXVUZwcGw4d3FBaUVHbUJVYjE5bDB0N2ZfYXY4U05HWk9ON3JHUExyTVVob1UxQk5kYjlWQkZhWDJ5YWhFNTVVck4tSEdKblFQ?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "wave-en-02",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/wave.en-US.xml",
+      "company": {
+        "displayName": "Wave",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "ERCOT prepares for record demand during Texas heat wave",
+        "snippet": "ERCOT prepares for record demand during Texas heat wave",
+        "outlet": "Houston Public Media",
+        "publishedAt": "2026-07-22T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPb2M1WVY2a1diWTVGNHdtWVN4eWJ3UWVtZnVkS3BkRTdVQ0FkRmtZZlBvTDZIelpWNktQZjVVWXdMVm1vY2tIVWhzd01iSUFlUWhvQjl3WlVoelZ2SHZjQWJJeGFXMXJ5eUIzYU1pekxoQ0JlQU5qZjFwbkhjd3hWM0pGdHZFTGN6X3ZLOVdWWkg5TVNJT3NQc1lWUldIa0RCUUpmcm1OSE5nbTZQMGNTWURIYTFmYzRN0gHAAUFVX3lxTE12NnF5Y0dYdURlN1l1WlJObWJJOUtUME0xR2kxakVyckZVZ2NsUlNZeHBYWkt0eGRXdTJDaXVGdmZwU3pfQjdZTHdCN2phYnJxWHMxZlpMT3ZRLTR2MEFYSWw0MTVEdFRBMXloQnEzaWI3cmcyVEdBc1JBWVRWV1Y0SVN6Z08yUW9LZWZGZWpkWV9JWk9NRnFYS3JhWnF6TTd2X0RNUk1ySmppMHgtN1dsZXV4VkNtcVN4dGx6VWx0TQ?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "wave-en-03",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/wave.en-US.xml",
+      "company": {
+        "displayName": "Wave",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "What Exactly Is a Wave Election? And Should Republicans Be on High Alert?",
+        "snippet": "What Exactly Is a Wave Election? And Should Republicans Be on High Alert?",
+        "outlet": "The New York Times",
+        "publishedAt": "2026-09-20T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPWVNPRDBxSDlnLUdkMHU4c29xQWxBWm9kSFBDYjF6SVVhaXRaSURyaFhlV3VRd0dCcDk0V25mbWxOZkppVDdKM2NDb09aY2FEZnhqY2lUZnR4SmdkQWNKREN3YUtTQkdRUlEzbExzbUVCc3VDZ2ZSMnBXRlRpQkY1R1R1bnhqQXZIRUE?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "wave-en-04",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/wave.en-US.xml",
+      "company": {
+        "displayName": "Wave",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Don’t Wave the White Flag on Reading Just Yet (opinion)",
+        "snippet": "Don’t Wave the White Flag on Reading Just Yet (opinion)",
+        "outlet": "Inside Higher Ed",
+        "publishedAt": "2026-08-07T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPQXZrVk1CeXg0S09IOHpSMzIwdDRBUkFkaDZZMU5scEpJcFFmMVo5THZCa3R6QmVNUW5ZRXlrdWNRRzlnckFzUU1xMXFoN3FEbEhxdGtNSzNxRDR2WTFrMG1UbFlpOVhjcXRPc2ZwRWFpZXVna0lRM2Jvc2J3ZDlRRUJTY2ZLUWJfRThTcVY4a0RiT1BxaHNDU211eDc3THBrcWFiWnF2d3o0SWlEeVNYWW1uMURlQkVpbEE?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "ro-en-01",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/ro.en-US.xml",
+      "company": {
+        "displayName": "Ro",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Ro vs. BlueChew for ED 2026",
+        "snippet": "Ro vs. BlueChew for ED 2026",
+        "outlet": "Ro",
+        "publishedAt": "2026-09-29T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9MbFE0c21Bd2ktR1FUV2UtWmU0Y2RwY0JVTEVuYVBkbWtOX3NnMjhTeXI0N2NSYUJDYTNfU1J4YjJYcmZuV2UtcGw3MG0xNGp3LUVHNjhsM0NhNm5JYmdV?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "ro-en-02",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/ro.en-US.xml",
+      "company": {
+        "displayName": "Ro",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Congressman Ro Khanna says he was detained by Israeli settlers in the West Bank",
+        "snippet": "Congressman Ro Khanna says he was detained by Israeli settlers in the West Bank",
+        "outlet": "CBS News",
+        "publishedAt": "2026-07-11T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9hcUFhaWtmRzBwVHRvakdtcjYtNjRzTTlnc2RpUm9kNTJPcnB1WEZFYlh5Tk1kaGd6ZGhrbm41c0YwRnVVLWhNekJkTkhhQjE4cFNXcS0wWWJQbFFnYnN6UHlqNUdiNjlmcWN5S0pMcGZQWnRv?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "ro-en-03",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/ro.en-US.xml",
+      "company": {
+        "displayName": "Ro",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Bernie Sanders to rally with Khanna, Kim for Prop 40",
+        "snippet": "Bernie Sanders to rally with Khanna, Kim for Prop 40",
+        "outlet": "FOX40",
+        "publishedAt": "2026-09-28T17:33:59.000Z",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNSGdvRWtHNm5HbEpSbDNycVNZOE5SOUhnUXU3Wm95Nk43QTFVWG4wRnhQdkVWdTFDZWhiMWwyYVBUeDVUQzU5ZlhwRXZzeE5ndnR1cTFjZi1zX0psdE5ra2FvQkJEV3djcmRrYXMtYW8xYXZNNjBrNGdwcEZrZVJvWWlUcWliVzRWbHRsbHFpRU9LLXZmanBvT084X0FoQdIBowFBVV95cUxNNW1vdnlfWTVHRVFlYzBTUU1fUkNiOVY4Ui0zbWhobzIxamJIcHg2ekYyRjFkSVdtd2dpVi1UNlY1QzZkQUhQLUc5cUtFVHFaTWpFT1hzYnVDa1lWUlBldkxXOVlJT0ZfMkxtLUdPU2t6VVFDR2VKMng1MjhjV1Y3NkU4SDNEUURWeU1HMjNfM1dndVlXYzBUbWZ5MEQyUDdLYnR3?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "ro-en-04",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/ro.en-US.xml",
+      "company": {
+        "displayName": "Ro",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Historic Ro-Na Theatre in Ironton hosts first movie screening in over 50 years",
+        "snippet": "Historic Ro-Na Theatre in Ironton hosts first movie screening in over 50 years",
+        "outlet": "KCBD",
+        "publishedAt": "2026-09-24T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPRmpURmtRWGxQcVl0SHEyRjBaSjhRRXBFUURIeG5ZWFh1eGF2Q0JmUXJ2dWxMa1NmdmpadDRDOE0waDhwTWZZbUtKd2FRcGdOTGpxWUdhbUYtSldnR1Q4SjNIX3dCT1RMSjREUXkzWDVkZ3lVVENCN0dlZDdrMnl2U2RtdHZqMjlxZVVQb3lQVm1KWkdjQXlkVDR4aHNQZ1dJOTlVR3Y4OEJCY1FWZ1YtZQ?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "glean-en-01",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/glean.en-US.xml",
+      "company": {
+        "displayName": "Glean",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Glean Bets Everything on Context",
+        "snippet": "Glean Bets Everything on Context",
+        "outlet": "The AI Economy | Ken Yeung",
+        "publishedAt": "2026-08-30T07:02:59.000Z",
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1Wd3hwN0E2RnRVeXVzYWREbEZQNFgzWnlienJKMy0wSVJmZk1IeTc2bGh6VUxiZ0pIVVItVGJ6TG5ITkplaDhDLXpHbzMwb1pOeWJVWEl2NWw4cUJJRVl5MjVVUUpzdFlDRU83ZHZYeHF1STVqc19JWg?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "glean-en-02",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/glean.en-US.xml",
+      "company": {
+        "displayName": "Glean",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "LTM Partners with Glean to Accelerate Enterprise AI Adoption",
+        "snippet": "LTM Partners with Glean to Accelerate Enterprise AI Adoption",
+        "outlet": "Yahoo Finance Singapore",
+        "publishedAt": "2026-07-17T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQVTZrX3FlRWhpT09LakI2TlZ2SkNJa3N1OTVzNHljUjlIQlJHUVNBUGVyZHo1UXV3MzFGb1M2SVUtU1hfZlBZLXZZRXFWb1hUR3Z0ZW5hQUhqeUdpSHBDVWl2MkFIdEhvUlA1clRYS09KQTZYUjhkLVJCZERoOWhRRnEtcVBXRXFtbEFfd05LSjFhd3M?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "glean-en-03",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/glean.en-US.xml",
+      "company": {
+        "displayName": "Glean",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Regional blueberry gleaning event returns to Bow | Growskagit",
+        "snippet": "Regional blueberry gleaning event returns to Bow | Growskagit",
+        "outlet": "goSkagit",
+        "publishedAt": "2026-08-06T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPdkNTTlJEcTVWbW9MM0h6QmZTaFRmXzRtbmYyeGZlc2xkSEN3djl6V3dGSkJUT3VpLXZKT2RJRHBZOUtHZDNqNW5Ecjg4TDF3eTFQM2V5YUlYM2lIbmY2RXFqWDZSaW56cWN6alRQSjc4UW1xV3RyQV9mRUk4T05tNDN4N3UxcnBTSmpHbDdHcnFEeEFkOUpGX291ekpBUE82aFVMQ3k1aVFzSlNnVURCaGJleTdKcWFBazZya2VHWkxBS2ZvZVlzSndRdlNXckk?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "glean-en-04",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/glean.en-US.xml",
+      "company": {
+        "displayName": "Glean",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "LTM Teams Up With Glean To Speed Up Enterprise AI Adoption And Productivity",
+        "snippet": "LTM Teams Up With Glean To Speed Up Enterprise AI Adoption And Productivity",
+        "outlet": "Sahi",
+        "publishedAt": "2026-07-17T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVUZBM3JUbC1meF8tclIxSmx0dHVVbmNGSEpvaVROOHc3TmZtRmtqcFpJU0tnLXN6eDRzSHpkVDM2SGR1MHZ6TGFDVXp6RmcybnlpSWdqdjQ2T190UEFGN1hiT3FZZlQ5akU4Wkx4aDBuOWNXckdFTlhwclV5UnctOGFKeHBKeVhhTmpUVjlnVVZLS3ZCWVNQVFhxSTh5eXp6V3RWNnBkNjQwNVNUOUNQZGt2dVI?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "lambda-en-01",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/lambda.en-US.xml",
+      "company": {
+        "displayName": "Lambda",
+        "aliases": [],
+        "domain": "lambda.ai",
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Anthropic signs $35 billion cloud deal with Nvidia-backed Lambda, source says",
+        "snippet": "Anthropic signs $35 billion cloud deal with Nvidia-backed Lambda, source says",
+        "outlet": "Reuters",
+        "publishedAt": "2026-08-31T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPSkZwYjlLQzYtTmVrNTNjeXU1QlVIa1l6X1N4MDdPTHlhVkE0UkZHRUZjanllWEN1d1lzR08yRFQyNDVaZ0hIY2hGWUh0Vi1qLU1kaG1fT1NraWJqTFAyVkdQbFhPMUVTaFo3RUJiZGQ1S3A0VGxVT0xZSTdWcWhSaFZ2TGl4TnRzdWlucGNnTHhuSW1YNXEzVU1ZUjFzdTI5MWlhX01hY3FLZml1eUI2bWdnSVptd21IMURKSzlJaw?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "lambda-en-02",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/lambda.en-US.xml",
+      "company": {
+        "displayName": "Lambda",
+        "aliases": [],
+        "domain": "lambda.ai",
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Lambda raises $926m senior secured loan facility",
+        "snippet": "Lambda raises $926m senior secured loan facility",
+        "outlet": "Data Center Dynamics",
+        "publishedAt": "2026-08-13T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxONEZiVkYwV1hPc0FEVmM4cTduSFZVMHRoVmg4N3UxZWlkdGNkR0Q0OWlGMHZsUllfeW9RZUwwWFh6aG9pNGZmZm13bkpfbTllbndlcldqWDlCNXMyZ19XbTFFdGtZMHZ1a1J1bXhsUTdrSnZudDA5Z0dPT3hYaGpQVEFrS25PV1ZEOWVrNXkzd21HbUVLWEE?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "lambda-en-03",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/lambda.en-US.xml",
+      "company": {
+        "displayName": "Lambda",
+        "aliases": [],
+        "domain": "lambda.ai",
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "AI Cloud Provider Lambda in Talks for $3 Billion Pre-IPO Round",
+        "snippet": "AI Cloud Provider Lambda in Talks for $3 Billion Pre-IPO Round",
+        "outlet": "Bloomberg.com",
+        "publishedAt": "2026-08-25T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdnFGMmJzb3hpNVRqTGljVGpzRmVSX3NKUEp0eHFrMlduSnpzSTRmVkFaeGxKcEh6UGhrQ1ZTMXhubTZBUXpiVUhENnJZUThIWWE3a0FtUGViMEhZWDlWYXZRQTVnNnZCNGJEWm02MzZiaFJ3T1d5bmZ4RUhMQlJZQVBCblQ2ZXhRSFJIZjdDczhTeTNIb25QaHg2RW1Oc1BxVElzcFJlUWd0ZlhVNzJvS3lB?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "lambda-en-04",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/lambda.en-US.xml",
+      "company": {
+        "displayName": "Lambda",
+        "aliases": [],
+        "domain": "lambda.ai",
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stephen Balaban, Lambda",
+        "snippet": "Stephen Balaban, Lambda",
+        "outlet": "Investment Reports",
+        "publishedAt": "2026-07-02T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9rNUY3UW9LdTRqdEQ0TGxxdlktMU1hQnBIdkxRWlpLVWU3SFUzWVRnbW5UbDVzdUs0UHlONVJMQkx6X0xXc0diTndPTmp3U2x1aHhtWktYQVZaQ3BSaTJsVG9UU1FFTHVkaXQxeS1IWWs?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "peak-en-01",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/peak.en-US.xml",
+      "company": {
+        "displayName": "Peak",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "What’s unique about Northcom’s Falcon Peak 26.2 counter-drone exercise",
+        "snippet": "What’s unique about Northcom’s Falcon Peak 26.2 counter-drone exercise",
+        "outlet": "DefenseScoop",
+        "publishedAt": "2026-09-23T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOMW9ydlVkLWI0U3JUN1BhNTZ1U2R6bzY0eFNnMXF1NWUxMjdhLUpFSUg3MVRGeHdpaGw0enExX1I5c3IzTXZBclMybkNtcWZiZVpYM2wyQmdnOTFDUEY5Q0Jrcld0Yl84RmVLYzRweVpyamFwOGFZNUtaYzdNVXh4STAxUFcyU3JVSWtnQTlueTRvOTcxQzFtdg?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "peak-en-02",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/peak.en-US.xml",
+      "company": {
+        "displayName": "Peak",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Peak fall colors are coming to Tennessee. Here’s where to see them this season:",
+        "snippet": "Peak fall colors are coming to Tennessee. Here’s where to see them this season:",
+        "outlet": "WVLT",
+        "publishedAt": "2026-09-08T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNTFg5SFZUZE1aT2FHSmUxWFhyb3FKS0pfRzR2MURfTG80Q3ZFcHRDVUV1eWx3NWUycWlSZjdfbEFYVUxNY05fRXNRNFB0TFV5Nk1TYVpNd1ZMOUJVNzZsaFQtR3ladkZBMU5CbE9vQl9kWFZod0FJdFRnb0FoZjVZYlpQcFljOVlackZUdWNVRnlhS0hYcmtGMV85NkF5VWhSWVotVA?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "peak-en-03",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/peak.en-US.xml",
+      "company": {
+        "displayName": "Peak",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "As Summer Winds Down in Maine, Oyster Season Hits Its Peak",
+        "snippet": "As Summer Winds Down in Maine, Oyster Season Hits Its Peak",
+        "outlet": "WSJ",
+        "publishedAt": "2026-08-29T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1nQ0Y0Z2hOaUpBMGY4VkVfaDFiakwtTk1hMWY1WmVRWmRWVEszTXEyaGJ2TjlIa3ZjR2lJbzFVS0hoSFJhSm9xTlI1dm5lbmZrT2YyWDM4SXYyWU5wczNnMWFsRkZBX2M3MnFKbzJ3RFhadm9XS2FiQnFlRFY?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "peak-en-04",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/peak.en-US.xml",
+      "company": {
+        "displayName": "Peak",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Blohm Tabbed Summit League Defensive Peak Performer of the Week",
+        "snippet": "Blohm Tabbed Summit League Defensive Peak Performer of the Week",
+        "outlet": "NDSU Bison Athletics",
+        "publishedAt": "2026-09-22T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPa002dXowdnA5UlVyRDhESmh0YmlmRng4ZllUaU1HVUxVMmt0S3RVTml4ODI2QTlyM3U1ZVJMQ2NXTWpiclJlZHhVMG5KLWNaZTd0Zi1PZ2gtcHl5ZlI5RVFKTlRWVXhhVjhXdmNBbGxfSkxhV2dpMDZZV3hnRzRXODNITmIxLWFCVGVLbF9jMnZiTXc1dlNRLVpFLUhxLS1POEwxXy1jLVV2N2VGNDFjUC00NG45RDg?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "guild-en-01",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/guild.en-US.xml",
+      "company": {
+        "displayName": "Guild",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Guild Unveils the Starfire Deluxe Bass",
+        "snippet": "Guild Unveils the Starfire Deluxe Bass",
+        "outlet": "Bass Magazine",
+        "publishedAt": "2026-09-22T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBoUk9HMW1leGhxdFI3bGZwNm5kUFlJLVFzMlN0RkJVa255ZW5tVG1IRGJfRjlSekNxLWMtX0ViNGt5MmxZeHcyQkNsUi0xNUVtUE5OMWtqTEl5SzZvN2FXQXc1VThvVjExUVRUczRBSC1FQQ?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "guild-en-02",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/guild.en-US.xml",
+      "company": {
+        "displayName": "Guild",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Guild Wars 3's approach to combat and movement is like nothing I've ever seen in an MMO before: 'One of our big goals when we make a new game in the Guild Wars franchise is to set out and try new things'",
+        "snippet": "Guild Wars 3's approach to combat and movement is like nothing I've ever seen in an MMO before: 'One of our big goals when we make a new game in the Guild Wars franchise is to set out and try new things'",
+        "outlet": "PC Gamer",
+        "publishedAt": "2026-09-03T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMi0wJBVV95cUxORVpQc24tZFZqX2pWVWhZZ2dKY3dLc2NJNjdzSXhOazZqSGpRTW9RRXliZ2U0M1Q2WUlDX1ZucXZoVGFSaENXalVDYWRHYzJ2YW14U3NMX1dfTllHQTdoS0toOUtiUmF3VDJMcGlFZV9jWWZKUDVLengzQlMzZUk4bTdUVHFOemFNU0dCYTIzMkIwd0pXM0VfczQxWVJBaVJMd2YwUzRRR2NPVkNBR1EtLTFLVUVyWUxPLXFTbzJ3dHBTaVpzYmtvWlZXS0pNcWF6QlFQbWVaMTJJWG1SWDNBazVmM2hzQWpnSUJYU1NIMzdJUzJJS0g0LXo3TXdpWHo1X09kVHZVX1VWRFNEODRSeTJTX1BmWlhIalM3bHgtREQ2elF2WnRhendDTWo3MlAwU3F5djU0YmJEN3l1cWR0Uy1lUXBabmdNRXgybWdtNkZVUUk?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "guild-en-03",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/guild.en-US.xml",
+      "company": {
+        "displayName": "Guild",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Guild Wars 1 makes balance tweaks, adds a new bonus merchant, and makes some small fixes",
+        "snippet": "Guild Wars 1 makes balance tweaks, adds a new bonus merchant, and makes some small fixes",
+        "outlet": "Massively Overpowered",
+        "publishedAt": "2026-08-31T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPQXRoX3FLeUJGMi1PMzJ0c0l5eVlaWjAxNlhjVTl3MWpfLUR1MWhlQmVlTTFKbC0yWGZRR0NtT3dPd242WExld1ZPcl8tZ3BKWWxYdUhLZmo0ak5MU25CeGdWVVk3SkZsR3NNWXlvYVJVNEZ2ZzJaTkVTbmhEaTN2dXdyczFFa3pwVS1GTUtDOHZYa3RfYWN5V1NkNkxnaEN0RU5HN2FwRTRhQnJoQjdVVTBPUVN4bXc2X1p2d3FLOA?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "guild-en-04",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/guild.en-US.xml",
+      "company": {
+        "displayName": "Guild",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Jockeys’ Guild Education Foundation Introduces Academic Success Program, Begins Accepting Applications",
+        "snippet": "Jockeys’ Guild Education Foundation Introduces Academic Success Program, Begins Accepting Applications",
+        "outlet": "Yahoo Sports",
+        "publishedAt": "2026-09-09T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOTjI4VU5hQ2Q3RmE1dTdKMUtKSVRnOGRxTzNwMERnWC1yTGJDR0F6WmJ5VzdYa0ZIYTVBR2c0bmctaFBVNHpBMzFveGtSZWRUOU1DazRmS0NoRTd5ZjhJUUsxWWcxU0RDVjlBMmtfM0R4X29BeU5SUTl5VXlYdHRGdlgtMm9ybHowSndma0lFR3R6eTdBYVJiUi1n?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "astra-en-01",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/astra.en-US.xml",
+      "company": {
+        "displayName": "Astra",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Path to Astra: critical capabilities and frontier safeguards",
+        "snippet": "Path to Astra: critical capabilities and frontier safeguards",
+        "outlet": "OpenAI",
+        "publishedAt": "2026-09-01T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5XVkhISmZOMUx2VV9iblFmYlJERjA5c3RQNzNhUjFvZFl4V1J2S1RDdkdpTG5UNEN3WkNJYV9rWDJjaVpmbzBTbEFST1FjeVVE?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "astra-en-02",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/astra.en-US.xml",
+      "company": {
+        "displayName": "Astra",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "OpenAI Says It Will Not Release Newest Astra A.I. Model Over Safety Concerns",
+        "snippet": "OpenAI Says It Will Not Release Newest Astra A.I. Model Over Safety Concerns",
+        "outlet": "The New York Times",
+        "publishedAt": "2026-09-28T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE44UldTTk4wWS1oa3NoWXZ3RFdSZ3M1Q2lhMFFCa3A2QmMzTjRmYWk5bHp3cVBPUldmdzBDRjNmUVVfNnFycy05YVdTVjU4T1ljYUZxRkJZY2RINVNUV1lxMUdyX3BodGNja09adjlRNTYwelNZUEZWR093?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "astra-en-03",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/astra.en-US.xml",
+      "company": {
+        "displayName": "Astra",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "OpenAI confirms Astra has reached 'critical' cyber threat level",
+        "snippet": "OpenAI confirms Astra has reached 'critical' cyber threat level",
+        "outlet": "Mashable",
+        "publishedAt": "2026-09-02T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9KWlBMeEowVHg4LWFva2xzRHE3T3k4R0RnYkRFRTlZVmtPaVp5UmM0R3N3a0Q3R2tBR3VmVFhabHlMT01LUHBRZk1JdWltazZXckFncVpBSm0zVVdsZDJSWmEzbzFZbE9YZXV4VG1fYXQ2YzBC?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "astra-en-04",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/astra.en-US.xml",
+      "company": {
+        "displayName": "Astra",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Astra and Opus just passed Turing’s other test",
+        "snippet": "Astra and Opus just passed Turing’s other test",
+        "outlet": "TechCrunch",
+        "publishedAt": "2026-09-25T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPWGtmTExENDBPUXd4bHUyRDhnTnB5eG1haGp3YVY3R21UTHllcDR4Z2tXOFNUTW1hd24xWktsc1RnX1FaTTR1ckJRR0dPeXNQV3FpRXpzMVdFTVFmeDlvekRIWk9JWXVXQ1B2cC01ZTZlTXVuRXFLQzdtOVBlaF9abnJUUlhkT2s?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "stripe-en-01",
+      "nameKind": "ambiguous",
+      "sourceFeed": "google-news/stripe.en-US.xml",
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Coach Fleck Previews Saturday's Stripe Out Against Michigan - University of Minnesota Athletics",
+        "snippet": "Coach Fleck Previews Saturday's Stripe Out Against Michigan - University of Minnesota Athletics",
+        "outlet": "University of Minnesota Athletics",
+        "publishedAt": "2026-09-28T16:05:19.000Z",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPTzNMdWxMYzhPd05RNkFCQzBLVnprYm5ILUxIRWFEWjBUMFpTbFBsSWRNNS1OcjRRaVpibHByYl81T1lDMWw5akVLTXJHV05pRGxKZ2pVOXM4N3l1TUsxUl9JS09qTjhLLVdLMjZ6OG55ZmM3OHlvRG5pczlCWVhuSmxGamxjUlAzSVRFOVdQNk1NNURqdmt3V0lnTC1lT2NKRkRkWDczSzdaVDQ?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "stripe-en-02",
+      "nameKind": "ambiguous",
+      "sourceFeed": "google-news/stripe.en-US.xml",
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "PayPal Sinks 15% as Stripe and Advent Abandon $50B Buyout, Affirm Soars 13% on ‘Most Profitable Quarter Ever’",
+        "snippet": "PayPal Sinks 15% as Stripe and Advent Abandon $50B Buyout, Affirm Soars 13% on ‘Most Profitable Quarter Ever’",
+        "outlet": "Yahoo Finance",
+        "publishedAt": "2026-08-28T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPakw1bURvV1ZTRnBCMHRJX0JndGFBdjhTblVlNFBiM1BZdDhDMzVkMUVsSHJXaVFqMVNCTjZ3N3c1a3hWekxBeTZoek5obk9Hd0VWRzk1djZDMHVEV3BUTjlkQUxRVGpYMkc4bXNyeTNRelR1YVktRzJSOEpxTDRrZUZ0NVpCNUZmNVRnbFRDNGZFbWs0RzBmTU9B?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "hailo-en-01",
+      "nameKind": "clear",
+      "sourceFeed": "validation/feeds/hailo.en-US.xml",
+      "company": {
+        "displayName": "Hailo",
+        "aliases": [
+          "היילו"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Microchip Technology Signs Definitive Agreement to Acquire Hailo",
+        "snippet": "Microchip Technology Signs Definitive Agreement to Acquire Hailo",
+        "outlet": "Microchip Technology",
+        "publishedAt": "2026-07-24T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPOUQzWFUtNHlhSUJFMm1JYXNza0NWOHc5VlA4d2dIUTFwMjdFeHdxdXFFRlR2ZVN5QXFEaVBpNGlyendIbGFNUmMwMEk0eV9JdUZCdEtFQzU3TkJwUUNIaEtuZ2I3WUxCbHVHVWxXdFIxb1lITlZTQ2tvSXFPOHNnNmN1Rjk4TmNKc25obXJjLWxtLTZ2MHAzQkdCRzloRVlSUTJYSUVRakJzcms0UnljV2RLNVFXWEZJNGpXdHNqTjA4N1lpemhn?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "hailo-en-02",
+      "nameKind": "clear",
+      "sourceFeed": "validation/feeds/hailo.en-US.xml",
+      "company": {
+        "displayName": "Hailo",
+        "aliases": [
+          "היילו"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Microchip Technology Completes Acquisition of Hailo",
+        "snippet": "Microchip Technology Completes Acquisition of Hailo",
+        "outlet": "Microchip Technology",
+        "publishedAt": "2026-09-21T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPV183NnJTTFZncXliZkN1VTRQdnlxYko1R0dZTmRYR1V6SlBQbzZvemYtZ0QzYnhLSGhheUJJQWpHM3JqWVJnUkZia3NfblgxVThtaFo0WHM3elM3VGV2Vmc0SFZQSXA4WDV4R2c0TUItMDd0YVMtVkRVckp5YkxLdjIzd001ellQMG5hSXBfUVh4ekNiWmxIMUdydlNmNHJjcERHUHV4OF8zUEMwcnVxVDdlOG5QQQ?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "hailo-en-03",
+      "nameKind": "clear",
+      "sourceFeed": "validation/feeds/hailo.en-US.xml",
+      "company": {
+        "displayName": "Hailo",
+        "aliases": [
+          "היילו"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "AIS-1000 AI Surveillance Station – A $3,640 NDAA and TAA-compliant AI box based on Raspberry Pi 5 and Hailo-8L",
+        "snippet": "AIS-1000 AI Surveillance Station – A $3,640 NDAA and TAA-compliant AI box based on Raspberry Pi 5 and Hailo-8L",
+        "outlet": "CNX Software",
+        "publishedAt": "2026-07-23T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPbHdSNEZDUk5JbG5GMUEzY3o4ZFhuVlZyNVBDSWFwdGNyMTFnTDZNVUNyRkxvWEUtejhObzZaVFlfLVhoTWFHSm95WmgxV3ZaWFVIWGVhakZaRHdYZi0yR3RuWmJwSUVMbUxFM2V0Z2hibkcyV2x3Q0JpN0F4bzRmcThBeW11REw5TUdIUjJpU051dmNZZ3NrRzRIQkUxSXFqYTRaZEZaZWNBM2tpNHZQMGplcDY0VlNhTGZRVVJiV1p4NVhRMzJvUXhrMzlQV1N3SGxOdUZwWnNvOUE3aHZLX9IB6AFBVV95cUxPcmczTEdFY09pQWlHbWwyVDR0TEdKSGRSbzJPQlVibUhWeDBJc3k5UHpRWXhrTmZjTG5MNS1IRDZ5QnBDcmJ6QTE3akVoekdnWm9MR1JFYWwzRVNKOGp5VndRbDJPYUIzZ3h2RnMxVmRhQzRXZldlcFB5dE92ZUlTNUJMMkFmSUJlN3BjdXdYRDdyUHlOTkZiajlLOXB4Q0dBR0ZDam4tSHVEY2Vya1NWMFpZUVg1a1p5OWx0MHAtVFFPNFViMjctcGk5MFgxbHhydWN5VUV1R1lJc0R0aWQxYUZ1cEZ1TXRO?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "zutacore-en-01",
+      "nameKind": "clear",
+      "sourceFeed": "validation/feeds/zutacore.en-US.xml",
+      "company": {
+        "displayName": "ZutaCore",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Options Technology Partners with ZutaCore to Bring Waterless, Two-Phase Liquid Cooling to Financial Services Infrastructure",
+        "snippet": "Options Technology Partners with ZutaCore to Bring Waterless, Two-Phase Liquid Cooling to Financial Services Infrastructure",
+        "outlet": "Business Wire",
+        "publishedAt": "2026-09-23T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxOUVFzM3Q2LThiMGNqMFhoanNsN29kUXBhYVZPNFB4ekhHS1VXVlNxOXMyX1RXZllWaHZrbVRyNGdkc3I0dVl6dVJKVUhPaF9FYkZnWjRLRzBkMFI2eGJNOUsxX2g4Q1dKdFZYUWtSdnp4N3AwRm8xZjJ5cG9TNjF4SFNxLTFzaHJGXzNWMmdkRnNiQU1UYm12cENrZks5ZjdlYWpfR1NzT2ZOcnZGd3VaZndFa0paX1doODl1X2tHdzVoOE9ySFlyZGlUdzV5STR2R2hDTlZPUFc0aUZFNUgtMzNTQ1E4dzFVelJsTHF0dnZVTkU2bXZPMFhhVUNxNjRnenlaS2tTMGFfQkk?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "zutacore-en-02",
+      "nameKind": "clear",
+      "sourceFeed": "validation/feeds/zutacore.en-US.xml",
+      "company": {
+        "displayName": "ZutaCore",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Options Technology Partners with ZutaCore to Bring Waterless, Two-Phase Liquid Cooling to Financial Services Infrastructure",
+        "snippet": "Options Technology Partners with ZutaCore to Bring Waterless, Two-Phase Liquid Cooling to Financial Services Infrastructure",
+        "outlet": "New Castle News",
+        "publishedAt": "2026-09-23T11:15:07.000Z",
+        "url": "https://news.google.com/rss/articles/CBMipwJBVV95cUxNc2dORkhaci1OcldBMXF5NG5pVTE4eEpKX2RGWWt2empDZUIza2VxMWl0Sk5sRmozWUttejJWM2RYeG95T0lQS2x0VWJ3TjFOdUVFVWM0aEc3d01JRmtfV2hQNTd2VGprX01BOUtNQ2tnSnJfQ3JjbFhNdUhwczd6UmJHejFHUncxVzBWUlB1SDE5NFZEN2VPWUpiNVZoblREMTJURWtKS2c5ZGJoeG00REt2N3pUOUcxMmtjTmFIUWhxM3JBWnZQdjMzU2wzeno0NjRoUUdESzVyYi05TGp6SkR6R01IN1dpeXpXelhUblllLVlFblpya21qdHM4TjhMOEplMGI0bjRWQnNlWjdIdnBzY2RNTE9Ga09vMy11M1RON3ZGTUhF?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "zutacore-en-03",
+      "nameKind": "clear",
+      "sourceFeed": "validation/feeds/zutacore.en-US.xml",
+      "company": {
+        "displayName": "ZutaCore",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Options Technology Partners with ZutaCore to Bring Waterless, Two-Phase Liquid Cooling to Financial Services Infrastructure",
+        "snippet": "Options Technology Partners with ZutaCore to Bring Waterless, Two-Phase Liquid Cooling to Financial Services Infrastructure",
+        "outlet": "The Joplin Globe",
+        "publishedAt": "2026-09-23T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxQSndYZFZocHlQWno5Z1dHVXJXUnZNRGwtdVVJWk04Q3FCdjlXeFczQVh5Q2hRV2JPcnp3QTFxbWoxV3ZuVzZwM0Q2NDZ6SUZjMG44OXFqNVExV0xGUFowTXhXQTlTV1RqNkwxQk5MOXI1Qkpfa2VnWjk3ek5PMllLVzlKM1pXYzUzN1dVQzJ2LVNFazRBbEFCZG9qV0hlWDBiWV92eVlwNWlIYk5LRk83dXlaZ29uT2Ztc204RmppZlhsd1YwN3dhNURoNm5jUEt5eEhNMmJ4SldNSzdNaW1vcGRtWmV1dTBKdWROS3V0VEQySkVWcV9zeV9yekNZUWp0NmFVQzM0c1EzdlpnZTJFS3paN1F2UVJQbWl2cE5UMHNqX0ZqNnVZbFlhU3liRjNwRDNhRA?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "cerebras-en-01",
+      "nameKind": "clear",
+      "sourceFeed": "validation/feeds/cerebras.en-US.xml",
+      "company": {
+        "displayName": "Cerebras",
+        "aliases": [
+          "סרברס"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Cerebras to supply AI systems to cloud computing startup Gimlet Labs",
+        "snippet": "Cerebras to supply AI systems to cloud computing startup Gimlet Labs",
+        "outlet": "Reuters",
+        "publishedAt": "2026-09-28T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOMDgtbmhLenNVQVdOQXJDbmJmck52THdJR3BYWV8zeXdjRFdieFdIdUNlTTNreWNWSy1obHdabzhtakNsQldBeGF6Y0RwLTQ0ZVRzZy11UkFycEx6azI0dWM1enN5NkdHTEg3N1VhajVFZEFqMmlKblo3Y2Zmam1wUTNLS3ZNYTd2b2MxdWNVQzJtdklpVV92WS1wZllQVGVBak9mUEdkeldoWFZRWFE?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "cerebras-en-02",
+      "nameKind": "clear",
+      "sourceFeed": "validation/feeds/cerebras.en-US.xml",
+      "company": {
+        "displayName": "Cerebras",
+        "aliases": [
+          "סרברס"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Can Cerebras Systems (CBRS) Justify Its Valuation After ARK Bought More Shares?",
+        "snippet": "Can Cerebras Systems (CBRS) Justify Its Valuation After ARK Bought More Shares?",
+        "outlet": "Yahoo Finance",
+        "publishedAt": "2026-08-26T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxON193TXVxMVBxVjZxa3RCNlY0Zlg4N0pjTVAybWdLNHk2UUwzTTJQd0VYaVU0R1hIdEUzcTR1eHRpZW9pajNpQk9wZVNkTk83WjRtdE5YMm50b2hldUxrYnlhVGp2VldTcFlVRVBHNlVYVFd2ZldQZDYycjdZVWlDQjd0c0pMWDBQTVlFTldkS281MHhFbmNwa3ZOblhVckI4MklndDR4aw?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "cerebras-en-03",
+      "nameKind": "clear",
+      "sourceFeed": "validation/feeds/cerebras.en-US.xml",
+      "company": {
+        "displayName": "Cerebras",
+        "aliases": [
+          "סרברס"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Cerebras CS-4 Claims 30x Faster AI Inference Than GPUs [2026]",
+        "snippet": "Cerebras CS-4 Claims 30x Faster AI Inference Than GPUs [2026]",
+        "outlet": "https://tech-insider.org/",
+        "publishedAt": "2026-08-24T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE55ZDVRZ0JQMVdiekNvUjhlUkZ6ZHRzelg3dzZvd3c3cFhRUk1lZkU2dndrNnQ3bnFycmVkWUhWcklLZFU1OF8zY0g0Mkh3OWZvSXFnaUdHNU9jTVp0TjNaOTdfOTVWa0JWcnlHYjJUQk9OSV9w?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "morphisec-en-01",
+      "nameKind": "clear",
+      "sourceFeed": "validation/feeds/morphisec.en-US.xml",
+      "company": {
+        "displayName": "Morphisec",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Morphisec Launches AI Usage Control: Governing Shadow and Sanctioned AI on the Endpoint",
+        "snippet": "Morphisec Launches AI Usage Control: Governing Shadow and Sanctioned AI on the Endpoint",
+        "outlet": "EIN News",
+        "publishedAt": "2026-07-29T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQbHpJUFBUM2ZMWm9wNElRZU1EUTc0YXNkX04zUlR5ZllKSEdhbXdOY2VHS01oRzhQSFIxV2lJSFFuSU45dVZkeGhSY1g3dllDeXlfUVRVeEg2Z1haZS1ZSVJUQzlQdTVFa0dObmF4RlpoZDV1ak9VeTVDbUxfNDJFdElwVjFyX05mZURWb0ZOSE82Y0dISE1pSloyMzlSd1dYZjVjUlNaeGNqaGdRS3BXMFM1Z0Q2YU1qcjFGTklRc3B2a01iMHNR?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "ayar-labs-en-01",
+      "nameKind": "clear",
+      "sourceFeed": "validation/feeds/ayar-labs.en-US.xml",
+      "company": {
+        "displayName": "Ayar Labs",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "AI ETF AGIX Adds Private Photonics Company Ayar Labs & KraneShares Launches Photonics ETF LUMA",
+        "snippet": "AI ETF AGIX Adds Private Photonics Company Ayar Labs & KraneShares Launches Photonics ETF LUMA",
+        "outlet": "KraneShares",
+        "publishedAt": "2026-07-21T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPdjVza09qUDh6MHk3UENXbjE2LWl3WnZDYXhpamVTa2E2bjlxdWcxT1dHYkQwdi1NZDEzVlZGV3dIVjlUNURPZDIxUXJnN29mMU13enE5S1pPNWNRSjlhQnlWMmdPUXU5ei13ajJfNEZtdC00aEtiVjFhZzRnSmp5aUtfUjJud1JMRmpPWjJUbm5jVmV1N21uMW9idWVRdVBVYzJNSDRuOXZ5QTFGNVJtWFlxakFrbDNy?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "ayar-labs-en-02",
+      "nameKind": "clear",
+      "sourceFeed": "validation/feeds/ayar-labs.en-US.xml",
+      "company": {
+        "displayName": "Ayar Labs",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Ayar Labs Revenue 2025: $91.6M Est., $3.8B Valuation",
+        "snippet": "Ayar Labs Revenue 2025: $91.6M Est., $3.8B Valuation",
+        "outlet": "GetLatka",
+        "publishedAt": "2026-09-28T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9BVVpTZXoxRWppUzg0ZVlJdVh6ekNRamtUSGtTU1NwS2JYOWZzV0k3V0xWNUhXbENYRERUR2M2UzBXM3gyaTBIckdjc19NQktQLVE?oc=5",
+        "edition": "en-US",
+        "language": "en"
+      }
+    },
+    {
+      "id": "island-he-01",
+      "nameKind": "ambiguous",
+      "sourceFeed": "google-news/island.he-IL.xml",
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "מכפילה את שוויה תוך שנתיים: איילנד גייסה 400 מיליון דולר לפי 6.4 מיליארד",
+        "snippet": "מכפילה את שוויה תוך שנתיים: איילנד גייסה 400 מיליון דולר לפי 6.4 מיליארד",
+        "outlet": "calcalist",
+        "publishedAt": "2026-09-24T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE8zb3ppZ0tTb1NVcTRCYVJuOGg5WkFSQVg4WDFURnV3ZU5xeWZQdTZSWVZvZHFWekNnQXZXRXdKR2ZXSE9CbVBLTHdjaUhGMlpnVVVRWmM4bmFXcklKdGZOQ0hrVWt5b000THFZ?oc=5",
+        "edition": "he-IL",
+        "language": "he"
+      }
+    },
+    {
+      "id": "island-he-02",
+      "nameKind": "ambiguous",
+      "sourceFeed": "google-news/island.he-IL.xml",
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "גיורא איילנד חושף: עברתי ניתוח קשה; יש לי סיבות לדאגה",
+        "snippet": "גיורא איילנד חושף: עברתי ניתוח קשה; יש לי סיבות לדאגה",
+        "outlet": "ערוץ 7",
+        "publishedAt": "2026-09-22T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE0waExNLXZ0MlZnOWE2Q1hCbk9oMThiTkVFMFNnWVY1ZFVrWDU4RGE4ZDdsZnl3Yjg5UWxLVmFjTFdXblZiMXRBNg?oc=5",
+        "edition": "he-IL",
+        "language": "he"
+      }
+    },
+    {
+      "id": "island-he-03",
+      "nameKind": "ambiguous",
+      "sourceFeed": "google-news/island.he-IL.xml",
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "גיורא איילנד כפי שמעולם לא ראיתם: \"אני מאוד רגשן, בוכה מסרטים\"",
+        "snippet": "גיורא איילנד כפי שמעולם לא ראיתם: \"אני מאוד רגשן, בוכה מסרטים\"",
+        "outlet": "מעריב",
+        "publishedAt": "2026-09-17T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBoYmw0Q3l2aWRfb2VvRi1EUjltM0dDdkNLVDFOOXNpMC1yVUhNR0dLUXhac1FNM19MX25OLWRFZ0ZibmY3Q0p4bktSRHBtOEVJaWlyTTlaQTJUdlZEaEtPVDk0Tng?oc=5",
+        "edition": "he-IL",
+        "language": "he"
+      }
+    },
+    {
+      "id": "wave-he-01",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/wave.he-IL.xml",
+      "company": {
+        "displayName": "Wave",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "סמנכ\"לית D-Wave Quantum מכרה מניות בשווי $52,041 מאת Investing.com",
+        "snippet": "סמנכ\"לית D-Wave Quantum מכרה מניות בשווי $52,041 מאת Investing.com",
+        "outlet": "Investing.com",
+        "publishedAt": "2026-07-29T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9yRTFmMjJfVnZmU3pLVXJDRXZyZWVSQlhDZEdJY3p2RHNEUHVuZng1UklPWERyVDY4Q2JKNVlQQUk4Q3g0M0M3WXQtcTdxNmVZaWhyNU16UkRuX19KaGxuTzBxbG5rRUdWakJMNC14MU1hMnlMWlNmcjNn?oc=5",
+        "edition": "he-IL",
+        "language": "he"
+      }
+    },
+    {
+      "id": "wave-he-02",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/wave.he-IL.xml",
+      "company": {
+        "displayName": "Wave",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "הסיוט של סוני ו- Bose? בדקנו את EarFun Wave Pro X החדשות",
+        "snippet": "הסיוט של סוני ו- Bose? בדקנו את EarFun Wave Pro X החדשות",
+        "outlet": "Girafa",
+        "publishedAt": "2026-09-29T12:25:51.000Z",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBSLWFiYVczT0hOX3R2d0RUQ3ZjNXN1ZDlkLW1VV2p3MFI5MlpRQnc5a3N3WTdXQ2Y1VXdfeGZ1UEdDRGxpOUV0Z2N5SEQyQV9nNHhVQ3ZKa1BjZw?oc=5",
+        "edition": "he-IL",
+        "language": "he"
+      }
+    },
+    {
+      "id": "peak-he-01",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/peak.he-IL.xml",
+      "company": {
+        "displayName": "Peak",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Elbit Systems beats analysts, backlog reaches new peak",
+        "snippet": "Elbit Systems beats analysts, backlog reaches new peak",
+        "outlet": "גלובס",
+        "publishedAt": "2026-08-11T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBBUXl2dFZnTXM5QnVicU5Mb2lTMld1UHVCU3B5dHpZbl9ST0o4a0h3azV0SEdPT1MwOFlwZnh6aFR3aGRfLXN5T2dMRWtxNmZXc3c1QmJYT0w4VnpuaG8xWUJ3S2dmWHVs?oc=5",
+        "edition": "he-IL",
+        "language": "he"
+      }
+    },
+    {
+      "id": "peak-he-02",
+      "nameKind": "ambiguous",
+      "sourceFeed": "validation/feeds/peak.he-IL.xml",
+      "company": {
+        "displayName": "Peak",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Analysts see upside in JFrog, despite slide from peak",
+        "snippet": "Analysts see upside in JFrog, despite slide from peak",
+        "outlet": "גלובס",
+        "publishedAt": "2026-09-06T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5nUnkwb2MyQkR2dUg1bG40TmhVMUJSalZRbGlKV2V5Q1gwQ1VmRmRjTjNSS1VRa0cyRm9FSTEwX1dLcGNYU2ZxaVo3X1RlaDZid0hSdXNqeThRRFp2SWFZUmU3UTJvWndy?oc=5",
+        "edition": "he-IL",
+        "language": "he"
+      }
+    },
+    {
+      "id": "hailo-he-01",
+      "nameKind": "clear",
+      "sourceFeed": "validation/feeds/hailo.he-IL.xml",
+      "company": {
+        "displayName": "Hailo",
+        "aliases": [
+          "היילו"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "נחשף בגלובס: חברת השבבים הישראלית היילו נמכרת בהפסד צורב",
+        "snippet": "נחשף בגלובס: חברת השבבים הישראלית היילו נמכרת בהפסד צורב",
+        "outlet": "גלובס",
+        "publishedAt": "2026-07-25T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBxZ09CcXcySnpUR3NxbzZvc0tWS3pzd0JMVkRJOUdJTUhYMjFKZENzSTRJMFQ5dTNGUXRBMVZ5MmE5T2M0QTJkU1UycTlMZHFKZWpsOV9PM2p1dmt2TGhjaE9TbTBsdGFk?oc=5",
+        "edition": "he-IL",
+        "language": "he"
+      }
+    },
+    {
+      "id": "hailo-he-02",
+      "nameKind": "clear",
+      "sourceFeed": "validation/feeds/hailo.he-IL.xml",
+      "company": {
+        "displayName": "Hailo",
+        "aliases": [
+          "היילו"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "מיקרוצ'יפ רוכשת את חברת ה-AI הישראלית היילו -",
+        "snippet": "מיקרוצ'יפ רוכשת את חברת ה-AI הישראלית היילו -",
+        "outlet": "אנשים ומחשבים",
+        "publishedAt": "2026-07-26T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9CM1hKZkJSQlRVR0s1T0ZtVHl4SGtqeFo3YU1wRkw2M0FZbHRhN0hnb1NSSWhwVEZ1alEybUVrOEh6NVMxRm5RcA?oc=5",
+        "edition": "he-IL",
+        "language": "he"
+      }
+    },
+    {
+      "id": "cerebras-he-01",
+      "nameKind": "clear",
+      "sourceFeed": "validation/feeds/cerebras.he-IL.xml",
+      "company": {
+        "displayName": "Cerebras",
+        "aliases": [
+          "סרברס"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "פי 30 יותר מהר מאנבידיה? סרברס חושפת את ה-CS-4 עם 4 טריליון טרנזיסטורים",
+        "snippet": "פי 30 יותר מהר מאנבידיה? סרברס חושפת את ה-CS-4 עם 4 טריליון טרנזיסטורים",
+        "outlet": "ביזפורטל",
+        "publishedAt": "2026-08-19T07:00:00.000Z",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1EMzd2OURUNGZYaVJzZ25xeXd6d0Z1S3F0cVRqTzZQbXpiYkZWeGl3cVFERGozTXJDeXdWQ1JNOUdic29YcUdLeTRKVWNLc3htTnFqd3p6Yk5Yd1kwYm8yNG5BSzVSMjFFa2VRamt6ODQ?oc=5",
+        "edition": "he-IL",
+        "language": "he"
+      }
+    }
+  ]
+}
