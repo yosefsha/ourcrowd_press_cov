@@ -22,6 +22,10 @@ The brief is in [docs/TASKS.md](docs/TASKS.md).
 
 ---
 
+**New to the codebase?** Read the [technical specification](docs/TECHNICAL_SPEC.md) first. It
+covers the architecture, modules and ports, data model, pipeline, LLM integration, API, frontend
+and known limitations.
+
 ## Contents
 
 - [Quick start](#quick-start)
@@ -787,6 +791,8 @@ container for both apps. It also builds both Docker images. A skipped test fails
 ---
 
 ## Further reading
+
+- [docs/TECHNICAL_SPEC.md](docs/TECHNICAL_SPEC.md): technical specification and onboarding for engineers.
 
 | Document | What is in it |
 |---|---|
