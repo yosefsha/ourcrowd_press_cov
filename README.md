@@ -283,18 +283,22 @@ must go in **before the collector first starts**. `npm run import-data` runs ins
 container, so start only that service (and its dependencies) first:
 
 ```bash
-npm run setup                          # once
-npm stop                               # if the stack is running
-docker compose down --volumes          # DELETES the local database volume, for a fresh start
-docker compose up --detach --wait api  # postgres + migrate + api only, no collector
-npm run import-data                    # loads data/ into the empty database
-npm start                              # starts the rest, including the collector
+npm run setup                                  # once
+npm stop                                       # if the stack is running
+docker compose down --volumes                  # DELETES the local database volume, for a fresh start
+docker compose up --build --detach --wait api  # postgres + migrate + api only, no collector
+npm run import-data                            # loads data/ into the empty database
+npm start                                      # starts the rest, including the collector
 ```
 
 The collector sees a companies table that already holds the Seed List and imports nothing. The
 dashboard then shows the snapshot as of its export date. The rolling Coverage Window keeps moving
 while the data does not, so pick the snapshot's quarter in the Coverage Window selector if the
 rolling view looks thin. If the database is not empty, the command explains how to start fresh.
+
+Keep `--build`: the image tag is shared, so without it Compose may start an older image that
+lacks the `import-data` command. Without a committed export, the command stops with
+`import-data failed: The export has no manifest.json`.
 
 > The snapshot itself is **pending #20** (a full real run). Until it is committed, `data/` holds
 > only what your own Runs exported.
