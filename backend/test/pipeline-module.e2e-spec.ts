@@ -2,6 +2,7 @@ import type { INestApplicationContext } from '@nestjs/common';
 import { DataSource } from 'typeorm';
 
 import { RELEVANCE_CLASSIFIER } from '../src/classification/relevance-classifier';
+import { DATA_EXPORTER, type DataExporter } from '../src/data-export/data-exporter';
 import { SENTIMENT_CLASSIFIER } from '../src/classification/sentiment-classifier';
 import type { RunStatus } from '../src/domain/run';
 import { NEWS_SOURCE } from '../src/news/news-source';
@@ -27,7 +28,8 @@ async function waitFor<T>(probe: () => Promise<T | undefined>, timeoutMs = 15_00
  * The executors as the collector wires them: `PipelineModule` binds
  * `RUN_EXECUTORS`, and the Run worker executes a queued Backfill through it
  * against Postgres. The News Source and the classifiers are the recorded
- * in-memory ones, so nothing reaches Google News or Ollama.
+ * in-memory ones, so nothing reaches Google News or Ollama, and the export
+ * after the Run is a no-op.
  */
 describe('PipelineModule in the CollectorModule (against Postgres)', () => {
   let context: INestApplicationContext;
@@ -37,8 +39,12 @@ describe('PipelineModule in the CollectorModule (against Postgres)', () => {
 
   beforeAll(async () => {
     const classifiers = new RecordedClassifiers();
+    // The worker exports after every Run; keep it from writing the repository's data/ folder.
+    const exporter: DataExporter = { exportAll: () => Promise.resolve() };
     context = await createCollectorContext((builder) =>
       builder
+        .overrideProvider(DATA_EXPORTER)
+        .useValue(exporter)
         .overrideProvider(NEWS_SOURCE)
         .useValue(new RecordedNewsSource())
         .overrideProvider(RELEVANCE_CLASSIFIER)
