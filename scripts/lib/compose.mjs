@@ -9,10 +9,11 @@ import { capture, run } from './process.mjs';
  * environment itself.
  *
  * @param {readonly string[]} args
+ * @param {Record<string, string>} [env] Variables for compose interpolation, merged over process.env.
  * @returns {void}
  */
-export function compose(args) {
-  run({ command: 'docker', args: ['compose', ...args], shell: false }, { cwd: REPO_ROOT });
+export function compose(args, env = {}) {
+  run({ command: 'docker', args: ['compose', ...args], shell: false }, { cwd: REPO_ROOT, env });
 }
 
 /**
