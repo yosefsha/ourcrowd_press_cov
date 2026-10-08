@@ -19,6 +19,7 @@ import { InvalidRunParams } from './collection-window';
 
 const KEYNOTE = 'AMD AAI 2026 Keynote Cerebras';
 const PULSE = 'CrowdStrike And Cerebras Partner To Power Falcon AIDR';
+const CNBC = 'Cerebras stock gains on AMD partnership';
 
 function world(options: Parameters<typeof pipelineWorld>[0] = {}): ReturnType<typeof pipelineWorld> & {
   store: InMemoryCandidateRepository;
@@ -49,7 +50,8 @@ describe('DailyCheckExecutor over recorded Google News results', () => {
     const confirmedNow = store.candidates.filter((candidate) => candidate.confirmedInRunId === 2);
     expect(confirmedNow).toHaveLength(8);
     expect(store.byTitle(CEREBRAS.id).get(PULSE)).toMatchObject({ fetchedInRunId: 2, confirmedInRunId: 2 });
-    expect(store.byTitle(CEREBRAS.id).get(KEYNOTE)).toMatchObject({ fetchedInRunId: 1, confirmedInRunId: 1 });
+    expect(store.byTitle(CEREBRAS.id).get(KEYNOTE)).toMatchObject({ fetchedInRunId: 1, relevance: 'rejected' });
+    expect(store.byTitle(CEREBRAS.id).get(CNBC)).toMatchObject({ fetchedInRunId: 1, confirmedInRunId: 1 });
     expect([...store.byTitle(INNOVIZ.id).values()].filter((c) => c.relevance === 'relevant')).toHaveLength(7);
     expect(progress.last).toMatchObject({ companiesDone: 3, mentionsConfirmed: 8, candidatesFound: 11 });
   });
@@ -76,13 +78,14 @@ describe('DailyCheckExecutor over recorded Google News results', () => {
 
   it('confirms a Candidate a failed earlier Run left pending — confirmation, not first fetch, makes it new', async () => {
     const { backfill, dailyCheck, store, classifiers } = world();
-    classifiers.failRelevance('unavailable');
+    // Cerebras' two newest Candidates before the cutoff: the keynote, then CNBC's report.
+    classifiers.failRelevance('unavailable', 'unavailable');
     await backfill.execute(claimedRun(1, 'backfill', { until: '2026-07-23' }), new RecordingProgress(), RUNNING);
-    expect(store.byTitle(CEREBRAS.id).get(KEYNOTE)).toMatchObject({ relevance: 'pending' });
+    expect(store.byTitle(CEREBRAS.id).get(CNBC)).toMatchObject({ relevance: 'pending' });
 
     await dailyCheck.execute(claimedRun(2, 'daily_check'), new RecordingProgress(), RUNNING);
 
-    expect(store.byTitle(CEREBRAS.id).get(KEYNOTE)).toMatchObject({
+    expect(store.byTitle(CEREBRAS.id).get(CNBC)).toMatchObject({
       relevance: 'relevant',
       fetchedInRunId: 1,
       confirmedInRunId: 2,

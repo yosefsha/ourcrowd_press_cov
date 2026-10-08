@@ -1,0 +1,508 @@
+{
+  "model": "qwen2.5:7b",
+  "recordedAt": "2026-10-08T06:11:49.028Z",
+  "kind": "relevance",
+  "promptVersion": "relevance-v1",
+  "entries": [
+    {
+      "company": {
+        "displayName": "Cerebras",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Cerebras stock gains on AMD partnership",
+        "snippet": "Cerebras stock gains on AMD partnership CNBC",
+        "outletName": "CNBC",
+        "publishedAt": "2026-07-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on the company's stock performance due to a partnership"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Cerebras",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "AMD and Cerebras join forces against Nvidia’s Groq LPUs",
+        "snippet": "AMD and Cerebras join forces against Nvidia’s Groq LPUs The Register",
+        "outletName": "The Register",
+        "publishedAt": "2026-07-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports a partnership involving the company Cerebras"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Cerebras",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "AMD Fires Back At NVIDIA’s Groq Bet, Fuses The Cerebras Wafer-Scale Engine With Helios For 5x Higher Tokens Per Second Per Watt",
+        "snippet": "AMD Fires Back At NVIDIA’s Groq Bet, Fuses The Cerebras Wafer-Scale Engine With Helios For 5x Higher Tokens Per Second Per Watt Wccftech",
+        "outletName": "Wccftech",
+        "publishedAt": "2026-07-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on the company's technology and competition"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Cerebras",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "AMD partners with big chip co. Cerebras for ultra-low-latency and high throughput AI inference system",
+        "snippet": "AMD partners with big chip co. Cerebras for ultra-low-latency and high throughput AI inference system Data Center Dynamics",
+        "outletName": "Data Center Dynamics",
+        "publishedAt": "2026-07-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports a partnership involving the company Cerebras"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Cerebras",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Cerebras stock jumps 6% on CrowdStrike partnership",
+        "snippet": "Cerebras stock jumps 6% on CrowdStrike partnership Investing.com",
+        "outletName": "Investing.com",
+        "publishedAt": "2026-07-22T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on the company's stock reaction to a partnership"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Cerebras",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "AMD and Cerbras form a partnership that makes chips faster and more efficient.",
+        "snippet": "AMD and Cerbras form a partnership that makes chips faster and more efficient. investingLive",
+        "outletName": "investingLive",
+        "publishedAt": "2026-07-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "Cerbras is not the same company as Cerebras"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Cerebras",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "AMD AAI 2026 Keynote Cerebras",
+        "snippet": "AMD AAI 2026 Keynote Cerebras ServeTheHome",
+        "outletName": "ServeTheHome",
+        "publishedAt": "2026-07-23T18:55:09.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About AMD AAI keynote, not Cerebras"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Cerebras",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "CrowdStrike And Cerebras Partner To Power Falcon AIDR",
+        "snippet": "CrowdStrike And Cerebras Partner To Power Falcon AIDR Pulse 2.0",
+        "outletName": "Pulse 2.0",
+        "publishedAt": "2026-07-25T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Partnership with CrowdStrike for AI technology"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Groq",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "AMD Fires Back At NVIDIA’s Groq Bet, Fuses The Cerebras Wafer-Scale Engine With Helios For 5x Higher Tokens Per Second Per Watt",
+        "snippet": "AMD Fires Back At NVIDIA’s Groq Bet, Fuses The Cerebras Wafer-Scale Engine With Helios For 5x Higher Tokens Per Second Per Watt Wccftech",
+        "outletName": "Wccftech",
+        "publishedAt": "2026-07-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "Article mentions Groq but refers to NVIDIA’s product, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Groq",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "AMD and Cerebras join forces against Nvidia’s Groq LPUs",
+        "snippet": "AMD and Cerebras join forces against Nvidia’s Groq LPUs The Register",
+        "outletName": "The Register",
+        "publishedAt": "2026-07-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "Article is about Nvidia's Groq LPUs, not the company Groq"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Groq",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Cerebras stock gains on AMD partnership",
+        "snippet": "Cerebras stock gains on AMD partnership CNBC",
+        "outletName": "CNBC",
+        "publishedAt": "2026-07-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "Article about Cerebras, not Groq"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Groq",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "AMD partners with big chip co. Cerebras for ultra-low-latency and high throughput AI inference system",
+        "snippet": "AMD partners with big chip co. Cerebras for ultra-low-latency and high throughput AI inference system Data Center Dynamics",
+        "outletName": "Data Center Dynamics",
+        "publishedAt": "2026-07-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "Article about Cerebras, not Groq"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Groq",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Nvidia’s LPU gamble",
+        "snippet": "Nvidia’s LPU gamble Data Center Dynamics",
+        "outletName": "Data Center Dynamics",
+        "publishedAt": "2026-07-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "Article is about Nvidia, not Groq"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Groq",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "From OpenAI to Nvidia, firms channel billions into AI infrastructure as demand booms",
+        "snippet": "From OpenAI to Nvidia, firms channel billions into AI infrastructure as demand booms Reuters",
+        "outletName": "Reuters",
+        "publishedAt": "2026-07-22T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "Does not mention Groq"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Innoviz",
+        "aliases": [
+          "אינוויז"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Why Is Innoviz Technologies Stock Falling Tuesday?",
+        "snippet": "Why Is Innoviz Technologies Stock Falling Tuesday? Benzinga",
+        "outletName": "Benzinga",
+        "publishedAt": "2026-07-28T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on the company's stock performance"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Innoviz",
+        "aliases": [
+          "אינוויז"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Innoviz Technologies stock tumbles 30% on share offering",
+        "snippet": "Innoviz Technologies stock tumbles 30% on share offering Investing.com",
+        "outletName": "Investing.com",
+        "publishedAt": "2026-07-28T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on the company's stock performance"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Innoviz",
+        "aliases": [
+          "אינוויז"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "INVZ Q2'26 Earnings: revenue estimate is 16.33M USD",
+        "snippet": "INVZ Q2'26 Earnings: revenue estimate is 16.33M USD TradingView",
+        "outletName": "TradingView",
+        "publishedAt": "2026-07-29T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports the company's financial results"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Innoviz",
+        "aliases": [
+          "אינוויז"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Automotive LiDAR maker lands new counter-drone contract",
+        "snippet": "Automotive LiDAR maker lands new counter-drone contract The Defence Blog",
+        "outletName": "The Defence Blog",
+        "publishedAt": "2026-07-31T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "Article does not mention Innoviz by name."
+      }
+    },
+    {
+      "company": {
+        "displayName": "Innoviz",
+        "aliases": [
+          "אינוויז"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "מניית Innoviz Technologies צונחת 30% בעקבות הנפקת מניות מאת Investing.com",
+        "snippet": "מניית Innoviz Technologies צונחת 30% בעקבות הנפקת מניות מאת Investing.com Investing.com",
+        "outletName": "Investing.com",
+        "publishedAt": "2026-07-28T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Innoviz Technologies' stock performance"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Innoviz",
+        "aliases": [
+          "אינוויז"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "אינוויז שוב מגייסת בדיסקאונט – ושוב מפילה את המניה",
+        "snippet": "אינוויז שוב מגייסת בדיסקאונט – ושוב מפילה את המניה Techtime",
+        "outletName": "Techtime",
+        "publishedAt": "2026-07-29T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on the company's discount fundraising and stock performance"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Innoviz",
+        "aliases": [
+          "אינוויז"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Innoviz מתמחרת הנפקה פרטית רשומה של $30 מיליון מאת Investing.com",
+        "snippet": "Innoviz מתמחרת הנפקה פרטית רשומה של $30 מיליון מאת Investing.com Investing.com",
+        "outletName": "Investing.com",
+        "publishedAt": "2026-07-28T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on the company's private placement"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Innoviz",
+        "aliases": [
+          "אינוויז"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "מניות אינוויז צונחות ב-30%: מגייסת 30 מיליון דולר בדיסקאונט חד",
+        "snippet": "מניות אינוויז צונחות ב-30%: מגייסת 30 מיליון דולר בדיסקאונט חד ביזפורטל",
+        "outletName": "ביזפורטל",
+        "publishedAt": "2026-07-28T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Innoviz's funding"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Innoviz",
+        "aliases": [
+          "אינוויז"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "הישראלית שצנחה אתמול ב-30%: והחלום שהיא עוד מנסה למכור",
+        "snippet": "הישראלית שצנחה אתמול ב-30%: והחלום שהיא עוד מנסה למכור ice (אייס)",
+        "outletName": "ice (אייס)",
+        "publishedAt": "2026-07-29T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a person, not the company Innoviz"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Innoviz",
+        "aliases": [
+          "אינוויז"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "מחיר הדילול: מפתחת חיישני ה-LiDAR אינוויז צללה בעקבות גיוס הון",
+        "snippet": "מחיר הדילול: מפתחת חיישני ה-LiDAR אינוויז צללה בעקבות גיוס הון ספונסר",
+        "outletName": "ספונסר",
+        "publishedAt": "2026-07-29T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Innoviz's funding round"
+      }
+    }
+  ]
+}

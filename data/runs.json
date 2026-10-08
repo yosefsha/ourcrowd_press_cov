@@ -1,0 +1,31 @@
+[
+  {
+    "id": 49,
+    "type": "backfill",
+    "status": "completed",
+    "trigger": "dashboard",
+    "params": {
+      "until": null,
+      "reprocess": false,
+      "companyIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "progress": {
+      "companiesDone": 3,
+      "companyErrors": 0,
+      "companiesTotal": 3,
+      "currentCompany": null,
+      "candidatesFound": 24,
+      "mentionsConfirmed": 13,
+      "candidatesClassified": 24
+    },
+    "error": null,
+    "createdAt": "2026-10-08T06:25:41.341166Z",
+    "startedAt": "2026-10-08T06:25:44.316835Z",
+    "finishedAt": "2026-10-08T06:25:44.649246Z",
+    "companyErrors": []
+  }
+]

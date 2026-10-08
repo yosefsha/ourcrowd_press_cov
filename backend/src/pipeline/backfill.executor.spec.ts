@@ -24,6 +24,8 @@ const WCCFTECH =
   'AMD Fires Back At NVIDIA’s Groq Bet, Fuses The Cerebras Wafer-Scale Engine With Helios For 5x Higher Tokens Per Second Per Watt';
 const REGISTER = 'AMD and Cerebras join forces against Nvidia’s Groq LPUs';
 const CNBC = 'Cerebras stock gains on AMD partnership';
+const KEYNOTE = 'AMD AAI 2026 Keynote Cerebras';
+const PULSE = 'CrowdStrike And Cerebras Partner To Power Falcon AIDR';
 
 function world(options: Parameters<typeof pipelineWorld>[0] = {}): ReturnType<typeof pipelineWorld> & {
   store: InMemoryCandidateRepository;
@@ -45,14 +47,14 @@ describe('BackfillExecutor over recorded Google News results', () => {
     expect(store.candidates).toHaveLength(24);
     expect(store.articles.size).toBe(20);
     expect(store.candidates.filter((candidate) => candidate.relevance === 'pending')).toEqual([]);
-    expect(store.candidates.filter((candidate) => candidate.relevance === 'relevant')).toHaveLength(15);
+    expect(store.candidates.filter((candidate) => candidate.relevance === 'relevant')).toHaveLength(13);
     expect(store.candidates.every((candidate) => candidate.fetchedInRunId === 1)).toBe(true);
     expect(progress.last).toEqual({
       companiesTotal: 3,
       companiesDone: 3,
       candidatesFound: 24,
       candidatesClassified: 24,
-      mentionsConfirmed: 15,
+      mentionsConfirmed: 13,
       companyErrors: 0,
       currentCompany: null,
     });
@@ -64,7 +66,10 @@ describe('BackfillExecutor over recorded Google News results', () => {
   });
 
   it('stores an Article found for two companies once, as one Candidate per company — two Mentions', async () => {
-    const { backfill, store } = world();
+    const { backfill, store, classifiers } = world();
+    // Hand-listed: the recorded model judged this AMD/Cerebras story not to be
+    // about Groq, so no recorded verdict yields one Article with two Mentions.
+    classifiers.handList({ company: 'Groq', title: WCCFTECH, sentiment: 'neutral' });
 
     await backfill.execute(claimedRun(1, 'backfill'), new RecordingProgress(), RUNNING);
 
@@ -143,8 +148,8 @@ describe('BackfillExecutor over recorded Google News results', () => {
 
   it('resumes: a second Backfill classifies only what the first left pending', async () => {
     const { backfill, store, classifiers } = world();
-    // Groq's only LLM-judged Candidates fail; nothing reaches the threshold of 5.
-    classifiers.failRelevance(null, null, null, null, null, null, null, 'unavailable', 'unavailable');
+    // Cerebras' two newest Candidates fail; nothing reaches the threshold of 5.
+    classifiers.failRelevance('unavailable', 'unavailable');
 
     const first = await backfill.execute(claimedRun(1, 'backfill'), new RecordingProgress(), RUNNING);
     const pendingAfterFirst = store.candidates.filter((candidate) => candidate.relevance === 'pending');
@@ -156,7 +161,7 @@ describe('BackfillExecutor over recorded Google News results', () => {
       status: 'completed_with_errors',
       companyErrors: [
         {
-          companyId: GROQ.id,
+          companyId: CEREBRAS.id,
           stage: 'relevance',
           message: '2 Candidate(s) left pending for the next Run: connect ECONNREFUSED 127.0.0.1:11434',
         },
@@ -164,9 +169,10 @@ describe('BackfillExecutor over recorded Google News results', () => {
     });
     expect(pendingAfterFirst).toHaveLength(2);
     expect(second).toEqual({ status: 'completed' });
-    expect([...classifiers.relevanceCalls].sort()).toEqual([`Groq|${REGISTER}`, `Groq|${WCCFTECH}`].sort());
+    expect([...classifiers.relevanceCalls].sort()).toEqual([`Cerebras|${KEYNOTE}`, `Cerebras|${PULSE}`].sort());
     expect(store.candidates).toHaveLength(24);
-    expect(store.byTitle(GROQ.id).get(WCCFTECH)).toMatchObject({ relevance: 'relevant', confirmedInRunId: 2 });
+    expect(store.byTitle(CEREBRAS.id).get(PULSE)).toMatchObject({ relevance: 'relevant', fetchedInRunId: 1, confirmedInRunId: 2 });
+    expect(store.byTitle(CEREBRAS.id).get(KEYNOTE)).toMatchObject({ relevance: 'rejected', relevanceMethod: 'llm' });
     expect(store.byTitle(CEREBRAS.id).get(WCCFTECH)).toMatchObject({ confirmedInRunId: 1 });
   });
 
@@ -261,7 +267,7 @@ describe('BackfillExecutor over recorded Google News results', () => {
     expect(cerebras.every((candidate) => candidate.fetchedInRunId === 2)).toBe(true);
     expect(cerebras.filter((candidate) => candidate.relevance === 'relevant').every((c) => c.confirmedInRunId === 2)).toBe(true);
     // Groq's Candidates — including those for Articles shared with Cerebras — are untouched.
-    expect(store.byTitle(GROQ.id).get(WCCFTECH)).toMatchObject({ fetchedInRunId: 1, confirmedInRunId: 1 });
+    expect(store.byTitle(GROQ.id).get(WCCFTECH)).toMatchObject({ fetchedInRunId: 1, relevance: 'rejected' });
     expect(store.articles.size).toBe(20);
   });
 

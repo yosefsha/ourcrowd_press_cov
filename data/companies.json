@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "sourceName": null,
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Cerebras",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T06:25:41.333898Z",
+    "updatedAt": "2026-10-08T06:25:44.366852Z"
+  },
+  {
+    "id": 2,
+    "sourceName": null,
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Groq",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T06:25:41.333898Z",
+    "updatedAt": "2026-10-08T06:25:44.450061Z"
+  },
+  {
+    "id": 3,
+    "sourceName": null,
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Innoviz",
+      "aliases": [
+        "אינוויז"
+      ],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T06:25:41.333898Z",
+    "updatedAt": "2026-10-08T06:25:44.544538Z"
+  }
+]

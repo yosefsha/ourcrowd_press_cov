@@ -1,0 +1,304 @@
+{
+  "model": "qwen2.5:7b",
+  "recordedAt": "2026-10-08T06:11:49.028Z",
+  "kind": "sentiment",
+  "promptVersion": "sentiment-v1",
+  "entries": [
+    {
+      "company": {
+        "displayName": "Cerebras",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Cerebras stock gains on AMD partnership",
+        "snippet": "Cerebras stock gains on AMD partnership CNBC",
+        "outletName": "CNBC",
+        "publishedAt": "2026-07-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Stock gains due to partnership"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Cerebras",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "AMD and Cerebras join forces against Nvidia’s Groq LPUs",
+        "snippet": "AMD and Cerebras join forces against Nvidia’s Groq LPUs The Register",
+        "outletName": "The Register",
+        "publishedAt": "2026-07-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports a partnership with AMD against Nvidia"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Cerebras",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "AMD Fires Back At NVIDIA’s Groq Bet, Fuses The Cerebras Wafer-Scale Engine With Helios For 5x Higher Tokens Per Second Per Watt",
+        "snippet": "AMD Fires Back At NVIDIA’s Groq Bet, Fuses The Cerebras Wafer-Scale Engine With Helios For 5x Higher Tokens Per Second Per Watt Wccftech",
+        "outletName": "Wccftech",
+        "publishedAt": "2026-07-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports Cerebras' technology fusion with Helios"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Cerebras",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "AMD partners with big chip co. Cerebras for ultra-low-latency and high throughput AI inference system",
+        "snippet": "AMD partners with big chip co. Cerebras for ultra-low-latency and high throughput AI inference system Data Center Dynamics",
+        "outletName": "Data Center Dynamics",
+        "publishedAt": "2026-07-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Partnership with AMD for AI inference system"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Cerebras",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Cerebras stock jumps 6% on CrowdStrike partnership",
+        "snippet": "Cerebras stock jumps 6% on CrowdStrike partnership Investing.com",
+        "outletName": "Investing.com",
+        "publishedAt": "2026-07-22T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports stock jump due to partnership"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Cerebras",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "CrowdStrike And Cerebras Partner To Power Falcon AIDR",
+        "snippet": "CrowdStrike And Cerebras Partner To Power Falcon AIDR Pulse 2.0",
+        "outletName": "Pulse 2.0",
+        "publishedAt": "2026-07-25T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports a partnership for the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Innoviz",
+        "aliases": [
+          "אינוויז"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Why Is Innoviz Technologies Stock Falling Tuesday?",
+        "snippet": "Why Is Innoviz Technologies Stock Falling Tuesday? Benzinga",
+        "outletName": "Benzinga",
+        "publishedAt": "2026-07-28T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "negative",
+        "reason": "Reports stock falling for the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Innoviz",
+        "aliases": [
+          "אינוויז"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Innoviz Technologies stock tumbles 30% on share offering",
+        "snippet": "Innoviz Technologies stock tumbles 30% on share offering Investing.com",
+        "outletName": "Investing.com",
+        "publishedAt": "2026-07-28T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "negative",
+        "reason": "Reports stock tumbles following share offering"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Innoviz",
+        "aliases": [
+          "אינוויז"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "INVZ Q2'26 Earnings: revenue estimate is 16.33M USD",
+        "snippet": "INVZ Q2'26 Earnings: revenue estimate is 16.33M USD TradingView",
+        "outletName": "TradingView",
+        "publishedAt": "2026-07-29T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "sentiment": "neutral",
+        "reason": "Revenue estimate reported"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Innoviz",
+        "aliases": [
+          "אינוויז"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "מניית Innoviz Technologies צונחת 30% בעקבות הנפקת מניות מאת Investing.com",
+        "snippet": "מניית Innoviz Technologies צונחת 30% בעקבות הנפקת מניות מאת Investing.com Investing.com",
+        "outletName": "Investing.com",
+        "publishedAt": "2026-07-28T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "sentiment": "negative",
+        "reason": "Reports 30% share price drop due to share issuance"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Innoviz",
+        "aliases": [
+          "אינוויז"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "אינוויז שוב מגייסת בדיסקאונט – ושוב מפילה את המניה",
+        "snippet": "אינוויז שוב מגייסת בדיסקאונט – ושוב מפילה את המניה Techtime",
+        "outletName": "Techtime",
+        "publishedAt": "2026-07-29T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "sentiment": "negative",
+        "reason": "Reports discounted fundraising and share price drop"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Innoviz",
+        "aliases": [
+          "אינוויז"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Innoviz מתמחרת הנפקה פרטית רשומה של $30 מיליון מאת Investing.com",
+        "snippet": "Innoviz מתמחרת הנפקה פרטית רשומה של $30 מיליון מאת Investing.com Investing.com",
+        "outletName": "Investing.com",
+        "publishedAt": "2026-07-28T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "sentiment": "positive",
+        "reason": "Reports new funding for the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Innoviz",
+        "aliases": [
+          "אינוויז"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "מניות אינוויז צונחות ב-30%: מגייסת 30 מיליון דולר בדיסקאונט חד",
+        "snippet": "מניות אינוויז צונחות ב-30%: מגייסת 30 מיליון דולר בדיסקאונט חד ביזפורטל",
+        "outletName": "ביזפורטל",
+        "publishedAt": "2026-07-28T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "sentiment": "negative",
+        "reason": "Stock price drops 30% after discounted funding round"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Innoviz",
+        "aliases": [
+          "אינוויז"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "מחיר הדילול: מפתחת חיישני ה-LiDAR אינוויז צללה בעקבות גיוס הון",
+        "snippet": "מחיר הדילול: מפתחת חיישני ה-LiDAR אינוויז צללה בעקבות גיוס הון ספונסר",
+        "outletName": "ספונסר",
+        "publishedAt": "2026-07-29T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "sentiment": "neutral",
+        "reason": "Announcement of funding round"
+      }
+    }
+  ]
+}

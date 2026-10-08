@@ -16,8 +16,7 @@ import {
   trackedCompany,
 } from './in-memory-pipeline-ports';
 import { RecordedNewsSource } from './recorded-news';
-import { ScriptedClassifiers } from './scripted-classifiers';
-import { RECORDED_ARTICLE_VERDICTS } from './verdicts';
+import { RecordedClassifiers } from './recorded-classifiers';
 
 export const CEREBRAS = trackedCompany(1, { displayName: 'Cerebras' });
 export const GROQ = trackedCompany(2, { displayName: 'Groq' });
@@ -40,7 +39,7 @@ export const SETTINGS: PipelineSettings = {
 
 export interface PipelineWorld {
   readonly news: RecordedNewsSource;
-  readonly classifiers: ScriptedClassifiers;
+  readonly classifiers: RecordedClassifiers;
   readonly companies: PipelineCompanies;
   readonly candidates: CandidateRepository;
   readonly history: RunHistory;
@@ -61,7 +60,7 @@ export interface WorldOptions {
 /** Both executors over the recorded fixtures and in-memory ports, unless others are given. */
 export function pipelineWorld(options: WorldOptions = {}): PipelineWorld {
   const news = options.news ?? new RecordedNewsSource();
-  const classifiers = new ScriptedClassifiers(RECORDED_ARTICLE_VERDICTS);
+  const classifiers = new RecordedClassifiers();
   const companies = options.companies ?? new InMemoryPipelineCompanies(FIXTURE_COMPANIES);
   const candidates = options.candidates ?? new InMemoryCandidateRepository();
   const history = options.history ?? new InMemoryRunHistory();

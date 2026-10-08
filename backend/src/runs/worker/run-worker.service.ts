@@ -4,7 +4,6 @@ import {
   Injectable,
   Logger,
   OnApplicationBootstrap,
-  Optional,
 } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 
@@ -55,11 +54,10 @@ export class RunWorker implements OnApplicationBootstrap, BeforeApplicationShutd
     @Inject(DATA_EXPORTER) private readonly exporter: DataExporter,
     private readonly activity: CollectorActivity,
     config: ConfigService<AppConfig, true>,
-    // Optional until PipelineModule binds it (#9): with no executor for its
-    // type a Run fails, loudly, rather than the collector refusing to boot.
-    @Optional() @Inject(RUN_EXECUTORS) executors: readonly RunExecutor[] | null = null,
+    // Bound by PipelineModule (#9): one executor per Run type.
+    @Inject(RUN_EXECUTORS) executors: readonly RunExecutor[],
   ) {
-    this.executors = indexByRunType(executors ?? []);
+    this.executors = indexByRunType(executors);
     this.pollIntervalMs = config.get('runs.pollIntervalMs', { infer: true });
   }
 

@@ -153,10 +153,12 @@ describe('Backfill and Daily Check against Postgres', () => {
     const shared = cerebrasAfterBackfill.filter((c) => groqAfterBackfill.some((g) => g.article_id === c.article_id));
     expect(shared).toHaveLength(4);
     const wccftech = groqAfterBackfill.find((g) => g.title.startsWith('AMD Fires Back'));
-    expect(wccftech).toMatchObject({ relevance: 'relevant', sentiment: 'neutral', confirmed_in_run_id: backfillId });
+    // Recorded verdicts: a Mention of Cerebras, rejected by the classifier for Groq.
+    expect(wccftech).toMatchObject({ relevance: 'rejected', relevance_method: 'llm', confirmed_in_run_id: null });
     expect(cerebrasAfterBackfill.find((c) => c.article_id === wccftech?.article_id)).toMatchObject({
       relevance: 'relevant',
       sentiment: 'positive',
+      confirmed_in_run_id: backfillId,
     });
 
     const dailyId = await startRun('daily_check');
