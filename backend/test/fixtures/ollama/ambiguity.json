@@ -1,0 +1,1814 @@
+{
+  "model": "qwen2.5:7b",
+  "recordedAt": "2026-10-08T06:27:49.406Z",
+  "kind": "ambiguity",
+  "promptVersion": "ambiguity-v1",
+  "entries": [
+    {
+      "name": "ZutaCore",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Maolac",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word; also Maolac hair removal"
+      }
+    },
+    {
+      "name": "Biolojic Design",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "OncoHost",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive name unlikely to match other topics"
+      }
+    },
+    {
+      "name": "Morphisec",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Harvey",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common first name; also Hurricane Harvey and Harvey Weinstein"
+      }
+    },
+    {
+      "name": "OpenEvidence",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Stripe",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Cerebras",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Together AI",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Harbinger Motors",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive name unlikely to match other topics"
+      }
+    },
+    {
+      "name": "TensorWave",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "Glean",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English verb and noun"
+      }
+    },
+    {
+      "name": "SpaceX",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "DeepKeep",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Lambda",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "SSI",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common abbreviation used in many contexts"
+      }
+    },
+    {
+      "name": "xAI",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common abbreviation; could refer to many topics"
+      }
+    },
+    {
+      "name": "Island",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with many unrelated meanings"
+      }
+    },
+    {
+      "name": "Velotix",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Databricks",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Ayar Labs",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive name of a startup company"
+      }
+    },
+    {
+      "name": "RepAir Carbon",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "Kardome",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with unrelated meanings"
+      }
+    },
+    {
+      "name": "Omnix Medical",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Kodiak Robotics",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive name of a robotics company"
+      }
+    },
+    {
+      "name": "Scale AI",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive name of a startup"
+      }
+    },
+    {
+      "name": "Spot AI",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Siteaware",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Ukko",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common Finnish name and word"
+      }
+    },
+    {
+      "name": "Groq",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with unrelated meanings"
+      }
+    },
+    {
+      "name": "Anthropic",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with unrelated meanings"
+      }
+    },
+    {
+      "name": "Bites",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "Atlas Obscura",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Stoke Space",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with unrelated meanings"
+      }
+    },
+    {
+      "name": "SeeTree",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "OneAI",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Edity Therapeutics",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive name unlikely to match other topics"
+      }
+    },
+    {
+      "name": "Carrar",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple meanings"
+      }
+    },
+    {
+      "name": "Quidnet Energy",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Lano",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple meanings"
+      }
+    },
+    {
+      "name": "Flash Forest",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Kando",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "NT-Tao",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Neolithics",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word; also refers to ancient history"
+      }
+    },
+    {
+      "name": "Arrow Global",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple meanings"
+      }
+    },
+    {
+      "name": "Air EV",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "Ursa Major",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Quai.MD",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Cyfirma",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "Ludeo",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Lightico",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "3d Signals",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "IQM",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common abbreviation; may refer to IQ tests"
+      }
+    },
+    {
+      "name": "Kini",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common Hebrew word; also a surname"
+      }
+    },
+    {
+      "name": "Liquid Instruments",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Sotero",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common Hebrew surname"
+      }
+    },
+    {
+      "name": "Connected Energy",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "BetterSeeds",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Oshi",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple meanings"
+      }
+    },
+    {
+      "name": "Genopore",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Mermade Seafoods",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word 'made' used in many contexts"
+      }
+    },
+    {
+      "name": "ProFuse",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "AEYE Health",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Workspot",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "Spectrum Labs",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive name unlikely to match other topics"
+      }
+    },
+    {
+      "name": "Anodot",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive name of a startup company"
+      }
+    },
+    {
+      "name": "Xage Security",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "IronVest",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "The EVERY Company",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word used in many unrelated stories"
+      }
+    },
+    {
+      "name": "InsideTracker",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "CarDekho",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with unrelated meanings"
+      }
+    },
+    {
+      "name": "One Zero Digital Bank",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive name unlikely to match other topics"
+      }
+    },
+    {
+      "name": "Binah.ai",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Eko Health",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with unrelated meanings"
+      }
+    },
+    {
+      "name": "Cycuity",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Peak",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple meanings"
+      }
+    },
+    {
+      "name": "Oriient",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word; also orientation and orient"
+      }
+    },
+    {
+      "name": "Tabnine",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive name unlikely to match other topics"
+      }
+    },
+    {
+      "name": "InZiv",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common Hebrew word; also a hospital name"
+      }
+    },
+    {
+      "name": "BlueTree Technologies",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "BioLumic",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Orchard",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple meanings"
+      }
+    },
+    {
+      "name": "Tailor Brands",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "Flytrex",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Quantum Machines",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Sufresca",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with unrelated meanings"
+      }
+    },
+    {
+      "name": "Guild",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with various unrelated meanings"
+      }
+    },
+    {
+      "name": "Sfara",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common Hebrew word; also a brand name"
+      }
+    },
+    {
+      "name": "Zippin",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "Privateer",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with various unrelated meanings"
+      }
+    },
+    {
+      "name": "Cordio Medical",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "wefox",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "Moodify",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Polaris Quantum Biotech",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Alloy Therapeutics",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive name unlikely to match other topics"
+      }
+    },
+    {
+      "name": "Ynsect",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with unrelated meanings"
+      }
+    },
+    {
+      "name": "Treedom",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with unrelated meanings"
+      }
+    },
+    {
+      "name": "MaterialsZone",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "BrightInsight",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Launchpad",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "Sequentify",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Tamar Robotics",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive name unlikely to match other topics"
+      }
+    },
+    {
+      "name": "Entangled Networks",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Dandelion Energy",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive name unlikely to match other topics"
+      }
+    },
+    {
+      "name": "Shield",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "People.ai",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated uses"
+      }
+    },
+    {
+      "name": "H2Pro",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "JumpCloud",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Future Family",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common phrase in English"
+      }
+    },
+    {
+      "name": "Remilk",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Ordergroove",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Clinch",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English verb and surname"
+      }
+    },
+    {
+      "name": "BlueGreen Water Technologies",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive name unlikely to match other topics"
+      }
+    },
+    {
+      "name": "Classiq",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "Diagnostic Robotics",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive name unlikely to match other topics"
+      }
+    },
+    {
+      "name": "Overtime",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "Dataloop",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Greenlight",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "Cyabra",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "C2A Security",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive name unlikely to match other topics"
+      }
+    },
+    {
+      "name": "MasterClass",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with unrelated meanings"
+      }
+    },
+    {
+      "name": "HEQA Security",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English acronym"
+      }
+    },
+    {
+      "name": "CytoReason",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Tovala",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with unrelated meanings"
+      }
+    },
+    {
+      "name": "Ro",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with many unrelated uses"
+      }
+    },
+    {
+      "name": "MigVax",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word; also a surname"
+      }
+    },
+    {
+      "name": "Skillz",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "BlueCircle",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple meanings"
+      }
+    },
+    {
+      "name": "Near",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with many unrelated meanings"
+      }
+    },
+    {
+      "name": "CyberX",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Celeno",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Kenna Security",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive name of a cybersecurity startup"
+      }
+    },
+    {
+      "name": "Wayup",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "Nanorep",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Taranis",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive name unlikely to match other topics"
+      }
+    },
+    {
+      "name": "Momentis Surgical",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Argus Cyber Security",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive name of a cybersecurity company"
+      }
+    },
+    {
+      "name": "The Bouqs",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English phrase; also bouquets"
+      }
+    },
+    {
+      "name": "Zoomcar",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive name of a startup"
+      }
+    },
+    {
+      "name": "Sweetch",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "TechSee",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Replay Technologies",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive name unlikely to match other topics"
+      }
+    },
+    {
+      "name": "NooBaa",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "mPrest",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "Amitree",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple meanings"
+      }
+    },
+    {
+      "name": "Wave",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word used in many unrelated stories"
+      }
+    },
+    {
+      "name": "Firefly Neuroscience",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Syqe",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple meanings"
+      }
+    },
+    {
+      "name": "Ubimo",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with unrelated meanings"
+      }
+    },
+    {
+      "name": "BIScience",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Verse.ai",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Global Kinetics",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Zebra Medical Vision",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Corephotonics",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "JUMP Bikes",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English verb and brand name"
+      }
+    },
+    {
+      "name": "UPnRIDE",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Appforma",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Nextpeer",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Parko",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "PulmOne",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "Shopial",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with unrelated meanings"
+      }
+    },
+    {
+      "name": "Fireblade",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Freightos",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive name of a shipping technology company"
+      }
+    },
+    {
+      "name": "The Trendlines Group",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English phrase used in various contexts"
+      }
+    },
+    {
+      "name": "Viewbix",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "eVigilo",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Appdome",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "enVerid",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Crosswise",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "Abes Market",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "Surgical Theater",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive name unlikely to match other topics"
+      }
+    },
+    {
+      "name": "MST",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common abbreviation or initialism"
+      }
+    },
+    {
+      "name": "Bizzabo",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "Neverware",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "BioCatch",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Sight Diagnostics",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Consumer Physics",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "StackIQ",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Mentad",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "CropX",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive name unlikely to match other topics"
+      }
+    },
+    {
+      "name": "Powwow",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple meanings"
+      }
+    },
+    {
+      "name": "Apploi",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Lifeward",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "Cimagine",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Boatsetter",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with unrelated meanings"
+      }
+    },
+    {
+      "name": "Stringify",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with various unrelated meanings"
+      }
+    },
+    {
+      "name": "BriefCam",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "BillGuard",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English first name"
+      }
+    },
+    {
+      "name": "Xsense",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Astra",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "NeuReality",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "EquipmentShare",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "Hub Security",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "BlueNalu",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Medisafe",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with unrelated meanings"
+      }
+    },
+    {
+      "name": "Ravin AI",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word; also surname"
+      }
+    },
+    {
+      "name": "Kemtai",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Distinctive invented name unlikely to match other topics"
+      }
+    },
+    {
+      "name": "Kryon Systems",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive name unlikely to match other topics"
+      }
+    },
+    {
+      "name": "TubiTV",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive name of a streaming service"
+      }
+    },
+    {
+      "name": "NetOp",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "CorrActions",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "SaNOtize",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Stellar Cyber",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "SeeTrue",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Perception Point",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Innovalve",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Tala",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "Signals Analytics",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "PlaySight",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "EduNav",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Barcode Nanotech",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Ride Vision",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Frontier Car Group",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive name unlikely to match other topics"
+      }
+    },
+    {
+      "name": "Autobrains",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "DailyPay",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with unrelated uses"
+      }
+    },
+    {
+      "name": "Sayata",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Locusview",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Juganu",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common Hebrew word; also a surname"
+      }
+    },
+    {
+      "name": "Nanomedic",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "Incredo",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Casper",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with unrelated meanings"
+      }
+    },
+    {
+      "name": "CB4",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common abbreviation; could refer to many topics"
+      }
+    },
+    {
+      "name": "Foretellix",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive name unlikely to match other topics"
+      }
+    },
+    {
+      "name": "Neura",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with unrelated meanings"
+      }
+    },
+    {
+      "name": "ItsMine",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common phrase 'its mine' in quotes"
+      }
+    },
+    {
+      "name": "Tevel",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common Hebrew word; also meaning universe"
+      }
+    },
+    {
+      "name": "Trusona",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Beyond Meat",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name for a startup"
+      }
+    },
+    {
+      "name": "HoneyBook",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "RealView Imaging",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with unrelated meanings"
+      }
+    },
+    {
+      "name": "CyberMDX",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive name unlikely to match other topics"
+      }
+    },
+    {
+      "name": "Alpha Tau",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "ThetaRay",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "VAYAVISION",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common Hebrew word; also a brand name"
+      }
+    },
+    {
+      "name": "Insightec",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive name unlikely to match other topics"
+      }
+    },
+    {
+      "name": "Cognigo",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Ossio",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English surname"
+      }
+    },
+    {
+      "name": "MeMed",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "Arbe Robotics",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive name of a robotics company"
+      }
+    },
+    {
+      "name": "Lemonade",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "Hailo",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with unrelated meanings"
+      }
+    },
+    {
+      "name": "Sense Education",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "Unispectral",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Klook",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with unrelated uses"
+      }
+    },
+    {
+      "name": "Innoviz",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name for a startup"
+      }
+    },
+    {
+      "name": "Rewire",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English verb and noun"
+      }
+    },
+    {
+      "name": "YuLife",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "Edgybees",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "DreaMed Diabetes",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive name unlikely to match other topics"
+      }
+    },
+    {
+      "name": "Magisto",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with unrelated meanings"
+      }
+    },
+    {
+      "name": "Virgin Hyperloop One",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Airobotics",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Scopio Labs",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive name unlikely to match other topics"
+      }
+    },
+    {
+      "name": "BeetleSat",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Silo",
+      "assessment": {
+        "ambiguous": true,
+        "reason": "Common English word with multiple unrelated meanings"
+      }
+    },
+    {
+      "name": "BrainQ Technologies",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    },
+    {
+      "name": "Intuition Robotics",
+      "assessment": {
+        "ambiguous": false,
+        "reason": "Distinctive invented name"
+      }
+    }
+  ]
+}

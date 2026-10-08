@@ -1,0 +1,350 @@
+{
+  "recordedAt": "2026-10-08T06:10:28.173Z",
+  "window": {
+    "from": "2026-07-01T00:00:00.000Z",
+    "to": "2026-10-01T00:00:00.000Z"
+  },
+  "sampleRule": "one in every 12 of the 258 Seed List companies (20 sampled), searched in en-US and he-IL for Q3 2026 with the profile the Seed List gives them",
+  "companies": [
+    {
+      "company": "ZutaCore",
+      "editions": [
+        {
+          "edition": "en-US",
+          "found": 6,
+          "capped": false
+        },
+        {
+          "edition": "he-IL",
+          "found": 1,
+          "capped": false
+        }
+      ],
+      "candidates": 7,
+      "classified": 4
+    },
+    {
+      "company": "Glean",
+      "editions": [
+        {
+          "edition": "en-US",
+          "found": 81,
+          "capped": false
+        },
+        {
+          "edition": "he-IL",
+          "found": 0,
+          "capped": false
+        }
+      ],
+      "candidates": 81,
+      "classified": 58
+    },
+    {
+      "company": "Omnix Medical",
+      "editions": [
+        {
+          "edition": "en-US",
+          "found": 3,
+          "capped": false
+        },
+        {
+          "edition": "he-IL",
+          "found": 1,
+          "capped": false
+        }
+      ],
+      "candidates": 4,
+      "classified": 0
+    },
+    {
+      "company": "OneAI",
+      "editions": [
+        {
+          "edition": "en-US",
+          "found": 7,
+          "capped": false
+        },
+        {
+          "edition": "he-IL",
+          "found": 0,
+          "capped": false
+        }
+      ],
+      "candidates": 7,
+      "classified": 1
+    },
+    {
+      "company": "Quai.MD",
+      "editions": [
+        {
+          "edition": "en-US",
+          "found": 0,
+          "capped": false
+        },
+        {
+          "edition": "he-IL",
+          "found": 0,
+          "capped": false
+        }
+      ],
+      "candidates": 0,
+      "classified": 0
+    },
+    {
+      "company": "Genopore",
+      "editions": [
+        {
+          "edition": "en-US",
+          "found": 1,
+          "capped": false
+        },
+        {
+          "edition": "he-IL",
+          "found": 0,
+          "capped": false
+        }
+      ],
+      "candidates": 1,
+      "classified": 1
+    },
+    {
+      "company": "One Zero Digital Bank Ltd.",
+      "editions": [
+        {
+          "edition": "en-US",
+          "found": 0,
+          "capped": false
+        },
+        {
+          "edition": "he-IL",
+          "found": 0,
+          "capped": false
+        }
+      ],
+      "candidates": 0,
+      "classified": 0
+    },
+    {
+      "company": "Flytrex",
+      "editions": [
+        {
+          "edition": "en-US",
+          "found": 16,
+          "capped": false
+        },
+        {
+          "edition": "he-IL",
+          "found": 0,
+          "capped": false
+        }
+      ],
+      "candidates": 16,
+      "classified": 9
+    },
+    {
+      "company": "Ynsect",
+      "editions": [
+        {
+          "edition": "en-US",
+          "found": 1,
+          "capped": false
+        },
+        {
+          "edition": "he-IL",
+          "found": 0,
+          "capped": false
+        }
+      ],
+      "candidates": 1,
+      "classified": 0
+    },
+    {
+      "company": "JumpCloud",
+      "editions": [
+        {
+          "edition": "en-US",
+          "found": 10,
+          "capped": false
+        },
+        {
+          "edition": "he-IL",
+          "found": 0,
+          "capped": false
+        }
+      ],
+      "candidates": 10,
+      "classified": 8
+    },
+    {
+      "company": "C2A Security",
+      "editions": [
+        {
+          "edition": "en-US",
+          "found": 2,
+          "capped": false
+        },
+        {
+          "edition": "he-IL",
+          "found": 0,
+          "capped": false
+        }
+      ],
+      "candidates": 2,
+      "classified": 1
+    },
+    {
+      "company": "Kenna Security",
+      "editions": [
+        {
+          "edition": "en-US",
+          "found": 8,
+          "capped": false
+        },
+        {
+          "edition": "he-IL",
+          "found": 0,
+          "capped": false
+        }
+      ],
+      "candidates": 8,
+      "classified": 0
+    },
+    {
+      "company": "mPrest",
+      "editions": [
+        {
+          "edition": "en-US",
+          "found": 3,
+          "capped": false
+        },
+        {
+          "edition": "he-IL",
+          "found": 0,
+          "capped": false
+        }
+      ],
+      "candidates": 3,
+      "classified": 0
+    },
+    {
+      "company": "UPnRIDE",
+      "editions": [
+        {
+          "edition": "en-US",
+          "found": 2,
+          "capped": false
+        },
+        {
+          "edition": "he-IL",
+          "found": 0,
+          "capped": false
+        }
+      ],
+      "candidates": 2,
+      "classified": 2
+    },
+    {
+      "company": "enVerid",
+      "editions": [
+        {
+          "edition": "en-US",
+          "found": 0,
+          "capped": false
+        },
+        {
+          "edition": "he-IL",
+          "found": 0,
+          "capped": false
+        }
+      ],
+      "candidates": 0,
+      "classified": 0
+    },
+    {
+      "company": "CropX",
+      "editions": [
+        {
+          "edition": "en-US",
+          "found": 7,
+          "capped": false
+        },
+        {
+          "edition": "he-IL",
+          "found": 5,
+          "capped": false
+        }
+      ],
+      "candidates": 12,
+      "classified": 6
+    },
+    {
+      "company": "EquipmentShare",
+      "editions": [
+        {
+          "edition": "en-US",
+          "found": 96,
+          "capped": true
+        },
+        {
+          "edition": "he-IL",
+          "found": 0,
+          "capped": false
+        }
+      ],
+      "candidates": 96,
+      "classified": 94
+    },
+    {
+      "company": "SeeTrue",
+      "editions": [
+        {
+          "edition": "en-US",
+          "found": 8,
+          "capped": false
+        },
+        {
+          "edition": "he-IL",
+          "found": 1,
+          "capped": false
+        }
+      ],
+      "candidates": 9,
+      "classified": 8
+    },
+    {
+      "company": "Sayata",
+      "editions": [
+        {
+          "edition": "en-US",
+          "found": 0,
+          "capped": false
+        },
+        {
+          "edition": "he-IL",
+          "found": 0,
+          "capped": false
+        }
+      ],
+      "candidates": 0,
+      "classified": 0
+    },
+    {
+      "company": "Beyond Meat",
+      "editions": [
+        {
+          "edition": "en-US",
+          "found": 100,
+          "capped": true
+        },
+        {
+          "edition": "he-IL",
+          "found": 1,
+          "capped": false
+        }
+      ],
+      "candidates": 101,
+      "classified": 93
+    }
+  ]
+}

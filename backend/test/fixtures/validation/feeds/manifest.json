@@ -1,0 +1,304 @@
+{
+  "recordedAt": "2026-10-08T06:02:16.388Z",
+  "feeds": [
+    {
+      "file": "island.en-US.xml",
+      "description": "Ambiguous name, Seed List line \"Island\"",
+      "edition": "en-US",
+      "profile": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "window": {
+        "from": "2026-07-01T00:00:00.000Z",
+        "to": "2026-10-01T00:00:00.000Z"
+      },
+      "url": "https://news.google.com/rss/search?q=%28%22Island%22+OR+%22%D7%90%D7%99%D7%99%D7%9C%D7%A0%D7%93%22%29+after%3A2026-06-30+before%3A2026-10-02&hl=en-US&gl=US&ceid=US%3Aen"
+    },
+    {
+      "file": "wave.en-US.xml",
+      "description": "Ambiguous name, Seed List line \"Wave\"",
+      "edition": "en-US",
+      "profile": {
+        "displayName": "Wave",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "window": {
+        "from": "2026-07-01T00:00:00.000Z",
+        "to": "2026-10-01T00:00:00.000Z"
+      },
+      "url": "https://news.google.com/rss/search?q=%22Wave%22+after%3A2026-06-30+before%3A2026-10-02&hl=en-US&gl=US&ceid=US%3Aen"
+    },
+    {
+      "file": "ro.en-US.xml",
+      "description": "Ambiguous name, Seed List line \"Ro\"",
+      "edition": "en-US",
+      "profile": {
+        "displayName": "Ro",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "window": {
+        "from": "2026-07-01T00:00:00.000Z",
+        "to": "2026-10-01T00:00:00.000Z"
+      },
+      "url": "https://news.google.com/rss/search?q=%22Ro%22+after%3A2026-06-30+before%3A2026-10-02&hl=en-US&gl=US&ceid=US%3Aen"
+    },
+    {
+      "file": "glean.en-US.xml",
+      "description": "Ambiguous name, Seed List line \"Glean\"",
+      "edition": "en-US",
+      "profile": {
+        "displayName": "Glean",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "window": {
+        "from": "2026-07-01T00:00:00.000Z",
+        "to": "2026-10-01T00:00:00.000Z"
+      },
+      "url": "https://news.google.com/rss/search?q=%22Glean%22+after%3A2026-06-30+before%3A2026-10-02&hl=en-US&gl=US&ceid=US%3Aen"
+    },
+    {
+      "file": "lambda.en-US.xml",
+      "description": "Ambiguous name, Seed List line \"Lambda (lambda.ai)\"",
+      "edition": "en-US",
+      "profile": {
+        "displayName": "Lambda",
+        "aliases": [],
+        "domain": "lambda.ai",
+        "description": null,
+        "searchTerms": []
+      },
+      "window": {
+        "from": "2026-07-01T00:00:00.000Z",
+        "to": "2026-10-01T00:00:00.000Z"
+      },
+      "url": "https://news.google.com/rss/search?q=%22Lambda%22+after%3A2026-06-30+before%3A2026-10-02&hl=en-US&gl=US&ceid=US%3Aen"
+    },
+    {
+      "file": "peak.en-US.xml",
+      "description": "Ambiguous name, Seed List line \"Peak\"",
+      "edition": "en-US",
+      "profile": {
+        "displayName": "Peak",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "window": {
+        "from": "2026-07-01T00:00:00.000Z",
+        "to": "2026-10-01T00:00:00.000Z"
+      },
+      "url": "https://news.google.com/rss/search?q=%22Peak%22+after%3A2026-06-30+before%3A2026-10-02&hl=en-US&gl=US&ceid=US%3Aen"
+    },
+    {
+      "file": "guild.en-US.xml",
+      "description": "Ambiguous name, Seed List line \"Guild\"",
+      "edition": "en-US",
+      "profile": {
+        "displayName": "Guild",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "window": {
+        "from": "2026-07-01T00:00:00.000Z",
+        "to": "2026-10-01T00:00:00.000Z"
+      },
+      "url": "https://news.google.com/rss/search?q=%22Guild%22+after%3A2026-06-30+before%3A2026-10-02&hl=en-US&gl=US&ceid=US%3Aen"
+    },
+    {
+      "file": "astra.en-US.xml",
+      "description": "Ambiguous name, Seed List line \"Astra\"",
+      "edition": "en-US",
+      "profile": {
+        "displayName": "Astra",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "window": {
+        "from": "2026-07-01T00:00:00.000Z",
+        "to": "2026-10-01T00:00:00.000Z"
+      },
+      "url": "https://news.google.com/rss/search?q=%22Astra%22+after%3A2026-06-30+before%3A2026-10-02&hl=en-US&gl=US&ceid=US%3Aen"
+    },
+    {
+      "file": "hailo.en-US.xml",
+      "description": "Clear-cut name, Seed List line \"Hailo\"",
+      "edition": "en-US",
+      "profile": {
+        "displayName": "Hailo",
+        "aliases": [
+          "היילו"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "window": {
+        "from": "2026-07-01T00:00:00.000Z",
+        "to": "2026-10-01T00:00:00.000Z"
+      },
+      "url": "https://news.google.com/rss/search?q=%28%22Hailo%22+OR+%22%D7%94%D7%99%D7%99%D7%9C%D7%95%22%29+after%3A2026-06-30+before%3A2026-10-02&hl=en-US&gl=US&ceid=US%3Aen"
+    },
+    {
+      "file": "zutacore.en-US.xml",
+      "description": "Clear-cut name, Seed List line \"ZutaCore\"",
+      "edition": "en-US",
+      "profile": {
+        "displayName": "ZutaCore",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "window": {
+        "from": "2026-07-01T00:00:00.000Z",
+        "to": "2026-10-01T00:00:00.000Z"
+      },
+      "url": "https://news.google.com/rss/search?q=%22ZutaCore%22+after%3A2026-06-30+before%3A2026-10-02&hl=en-US&gl=US&ceid=US%3Aen"
+    },
+    {
+      "file": "cerebras.en-US.xml",
+      "description": "Clear-cut name, Seed List line \"Cerebras\"",
+      "edition": "en-US",
+      "profile": {
+        "displayName": "Cerebras",
+        "aliases": [
+          "סרברס"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "window": {
+        "from": "2026-07-01T00:00:00.000Z",
+        "to": "2026-10-01T00:00:00.000Z"
+      },
+      "url": "https://news.google.com/rss/search?q=%28%22Cerebras%22+OR+%22%D7%A1%D7%A8%D7%91%D7%A8%D7%A1%22%29+after%3A2026-06-30+before%3A2026-10-02&hl=en-US&gl=US&ceid=US%3Aen"
+    },
+    {
+      "file": "morphisec.en-US.xml",
+      "description": "Clear-cut name, Seed List line \"Morphisec\"",
+      "edition": "en-US",
+      "profile": {
+        "displayName": "Morphisec",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "window": {
+        "from": "2026-07-01T00:00:00.000Z",
+        "to": "2026-10-01T00:00:00.000Z"
+      },
+      "url": "https://news.google.com/rss/search?q=%22Morphisec%22+after%3A2026-06-30+before%3A2026-10-02&hl=en-US&gl=US&ceid=US%3Aen"
+    },
+    {
+      "file": "ayar-labs.en-US.xml",
+      "description": "Clear-cut name, Seed List line \"Ayar Labs\"",
+      "edition": "en-US",
+      "profile": {
+        "displayName": "Ayar Labs",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "window": {
+        "from": "2026-07-01T00:00:00.000Z",
+        "to": "2026-10-01T00:00:00.000Z"
+      },
+      "url": "https://news.google.com/rss/search?q=%22Ayar+Labs%22+after%3A2026-06-30+before%3A2026-10-02&hl=en-US&gl=US&ceid=US%3Aen"
+    },
+    {
+      "file": "hailo.he-IL.xml",
+      "description": "Clear-cut name, Seed List line \"Hailo\"",
+      "edition": "he-IL",
+      "profile": {
+        "displayName": "Hailo",
+        "aliases": [
+          "היילו"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "window": {
+        "from": "2026-07-01T00:00:00.000Z",
+        "to": "2026-10-01T00:00:00.000Z"
+      },
+      "url": "https://news.google.com/rss/search?q=%28%22Hailo%22+OR+%22%D7%94%D7%99%D7%99%D7%9C%D7%95%22%29+after%3A2026-06-30+before%3A2026-10-02&hl=he&gl=IL&ceid=IL%3Ahe"
+    },
+    {
+      "file": "wave.he-IL.xml",
+      "description": "Ambiguous name, Seed List line \"Wave\"",
+      "edition": "he-IL",
+      "profile": {
+        "displayName": "Wave",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "window": {
+        "from": "2026-07-01T00:00:00.000Z",
+        "to": "2026-10-01T00:00:00.000Z"
+      },
+      "url": "https://news.google.com/rss/search?q=%22Wave%22+after%3A2026-06-30+before%3A2026-10-02&hl=he&gl=IL&ceid=IL%3Ahe"
+    },
+    {
+      "file": "peak.he-IL.xml",
+      "description": "Ambiguous name, Seed List line \"Peak\"",
+      "edition": "he-IL",
+      "profile": {
+        "displayName": "Peak",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "window": {
+        "from": "2026-07-01T00:00:00.000Z",
+        "to": "2026-10-01T00:00:00.000Z"
+      },
+      "url": "https://news.google.com/rss/search?q=%22Peak%22+after%3A2026-06-30+before%3A2026-10-02&hl=he&gl=IL&ceid=IL%3Ahe"
+    },
+    {
+      "file": "cerebras.he-IL.xml",
+      "description": "Clear-cut name, Seed List line \"Cerebras\"",
+      "edition": "he-IL",
+      "profile": {
+        "displayName": "Cerebras",
+        "aliases": [
+          "סרברס"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "window": {
+        "from": "2026-07-01T00:00:00.000Z",
+        "to": "2026-10-01T00:00:00.000Z"
+      },
+      "url": "https://news.google.com/rss/search?q=%28%22Cerebras%22+OR+%22%D7%A1%D7%A8%D7%91%D7%A8%D7%A1%22%29+after%3A2026-06-30+before%3A2026-10-02&hl=he&gl=IL&ceid=IL%3Ahe"
+    }
+  ]
+}

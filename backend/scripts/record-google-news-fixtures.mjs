@@ -2,18 +2,26 @@
 // live feed (ADR-006: test data is recorded, never hand-written).
 //
 //   npm run fixtures:google-news
+//   node scripts/record-google-news-fixtures.mjs --manifest <dir>/manifest.json
 //
+// `--manifest` records the feeds another manifest lists into that manifest's
+// directory (e.g. the classifier validation feeds, #18); its `publisherUrl`
+// section is optional.
 // Every search URL comes from manifest.json, which the unit tests check against
 // the query builder, so a recorded feed always answers the request the code
 // really makes. After re-recording, run `npm test`: assertions that depend on
 // the recorded content (counts, a sample item) may need updating.
 import { readFile, writeFile } from 'node:fs/promises';
-import { dirname, join } from 'node:path';
+import { basename, dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { parseArgs } from 'node:util';
 import { gzipSync } from 'node:zlib';
 
-const fixturesDir = join(dirname(fileURLToPath(import.meta.url)), '..', 'test', 'fixtures', 'google-news');
-const manifestPath = join(fixturesDir, 'manifest.json');
+const { values: args } = parseArgs({ options: { manifest: { type: 'string' } } });
+const manifestPath = args.manifest
+  ? resolve(args.manifest)
+  : join(dirname(fileURLToPath(import.meta.url)), '..', 'test', 'fixtures', 'google-news', 'manifest.json');
+const fixturesDir = dirname(manifestPath);
 const GOOGLE_NEWS = 'https://news.google.com';
 const PAUSE_MS = 1500;
 const TIMEOUT_MS = 15000;
@@ -61,6 +69,9 @@ function resolvedUrlFrom(responseText) {
 const manifest = JSON.parse(await readFile(manifestPath, 'utf8'));
 
 for (const feed of manifest.feeds) {
+  if (typeof feed.file !== 'string' || basename(feed.file) !== feed.file) {
+    throw new Error(`Refusing to write ${feed.file}: a feed file must be a plain name inside ${fixturesDir}`);
+  }
   const xml = await fetchText(feed.url);
   await writeFile(join(fixturesDir, feed.file), xml);
   console.log(`${feed.file}: ${(xml.match(/<item>/g) ?? []).length} items`);
@@ -68,6 +79,11 @@ for (const feed of manifest.feeds) {
 }
 
 const publisher = manifest.publisherUrl;
+if (publisher === undefined) {
+  manifest.recordedAt = new Date().toISOString();
+  await writeFile(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`);
+  process.exit(0);
+}
 const feedXml = await readFile(join(fixturesDir, publisher.feedFile), 'utf8');
 const id = firstArticleId(feedXml);
 const params = new URLSearchParams(EDITION_PARAMS[publisher.edition]);

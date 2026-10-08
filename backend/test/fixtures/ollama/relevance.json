@@ -1,0 +1,4260 @@
+{
+  "model": "qwen2.5:7b",
+  "recordedAt": "2026-10-08T06:27:49.406Z",
+  "kind": "relevance",
+  "promptVersion": "relevance-v1",
+  "entries": [
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Coach Fleck Previews Saturday's Stripe Out Against Michigan - University of Minnesota Athletics",
+        "snippet": "Coach Fleck Previews Saturday's Stripe Out Against Michigan - University of Minnesota Athletics",
+        "outletName": "University of Minnesota Athletics",
+        "publishedAt": "2026-09-28T16:05:19.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a sports preview, not Stripe the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Georgia Hosts Oklahoma in Stripe Sanford Game - University of Georgia Athletics",
+        "snippet": "Georgia Hosts Oklahoma in Stripe Sanford Game - University of Georgia Athletics",
+        "outletName": "University of Georgia Athletics",
+        "publishedAt": "2026-09-21T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a university sports game, not Stripe"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Parafin Is Joining Stripe",
+        "snippet": "Parafin Is Joining Stripe",
+        "outletName": "Yahoo Finance",
+        "publishedAt": "2026-09-30T21:58:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "Parafin is joining Stripe, but Parafin is not the company."
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe’s OpenRouter deal shows where the AI money is moving",
+        "snippet": "Stripe’s OpenRouter deal shows where the AI money is moving",
+        "outletName": "IBM",
+        "publishedAt": "2026-08-21T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Stripe's deal with OpenRouter"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Scoop: Stripe says \"the singularity\" has begun",
+        "snippet": "Scoop: Stripe says \"the singularity\" has begun",
+        "outletName": "Axios",
+        "publishedAt": "2026-08-19T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "Phrase 'the singularity' is likely a common expression, not about Stripe"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe to buy OpenRouter as fintech expands deeper into AI",
+        "snippet": "Stripe to buy OpenRouter as fintech expands deeper into AI",
+        "outletName": "CNBC",
+        "publishedAt": "2026-08-19T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Stripe's acquisition of another company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Game Week Fan Guide Presented by Utah 360: Stripe the Stadium vs. Idaho",
+        "snippet": "Game Week Fan Guide Presented by Utah 360: Stripe the Stadium vs. Idaho",
+        "outletName": "University of Utah Athletics",
+        "publishedAt": "2026-08-31T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a stadium, not Stripe the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "EXCLUSIVE: Stripe, Advent offer to buy PayPal for more than $53 billion, sources say",
+        "snippet": "EXCLUSIVE: Stripe, Advent offer to buy PayPal for more than $53 billion, sources say",
+        "outletName": "Reuters",
+        "publishedAt": "2026-07-16T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on a deal involving Stripe"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe, Visa-Backed Consortium Launches Dollar Stablecoin",
+        "snippet": "Stripe, Visa-Backed Consortium Launches Dollar Stablecoin",
+        "outletName": "Bloomberg.com",
+        "publishedAt": "2026-09-30T16:26:21.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on the company's product launch"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Cowboys Host Northern Colorado in Stripe Out of War Memorial Stadium on Saturday",
+        "snippet": "Cowboys Host Northern Colorado in Stripe Out of War Memorial Stadium on Saturday",
+        "outletName": "University of Wyoming Athletics",
+        "publishedAt": "2026-09-07T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "Stadium name, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Parafin Financed 60,000 Small Businesses With $3 Billion. Now Stripe Is Buying It",
+        "snippet": "Parafin Financed 60,000 Small Businesses With $3 Billion. Now Stripe Is Buying It",
+        "outletName": "Inc.com",
+        "publishedAt": "2026-09-30T20:04:18.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "Article is about Parafin, not Stripe"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe Buys A.I. Start-Up OpenRouter for $7.5 Billion",
+        "snippet": "Stripe Buys A.I. Start-Up OpenRouter for $7.5 Billion",
+        "outletName": "The New York Times",
+        "publishedAt": "2026-08-19T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Stripe's acquisition of a startup"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe Acquires OpenRouter for $7B+, Turning Model Routing Into a Payments Infrastructure Problem",
+        "snippet": "Stripe Acquires OpenRouter for $7B+, Turning Model Routing Into a Payments Infrastructure Problem",
+        "outletName": "Yahoo Finance",
+        "publishedAt": "2026-08-17T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Stripe's acquisition of a company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "EXCLUSIVE: PayPal board sees Stripe-Advent offer as inadequate, sources say",
+        "snippet": "EXCLUSIVE: PayPal board sees Stripe-Advent offer as inadequate, sources say",
+        "outletName": "Reuters",
+        "publishedAt": "2026-07-17T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Stripe's offer to Advent, relevant to the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe tips toward staying private",
+        "snippet": "Stripe tips toward staying private",
+        "outletName": "Payments Dive",
+        "publishedAt": "2026-08-24T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on the company's decision to stay private"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe, Advent make $53 billion takeover offer for PayPal, sending stock soaring",
+        "snippet": "Stripe, Advent make $53 billion takeover offer for PayPal, sending stock soaring",
+        "outletName": "CNBC",
+        "publishedAt": "2026-07-15T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "Article about PayPal takeover offer, not Stripe"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "What's behind Stripe's OpenRouter move",
+        "snippet": "What's behind Stripe's OpenRouter move",
+        "outletName": "Axios",
+        "publishedAt": "2026-07-24T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Stripe's product move"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Anthropic Is Reportedly Pushing To Build In-House Payments Infrastructure, Challenging Stripe",
+        "snippet": "Anthropic Is Reportedly Pushing To Build In-House Payments Infrastructure, Challenging Stripe",
+        "outletName": "Yahoo Finance",
+        "publishedAt": "2026-09-04T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "Article about a different company, Anthropic"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Payments firm Stripe to buy marketplace OpenRouter in AI push",
+        "snippet": "Payments firm Stripe to buy marketplace OpenRouter in AI push",
+        "outletName": "Reuters",
+        "publishedAt": "2026-08-19T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Stripe's acquisition of OpenRouter"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe's $7.5 Billion Bet on the AI Model Routing Layer",
+        "snippet": "Stripe's $7.5 Billion Bet on the AI Model Routing Layer",
+        "outletName": "Yahoo Finance",
+        "publishedAt": "2026-08-27T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Stripe's AI investment"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe in talks to acquire OpenRouter in potential $10 billion deal, WSJ reports",
+        "snippet": "Stripe in talks to acquire OpenRouter in potential $10 billion deal, WSJ reports",
+        "outletName": "Yahoo Finance",
+        "publishedAt": "2026-07-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Stripe's potential acquisition"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "PayPal Says a $53 Billion Takeover Offer from Stripe Undervalues It. How to Play PYPL Stock Here.",
+        "snippet": "PayPal Says a $53 Billion Takeover Offer from Stripe Undervalues It. How to Play PYPL Stock Here.",
+        "outletName": "Yahoo Finance",
+        "publishedAt": "2026-07-21T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About PayPal's response to a takeover offer, not Stripe"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Ripple Just Connected XRP to Stripe’s AI Agent Payments. Why the Sessions Run on XRP, Not RLUSD",
+        "snippet": "Ripple Just Connected XRP to Stripe’s AI Agent Payments. Why the Sessions Run on XRP, Not RLUSD",
+        "outletName": "Yahoo Finance",
+        "publishedAt": "2026-09-18T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports a connection between Stripe and Ripple"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe strikes mega-deal for OpenRouter",
+        "snippet": "Stripe strikes mega-deal for OpenRouter",
+        "outletName": "Axios",
+        "publishedAt": "2026-08-17T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports a deal involving the company Stripe"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Penn State releases seating chart for this weekend’s Helmet Stripe Game vs. Wisconsin",
+        "snippet": "Penn State releases seating chart for this weekend’s Helmet Stripe Game vs. Wisconsin",
+        "outletName": "ABC27",
+        "publishedAt": "2026-09-21T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a sports game, not Stripe"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Exclusive | Stripe in Talks to Buy Buzzy AI-Model Marketplace OpenRouter",
+        "snippet": "Exclusive | Stripe in Talks to Buy Buzzy AI-Model Marketplace OpenRouter",
+        "outletName": "WSJ",
+        "publishedAt": "2026-07-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Stripe's potential acquisition of a competing company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "PayPal Receives $53 Billion Takeover Offer Involving Stripe",
+        "snippet": "PayPal Receives $53 Billion Takeover Offer Involving Stripe",
+        "outletName": "The New York Times",
+        "publishedAt": "2026-07-15T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Stripe as part of a takeover offer"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "PayPal (PYPL) Hit After Stripe, Advent Drop $53B Planned Takeover",
+        "snippet": "PayPal (PYPL) Hit After Stripe, Advent Drop $53B Planned Takeover",
+        "outletName": "Yahoo Finance",
+        "publishedAt": "2026-08-28T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "Article is about PayPal and a planned takeover, not Stripe."
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Watch Stripe: AI Now Accelerating Progress of Internet Economy",
+        "snippet": "Watch Stripe: AI Now Accelerating Progress of Internet Economy",
+        "outletName": "Bloomberg.com",
+        "publishedAt": "2026-08-27T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on the company's use of AI"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "New York City Has a New Tool to Update Its Streets: The Stripe Hog",
+        "snippet": "New York City Has a New Tool to Update Its Streets: The Stripe Hog",
+        "outletName": "The New York Times",
+        "publishedAt": "2026-09-15T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a street marking tool, not the company Stripe"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Open Standard issues dollar stablecoin backed by Visa, Stripe, and Mastercard",
+        "snippet": "Open Standard issues dollar stablecoin backed by Visa, Stripe, and Mastercard",
+        "outletName": "Yahoo Finance",
+        "publishedAt": "2026-09-30T16:54:42.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Stripe is listed as one of the companies backing the stablecoin"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe's Bridge Launches OUSD, the Stablecoin That Pays Its Distributors",
+        "snippet": "Stripe's Bridge Launches OUSD, the Stablecoin That Pays Its Distributors",
+        "outletName": "Yahoo Finance",
+        "publishedAt": "2026-09-30T17:45:57.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on the company's product launch"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "PayPal shares sink on reports Advent-Stripe consortium walks away from bid",
+        "snippet": "PayPal shares sink on reports Advent-Stripe consortium walks away from bid",
+        "outletName": "Reuters",
+        "publishedAt": "2026-08-28T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "Article mentions Stripe in a different context"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe, OpenRouter finally strike a deal",
+        "snippet": "Stripe, OpenRouter finally strike a deal",
+        "outletName": "Payments Dive",
+        "publishedAt": "2026-08-19T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports a deal involving the company Stripe"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Advent, Stripe consortium is said to drop pursuit of PayPal, Bloomberg News reports",
+        "snippet": "Advent, Stripe consortium is said to drop pursuit of PayPal, Bloomberg News reports",
+        "outletName": "Reuters",
+        "publishedAt": "2026-08-27T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "Mentions Stripe in a different context"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe’s Attempted Takeover of PayPal Has Collapsed—Again",
+        "snippet": "Stripe’s Attempted Takeover of PayPal Has Collapsed—Again",
+        "outletName": "Inc.com",
+        "publishedAt": "2026-08-29T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Stripe's business dealings"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe Is Reportedly In Talks To Buy PayPal",
+        "snippet": "Stripe Is Reportedly In Talks To Buy PayPal",
+        "outletName": "Engadget",
+        "publishedAt": "2026-08-15T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "Article is about PayPal, not Stripe"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe is giving off early Google vibes—for good and for bad",
+        "snippet": "Stripe is giving off early Google vibes—for good and for bad",
+        "outletName": "Fortune",
+        "publishedAt": "2026-09-02T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on the company Stripe"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Why a Payments Giant Is Paying $7 Billion for the ‘Stripe of AI’",
+        "snippet": "Why a Payments Giant Is Paying $7 Billion for the ‘Stripe of AI’",
+        "outletName": "WSJ",
+        "publishedAt": "2026-08-19T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Discusses acquisition of an AI company compared to Stripe"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Faber Report: Stripe, Advent International make $60.50/share offer for PayPal, sources say",
+        "snippet": "Faber Report: Stripe, Advent International make $60.50/share offer for PayPal, sources say",
+        "outletName": "CNBC",
+        "publishedAt": "2026-07-15T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Stripe's offer for PayPal"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Georgia football will stripe Sanford Saturday. How to check what to wear",
+        "snippet": "Georgia football will stripe Sanford Saturday. How to check what to wear",
+        "outletName": "Yahoo Sports",
+        "publishedAt": "2026-09-21T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About football, not Stripe"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Branch + Stripe Survey Finds Gig Work Is Becoming a Pathway to Primary Income and Entrepreneurship",
+        "snippet": "Branch + Stripe Survey Finds Gig Work Is Becoming a Pathway to Primary Income and Entrepreneurship",
+        "outletName": "PR Newswire",
+        "publishedAt": "2026-08-26T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Stripe's survey with Branch"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe buys AI model router OpenRouter in reported $7.5B deal",
+        "snippet": "Stripe buys AI model router OpenRouter in reported $7.5B deal",
+        "outletName": "SiliconANGLE",
+        "publishedAt": "2026-08-19T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Stripe's acquisition of a company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "What a Stripe-PayPal Merger Would Mean for the Checkout Experience",
+        "snippet": "What a Stripe-PayPal Merger Would Mean for the Checkout Experience",
+        "outletName": "CX Today",
+        "publishedAt": "2026-07-21T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Discusses a potential merger involving Stripe"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe Benchmark Shows AI Agents Build Integrations but Struggle with Validation",
+        "snippet": "Stripe Benchmark Shows AI Agents Build Integrations but Struggle with Validation",
+        "outletName": "infoq.com",
+        "publishedAt": "2026-07-15T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Stripe's AI benchmarking results"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe and Private-Equity Firm Advent Offer to Buy PayPal",
+        "snippet": "Stripe and Private-Equity Firm Advent Offer to Buy PayPal",
+        "outletName": "WSJ",
+        "publishedAt": "2026-07-15T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Stripe's deal with a private-equity firm"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe Minted $3.2 Billion in Cash in 2025, Setting Up Acquisition Hunt",
+        "snippet": "Stripe Minted $3.2 Billion in Cash in 2025, Setting Up Acquisition Hunt",
+        "outletName": "The Information",
+        "publishedAt": "2026-07-22T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on the company's financial performance and strategy"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "PayPal Sinks 15% as Stripe and Advent Abandon $50B Buyout, Affirm Soars 13% on ‘Most Profitable Quarter Ever’",
+        "snippet": "PayPal Sinks 15% as Stripe and Advent Abandon $50B Buyout, Affirm Soars 13% on ‘Most Profitable Quarter Ever’",
+        "outletName": "Yahoo Finance",
+        "publishedAt": "2026-08-28T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Stripe's involvement in a buyout abandonment"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "PayPal stock soars on report of buyout proposal from Stripe, Advent",
+        "snippet": "PayPal stock soars on report of buyout proposal from Stripe, Advent",
+        "outletName": "Yahoo Finance",
+        "publishedAt": "2026-07-15T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on a buyout proposal involving Stripe"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Auburn football game vs. Florida announced as ‘Power Stripe Out’, fans asked to wear specific color depending on section seating",
+        "snippet": "Auburn football game vs. Florida announced as ‘Power Stripe Out’, fans asked to wear specific color depending on section seating",
+        "outletName": "WBRC 6 News",
+        "publishedAt": "2026-09-16T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About an Auburn football game, not Stripe"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Advent, Stripe Abandon $50 Billion Pursuit of PayPal",
+        "snippet": "Advent, Stripe Abandon $50 Billion Pursuit of PayPal",
+        "outletName": "PYMNTS.com",
+        "publishedAt": "2026-08-28T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "Article is about Stripe's abandoned pursuit of PayPal, not Stripe itself."
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe alums spark new payments plays",
+        "snippet": "Stripe alums spark new payments plays",
+        "outletName": "Payments Dive",
+        "publishedAt": "2026-09-28T14:02:53.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on former Stripe employees starting new payments companies"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Your Guide On What Color To Wear At Stripe Out",
+        "snippet": "Your Guide On What Color To Wear At Stripe Out",
+        "outletName": "Onward State",
+        "publishedAt": "2026-09-03T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About clothing color, not the company Stripe"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "PayPal stock surges 15% on report of a $53 billion takeover offer from Stripe and Advent",
+        "snippet": "PayPal stock surges 15% on report of a $53 billion takeover offer from Stripe and Advent",
+        "outletName": "Business Insider",
+        "publishedAt": "2026-07-15T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "Article is about PayPal, not Stripe"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe's Acquisition Pace Has Accelerated In The Past Five Years, But Nothing Comes Close To Its Reported $53B PayPal Bet",
+        "snippet": "Stripe's Acquisition Pace Has Accelerated In The Past Five Years, But Nothing Comes Close To Its Reported $53B PayPal Bet",
+        "outletName": "Crunchbase News",
+        "publishedAt": "2026-07-15T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Stripe's acquisitions and valuation"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "PayPal Board Calls $53 Billion Stripe-Advent Bid Inadequate",
+        "snippet": "PayPal Board Calls $53 Billion Stripe-Advent Bid Inadequate",
+        "outletName": "PYMNTS.com",
+        "publishedAt": "2026-07-17T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on a bid involving Stripe"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe is buying SMB lender Parafin",
+        "snippet": "Stripe is buying SMB lender Parafin",
+        "outletName": "Axios",
+        "publishedAt": "2026-09-30T20:05:14.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Stripe's acquisition of Parafin"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe’s wallet embraces AI bots",
+        "snippet": "Stripe’s wallet embraces AI bots",
+        "outletName": "Payments Dive",
+        "publishedAt": "2026-09-18T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Stripe's use of AI bots"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Ripple adds XRP payments to Stripe and Tempo’s AI standard in new developer kit",
+        "snippet": "Ripple adds XRP payments to Stripe and Tempo’s AI standard in new developer kit",
+        "outletName": "CoinDesk",
+        "publishedAt": "2026-09-17T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Stripe's integration with Ripple's payment standard"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "PayPal Stock Rises on Report of Stripe, Advent Buyout Talks",
+        "snippet": "PayPal Stock Rises on Report of Stripe, Advent Buyout Talks",
+        "outletName": "Barron's",
+        "publishedAt": "2026-08-14T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "Article discusses Stripe in passing, not reporting on the company itself."
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Exclusive | PayPal in Talks to Sell Itself to Stripe, Private-Equity Firm Advent",
+        "snippet": "Exclusive | PayPal in Talks to Sell Itself to Stripe, Private-Equity Firm Advent",
+        "outletName": "WSJ",
+        "publishedAt": "2026-08-14T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "Article is about PayPal potentially selling to Stripe, not Stripe itself"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe president says checkout pages ‘will go away’ as AI commerce expands",
+        "snippet": "Stripe president says checkout pages ‘will go away’ as AI commerce expands",
+        "outletName": "Business Insider",
+        "publishedAt": "2026-08-22T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports a statement from the company's president"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+",
+        "snippet": "Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+",
+        "outletName": "TechCrunch",
+        "publishedAt": "2026-08-16T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Stripe's acquisition of a startup"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe buys Clerky, the legal startup behind 23% of Silicon Valley seed deals",
+        "snippet": "Stripe buys Clerky, the legal startup behind 23% of Silicon Valley seed deals",
+        "outletName": "Dealroom.co",
+        "publishedAt": "2026-08-27T12:19:43.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Stripe's acquisition of a legal startup"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe & OpenRouter: Acquisition Powering AI Token Economics",
+        "snippet": "Stripe & OpenRouter: Acquisition Powering AI Token Economics",
+        "outletName": "AI Magazine",
+        "publishedAt": "2026-08-24T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on an acquisition involving Stripe"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe Clinches Over $7 Billion Deal to Buy AI Firm OpenRouter",
+        "snippet": "Stripe Clinches Over $7 Billion Deal to Buy AI Firm OpenRouter",
+        "outletName": "Bloomberg.com",
+        "publishedAt": "2026-08-16T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports a deal involving the company Stripe"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Analyzing Stripe Vendors Breach: Confirmed Vendor Exposure and Claims of 20,000 Compromised APIs",
+        "snippet": "Analyzing Stripe Vendors Breach: Confirmed Vendor Exposure and Claims of 20,000 Compromised APIs",
+        "outletName": "InfoStealers",
+        "publishedAt": "2026-08-18T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on a security breach involving the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe and Advent just bid $53 billion to buy PayPal: What to know",
+        "snippet": "Stripe and Advent just bid $53 billion to buy PayPal: What to know",
+        "outletName": "Yahoo Finance",
+        "publishedAt": "2026-07-15T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on a bid by Stripe for PayPal"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe, Advent suspend their pursuit of PayPal",
+        "snippet": "Stripe, Advent suspend their pursuit of PayPal",
+        "outletName": "American Banker",
+        "publishedAt": "2026-08-28T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on actions involving the company Stripe"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "NDSU calls for stripe out at FargoDome for season opener",
+        "snippet": "NDSU calls for stripe out at FargoDome for season opener",
+        "outletName": "Valley News Live",
+        "publishedAt": "2026-08-28T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a sports phrase, not the company Stripe"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe's $7.5 Billion Bet on the AI Model Routing Layer",
+        "snippet": "Stripe's $7.5 Billion Bet on the AI Model Routing Layer",
+        "outletName": "The Motley Fool",
+        "publishedAt": "2026-08-27T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Stripe's AI investment"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "PayPal Reopens Sale Talks With Stripe After Rejecting First Offer",
+        "snippet": "PayPal Reopens Sale Talks With Stripe After Rejecting First Offer",
+        "outletName": "PYMNTS.com",
+        "publishedAt": "2026-08-14T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on interactions between companies, including Stripe"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe and Advent abandoned their $50 billion pursuit of PayPal",
+        "snippet": "Stripe and Advent abandoned their $50 billion pursuit of PayPal",
+        "outletName": "Quartz",
+        "publishedAt": "2026-08-28T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on actions involving the company Stripe"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe, Advent offer over $53 billion for PayPal, sources say",
+        "snippet": "Stripe, Advent offer over $53 billion for PayPal, sources say",
+        "outletName": "Reuters",
+        "publishedAt": "2026-07-15T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on a deal involving Stripe"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe says the singularity has arrived. Here's what they told investors about it.",
+        "snippet": "Stripe says the singularity has arrived. Here's what they told investors about it.",
+        "outletName": "Business Insider",
+        "publishedAt": "2026-08-19T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on the company's statement about the singularity"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe clinches over $7 billion deal to buy AI firm OpenRouter",
+        "snippet": "Stripe clinches over $7 billion deal to buy AI firm OpenRouter",
+        "outletName": "Fortune",
+        "publishedAt": "2026-08-16T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports a deal involving the company Stripe"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe Uses Graph Search and State Machines to Automate Database Remediation",
+        "snippet": "Stripe Uses Graph Search and State Machines to Automate Database Remediation",
+        "outletName": "infoq.com",
+        "publishedAt": "2026-08-09T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Stripe's technology usage"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "PayPal Stock Jumps on Fresh Takeover Chatter After Stripe Walks Away",
+        "snippet": "PayPal Stock Jumps on Fresh Takeover Chatter After Stripe Walks Away",
+        "outletName": "Yahoo Finance",
+        "publishedAt": "2026-09-25T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Stripe's actions affecting PayPal's stock"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe declares we're living in the singularity and uses it as a reason not to IPO",
+        "snippet": "Stripe declares we're living in the singularity and uses it as a reason not to IPO",
+        "outletName": "The Decoder",
+        "publishedAt": "2026-08-19T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports the company's decision not to IPO"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "PayPal Shares Dive Premarket on Report of Advent, Stripe Abandoning Takeover Plan",
+        "snippet": "PayPal Shares Dive Premarket on Report of Advent, Stripe Abandoning Takeover Plan",
+        "outletName": "WSJ",
+        "publishedAt": "2026-08-28T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Stripe's takeover plan, relevant to the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "X shifts US creator payouts from Stripe to X Money",
+        "snippet": "X shifts US creator payouts from Stripe to X Money",
+        "outletName": "TechCrunch",
+        "publishedAt": "2026-09-02T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports a change in Stripe's service for creators"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Watch Stripe, Advent Said to Make $50B-Plus Offer for PayPal",
+        "snippet": "Watch Stripe, Advent Said to Make $50B-Plus Offer for PayPal",
+        "outletName": "Bloomberg.com",
+        "publishedAt": "2026-07-15T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "Article is about Advent's potential offer for PayPal, not Stripe."
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe reportedly finalizes deal to buy AI model router OpenRouter for more than $7B",
+        "snippet": "Stripe reportedly finalizes deal to buy AI model router OpenRouter for more than $7B",
+        "outletName": "SiliconANGLE",
+        "publishedAt": "2026-08-16T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Stripe's acquisition of OpenRouter"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Talks to sell PayPal to Stripe and Advent are heating up",
+        "snippet": "Talks to sell PayPal to Stripe and Advent are heating up",
+        "outletName": "TechCrunch",
+        "publishedAt": "2026-08-14T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "Article is about a potential sale, not Stripe itself"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe didn’t really buy OpenRouter because of the ‘singularity’",
+        "snippet": "Stripe didn’t really buy OpenRouter because of the ‘singularity’",
+        "outletName": "TechCrunch",
+        "publishedAt": "2026-08-19T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "Article is about OpenRouter, not Stripe"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Prediction market all but rules out a Stripe-PayPal deal as suitors walk away",
+        "snippet": "Prediction market all but rules out a Stripe-PayPal deal as suitors walk away",
+        "outletName": "Yahoo Finance",
+        "publishedAt": "2026-08-28T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on potential deals involving the company Stripe"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe Purchase Of AI Firm OpenRouter Unlikely To Derail PayPal Deal",
+        "snippet": "Stripe Purchase Of AI Firm OpenRouter Unlikely To Derail PayPal Deal",
+        "outletName": "Investor's Business Daily",
+        "publishedAt": "2026-08-17T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "Article mentions Stripe but is about a different acquisition"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe and Advent make $53B bid for PayPal",
+        "snippet": "Stripe and Advent make $53B bid for PayPal",
+        "outletName": "Axios",
+        "publishedAt": "2026-07-15T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "Article is about a bid for PayPal, not Stripe"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe and Advent Make $53 Billion Play for PayPal",
+        "snippet": "Stripe and Advent Make $53 Billion Play for PayPal",
+        "outletName": "PYMNTS.com",
+        "publishedAt": "2026-07-15T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on a deal involving Stripe"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe is acquiring AI model gateway startup OpenRouter in a $7 billion-plus deal",
+        "snippet": "Stripe is acquiring AI model gateway startup OpenRouter in a $7 billion-plus deal",
+        "outletName": "Quartz",
+        "publishedAt": "2026-08-17T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Stripe's acquisition of a startup"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe’s OpenRouter Bid 70 Times Company’s Annual Revenue",
+        "snippet": "Stripe’s OpenRouter Bid 70 Times Company’s Annual Revenue",
+        "outletName": "PYMNTS.com",
+        "publishedAt": "2026-07-29T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Stripe's acquisition bid"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Advent-Stripe consortium drops $50B pursuit of PayPal",
+        "snippet": "Advent-Stripe consortium drops $50B pursuit of PayPal",
+        "outletName": "Dealroom",
+        "publishedAt": "2026-08-28T11:05:07.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on a deal involving Stripe"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Advent and Stripe Abandon $50 Billion Pursuit of PayPal",
+        "snippet": "Advent and Stripe Abandon $50 Billion Pursuit of PayPal",
+        "outletName": "Bloomberg.com",
+        "publishedAt": "2026-08-28T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "Article is about Stripe's acquisition pursuit of PayPal, not Stripe itself."
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "OUSD Stablecoin Goes Live With Visa, Mastercard And Stripe Behind It",
+        "snippet": "OUSD Stablecoin Goes Live With Visa, Mastercard And Stripe Behind It",
+        "outletName": "Forbes",
+        "publishedAt": "2026-09-30T21:23:01.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on Stripe's involvement in a stablecoin launch"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Stripe",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Stripe, Advent mount a blockbuster $53 billion bid to buy PayPal (PYPL)",
+        "snippet": "Stripe, Advent mount a blockbuster $53 billion bid to buy PayPal (PYPL)",
+        "outletName": "CoinDesk",
+        "publishedAt": "2026-07-15T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "Article is about Stripe's acquisition bid, not Stripe itself"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Raises $550M at a $15.5B Valuation to Help Legal Teams Own Their Intelligence",
+        "snippet": "Harvey Raises $550M at a $15.5B Valuation to Help Legal Teams Own Their Intelligence",
+        "outletName": "Harvey",
+        "publishedAt": "2026-09-09T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports funding and valuation of the legal AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Injury Report: RB RJ Harvey listed as questionable for Broncos’ home opener vs. Jaguars",
+        "snippet": "Injury Report: RB RJ Harvey listed as questionable for Broncos’ home opener vs. Jaguars",
+        "outletName": "Denver Broncos",
+        "publishedAt": "2026-09-18T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a football player, not the AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
+        "snippet": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
+        "outletName": "OpenAI",
+        "publishedAt": "2026-09-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports the company's product and technology"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Nicholas Aaron Harvey Obituary Sep 19, 2026",
+        "snippet": "Nicholas Aaron Harvey Obituary Sep 19, 2026",
+        "outletName": "Davis Funeral Homes | Wartburg, TN",
+        "publishedAt": "2026-09-19T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a person, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Aaron Randall Harvey Obituary Sep 12, 2026",
+        "snippet": "Aaron Randall Harvey Obituary Sep 12, 2026",
+        "outletName": "Unger-Horner Funeral Home & Cremation Service",
+        "publishedAt": "2026-09-15T16:58:28.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a person, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "5th District Q&A: Cooke Harvey, John McGuire, Tom Perriello",
+        "snippet": "5th District Q&A: Cooke Harvey, John McGuire, Tom Perriello",
+        "outletName": "VPM",
+        "publishedAt": "2026-09-28T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About politicians, not the company Harvey"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Obituary information for Harvey F. Rowe, Jr.",
+        "snippet": "Obituary information for Harvey F. Rowe, Jr.",
+        "outletName": "Solimine Funeral Home",
+        "publishedAt": "2026-09-25T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a person, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Weinstein sentenced to 15 years on New York sex crime conviction",
+        "snippet": "Harvey Weinstein sentenced to 15 years on New York sex crime conviction",
+        "outletName": "NBC News",
+        "publishedAt": "2026-09-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About Harvey Weinstein, not the AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Crane Obituary Sep 19, 2026",
+        "snippet": "Harvey Crane Obituary Sep 19, 2026",
+        "outletName": "Bills-McGaugh & Hamilton Funeral Home & Crematory",
+        "publishedAt": "2026-09-19T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a person, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Tenet Research Preview",
+        "snippet": "Harvey Tenet Research Preview",
+        "outletName": "Harvey",
+        "publishedAt": "2026-08-20T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About an event, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Broncos sign OLB Jahfari Harvey to practice squad",
+        "snippet": "Broncos sign OLB Jahfari Harvey to practice squad",
+        "outletName": "Denver Broncos",
+        "publishedAt": "2026-09-29T21:08:29.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a football player, not the AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "RB RJ Harvey among Broncos’ inactives for Week 2 game vs. Jaguars",
+        "snippet": "RB RJ Harvey among Broncos’ inactives for Week 2 game vs. Jaguars",
+        "outletName": "Denver Broncos",
+        "publishedAt": "2026-09-20T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a football player, not the AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Y Combinator-Backed Benchmark Joins Harvey",
+        "snippet": "Y Combinator-Backed Benchmark Joins Harvey",
+        "outletName": "Harvey",
+        "publishedAt": "2026-07-16T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "Article title is about a different company named Harvey"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Guardrails AI Joins Harvey",
+        "snippet": "Guardrails AI Joins Harvey",
+        "outletName": "Harvey",
+        "publishedAt": "2026-09-09T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "Article title and outlet are the same name, not about Harvey AI platform"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Announces Strategic Investment from Goldman Sachs and J.P. Morgan",
+        "snippet": "Harvey Announces Strategic Investment from Goldman Sachs and J.P. Morgan",
+        "outletName": "Harvey",
+        "publishedAt": "2026-07-28T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports funding from major financial institutions"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "U.S. Attorney Matthew L. Harvey Announces “Four Corners of Public Safety” Initiative Highlighting District’s Priorities",
+        "snippet": "U.S. Attorney Matthew L. Harvey Announces “Four Corners of Public Safety” Initiative Highlighting District’s Priorities",
+        "outletName": "Department of Justice (.gov)",
+        "publishedAt": "2026-09-30T13:10:58.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a U.S. Attorney, not the company Harvey"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Obituary for Harvey E. Holtan",
+        "snippet": "Obituary for Harvey E. Holtan",
+        "outletName": "Griffin-Gray Funeral Home",
+        "publishedAt": "2026-09-09T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a person, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Expands Collaboration with Microsoft on Legal AI",
+        "snippet": "Harvey Expands Collaboration with Microsoft on Legal AI",
+        "outletName": "Harvey",
+        "publishedAt": "2026-07-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on the company's collaboration with Microsoft"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "J.K. Dobbins, RJ Harvey injured; Broncos' run game in question",
+        "snippet": "J.K. Dobbins, RJ Harvey injured; Broncos' run game in question",
+        "outletName": "ESPN",
+        "publishedAt": "2026-09-21T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About football players, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Weinstein sentenced, again: A guide to disgraced mogul's convictions and prison time",
+        "snippet": "Harvey Weinstein sentenced, again: A guide to disgraced mogul's convictions and prison time",
+        "outletName": "Los Angeles Times",
+        "publishedAt": "2026-09-25T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About Harvey Weinstein, not the legal AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Weinstein is sentenced to 15 years in prison for 2006 sex crime in New York",
+        "snippet": "Harvey Weinstein is sentenced to 15 years in prison for 2006 sex crime in New York",
+        "outletName": "CNBC",
+        "publishedAt": "2026-09-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About Harvey Weinstein, not the AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Weinstein Sentenced to 15 Years in Prison",
+        "snippet": "Harvey Weinstein Sentenced to 15 Years in Prison",
+        "outletName": "WSJ",
+        "publishedAt": "2026-09-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About Harvey Weinstein, not the AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Legal AI startup Harvey reaches $15.5 billion valuation in new funding round",
+        "snippet": "Legal AI startup Harvey reaches $15.5 billion valuation in new funding round",
+        "outletName": "Reuters",
+        "publishedAt": "2026-09-09T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on the company's funding round"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Conrads Soechting Obituary Aug 5, 2026",
+        "snippet": "Harvey Conrads Soechting Obituary Aug 5, 2026",
+        "outletName": "Doeppenschmidt Funeral Home | New Braunfels, TX",
+        "publishedAt": "2026-08-05T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a person, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Weinstein Sentenced to 15 Years in Prison in New York Sex Crime Case",
+        "snippet": "Harvey Weinstein Sentenced to 15 Years in Prison in New York Sex Crime Case",
+        "outletName": "The New York Times",
+        "publishedAt": "2026-09-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About Harvey Weinstein, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Weinstein is sentenced to 15 years in prison for 2006 sex crime in New York",
+        "snippet": "Harvey Weinstein is sentenced to 15 years in prison for 2006 sex crime in New York",
+        "outletName": "CNN",
+        "publishedAt": "2026-09-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About Harvey Weinstein, not the AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Gene Harvey Obituary Sep 30, 2026",
+        "snippet": "Gene Harvey Obituary Sep 30, 2026",
+        "outletName": "Ashley Valley Funeral Home",
+        "publishedAt": "2026-09-30T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a person, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Weinstein sentenced to 15 years in prison in New York sexual assault case",
+        "snippet": "Harvey Weinstein sentenced to 15 years in prison in New York sexual assault case",
+        "outletName": "CBS News",
+        "publishedAt": "2026-09-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About Harvey Weinstein, not the legal AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "James Harvey Obituary - Hot Springs, AR",
+        "snippet": "James Harvey Obituary - Hot Springs, AR",
+        "outletName": "Dignity Memorial",
+        "publishedAt": "2026-09-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a person, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Atsma Obituary - Woodstock, GA",
+        "snippet": "Harvey Atsma Obituary - Woodstock, GA",
+        "outletName": "Dignity Memorial",
+        "publishedAt": "2026-09-27T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a person, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Injury Report: RB RJ Harvey improves to limited participant ahead of Week 2 game vs. Jaguars",
+        "snippet": "Injury Report: RB RJ Harvey improves to limited participant ahead of Week 2 game vs. Jaguars",
+        "outletName": "Denver Broncos",
+        "publishedAt": "2026-09-17T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a football player, not the AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Run Custom Harvey Agents Directly in Word",
+        "snippet": "Run Custom Harvey Agents Directly in Word",
+        "outletName": "Harvey",
+        "publishedAt": "2026-09-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports a feature of the company's product"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "RJ Harvey Injury Update: Will 2nd-Year Broncos RB Play in Week 2 vs. Jaguars?",
+        "snippet": "RJ Harvey Injury Update: Will 2nd-Year Broncos RB Play in Week 2 vs. Jaguars?",
+        "outletName": "Yahoo Sports",
+        "publishedAt": "2026-09-20T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About an NFL player, not the AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Weinstein sentenced to 15 years in New York sexual assault retrial",
+        "snippet": "Harvey Weinstein sentenced to 15 years in New York sexual assault retrial",
+        "outletName": "Al Jazeera",
+        "publishedAt": "2026-09-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About Harvey Weinstein, not the legal AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Broncos RB Coleman doesn't practice; Dobbins, Harvey limited",
+        "snippet": "Broncos RB Coleman doesn't practice; Dobbins, Harvey limited",
+        "outletName": "ESPN",
+        "publishedAt": "2026-09-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About football players, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Obituary information for Clarissa Suzette Harvey",
+        "snippet": "Obituary information for Clarissa Suzette Harvey",
+        "outletName": "Strano & Feeley Family Funeral Home",
+        "publishedAt": "2026-09-27T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a person, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Weinstein is sentenced to 15 years in prison for 2006 sexual assault",
+        "snippet": "Harvey Weinstein is sentenced to 15 years in prison for 2006 sexual assault",
+        "outletName": "AP News",
+        "publishedAt": "2026-09-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About Harvey Weinstein, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Awards Announce 2026 Nominees For Top Comics And Related Projects",
+        "snippet": "Harvey Awards Announce 2026 Nominees For Top Comics And Related Projects",
+        "outletName": "Forbes",
+        "publishedAt": "2026-07-07T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About Harvey Awards, not the AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Broncos RB RJ Harvey evaluated for concussion, returns to game",
+        "snippet": "Broncos RB RJ Harvey evaluated for concussion, returns to game",
+        "outletName": "The Denver Post",
+        "publishedAt": "2026-09-27T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a football player, not the AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Weinstein sentenced to 15 years for 2006 sexual assault in New York",
+        "snippet": "Harvey Weinstein sentenced to 15 years for 2006 sexual assault in New York",
+        "outletName": "ABC News - Breaking News, Latest News and Videos",
+        "publishedAt": "2026-09-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About Harvey Weinstein, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Historic John J. Harvey fireboat carries 9/11 legacy into the 25th anniversary",
+        "snippet": "Historic John J. Harvey fireboat carries 9/11 legacy into the 25th anniversary",
+        "outletName": "Brooklyn Paper",
+        "publishedAt": "2026-09-10T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a fireboat, not the AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Legal AI startup Harvey reportedly raising $500M at $15.5B valuation",
+        "snippet": "Legal AI startup Harvey reportedly raising $500M at $15.5B valuation",
+        "outletName": "SiliconANGLE",
+        "publishedAt": "2026-08-07T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on the company's funding"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "UK's Frasers snaps up Harvey Nichols, warns of tough turnaround choices",
+        "snippet": "UK's Frasers snaps up Harvey Nichols, warns of tough turnaround choices",
+        "outletName": "Reuters",
+        "publishedAt": "2026-08-13T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About Frasers acquiring Harvey Nichols, not the AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Legal AI Startup Harvey Hits $15.6 Billion Value With $550 Million Round",
+        "snippet": "Legal AI Startup Harvey Hits $15.6 Billion Value With $550 Million Round",
+        "outletName": "Bloomberg.com",
+        "publishedAt": "2026-09-09T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports the company's valuation and funding"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Deepens Microsoft Relationship",
+        "snippet": "Harvey Deepens Microsoft Relationship",
+        "outletName": "Artificial Lawyer",
+        "publishedAt": "2026-07-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on the company's relationship with Microsoft"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "RJ Harvey Fantasy Week 3 Start or Sit: Two Broncos Backs Are Rosterable, and He Is Not",
+        "snippet": "RJ Harvey Fantasy Week 3 Start or Sit: Two Broncos Backs Are Rosterable, and He Is Not",
+        "outletName": "Yahoo Sports",
+        "publishedAt": "2026-09-27T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a fantasy sports column, not the AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Increases Token Use 14X in Just 6 Months",
+        "snippet": "Harvey Increases Token Use 14X in Just 6 Months",
+        "outletName": "Artificial Lawyer",
+        "publishedAt": "2026-07-08T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports the company's product usage growth"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Massage therapist refiles rape claims against Harvey Weinstein, Knicks owner James Dolan in New York",
+        "snippet": "Massage therapist refiles rape claims against Harvey Weinstein, Knicks owner James Dolan in New York",
+        "outletName": "Courthouse News",
+        "publishedAt": "2026-09-18T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About Harvey Weinstein and James Dolan, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Tenet, Nashville, Legal Innovators +",
+        "snippet": "Harvey Tenet, Nashville, Legal Innovators +",
+        "outletName": "Artificial Lawyer",
+        "publishedAt": "2026-08-21T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a person, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "RJ Harvey injury update: Latest news on Broncos RB's status in Week 3 game",
+        "snippet": "RJ Harvey injury update: Latest news on Broncos RB's status in Week 3 game",
+        "outletName": "Yahoo Sports",
+        "publishedAt": "2026-09-27T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About an NFL player, not the AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Weinstein sentenced to 15 years after sexual assault conviction",
+        "snippet": "Harvey Weinstein sentenced to 15 years after sexual assault conviction",
+        "outletName": "The Guardian",
+        "publishedAt": "2026-09-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About Harvey Weinstein, not the AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Weinstein is sentenced to 15 years in prison for 2006 sex crime in New York",
+        "snippet": "Harvey Weinstein is sentenced to 15 years in prison for 2006 sex crime in New York",
+        "outletName": "ABC News - Breaking News, Latest News and Videos",
+        "publishedAt": "2026-09-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About Harvey Weinstein, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey hits $15.5B valuation, months after reaching $11B",
+        "snippet": "Harvey hits $15.5B valuation, months after reaching $11B",
+        "outletName": "TechCrunch",
+        "publishedAt": "2026-09-09T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports the company's valuation"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Weinstein Sentenced to 15 Years in Prison for Sexual Assault After New York Retrial",
+        "snippet": "Harvey Weinstein Sentenced to 15 Years in Prison for Sexual Assault After New York Retrial",
+        "outletName": "Variety",
+        "publishedAt": "2026-09-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About Harvey Weinstein, not the AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Raises $550m at $15.5bn Val, Buys Guardrails AI",
+        "snippet": "Harvey Raises $550m at $15.5bn Val, Buys Guardrails AI",
+        "outletName": "Artificial Lawyer",
+        "publishedAt": "2026-09-09T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports funding and acquisition by the company Harvey"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Demand for Harvey S. Peeler Jr. College of Veterinary Medicine Apparent with 2031 Applicant Class",
+        "snippet": "Demand for Harvey S. Peeler Jr. College of Veterinary Medicine Apparent with 2031 Applicant Class",
+        "outletName": "Clemson News",
+        "publishedAt": "2026-09-25T20:24:16.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a college, not the AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Natrona County Fire District reports wildland fire near Salt Creek Highway, Harvey Place",
+        "snippet": "Natrona County Fire District reports wildland fire near Salt Creek Highway, Harvey Place",
+        "outletName": "Oil City News",
+        "publishedAt": "2026-08-04T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a place, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Frasers Group Acquires Harvey Nichols",
+        "snippet": "Frasers Group Acquires Harvey Nichols",
+        "outletName": "Vogue",
+        "publishedAt": "2026-08-13T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a different company, not the AI platform"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Obituary for Harvey Ole Brekhus",
+        "snippet": "Obituary for Harvey Ole Brekhus",
+        "outletName": "Woodland Hills Funeral Home",
+        "publishedAt": "2026-09-25T21:43:16.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a person, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Weinstein resentenced to 15 years for sexual assault",
+        "snippet": "Harvey Weinstein resentenced to 15 years for sexual assault",
+        "outletName": "DW.com",
+        "publishedAt": "2026-09-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About Harvey Weinstein, not the AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "VANCOUVER GOLDENEYES SIGN FIRST OVERALL PICK CAROLINE HARVEY TO THREE-YEAR CONTRACT",
+        "snippet": "VANCOUVER GOLDENEYES SIGN FIRST OVERALL PICK CAROLINE HARVEY TO THREE-YEAR CONTRACT",
+        "outletName": "Professional Women's Hockey League (PWHL)",
+        "publishedAt": "2026-09-29T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a hockey player, not the AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Sanford Berman Obituary Sep 26, 2026",
+        "snippet": "Harvey Sanford Berman Obituary Sep 26, 2026",
+        "outletName": "Sagel Bloomfield Danzansky Goldberg Funeral Care Inc",
+        "publishedAt": "2026-09-26T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a person, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey and PacerPro Announce Partnership To Connect Docket Data with AI Litigation Workflows",
+        "snippet": "Harvey and PacerPro Announce Partnership To Connect Docket Data with AI Litigation Workflows",
+        "outletName": "LawSites",
+        "publishedAt": "2026-08-24T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports a partnership involving the company Harvey"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Dustin Harvey \"Dusty\" Young Obituary (2026) - Mesa, AZ - Bunker Family Funerals & Cremation - Garden Chapel",
+        "snippet": "Dustin Harvey \"Dusty\" Young Obituary (2026) - Mesa, AZ - Bunker Family Funerals & Cremation - Garden Chapel",
+        "outletName": "Legacy | Obituary",
+        "publishedAt": "2026-09-25T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a person, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Broncos Work Out RB Trio Amid Injuries To RJ Harvey, J.K. Dobbins",
+        "snippet": "Broncos Work Out RB Trio Amid Injuries To RJ Harvey, J.K. Dobbins",
+        "outletName": "NFL Rumors - ProFootballRumors.com",
+        "publishedAt": "2026-09-22T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About NFL players, not the AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harris County gets one-year extension to use federal funds for post-Harvey flood bond projects",
+        "snippet": "Harris County gets one-year extension to use federal funds for post-Harvey flood bond projects",
+        "outletName": "Houston Public Media",
+        "publishedAt": "2026-09-28T20:54:56.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About Hurricane Harvey, not the legal AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Elmer and Harvey’s Bout with Bromethalin",
+        "snippet": "Elmer and Harvey’s Bout with Bromethalin",
+        "outletName": "ASPCA",
+        "publishedAt": "2026-09-24T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About animals, not the company Harvey"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Weinstein is set to be sentenced for sexual assault after 6-year legal odyssey",
+        "snippet": "Harvey Weinstein is set to be sentenced for sexual assault after 6-year legal odyssey",
+        "outletName": "Oregon Public Broadcasting - OPB",
+        "publishedAt": "2026-09-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About Harvey Weinstein, not the legal AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "AERIAL SPRAYING OVER PARTS OF GRETNA AND HARVEY ON TUESDAY, SEPTEMBER 29, 2026",
+        "snippet": "AERIAL SPRAYING OVER PARTS OF GRETNA AND HARVEY ON TUESDAY, SEPTEMBER 29, 2026",
+        "outletName": "Jefferson Parish (.gov)",
+        "publishedAt": "2026-09-28T19:35:50.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About aerial spraying, not the company Harvey"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Exclusive: After opting not to retry Harvey Weinstein, Manhattan DA urges legislators to step up for sex assault survivors",
+        "snippet": "Exclusive: After opting not to retry Harvey Weinstein, Manhattan DA urges legislators to step up for sex assault survivors",
+        "outletName": "CNN",
+        "publishedAt": "2026-07-01T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About Harvey Weinstein, not the legal AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Thomas Harvey Miller Obituary Sep 22, 2026",
+        "snippet": "Thomas Harvey Miller Obituary Sep 22, 2026",
+        "outletName": "Flanner Buchanan",
+        "publishedAt": "2026-09-22T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a person, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "HARVEY NAMED PRESEASON ALL-CONFERENCE, BULLDOGS PICKED FIFTH",
+        "snippet": "HARVEY NAMED PRESEASON ALL-CONFERENCE, BULLDOGS PICKED FIFTH",
+        "outletName": "Bryant University Bulldogs",
+        "publishedAt": "2026-09-28T14:24:58.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a basketball player, not the AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Keitel Shooting ‘No Bias,’ Written by Wife Daphna Kastner, Calls Out ‘Danger’ of AI When Mentioning Michael Caine AI-Narrated ‘The Odyssey’ Audiobook",
+        "snippet": "Harvey Keitel Shooting ‘No Bias,’ Written by Wife Daphna Kastner, Calls Out ‘Danger’ of AI When Mentioning Michael Caine AI-Narrated ‘The Odyssey’ Audiobook",
+        "outletName": "Variety",
+        "publishedAt": "2026-07-05T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About actors and an audiobook, not the company Harvey"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Museum of Worcester expands Harvey Ball Smiley exhibit",
+        "snippet": "Museum of Worcester expands Harvey Ball Smiley exhibit",
+        "outletName": "Spectrum News",
+        "publishedAt": "2026-09-29T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About Harvey Ball, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Dwain Harvey Rieke Obituary Sep 9, 2026",
+        "snippet": "Dwain Harvey Rieke Obituary Sep 9, 2026",
+        "outletName": "Jimerson - Lipsey Funeral Home",
+        "publishedAt": "2026-09-09T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a person, not the company Harvey"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Teachers' Venture Growth invests in Harvey, the leading AI legal platform",
+        "snippet": "Teachers' Venture Growth invests in Harvey, the leading AI legal platform",
+        "outletName": "Ontario Teachers' Pension Plan",
+        "publishedAt": "2026-09-24T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports funding for the AI legal platform company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Targets $15.5 Billion Valuation as Revenue Surges Past $350 Million",
+        "snippet": "Harvey Targets $15.5 Billion Valuation as Revenue Surges Past $350 Million",
+        "outletName": "PYMNTS.com",
+        "publishedAt": "2026-08-07T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports the company's valuation and revenue"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "‘It doesn’t go away’: Harvey Weinstein victim speaks out after disgraced mogul sentenced to 15 years",
+        "snippet": "‘It doesn’t go away’: Harvey Weinstein victim speaks out after disgraced mogul sentenced to 15 years",
+        "outletName": "amNewYork",
+        "publishedAt": "2026-09-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About Harvey Weinstein, not the legal AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "‘Love Island USA’ Star Aniya Harvey Says Life Has Been ‘Super Surreal’ Since Fiji as She Attends the MTV VMAs (Exclusive)",
+        "snippet": "‘Love Island USA’ Star Aniya Harvey Says Life Has Been ‘Super Surreal’ Since Fiji as She Attends the MTV VMAs (Exclusive)",
+        "outletName": "People.com",
+        "publishedAt": "2026-09-30T17:04:10.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About an actress, not the AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "17 Throwback Photos of Steve Harvey’s Big Blended Family",
+        "snippet": "17 Throwback Photos of Steve Harvey’s Big Blended Family",
+        "outletName": "People.com",
+        "publishedAt": "2026-09-30T14:41:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About Steve Harvey, not the legal AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Keitel, Britt Robertson, Dean Norris, Tom Berenger & Kit Lang Wrap On Psychological Thriller ‘Minute Mark’",
+        "snippet": "Harvey Keitel, Britt Robertson, Dean Norris, Tom Berenger & Kit Lang Wrap On Psychological Thriller ‘Minute Mark’",
+        "outletName": "Deadline",
+        "publishedAt": "2026-09-15T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About actors, not the AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Weinstein sentenced to 15 years in prison for sexual assault in New York case",
+        "snippet": "Harvey Weinstein sentenced to 15 years in prison for sexual assault in New York case",
+        "outletName": "NBC News",
+        "publishedAt": "2026-09-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About Harvey Weinstein, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "RJ Harvey evaluated for concussion in Week 3",
+        "snippet": "RJ Harvey evaluated for concussion in Week 3",
+        "outletName": "NBC Sports",
+        "publishedAt": "2026-09-27T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a person, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey raises at a $15.5bn valuation",
+        "snippet": "Harvey raises at a $15.5bn valuation",
+        "outletName": "The Next Web",
+        "publishedAt": "2026-08-07T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports funding for the company Harvey"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "RJ Harvey (hamstring) listed as DNP on Wednesday",
+        "snippet": "RJ Harvey (hamstring) listed as DNP on Wednesday",
+        "outletName": "NBC Sports",
+        "publishedAt": "2026-09-16T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a sports player, not the AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Valencia Reportedly Unhappy with Harvey Elliott’s Fitness",
+        "snippet": "Valencia Reportedly Unhappy with Harvey Elliott’s Fitness",
+        "outletName": "The Liverpool Offside",
+        "publishedAt": "2026-09-23T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a football player, not the AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Denver Broncos injury report: Good news for RB RJ Harvey",
+        "snippet": "Denver Broncos injury report: Good news for RB RJ Harvey",
+        "outletName": "Broncos Wire",
+        "publishedAt": "2026-09-17T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About an RB named RJ Harvey, not the AI company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Harvey Weinstein sentenced to 15 years in prison for assault",
+        "snippet": "Harvey Weinstein sentenced to 15 years in prison for assault",
+        "outletName": "NPR",
+        "publishedAt": "2026-09-24T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About Harvey Weinstein, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Harvey",
+        "aliases": [],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "James Harvey Obituary (2026) - Horsham, PA - Ciavarelli Family Funeral Home and Crematory - Ambler",
+        "snippet": "James Harvey Obituary (2026) - Horsham, PA - Ciavarelli Family Funeral Home and Crematory - Ambler",
+        "outletName": "Legacy | Obituary",
+        "publishedAt": "2026-09-25T07:00:00.000Z",
+        "language": "en"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a person, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "מכפילה את שוויה תוך שנתיים: איילנד גייסה 400 מיליון דולר לפי 6.4 מיליארד",
+        "snippet": "מכפילה את שוויה תוך שנתיים: איילנד גייסה 400 מיליון דולר לפי 6.4 מיליארד",
+        "outletName": "calcalist",
+        "publishedAt": "2026-09-24T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports the company Island raising funding"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "איילנד גייסה 400 מיליון דולר לפי שווי של יותר משישה מיליארד -",
+        "snippet": "איילנד גייסה 400 מיליון דולר לפי שווי של יותר משישה מיליארד -",
+        "outletName": "אנשים ומחשבים",
+        "publishedAt": "2026-09-24T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports funding of the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "גיורא איילנד בחשיפה מטלטלת: \"הבריאות שלי הסתבכה\" | פודקאסט מעריב",
+        "snippet": "גיורא איילנד בחשיפה מטלטלת: \"הבריאות שלי הסתבכה\" | פודקאסט מעריב",
+        "outletName": "מעריב",
+        "publishedAt": "2026-09-17T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a podcast, not the company Island"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "גיורא איילנד: \"המצב הנוכחי בעזה די טוב לביטחון. פיילוט שיקום בלי פירוז - מדרון חלקלק\"",
+        "snippet": "גיורא איילנד: \"המצב הנוכחי בעזה די טוב לביטחון. פיילוט שיקום בלי פירוז - מדרון חלקלק\"",
+        "outletName": "אתר החדשות דבר",
+        "publishedAt": "2026-07-28T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "Name refers to a person, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "איילנד מגייסת 400 מיליון דולר - השווי מטפס ל-6.4 מיליארד דולר",
+        "snippet": "איילנד מגייסת 400 מיליון דולר - השווי מטפס ל-6.4 מיליארד דולר",
+        "outletName": "גלובס",
+        "publishedAt": "2026-09-24T10:02:26.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports funding and valuation of the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "איילנד: פרדו אמר כי נתניהו הסתיר את מכירת הצוללות למצרים וסיכן את חיי לוחמי המוסד",
+        "snippet": "איילנד: פרדו אמר כי נתניהו הסתיר את מכירת הצוללות למצרים וסיכן את חיי לוחמי המוסד",
+        "outletName": "כאן 11",
+        "publishedAt": "2026-09-26T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About politics, not the company Island"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "עם שווי של 6.4 מיליארד דולר: איילנד השלימה סבב גיוס ענק",
+        "snippet": "עם שווי של 6.4 מיליארד דולר: איילנד השלימה סבב גיוס ענק",
+        "outletName": "ice (אייס)",
+        "publishedAt": "2026-09-24T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on the company's large funding round"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "גיורא איילנד חושף: בחרתי בו בעבר ואצביע לו גם הפעם",
+        "snippet": "גיורא איילנד חושף: בחרתי בו בעבר ואצביע לו גם הפעם",
+        "outletName": "סרוגים",
+        "publishedAt": "2026-09-17T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports the company's name and a past and future vote"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "גיורא איילנד חושף: עברתי ניתוח קשה; יש לי סיבות לדאגה",
+        "snippet": "גיורא איילנד חושף: עברתי ניתוח קשה; יש לי סיבות לדאגה",
+        "outletName": "ערוץ 7",
+        "publishedAt": "2026-09-22T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a personal experience, not the company Island"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "הענקית השקטה מתל אביב: חברת הסייבר איילנד גייסה 400 מיליון דולר",
+        "snippet": "הענקית השקטה מתל אביב: חברת הסייבר איילנד גייסה 400 מיליון דולר",
+        "outletName": "היום",
+        "publishedAt": "2026-09-26T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports funding for the cybersecurity company Island"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "איילנד גייסה 400 מיליון דולר לפי שווי של 6.4 מיליארד",
+        "snippet": "איילנד גייסה 400 מיליון דולר לפי שווי של 6.4 מיליארד",
+        "outletName": "ביזפורטל",
+        "publishedAt": "2026-09-24T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on the company's funding"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "הזינוק של איילנד הישראלית: שווה כבר 6.4 מיליארד דולר",
+        "snippet": "הזינוק של איילנד הישראלית: שווה כבר 6.4 מיליארד דולר",
+        "outletName": "mako",
+        "publishedAt": "2026-09-24T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on the valuation of the Israeli Island company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "גיורא איילנד טוען: \"זו השגיאה הנוראית של ישראל\" | פודקאסט מעריב",
+        "snippet": "גיורא איילנד טוען: \"זו השגיאה הנוראית של ישראל\" | פודקאסט מעריב",
+        "outletName": "מעריב",
+        "publishedAt": "2026-09-24T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a person named Gilora Ayland, not the company Island"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Island raises $400m at $6.4b valuation",
+        "snippet": "Island raises $400m at $6.4b valuation",
+        "outletName": "גלובס",
+        "publishedAt": "2026-09-24T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on the company's funding"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "גיורא איילנד חושף: 4 חודשים לפני הטבח, חליוה כינס 8 בכירים - \"נדהמתי\" | פודקאסט מעריב",
+        "snippet": "גיורא איילנד חושף: 4 חודשים לפני הטבח, חליוה כינס 8 בכירים - \"נדהמתי\" | פודקאסט מעריב",
+        "outletName": "מעריב",
+        "publishedAt": "2026-09-14T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a podcast, not the company Island"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "גיורא איילנד בלי פילטרים: \"עדיף שעזה תהיה הרוסה דורות קדימה\"",
+        "snippet": "גיורא איילנד בלי פילטרים: \"עדיף שעזה תהיה הרוסה דורות קדימה\"",
+        "outletName": "מעריב",
+        "publishedAt": "2026-08-09T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a filter-free version of a show, not the company Island"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "גיורא איילנד חושף: נפגשתי עם נתניהו בארבע עיניים והזהרתי אותו - זה מה שקרה מיד אחרי",
+        "snippet": "גיורא איילנד חושף: נפגשתי עם נתניהו בארבע עיניים והזהרתי אותו - זה מה שקרה מיד אחרי",
+        "outletName": "מעריב",
+        "publishedAt": "2026-09-14T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a person named Gilora Island, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "גיורא איילנד כפי שמעולם לא ראיתם: \"אני מאוד רגשן, בוכה מסרטים\"",
+        "snippet": "גיורא איילנד כפי שמעולם לא ראיתם: \"אני מאוד רגשן, בוכה מסרטים\"",
+        "outletName": "מעריב",
+        "publishedAt": "2026-09-17T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About an actress, not the company Island"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "גיורא איילנד חושף: \"ליברמן נתן הצעה אטרקטיבית - זו לא הייתה הבעיה\"",
+        "snippet": "גיורא איילנד חושף: \"ליברמן נתן הצעה אטרקטיבית - זו לא הייתה הבעיה\"",
+        "outletName": "מעריב",
+        "publishedAt": "2026-09-17T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "Name refers to a person, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "ריזורט דרים איילנד מציע בחוה\"מ סוכות ספא ריטריט",
+        "snippet": "ריזורט דרים איילנד מציע בחוה\"מ סוכות ספא ריטריט",
+        "outletName": "IAS",
+        "publishedAt": "2026-09-30T00:33:04.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports on the company's services offered"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "אירוע ירי בחגיגות בקוני איילנד בארה\"ב: 8 פצועים - מתוכם גם ילדים",
+        "snippet": "אירוע ירי בחגיגות בקוני איילנד בארה\"ב: 8 פצועים - מתוכם גם ילדים",
+        "outletName": "mako",
+        "publishedAt": "2026-07-05T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About an event at a concert in Koni Island, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "אבו דאבי מכינה הפתעה גדולה: שלוש ענקיות אירופיות בדרך ל-Yas Island",
+        "snippet": "אבו דאבי מכינה הפתעה גדולה: שלוש ענקיות אירופיות בדרך ל-Yas Island",
+        "outletName": "PassportNews",
+        "publishedAt": "2026-08-25T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About Yas Island, not the company Island"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "דיווח: 8 בני אדם, בהם 4 ילדים, נורו בחגיגות יום העצמאות בקוני איילנד בניו י",
+        "snippet": "דיווח: 8 בני אדם, בהם 4 ילדים, נורו בחגיגות יום העצמאות בקוני איילנד בניו י",
+        "outletName": "i24NEWS",
+        "publishedAt": "2026-07-05T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About fireworks at Independence Day celebrations in Kuni איילנד, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "Island גייסה 400 מיליון דולר ומרחיבה בקרה על סוכני AI",
+        "snippet": "Island גייסה 400 מיליון דולר ומרחיבה בקרה על סוכני AI",
+        "outletName": "quasa.io",
+        "publishedAt": "2026-09-30T10:15:39.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "relevant": true,
+        "reason": "Reports funding and expansion of AI control by the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "התראה על סופה קיצונית באזור לונג איילנד",
+        "snippet": "התראה על סופה קיצונית באזור לונג איילנד",
+        "outletName": "היום",
+        "publishedAt": "2026-07-05T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a fire in Long Island, not the company"
+      }
+    },
+    {
+      "company": {
+        "displayName": "Island",
+        "aliases": [
+          "איילנד"
+        ],
+        "domain": null,
+        "description": null,
+        "searchTerms": []
+      },
+      "article": {
+        "title": "שטרטר איילנד בערוץ Arte עם ליאונרדו די קפריו",
+        "snippet": "שטרטר איילנד בערוץ Arte עם ליאונרדו די קפריו",
+        "outletName": "Sortir à Paris",
+        "publishedAt": "2026-09-28T07:00:00.000Z",
+        "language": "he"
+      },
+      "verdict": {
+        "relevant": false,
+        "reason": "About a TV show, not the company Island"
+      }
+    }
+  ]
+}
