@@ -15,9 +15,8 @@ dashboard has three parts:
 Words in **bold** are defined in [CONTEXT.md](CONTEXT.md). The README uses them in that exact sense.
 The brief is in [docs/TASKS.md](docs/TASKS.md).
 
-> **Status.** Two pieces this README describes are still in progress:
-> - Classifier validation numbers: #18.
-> - The committed `data/` snapshot of a full real run: #20.
+> **Status.** One piece this README describes is still in progress: the committed `data/`
+> snapshot of a full real run (#20).
 >
 > Sections that depend on them say so.
 
@@ -55,6 +54,18 @@ npm start        # builds and starts Postgres, API, collector and dashboard in D
 ```
 
 Then open **http://localhost:8080**.
+
+**The dashboard shows no coverage until you start a Backfill.** Nothing is collected on its own:
+`npm start` only imports the Seed List. Then:
+
+1. **Companies**: about 150 of the ~258 Seed List companies start **active**. The rest wait in
+   **Needs Review** because their names are ambiguous. Only active companies are collected; see
+   [the review gate](#the-review-gate).
+2. **Operations** → **Start Backfill**. A full Backfill takes hours (see
+   [throughput](#throughput)); the dashboard fills company by company while it runs.
+
+If `npm start` reports port 5432 busy, a Postgres already runs on your machine; see
+[busy ports](#busy-ports).
 
 To see an alert within minutes, follow the [quick path](#quick-path-see-an-alert-in-minutes).
 To browse the committed real run without collecting anything, see
@@ -171,6 +182,10 @@ problem, and print the exact fix. Example output:
    the container user, cannot write it, and prints a `setfacl` fix.
 5. Runs `npm ci` in `backend/` and `frontend/`.
 
+The Docker stack does not need step 5, but every command run on the host does (`npm run dev`,
+`eval:classifiers`, tests, migrations). Without it the TypeScript build fails with hundreds of
+"Cannot find module '@nestjs/common'" errors. Run `npm run setup` once in each checkout or worktree.
+
 ### `npm start`
 
 1. Runs the same prerequisite checks. It also checks that ports 5432, 8000 and 8080 are free, or
@@ -190,12 +205,16 @@ Run it as often as you like: it reuses a running Ollama, and Compose only recrea
 - **Ollama check.** The collector **refuses to boot** if Ollama is unreachable or the model is not
   pulled. The collector log names the fix, e.g. ``Run `ollama pull qwen2.5:7b` ``. The API and the
   dashboard stay up, and the Operations page shows the collector as offline.
+- **No Run starts by itself.** Collection begins only when you start a Backfill (or a Daily Check)
+  from the Operations page, or when the optional daily cron is enabled.
 - **Seed List import** (#7). If the companies table is empty, the collector imports
   `docs/ourcrowd_companies.txt`, about 250 companies. Each name is **triaged**:
   - A rule flags names of 3 characters or fewer, and single common English words or first names.
   - Ollama is asked "would a news search for this exact name mostly return unrelated articles?"
 
-  A name flagged by either starts as **Needs Review**. The rest start **active**. Progress shows on
+  A name flagged by either starts as **Needs Review**. The rest start **active**. On the real Seed
+  List this gives roughly 150 active and 110 Needs Review; the exact split can vary by a few names
+  between imports. Progress shows on
   the Operations page as "Importing the Seed List: k of n companies". If Ollama becomes unreachable
   mid-import, the import pauses, and the next collector start resumes it.
 
@@ -214,6 +233,14 @@ same variable:
 FRONTEND_HOST_PORT=8081 POSTGRES_HOST_PORT=5433 npm start      # macOS/Linux
 $env:FRONTEND_HOST_PORT=8081; npm start                          # PowerShell
 ```
+
+**Why 5432 is often busy.** Postgres runs inside Docker, but Compose also publishes the container's
+port on the host as `localhost:5432`, so host-side tools (`npm run dev`, migrations and e2e tests
+run from a terminal, a database GUI) can reach it. A Postgres installed natively, e.g. Homebrew's
+`postgresql@18` service, already holds that port. The containers themselves are unaffected: they
+reach the database as `postgres:5432` on Docker's network. Either move the published port
+(`POSTGRES_HOST_PORT=5433 npm start`) or stop the native server
+(`brew services stop postgresql@18`; its data is kept).
 
 Every port is published on `127.0.0.1` only. Ollama's port 11434 is fixed, because the collector
 reaches it at `host.docker.internal:11434`.
@@ -544,25 +571,41 @@ The call goes to `POST {OLLAMA_BASE_URL}/api/chat` (`backend/src/classification/
 - **Transport failures** are `ClassifierUnavailable`: connection refused, the 120 s timeout, an HTTP
   error. They are not retried per call. After `OLLAMA_FAILURE_THRESHOLD` (5) in a row, the Run stops
   as `failed`, and the remaining Candidates resume in the next Run.
-- **Concurrency** is capped at `OLLAMA_NUM_PARALLEL` (2) requests in flight.
+- **Concurrency.** Each company's Candidates are classified `OLLAMA_NUM_PARALLEL` (2) at a time;
+  companies still run one after another. Reaching the failure threshold stops new calls, and the
+  ones in flight finish. **Ollama itself must be started with the same setting**
+  (`OLLAMA_NUM_PARALLEL=2 ollama serve`); otherwise it queues the requests and nothing is faster.
 - **Boot check (`CLASSIFIER_HEALTH`).** Before the collector does anything, it calls `/api/tags` and
   refuses to boot unless the configured model is listed. The heartbeat carries the model name and
   Ollama health to the Operations page.
 
 ### How classification quality was validated
 
-**Method** (planned in #18; the labelled set and the `eval:classifiers` script do not exist yet):
+**Method** (#18):
 
-- About 60 **real** Candidates collected by the pipeline are labelled by hand for relevance and
-  sentiment. The set is deliberately weighted toward ambiguous names (Harvey, Wave, Ro, Island…) and
-  includes about 10 Hebrew items. It is committed under `backend/test/fixtures/validation/`.
-- `npm run eval:classifiers` runs the real Ollama classifiers over the set. It reports:
-  - **relevance precision and recall**;
-  - **sentiment accuracy** with a confusion matrix;
-  - **median and p95 latency** per call.
-- The report goes to `docs/validation-report.md`, with the model, prompt versions and date.
+- 60 **real** Google News Candidates, labelled by hand for relevance and sentiment. The set is
+  weighted toward ambiguous names (Harvey, Island, Wave, Ro, Glean, Lambda, Peak, Guild, Astra,
+  Stripe) plus clear-cut ones (Hailo, ZutaCore, Cerebras, Morphisec, Ayar Labs), and includes 10
+  Hebrew items. Set: `backend/test/fixtures/validation/validation-set.json`. Labels:
+  `docs/validation/labelling-sheet.csv` (a Markdown twin is next to it).
+- `cd backend && npm run eval:classifiers -- --labels ../docs/validation/labelling-sheet.csv` runs
+  the real Ollama classifiers over the set and rewrites `docs/validation-report.md`.
+- The CSV's **first line must be the header** (`id,company,…`). Some spreadsheet apps (e.g.
+  Numbers) add title rows above it on export; delete them, or the eval reports missing columns.
 
-**Results: pending #18.** No numbers are claimed until that measurement is committed.
+**Results** (qwen2.5:7b, 2026-10-08, full tables in
+[docs/validation-report.md](docs/validation-report.md)):
+
+| | precision | recall |
+|---|---:|---:|
+| Relevance, all 60 | 85.7% | 82.8% |
+| Clear-cut names (15) | 93.3% | 100% |
+| Ambiguous names (45) | 76.9% | 66.7% |
+| Hebrew (10) | 100% | 100% |
+
+Sentiment matches the human label on 23 of 29 Mentions (79.3%); most misses are positive articles
+the model called neutral. On ambiguous names the model is conservative: few false matches, but about
+a third of real Mentions are missed.
 
 Continuous checks that exist today:
 
@@ -574,9 +617,13 @@ Continuous checks that exist today:
 
 ### Throughput
 
-The estimate is about 1.5–2.5 s per call on an M3. A full Backfill of every active company is
-thousands of calls, which is **hours** on a laptop. The measured per-call latency and the resulting
-Backfill estimate are **pending #18**.
+Measured on an Apple M3 (16 GB), one call at a time: relevance median 5.4 s (p95 6.9 s), sentiment
+median 5.5 s (p95 8.5 s). A sample of the Seed List averages about 14
+classified Candidates per company. For all 258 companies that is ~3,700 relevance and ~1,700
+sentiment calls, **about 9 hours one call at a time** (range 5.5–11 h); with only the ~150 active
+companies, proportionally less, plus ~50 min of Google News
+fetching. With `OLLAMA_NUM_PARALLEL=2` on both Ollama and the collector, throughput rises, but the
+gain was not measured. Details: [docs/validation-report.md](docs/validation-report.md).
 
 The pipeline keeps the cost down in four ways:
 

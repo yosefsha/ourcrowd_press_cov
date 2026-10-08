@@ -14,6 +14,13 @@ Backend standards for the NestJS stack — project structure, code style, config
 
 @docs/backend-nestjs-instructions.md
 
+## Project Status
+
+**Read [docs/STATUS.md](docs/STATUS.md) before starting work.** It covers what is merged and
+what is open, the non-obvious facts about running the system, and the shared-resource rules: one
+Ollama job at a time, tests never call Ollama, and verification runs on your own Postgres. Update
+it when you finish a task that changes any of these.
+
 ## AI Session Transcripts
 
 The brief requires a copy of the prompts used with AI coding assistants. The `PreCompact` and
