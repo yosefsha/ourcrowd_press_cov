@@ -39,7 +39,7 @@ const dailyCheck = { ...backfill, type: 'daily_check', trigger: 'schedule' } as 
 
 function worker(
   store: InMemoryRunStore,
-  executors: readonly RunExecutor[] | null,
+  executors: readonly RunExecutor[],
   exporter: DataExporter = new RecordingExporter(),
   activity = new CollectorActivity(),
 ): RunWorker {
@@ -130,7 +130,7 @@ describe('RunWorker', () => {
     const store = new InMemoryRunStore();
     await store.enqueue(dailyCheck);
 
-    await worker(store, null).pollOnce();
+    await worker(store, []).pollOnce();
 
     expect(store.all()[0]).toMatchObject({
       status: 'failed',
