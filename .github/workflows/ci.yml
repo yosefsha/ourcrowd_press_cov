@@ -35,6 +35,10 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
+        # A job-level `defaults.run` replaces the workflow-level one, so `shell`
+        # must be repeated here — without it GitHub falls back to `bash -e` with
+        # no pipefail, and `npm test | tee` reports tee's exit code (green).
+        shell: bash
         # The service lives in backend/; a run from the repo root finds nothing.
         working-directory: backend
 
@@ -148,6 +152,7 @@ jobs:
         # Jest writes its summary to stderr, hence the 2>&1. `--ci` also fails
         # on a snapshot that would be written rather than matched.
         run: |
+          set -o pipefail
           npm test -- --ci 2>&1 | tee jest-output.txt
           npm run test:e2e -- --ci 2>&1 | tee -a jest-output.txt
           if grep -qE '[0-9]+ (skipped|todo)' jest-output.txt; then
@@ -160,6 +165,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
+        shell: bash
         # The SPA lives in frontend/.
         working-directory: frontend
 
