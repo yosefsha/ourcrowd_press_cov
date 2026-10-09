@@ -797,6 +797,7 @@ container for both apps. It also builds both Docker images. A skipped test fails
 | [docs/TECHNICAL_SPEC.md](docs/TECHNICAL_SPEC.md) | Technical specification and onboarding for engineers |
 | [CONTEXT.md](CONTEXT.md) | The domain glossary: every bold term in this README |
 | [docs/adr/](docs/adr/) | Architecture decisions ADR-001 to ADR-010 (ADR-003 is superseded by ADR-010) |
+| [docs/ADRS.md](docs/ADRS.md) | All ADRs combined in one file for end-to-end reading (the files in `docs/adr/` stay canonical) |
 | [docs/IMPLEMENTATION_PLAN.md](docs/IMPLEMENTATION_PLAN.md) | System shape, backend layout, schema, ports, HTTP API contract, issue map |
 | [docs/BACKLOG.md](docs/BACKLOG.md) | Deliberately deferred work: auth, Slack/email alerts, story grouping, CLI Runs, preview search |
 | [docs/TASKS.md](docs/TASKS.md) | The original brief |
