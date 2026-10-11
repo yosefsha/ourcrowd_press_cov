@@ -23,7 +23,7 @@ export function NewDigestToast({ digests, onOpen, onDismiss }: Props): React.JSX
         maxWidth: 360,
         background: '#ffffff',
         border: `1px solid ${negative ? '#f04438' : '#d9e2ec'}`,
-        borderLeft: `4px solid ${negative ? '#f04438' : '#2563eb'}`,
+        borderLeft: `4px solid ${negative ? '#f04438' : '#00a9e0'}`,
         borderRadius: 6,
         boxShadow: '0 4px 16px rgba(16, 42, 67, 0.15)',
         padding: 12,

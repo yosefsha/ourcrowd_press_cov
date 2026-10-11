@@ -35,7 +35,7 @@ export function AdminCompanyList({ companies, selectedId, onSelect }: Props): Re
                 font: 'inherit',
                 cursor: 'pointer',
                 borderRadius: 6,
-                border: `1px solid ${selected ? '#2f6fde' : needsReview ? '#f0b429' : '#d9e2ec'}`,
+                border: `1px solid ${selected ? '#00a9e0' : needsReview ? '#f0b429' : '#d9e2ec'}`,
                 background: needsReview ? '#fffbea' : '#ffffff',
                 color: company.status === 'deactivated' ? '#7b8794' : 'inherit',
               }}

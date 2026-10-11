@@ -33,6 +33,7 @@ describe('AppShell routing', () => {
   ])('renders %s inside the shell', (path, heading) => {
     renderAt(path);
     expect(screen.getByText('Press Coverage')).toBeInTheDocument();
+    expect(screen.getByRole('img', { name: 'OurCrowd' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { level: 1, name: heading })).toBeInTheDocument();
   });
 

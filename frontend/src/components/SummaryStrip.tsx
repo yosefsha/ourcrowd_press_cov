@@ -52,8 +52,8 @@ function Tile({ label, children, pressed, onClick }: TileProps): React.JSX.Eleme
       style={{
         ...tileStyle,
         cursor: 'pointer',
-        borderColor: pressed === true ? '#2680c2' : '#d9e2ec',
-        boxShadow: pressed === true ? '0 0 0 1px #2680c2' : 'none',
+        borderColor: pressed === true ? '#00a9e0' : '#d9e2ec',
+        boxShadow: pressed === true ? '0 0 0 1px #00a9e0' : 'none',
       }}
     >
       {content}

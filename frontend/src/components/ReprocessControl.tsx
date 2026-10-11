@@ -39,8 +39,8 @@ export function ReprocessControl({ companyId, displayName, enabled, highlighted 
         gap: 8,
         padding: 12,
         borderRadius: 6,
-        border: `1px solid ${highlighted ? '#2f6fde' : '#d9e2ec'}`,
-        background: highlighted ? '#eef4fd' : '#ffffff',
+        border: `1px solid ${highlighted ? '#00a9e0' : '#d9e2ec'}`,
+        background: highlighted ? '#e6f6fc' : '#ffffff',
       }}
     >
       <h3 style={{ margin: 0, fontSize: 15 }}>Re-process</h3>

@@ -45,7 +45,7 @@ export function ChipInput({ label, itemNoun, values, onChange, errors, hint }: P
                 gap: 4,
                 padding: '2px 4px 2px 10px',
                 borderRadius: 12,
-                background: '#e0e8f9',
+                background: '#e6f6fc',
                 fontSize: 13,
               }}
             >

@@ -132,7 +132,7 @@ export function CompaniesPage(): React.JSX.Element {
               }}
               style={{
                 ...secondaryButtonStyle,
-                ...(status === filter.value && { background: '#243b53', color: '#ffffff', borderColor: '#243b53' }),
+                ...(status === filter.value && { background: '#006895', color: '#ffffff', borderColor: '#006895' }),
                 ...(filter.value === 'needs_review' && status !== filter.value && { borderColor: '#f0b429' }),
               }}
             >
