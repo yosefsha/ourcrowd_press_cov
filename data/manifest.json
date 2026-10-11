@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "exportedAt": "2026-10-09T04:42:32.787Z",
+  "timeZone": "Asia/Jerusalem",
+  "counts": {
+    "companies": 258,
+    "articles": 2924,
+    "candidates": 2933,
+    "mentions": 1092,
+    "runs": 2,
+    "runCompanyErrors": 0,
+    "alertDigests": 1,
+    "alertDigestItems": 137
+  }
+}

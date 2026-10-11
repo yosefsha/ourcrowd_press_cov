@@ -1,0 +1,4392 @@
+{
+  "exportedAt": "2026-10-09T04:42:32.787Z",
+  "timeZone": "Asia/Jerusalem",
+  "companies": [
+    {
+      "companyId": 53,
+      "displayName": "3d Signals",
+      "sourceName": "3d Signals",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 171,
+      "displayName": "Abes Market",
+      "sourceName": "Abes Market",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 64,
+      "displayName": "AEYE Health",
+      "sourceName": "AEYE Health",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 4,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 47,
+      "displayName": "Air EV",
+      "sourceName": "Air EV",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 253,
+      "displayName": "Airobotics",
+      "sourceName": "Airobotics",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 8,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 96,
+      "displayName": "Alloy Therapeutics",
+      "sourceName": "Alloy Therapeutics",
+      "companyStatus": "active",
+      "mentionStatus": "recent",
+      "lastMentionedAt": "2026-09-17T07:00:00.000000Z",
+      "mentions": 2,
+      "sentiment": {
+        "positive": 2,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 6,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 233,
+      "displayName": "Alpha Tau",
+      "sourceName": "Alpha Tau",
+      "companyStatus": "active",
+      "mentionStatus": "active",
+      "lastMentionedAt": "2026-10-08T03:05:20.000000Z",
+      "mentions": 15,
+      "sentiment": {
+        "positive": 7,
+        "negative": 2,
+        "neutral": 6
+      },
+      "rejectedCandidates": 27,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 146,
+      "displayName": "Amitree",
+      "sourceName": "Amitree",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 67,
+      "displayName": "Anodot",
+      "sourceName": "Anodot",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 2,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 32,
+      "displayName": "Anthropic",
+      "sourceName": "Anthropic",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 168,
+      "displayName": "Appdome",
+      "sourceName": "Appdome",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 1,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 158,
+      "displayName": "Appforma",
+      "sourceName": "Appforma",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 183,
+      "displayName": "Apploi",
+      "sourceName": "Apploi",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 3,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 240,
+      "displayName": "Arbe Robotics",
+      "sourceName": "Arbe Robotics",
+      "companyStatus": "active",
+      "mentionStatus": "active",
+      "lastMentionedAt": "2026-10-06T23:00:44.000000Z",
+      "mentions": 28,
+      "sentiment": {
+        "positive": 11,
+        "negative": 4,
+        "neutral": 13
+      },
+      "rejectedCandidates": 19,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 138,
+      "displayName": "Argus Cyber Security",
+      "sourceName": "Argus Cyber Security",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 2,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 46,
+      "displayName": "Arrow Global",
+      "sourceName": "Arrow Global",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 191,
+      "displayName": "Astra",
+      "sourceName": "Astra",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 34,
+      "displayName": "Atlas Obscura",
+      "sourceName": "Atlas Obscura",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 97,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 215,
+      "displayName": "Autobrains",
+      "sourceName": "Autobrains",
+      "companyStatus": "active",
+      "mentionStatus": "recent",
+      "lastMentionedAt": "2026-09-17T07:00:00.000000Z",
+      "mentions": 1,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 1
+      },
+      "rejectedCandidates": 7,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 22,
+      "displayName": "Ayar Labs",
+      "sourceName": "Ayar Labs",
+      "companyStatus": "active",
+      "mentionStatus": "recent",
+      "lastMentionedAt": "2026-09-28T07:00:00.000000Z",
+      "mentions": 11,
+      "sentiment": {
+        "positive": 8,
+        "negative": 0,
+        "neutral": 3
+      },
+      "rejectedCandidates": 15,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 212,
+      "displayName": "Barcode Nanotech",
+      "sourceName": "Barcode Nanotech",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 1,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 255,
+      "displayName": "BeetleSat",
+      "sourceName": "BeetleSat",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 59,
+      "displayName": "BetterSeeds",
+      "sourceName": "BetterSeeds",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 1,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 229,
+      "displayName": "Beyond Meat",
+      "sourceName": "Beyond Meat",
+      "companyStatus": "active",
+      "mentionStatus": "active",
+      "lastMentionedAt": "2026-10-08T20:14:41.000000Z",
+      "mentions": 100,
+      "sentiment": {
+        "positive": 33,
+        "negative": 20,
+        "neutral": 47
+      },
+      "rejectedCandidates": 21,
+      "pendingCandidates": 0,
+      "coverageCapped": true
+    },
+    {
+      "companyId": 189,
+      "displayName": "BillGuard",
+      "sourceName": "BillGuard",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 74,
+      "displayName": "Binah.ai",
+      "sourceName": "Binah.ai",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 2,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 176,
+      "displayName": "BioCatch",
+      "sourceName": "BioCatch",
+      "companyStatus": "active",
+      "mentionStatus": "active",
+      "lastMentionedAt": "2026-10-07T14:34:36.000000Z",
+      "mentions": 67,
+      "sentiment": {
+        "positive": 61,
+        "negative": 0,
+        "neutral": 6
+      },
+      "rejectedCandidates": 40,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 3,
+      "displayName": "Biolojic Design",
+      "sourceName": "Biolojic Design",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 2,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 82,
+      "displayName": "BioLumic",
+      "sourceName": "BioLumic",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 151,
+      "displayName": "BIScience",
+      "sourceName": "BIScience",
+      "companyStatus": "active",
+      "mentionStatus": "active",
+      "lastMentionedAt": "2026-10-07T09:19:55.000000Z",
+      "mentions": 1,
+      "sentiment": {
+        "positive": 1,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 33,
+      "displayName": "Bites",
+      "sourceName": "Bites",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 174,
+      "displayName": "Bizzabo",
+      "sourceName": "Bizzabo",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 129,
+      "displayName": "BlueCircle",
+      "sourceName": "BlueCircle (formerly Trellis)",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 114,
+      "displayName": "BlueGreen Water Technologies",
+      "sourceName": "BlueGreen Water Technologies",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 3,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 195,
+      "displayName": "BlueNalu",
+      "sourceName": "BlueNalu",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 3,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 81,
+      "displayName": "BlueTree Technologies",
+      "sourceName": "BlueTree Technologies",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 186,
+      "displayName": "Boatsetter",
+      "sourceName": "Boatsetter",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 257,
+      "displayName": "BrainQ Technologies",
+      "sourceName": "BrainQ Technologies",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 1,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 188,
+      "displayName": "BriefCam",
+      "sourceName": "BriefCam",
+      "companyStatus": "active",
+      "mentionStatus": "active",
+      "lastMentionedAt": "2026-10-05T15:16:43.000000Z",
+      "mentions": 1,
+      "sentiment": {
+        "positive": 1,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 5,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 100,
+      "displayName": "BrightInsight",
+      "sourceName": "BrightInsight",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 1,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 121,
+      "displayName": "C2A Security",
+      "sourceName": "C2A Security",
+      "companyStatus": "active",
+      "mentionStatus": "quiet",
+      "lastMentionedAt": "2026-08-18T07:00:00.000000Z",
+      "mentions": 1,
+      "sentiment": {
+        "positive": 1,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 1,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 72,
+      "displayName": "CarDekho",
+      "sourceName": "CarDekho",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 39,
+      "displayName": "Carrar",
+      "sourceName": "Carrar",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 222,
+      "displayName": "Casper",
+      "sourceName": "Casper",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 223,
+      "displayName": "CB4",
+      "sourceName": "CB4",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 132,
+      "displayName": "Celeno",
+      "sourceName": "Celeno",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 9,
+      "displayName": "Cerebras",
+      "sourceName": "Cerebras",
+      "companyStatus": "active",
+      "mentionStatus": "active",
+      "lastMentionedAt": "2026-10-08T17:36:58.000000Z",
+      "mentions": 140,
+      "sentiment": {
+        "positive": 75,
+        "negative": 22,
+        "neutral": 43
+      },
+      "rejectedCandidates": 45,
+      "pendingCandidates": 0,
+      "coverageCapped": true
+    },
+    {
+      "companyId": 185,
+      "displayName": "Cimagine",
+      "sourceName": "Cimagine",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 115,
+      "displayName": "Classiq",
+      "sourceName": "Classiq",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 113,
+      "displayName": "Clinch",
+      "sourceName": "Clinch",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 237,
+      "displayName": "Cognigo",
+      "sourceName": "Cognigo",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 58,
+      "displayName": "Connected Energy",
+      "sourceName": "Connected Energy",
+      "companyStatus": "active",
+      "mentionStatus": "recent",
+      "lastMentionedAt": "2026-09-21T09:03:46.000000Z",
+      "mentions": 2,
+      "sentiment": {
+        "positive": 1,
+        "negative": 0,
+        "neutral": 1
+      },
+      "rejectedCandidates": 36,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 178,
+      "displayName": "Consumer Physics",
+      "sourceName": "Consumer Physics",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 5,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 92,
+      "displayName": "Cordio Medical",
+      "sourceName": "Cordio Medical",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 3,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 155,
+      "displayName": "Corephotonics",
+      "sourceName": "Corephotonics",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 202,
+      "displayName": "CorrActions",
+      "sourceName": "CorrActions",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 181,
+      "displayName": "CropX",
+      "sourceName": "CropX",
+      "companyStatus": "active",
+      "mentionStatus": "quiet",
+      "lastMentionedAt": "2026-08-31T07:00:00.000000Z",
+      "mentions": 6,
+      "sentiment": {
+        "positive": 6,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 7,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 170,
+      "displayName": "Crosswise",
+      "sourceName": "Crosswise",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 120,
+      "displayName": "Cyabra",
+      "sourceName": "Cyabra",
+      "companyStatus": "active",
+      "mentionStatus": "active",
+      "lastMentionedAt": "2026-10-08T14:15:16.000000Z",
+      "mentions": 37,
+      "sentiment": {
+        "positive": 28,
+        "negative": 0,
+        "neutral": 9
+      },
+      "rejectedCandidates": 11,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 232,
+      "displayName": "CyberMDX",
+      "sourceName": "CyberMDX",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 131,
+      "displayName": "CyberX",
+      "sourceName": "CyberX",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 1,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 76,
+      "displayName": "Cycuity",
+      "sourceName": "Cycuity (formerly Tortuga Logic)",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 2,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 50,
+      "displayName": "Cyfirma",
+      "sourceName": "Cyfirma",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 124,
+      "displayName": "CytoReason",
+      "sourceName": "CytoReason",
+      "companyStatus": "active",
+      "mentionStatus": "active",
+      "lastMentionedAt": "2026-10-08T00:15:50.000000Z",
+      "mentions": 1,
+      "sentiment": {
+        "positive": 1,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 8,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 216,
+      "displayName": "DailyPay",
+      "sourceName": "DailyPay",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 105,
+      "displayName": "Dandelion Energy",
+      "sourceName": "Dandelion Energy",
+      "companyStatus": "active",
+      "mentionStatus": "active",
+      "lastMentionedAt": "2026-10-08T14:02:21.000000Z",
+      "mentions": 6,
+      "sentiment": {
+        "positive": 5,
+        "negative": 0,
+        "neutral": 1
+      },
+      "rejectedCandidates": 6,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 21,
+      "displayName": "Databricks",
+      "sourceName": "Databricks",
+      "companyStatus": "active",
+      "mentionStatus": "active",
+      "lastMentionedAt": "2026-10-08T20:25:48.000000Z",
+      "mentions": 53,
+      "sentiment": {
+        "positive": 45,
+        "negative": 3,
+        "neutral": 5
+      },
+      "rejectedCandidates": 67,
+      "pendingCandidates": 0,
+      "coverageCapped": true
+    },
+    {
+      "companyId": 118,
+      "displayName": "Dataloop",
+      "sourceName": "Dataloop",
+      "companyStatus": "active",
+      "mentionStatus": "recent",
+      "lastMentionedAt": "2026-09-22T07:00:00.000000Z",
+      "mentions": 1,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 1
+      },
+      "rejectedCandidates": 2,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 15,
+      "displayName": "DeepKeep",
+      "sourceName": "DeepKeep",
+      "companyStatus": "active",
+      "mentionStatus": "recent",
+      "lastMentionedAt": "2026-10-01T13:00:51.000000Z",
+      "mentions": 2,
+      "sentiment": {
+        "positive": 2,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 116,
+      "displayName": "Diagnostic Robotics",
+      "sourceName": "Diagnostic Robotics",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 4,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 250,
+      "displayName": "DreaMed Diabetes",
+      "sourceName": "DreaMed Diabetes",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 9,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 249,
+      "displayName": "Edgybees",
+      "sourceName": "Edgybees",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 38,
+      "displayName": "Edity Therapeutics",
+      "sourceName": "Edity Therapeutics",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 211,
+      "displayName": "EduNav",
+      "sourceName": "EduNav",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 75,
+      "displayName": "Eko Health",
+      "sourceName": "Eko Health",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 104,
+      "displayName": "Entangled Networks",
+      "sourceName": "Entangled Networks",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 4,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 169,
+      "displayName": "enVerid",
+      "sourceName": "enVerid",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 193,
+      "displayName": "EquipmentShare",
+      "sourceName": "EquipmentShare",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 167,
+      "displayName": "eVigilo",
+      "sourceName": "eVigilo",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 163,
+      "displayName": "Fireblade",
+      "sourceName": "Fireblade",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 47,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 148,
+      "displayName": "Firefly Neuroscience",
+      "sourceName": "Firefly Neuroscience (formerly ElMindA)",
+      "companyStatus": "active",
+      "mentionStatus": "recent",
+      "lastMentionedAt": "2026-09-29T20:16:19.000000Z",
+      "mentions": 10,
+      "sentiment": {
+        "positive": 7,
+        "negative": 0,
+        "neutral": 3
+      },
+      "rejectedCandidates": 5,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 42,
+      "displayName": "Flash Forest",
+      "sourceName": "Flash Forest",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 3,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 85,
+      "displayName": "Flytrex",
+      "sourceName": "Flytrex",
+      "companyStatus": "active",
+      "mentionStatus": "recent",
+      "lastMentionedAt": "2026-10-01T18:23:29.000000Z",
+      "mentions": 9,
+      "sentiment": {
+        "positive": 7,
+        "negative": 1,
+        "neutral": 1
+      },
+      "rejectedCandidates": 10,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 224,
+      "displayName": "Foretellix",
+      "sourceName": "Foretellix",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 1,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 164,
+      "displayName": "Freightos",
+      "sourceName": "Freightos",
+      "companyStatus": "active",
+      "mentionStatus": "active",
+      "lastMentionedAt": "2026-10-08T11:45:38.000000Z",
+      "mentions": 31,
+      "sentiment": {
+        "positive": 11,
+        "negative": 2,
+        "neutral": 18
+      },
+      "rejectedCandidates": 17,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 214,
+      "displayName": "Frontier Car Group",
+      "sourceName": "Frontier Car Group",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 110,
+      "displayName": "Future Family",
+      "sourceName": "Future Family",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 61,
+      "displayName": "Genopore",
+      "sourceName": "Genopore",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 13,
+      "displayName": "Glean",
+      "sourceName": "Glean",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 153,
+      "displayName": "Global Kinetics",
+      "sourceName": "Global Kinetics",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 119,
+      "displayName": "Greenlight",
+      "sourceName": "Greenlight",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 31,
+      "displayName": "Groq",
+      "sourceName": "Groq",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 88,
+      "displayName": "Guild",
+      "sourceName": "Guild",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 108,
+      "displayName": "H2Pro",
+      "sourceName": "H2Pro",
+      "companyStatus": "active",
+      "mentionStatus": "recent",
+      "lastMentionedAt": "2026-09-30T08:58:19.000000Z",
+      "mentions": 2,
+      "sentiment": {
+        "positive": 1,
+        "negative": 0,
+        "neutral": 1
+      },
+      "rejectedCandidates": 13,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 242,
+      "displayName": "Hailo",
+      "sourceName": "Hailo",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 11,
+      "displayName": "Harbinger Motors",
+      "sourceName": "Harbinger Motors",
+      "companyStatus": "active",
+      "mentionStatus": "recent",
+      "lastMentionedAt": "2026-09-11T07:00:00.000000Z",
+      "mentions": 3,
+      "sentiment": {
+        "positive": 1,
+        "negative": 0,
+        "neutral": 2
+      },
+      "rejectedCandidates": 25,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 6,
+      "displayName": "Harvey",
+      "sourceName": "Harvey",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 123,
+      "displayName": "HEQA Security",
+      "sourceName": "HEQA Security (formerly QuantLR)",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 230,
+      "displayName": "HoneyBook",
+      "sourceName": "HoneyBook",
+      "companyStatus": "active",
+      "mentionStatus": "active",
+      "lastMentionedAt": "2026-10-08T12:13:00.000000Z",
+      "mentions": 7,
+      "sentiment": {
+        "positive": 6,
+        "negative": 1,
+        "neutral": 0
+      },
+      "rejectedCandidates": 2,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 194,
+      "displayName": "Hub Security",
+      "sourceName": "Hub Security",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 221,
+      "displayName": "Incredo",
+      "sourceName": "Incredo (formerly known as DouxMatok)",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 207,
+      "displayName": "Innovalve",
+      "sourceName": "Innovalve",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 246,
+      "displayName": "Innoviz",
+      "sourceName": "Innoviz",
+      "companyStatus": "active",
+      "mentionStatus": "active",
+      "lastMentionedAt": "2026-10-08T02:33:01.000000Z",
+      "mentions": 52,
+      "sentiment": {
+        "positive": 27,
+        "negative": 12,
+        "neutral": 13
+      },
+      "rejectedCandidates": 18,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 71,
+      "displayName": "InsideTracker",
+      "sourceName": "InsideTracker",
+      "companyStatus": "active",
+      "mentionStatus": "quiet",
+      "lastMentionedAt": "2026-09-03T07:00:00.000000Z",
+      "mentions": 2,
+      "sentiment": {
+        "positive": 1,
+        "negative": 0,
+        "neutral": 1
+      },
+      "rejectedCandidates": 2,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 236,
+      "displayName": "Insightec",
+      "sourceName": "Insightec",
+      "companyStatus": "active",
+      "mentionStatus": "recent",
+      "lastMentionedAt": "2026-09-10T07:00:00.000000Z",
+      "mentions": 3,
+      "sentiment": {
+        "positive": 2,
+        "negative": 0,
+        "neutral": 1
+      },
+      "rejectedCandidates": 7,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 258,
+      "displayName": "Intuition Robotics",
+      "sourceName": "Intuition Robotics",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 9,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 80,
+      "displayName": "InZiv",
+      "sourceName": "InZiv",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 54,
+      "displayName": "IQM",
+      "sourceName": "IQM",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 69,
+      "displayName": "IronVest",
+      "sourceName": "IronVest",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 3,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 19,
+      "displayName": "Island",
+      "sourceName": "Island",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 226,
+      "displayName": "ItsMine",
+      "sourceName": "ItsMine",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 219,
+      "displayName": "Juganu",
+      "sourceName": "Juganu",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 156,
+      "displayName": "JUMP Bikes",
+      "sourceName": "JUMP Bikes",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 109,
+      "displayName": "JumpCloud",
+      "sourceName": "JumpCloud",
+      "companyStatus": "active",
+      "mentionStatus": "active",
+      "lastMentionedAt": "2026-10-07T17:04:00.000000Z",
+      "mentions": 11,
+      "sentiment": {
+        "positive": 8,
+        "negative": 0,
+        "neutral": 3
+      },
+      "rejectedCandidates": 5,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 43,
+      "displayName": "Kando",
+      "sourceName": "Kando",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 24,
+      "displayName": "Kardome",
+      "sourceName": "Kardome",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 198,
+      "displayName": "Kemtai",
+      "sourceName": "Kemtai",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 133,
+      "displayName": "Kenna Security",
+      "sourceName": "Kenna Security",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 8,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 55,
+      "displayName": "Kini",
+      "sourceName": "Kini",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 245,
+      "displayName": "Klook",
+      "sourceName": "Klook",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 26,
+      "displayName": "Kodiak Robotics",
+      "sourceName": "Kodiak Robotics",
+      "companyStatus": "active",
+      "mentionStatus": "recent",
+      "lastMentionedAt": "2026-09-29T23:43:33.000000Z",
+      "mentions": 2,
+      "sentiment": {
+        "positive": 2,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 10,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 199,
+      "displayName": "Kryon Systems",
+      "sourceName": "Kryon Systems",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 16,
+      "displayName": "Lambda",
+      "sourceName": "Lambda (lambda.ai)",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 41,
+      "displayName": "Lano",
+      "sourceName": "Lano",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 101,
+      "displayName": "Launchpad",
+      "sourceName": "Launchpad",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 241,
+      "displayName": "Lemonade",
+      "sourceName": "Lemonade",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 184,
+      "displayName": "Lifeward",
+      "sourceName": "Lifeward (formerly known as ReWalk)",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 52,
+      "displayName": "Lightico",
+      "sourceName": "Lightico",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 1,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 56,
+      "displayName": "Liquid Instruments",
+      "sourceName": "Liquid Instruments",
+      "companyStatus": "active",
+      "mentionStatus": "quiet",
+      "lastMentionedAt": "2026-07-29T07:00:00.000000Z",
+      "mentions": 5,
+      "sentiment": {
+        "positive": 5,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 22,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 218,
+      "displayName": "Locusview",
+      "sourceName": "Locusview",
+      "companyStatus": "active",
+      "mentionStatus": "recent",
+      "lastMentionedAt": "2026-09-19T20:04:03.000000Z",
+      "mentions": 1,
+      "sentiment": {
+        "positive": 1,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 1,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 51,
+      "displayName": "Ludeo",
+      "sourceName": "Ludeo (formerly Edge)",
+      "companyStatus": "active",
+      "mentionStatus": "active",
+      "lastMentionedAt": "2026-10-07T12:59:13.000000Z",
+      "mentions": 2,
+      "sentiment": {
+        "positive": 1,
+        "negative": 0,
+        "neutral": 1
+      },
+      "rejectedCandidates": 244,
+      "pendingCandidates": 0,
+      "coverageCapped": true
+    },
+    {
+      "companyId": 251,
+      "displayName": "Magisto",
+      "sourceName": "Magisto",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 2,
+      "displayName": "Maolac",
+      "sourceName": "Maolac",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 122,
+      "displayName": "MasterClass",
+      "sourceName": "MasterClass",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 99,
+      "displayName": "MaterialsZone",
+      "sourceName": "MaterialsZone",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 196,
+      "displayName": "Medisafe",
+      "sourceName": "Medisafe",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 239,
+      "displayName": "MeMed",
+      "sourceName": "MeMed",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 180,
+      "displayName": "Mentad",
+      "sourceName": "Mentad",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 62,
+      "displayName": "Mermade Seafoods",
+      "sourceName": "Mermade Seafoods",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 127,
+      "displayName": "MigVax",
+      "sourceName": "MigVax",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 137,
+      "displayName": "Momentis Surgical",
+      "sourceName": "Momentis Surgical (formerly Memic)",
+      "companyStatus": "active",
+      "mentionStatus": "quiet",
+      "lastMentionedAt": "2026-07-23T07:00:00.000000Z",
+      "mentions": 2,
+      "sentiment": {
+        "positive": 2,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 29,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 94,
+      "displayName": "Moodify",
+      "sourceName": "Moodify",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 5,
+      "displayName": "Morphisec",
+      "sourceName": "Morphisec",
+      "companyStatus": "active",
+      "mentionStatus": "quiet",
+      "lastMentionedAt": "2026-07-29T07:00:00.000000Z",
+      "mentions": 1,
+      "sentiment": {
+        "positive": 1,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 14,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 145,
+      "displayName": "mPrest",
+      "sourceName": "mPrest",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 173,
+      "displayName": "MST",
+      "sourceName": "MST",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 220,
+      "displayName": "Nanomedic",
+      "sourceName": "Nanomedic",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 135,
+      "displayName": "Nanorep",
+      "sourceName": "Nanorep",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 130,
+      "displayName": "Near",
+      "sourceName": "Near",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 45,
+      "displayName": "Neolithics",
+      "sourceName": "Neolithics",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 201,
+      "displayName": "NetOp",
+      "sourceName": "NetOp",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 225,
+      "displayName": "Neura",
+      "sourceName": "Neura",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 192,
+      "displayName": "NeuReality",
+      "sourceName": "NeuReality",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 2,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 175,
+      "displayName": "Neverware",
+      "sourceName": "Neverware",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 159,
+      "displayName": "Nextpeer",
+      "sourceName": "Nextpeer",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 144,
+      "displayName": "NooBaa",
+      "sourceName": "NooBaa",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 44,
+      "displayName": "NT-Tao",
+      "sourceName": "NT-Tao",
+      "companyStatus": "active",
+      "mentionStatus": "recent",
+      "lastMentionedAt": "2026-09-21T07:00:00.000000Z",
+      "mentions": 2,
+      "sentiment": {
+        "positive": 2,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 12,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 25,
+      "displayName": "Omnix Medical",
+      "sourceName": "Omnix Medical",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 3,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 4,
+      "displayName": "OncoHost",
+      "sourceName": "OncoHost",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 73,
+      "displayName": "One Zero Digital Bank",
+      "sourceName": "One Zero Digital Bank Ltd.",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 37,
+      "displayName": "OneAI",
+      "sourceName": "OneAI",
+      "companyStatus": "active",
+      "mentionStatus": "quiet",
+      "lastMentionedAt": "2026-07-27T07:00:00.000000Z",
+      "mentions": 2,
+      "sentiment": {
+        "positive": 2,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 9,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 7,
+      "displayName": "OpenEvidence",
+      "sourceName": "OpenEvidence",
+      "companyStatus": "active",
+      "mentionStatus": "active",
+      "lastMentionedAt": "2026-10-06T20:13:30.000000Z",
+      "mentions": 67,
+      "sentiment": {
+        "positive": 61,
+        "negative": 0,
+        "neutral": 6
+      },
+      "rejectedCandidates": 14,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 83,
+      "displayName": "Orchard",
+      "sourceName": "Orchard",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 112,
+      "displayName": "Ordergroove",
+      "sourceName": "Ordergroove",
+      "companyStatus": "active",
+      "mentionStatus": "recent",
+      "lastMentionedAt": "2026-09-27T14:27:54.000000Z",
+      "mentions": 2,
+      "sentiment": {
+        "positive": 2,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 78,
+      "displayName": "Oriient",
+      "sourceName": "Oriient",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 60,
+      "displayName": "Oshi",
+      "sourceName": "Oshi (formerly Plantish)",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 238,
+      "displayName": "Ossio",
+      "sourceName": "Ossio",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 117,
+      "displayName": "Overtime",
+      "sourceName": "Overtime",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 160,
+      "displayName": "Parko",
+      "sourceName": "Parko",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 77,
+      "displayName": "Peak",
+      "sourceName": "Peak",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 107,
+      "displayName": "People.ai",
+      "sourceName": "People.ai",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 206,
+      "displayName": "Perception Point",
+      "sourceName": "Perception Point",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 8,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 210,
+      "displayName": "PlaySight",
+      "sourceName": "PlaySight",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 5,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 95,
+      "displayName": "Polaris Quantum Biotech",
+      "sourceName": "Polaris Quantum Biotech",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 1,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 182,
+      "displayName": "Powwow",
+      "sourceName": "Powwow",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 91,
+      "displayName": "Privateer",
+      "sourceName": "Privateer",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 63,
+      "displayName": "ProFuse",
+      "sourceName": "ProFuse",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 42,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 161,
+      "displayName": "PulmOne",
+      "sourceName": "PulmOne",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 49,
+      "displayName": "Quai.MD",
+      "sourceName": "Quai.MD",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 86,
+      "displayName": "Quantum Machines",
+      "sourceName": "Quantum Machines",
+      "companyStatus": "active",
+      "mentionStatus": "recent",
+      "lastMentionedAt": "2026-09-23T07:00:00.000000Z",
+      "mentions": 8,
+      "sentiment": {
+        "positive": 8,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 81,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 40,
+      "displayName": "Quidnet Energy",
+      "sourceName": "Quidnet Energy",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 1,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 197,
+      "displayName": "Ravin AI",
+      "sourceName": "Ravin AI",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 231,
+      "displayName": "RealView Imaging",
+      "sourceName": "RealView Imaging",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 111,
+      "displayName": "Remilk",
+      "sourceName": "Remilk",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 3,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 23,
+      "displayName": "RepAir Carbon",
+      "sourceName": "RepAir Carbon",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 143,
+      "displayName": "Replay Technologies",
+      "sourceName": "Replay Technologies",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 41,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 247,
+      "displayName": "Rewire",
+      "sourceName": "Rewire",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 213,
+      "displayName": "Ride Vision",
+      "sourceName": "Ride Vision",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 3,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 126,
+      "displayName": "Ro",
+      "sourceName": "Ro",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 203,
+      "displayName": "SaNOtize",
+      "sourceName": "SaNOtize",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 217,
+      "displayName": "Sayata",
+      "sourceName": "Sayata",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 27,
+      "displayName": "Scale AI",
+      "sourceName": "Scale AI",
+      "companyStatus": "active",
+      "mentionStatus": "active",
+      "lastMentionedAt": "2026-10-08T16:02:02.000000Z",
+      "mentions": 10,
+      "sentiment": {
+        "positive": 6,
+        "negative": 0,
+        "neutral": 4
+      },
+      "rejectedCandidates": 185,
+      "pendingCandidates": 0,
+      "coverageCapped": true
+    },
+    {
+      "companyId": 254,
+      "displayName": "Scopio Labs",
+      "sourceName": "Scopio Labs",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 36,
+      "displayName": "SeeTree",
+      "sourceName": "SeeTree",
+      "companyStatus": "active",
+      "mentionStatus": "quiet",
+      "lastMentionedAt": "2026-07-14T07:00:00.000000Z",
+      "mentions": 1,
+      "sentiment": {
+        "positive": 1,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 205,
+      "displayName": "SeeTrue",
+      "sourceName": "SeeTrue",
+      "companyStatus": "active",
+      "mentionStatus": "quiet",
+      "lastMentionedAt": "2026-09-02T07:00:00.000000Z",
+      "mentions": 7,
+      "sentiment": {
+        "positive": 7,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 2,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 243,
+      "displayName": "Sense Education",
+      "sourceName": "Sense Education",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 102,
+      "displayName": "Sequentify",
+      "sourceName": "Sequentify",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 89,
+      "displayName": "Sfara",
+      "sourceName": "Sfara",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 106,
+      "displayName": "Shield",
+      "sourceName": "Shield",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 162,
+      "displayName": "Shopial",
+      "sourceName": "Shopial",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 177,
+      "displayName": "Sight Diagnostics",
+      "sourceName": "Sight Diagnostics",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 7,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 209,
+      "displayName": "Signals Analytics",
+      "sourceName": "Signals Analytics",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 4,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 256,
+      "displayName": "Silo",
+      "sourceName": "Silo",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 29,
+      "displayName": "Siteaware",
+      "sourceName": "Siteaware",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 128,
+      "displayName": "Skillz",
+      "sourceName": "Skillz",
+      "companyStatus": "active",
+      "mentionStatus": "active",
+      "lastMentionedAt": "2026-10-07T13:52:53.000000Z",
+      "mentions": 17,
+      "sentiment": {
+        "positive": 8,
+        "negative": 5,
+        "neutral": 4
+      },
+      "rejectedCandidates": 67,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 57,
+      "displayName": "Sotero",
+      "sourceName": "Sotero",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 14,
+      "displayName": "SpaceX",
+      "sourceName": "SpaceX",
+      "companyStatus": "active",
+      "mentionStatus": "active",
+      "lastMentionedAt": "2026-10-09T00:45:00.000000Z",
+      "mentions": 196,
+      "sentiment": {
+        "positive": 109,
+        "negative": 27,
+        "neutral": 60
+      },
+      "rejectedCandidates": 62,
+      "pendingCandidates": 0,
+      "coverageCapped": true
+    },
+    {
+      "companyId": 66,
+      "displayName": "Spectrum Labs",
+      "sourceName": "Spectrum Labs",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 6,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 28,
+      "displayName": "Spot AI",
+      "sourceName": "Spot AI",
+      "companyStatus": "active",
+      "mentionStatus": "quiet",
+      "lastMentionedAt": "2026-09-04T07:00:00.000000Z",
+      "mentions": 3,
+      "sentiment": {
+        "positive": 1,
+        "negative": 0,
+        "neutral": 2
+      },
+      "rejectedCandidates": 104,
+      "pendingCandidates": 0,
+      "coverageCapped": true
+    },
+    {
+      "companyId": 17,
+      "displayName": "SSI",
+      "sourceName": "SSI (Safe Superintelligence)",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 179,
+      "displayName": "StackIQ",
+      "sourceName": "StackIQ",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 204,
+      "displayName": "Stellar Cyber",
+      "sourceName": "Stellar Cyber",
+      "companyStatus": "active",
+      "mentionStatus": "active",
+      "lastMentionedAt": "2026-10-08T12:39:27.000000Z",
+      "mentions": 14,
+      "sentiment": {
+        "positive": 14,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 7,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 35,
+      "displayName": "Stoke Space",
+      "sourceName": "Stoke Space",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 187,
+      "displayName": "Stringify",
+      "sourceName": "Stringify",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 8,
+      "displayName": "Stripe",
+      "sourceName": "Stripe",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 87,
+      "displayName": "Sufresca",
+      "sourceName": "Sufresca",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 172,
+      "displayName": "Surgical Theater",
+      "sourceName": "Surgical Theater",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 7,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 141,
+      "displayName": "Sweetch",
+      "sourceName": "Sweetch",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 149,
+      "displayName": "Syqe",
+      "sourceName": "Syqe",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 79,
+      "displayName": "Tabnine",
+      "sourceName": "Tabnine",
+      "companyStatus": "active",
+      "mentionStatus": "quiet",
+      "lastMentionedAt": "2026-08-10T07:00:00.000000Z",
+      "mentions": 9,
+      "sentiment": {
+        "positive": 9,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 7,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 84,
+      "displayName": "Tailor Brands",
+      "sourceName": "Tailor Brands",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 208,
+      "displayName": "Tala",
+      "sourceName": "Tala",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 103,
+      "displayName": "Tamar Robotics",
+      "sourceName": "Tamar Robotics",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 136,
+      "displayName": "Taranis",
+      "sourceName": "Taranis",
+      "companyStatus": "active",
+      "mentionStatus": "active",
+      "lastMentionedAt": "2026-10-08T10:58:00.000000Z",
+      "mentions": 4,
+      "sentiment": {
+        "positive": 2,
+        "negative": 0,
+        "neutral": 2
+      },
+      "rejectedCandidates": 14,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 142,
+      "displayName": "TechSee",
+      "sourceName": "TechSee",
+      "companyStatus": "active",
+      "mentionStatus": "recent",
+      "lastMentionedAt": "2026-09-23T07:00:00.000000Z",
+      "mentions": 1,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 1
+      },
+      "rejectedCandidates": 1,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 12,
+      "displayName": "TensorWave",
+      "sourceName": "TensorWave",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 227,
+      "displayName": "Tevel",
+      "sourceName": "Tevel",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 139,
+      "displayName": "The Bouqs",
+      "sourceName": "The Bouqs",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 70,
+      "displayName": "The EVERY Company",
+      "sourceName": "The EVERY Company",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 165,
+      "displayName": "The Trendlines Group",
+      "sourceName": "The Trendlines Group",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 234,
+      "displayName": "ThetaRay",
+      "sourceName": "ThetaRay",
+      "companyStatus": "active",
+      "mentionStatus": "active",
+      "lastMentionedAt": "2026-10-02T05:01:26.000000Z",
+      "mentions": 6,
+      "sentiment": {
+        "positive": 4,
+        "negative": 0,
+        "neutral": 2
+      },
+      "rejectedCandidates": 1,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 10,
+      "displayName": "Together AI",
+      "sourceName": "Together AI",
+      "companyStatus": "active",
+      "mentionStatus": "active",
+      "lastMentionedAt": "2026-10-05T07:00:00.000000Z",
+      "mentions": 31,
+      "sentiment": {
+        "positive": 28,
+        "negative": 0,
+        "neutral": 3
+      },
+      "rejectedCandidates": 81,
+      "pendingCandidates": 0,
+      "coverageCapped": true
+    },
+    {
+      "companyId": 125,
+      "displayName": "Tovala",
+      "sourceName": "Tovala",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 98,
+      "displayName": "Treedom",
+      "sourceName": "Treedom",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 228,
+      "displayName": "Trusona",
+      "sourceName": "Trusona",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 200,
+      "displayName": "TubiTV",
+      "sourceName": "TubiTV",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 10,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 150,
+      "displayName": "Ubimo",
+      "sourceName": "Ubimo",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 30,
+      "displayName": "Ukko",
+      "sourceName": "Ukko",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 244,
+      "displayName": "Unispectral",
+      "sourceName": "Unispectral",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 157,
+      "displayName": "UPnRIDE",
+      "sourceName": "UPnRIDE",
+      "companyStatus": "active",
+      "mentionStatus": "recent",
+      "lastMentionedAt": "2026-09-28T15:15:00.000000Z",
+      "mentions": 2,
+      "sentiment": {
+        "positive": 2,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 48,
+      "displayName": "Ursa Major",
+      "sourceName": "Ursa Major",
+      "companyStatus": "active",
+      "mentionStatus": "active",
+      "lastMentionedAt": "2026-10-08T10:01:06.000000Z",
+      "mentions": 58,
+      "sentiment": {
+        "positive": 53,
+        "negative": 0,
+        "neutral": 5
+      },
+      "rejectedCandidates": 33,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 235,
+      "displayName": "VAYAVISION",
+      "sourceName": "VAYAVISION",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 20,
+      "displayName": "Velotix",
+      "sourceName": "Velotix",
+      "companyStatus": "active",
+      "mentionStatus": "active",
+      "lastMentionedAt": "2026-10-08T11:49:00.000000Z",
+      "mentions": 2,
+      "sentiment": {
+        "positive": 1,
+        "negative": 1,
+        "neutral": 0
+      },
+      "rejectedCandidates": 3,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 152,
+      "displayName": "Verse.ai",
+      "sourceName": "Verse.ai",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 6,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 166,
+      "displayName": "Viewbix",
+      "sourceName": "Viewbix",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 1,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 252,
+      "displayName": "Virgin Hyperloop One",
+      "sourceName": "Virgin Hyperloop One",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 2,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 147,
+      "displayName": "Wave",
+      "sourceName": "Wave",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 134,
+      "displayName": "Wayup",
+      "sourceName": "Wayup",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 93,
+      "displayName": "wefox",
+      "sourceName": "wefox",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 65,
+      "displayName": "Workspot",
+      "sourceName": "Workspot",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 68,
+      "displayName": "Xage Security",
+      "sourceName": "Xage Security",
+      "companyStatus": "active",
+      "mentionStatus": "quiet",
+      "lastMentionedAt": "2026-08-04T07:00:00.000000Z",
+      "mentions": 1,
+      "sentiment": {
+        "positive": 1,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 9,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 18,
+      "displayName": "xAI",
+      "sourceName": "xAI",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 190,
+      "displayName": "Xsense",
+      "sourceName": "Xsense (formerly BT9)",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 9,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 97,
+      "displayName": "Ynsect",
+      "sourceName": "Ynsect",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 248,
+      "displayName": "YuLife",
+      "sourceName": "YuLife",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 154,
+      "displayName": "Zebra Medical Vision",
+      "sourceName": "Zebra Medical Vision",
+      "companyStatus": "active",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 4,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 90,
+      "displayName": "Zippin",
+      "sourceName": "Zippin",
+      "companyStatus": "needs_review",
+      "mentionStatus": "no_coverage",
+      "lastMentionedAt": null,
+      "mentions": 0,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 0,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 140,
+      "displayName": "Zoomcar",
+      "sourceName": "Zoomcar",
+      "companyStatus": "active",
+      "mentionStatus": "active",
+      "lastMentionedAt": "2026-10-08T20:42:16.000000Z",
+      "mentions": 28,
+      "sentiment": {
+        "positive": 17,
+        "negative": 3,
+        "neutral": 8
+      },
+      "rejectedCandidates": 2,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    },
+    {
+      "companyId": 1,
+      "displayName": "ZutaCore",
+      "sourceName": "ZutaCore",
+      "companyStatus": "active",
+      "mentionStatus": "recent",
+      "lastMentionedAt": "2026-09-23T11:15:07.000000Z",
+      "mentions": 3,
+      "sentiment": {
+        "positive": 3,
+        "negative": 0,
+        "neutral": 0
+      },
+      "rejectedCandidates": 4,
+      "pendingCandidates": 0,
+      "coverageCapped": false
+    }
+  ]
+}

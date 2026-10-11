@@ -1,0 +1,4154 @@
+[
+  {
+    "id": 1,
+    "sourceName": "ZutaCore",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "ZutaCore",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:49:24.302714Z",
+    "updatedAt": "2026-10-08T21:24:13.693195Z"
+  },
+  {
+    "id": 2,
+    "sourceName": "Maolac",
+    "status": "needs_review",
+    "reviewReason": "Common English word; also Maolac hair removal",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Maolac",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:49:29.695544Z",
+    "updatedAt": "2026-10-08T12:49:29.695544Z"
+  },
+  {
+    "id": 3,
+    "sourceName": "Biolojic Design",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Biolojic Design",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:49:33.512278Z",
+    "updatedAt": "2026-10-08T19:19:37.275737Z"
+  },
+  {
+    "id": 4,
+    "sourceName": "OncoHost",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "OncoHost",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:49:37.762101Z",
+    "updatedAt": "2026-10-08T20:03:24.256356Z"
+  },
+  {
+    "id": 5,
+    "sourceName": "Morphisec",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Morphisec",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:49:40.758939Z",
+    "updatedAt": "2026-10-08T20:02:56.227007Z"
+  },
+  {
+    "id": 6,
+    "sourceName": "Harvey",
+    "status": "needs_review",
+    "reviewReason": "\"Harvey\" is a common first name, so a news search for it would mostly return unrelated people.",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Harvey",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:49:40.769544Z",
+    "updatedAt": "2026-10-08T12:49:40.769544Z"
+  },
+  {
+    "id": 7,
+    "sourceName": "OpenEvidence",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "OpenEvidence",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:49:44.042452Z",
+    "updatedAt": "2026-10-08T20:04:29.332396Z"
+  },
+  {
+    "id": 8,
+    "sourceName": "Stripe",
+    "status": "needs_review",
+    "reviewReason": "\"Stripe\" is a common English word, so a news search for it would mostly return unrelated articles.",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Stripe",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:49:44.056288Z",
+    "updatedAt": "2026-10-08T12:49:44.056288Z"
+  },
+  {
+    "id": 9,
+    "sourceName": "Cerebras",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": true,
+    "profile": {
+      "displayName": "Cerebras",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:49:50.928303Z",
+    "updatedAt": "2026-10-09T04:05:37.923073Z"
+  },
+  {
+    "id": 10,
+    "sourceName": "Together AI",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": true,
+    "profile": {
+      "displayName": "Together AI",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:49:54.152194Z",
+    "updatedAt": "2026-10-08T20:58:12.260158Z"
+  },
+  {
+    "id": 11,
+    "sourceName": "Harbinger Motors",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Harbinger Motors",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:49:58.615908Z",
+    "updatedAt": "2026-10-08T19:47:19.026448Z"
+  },
+  {
+    "id": 12,
+    "sourceName": "TensorWave",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "TensorWave",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:50:02.691767Z",
+    "updatedAt": "2026-10-08T12:50:02.691767Z"
+  },
+  {
+    "id": 13,
+    "sourceName": "Glean",
+    "status": "needs_review",
+    "reviewReason": "\"Glean\" is a common English word, so a news search for it would mostly return unrelated articles.",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Glean",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:50:02.707311Z",
+    "updatedAt": "2026-10-08T12:50:02.707311Z"
+  },
+  {
+    "id": 14,
+    "sourceName": "SpaceX",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": true,
+    "profile": {
+      "displayName": "SpaceX",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:50:05.890136Z",
+    "updatedAt": "2026-10-09T04:32:08.827523Z"
+  },
+  {
+    "id": 15,
+    "sourceName": "DeepKeep",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "DeepKeep",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:50:09.550277Z",
+    "updatedAt": "2026-10-08T19:39:34.531475Z"
+  },
+  {
+    "id": 16,
+    "sourceName": "Lambda (lambda.ai)",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Lambda",
+      "aliases": [],
+      "domain": "lambda.ai",
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:50:13.540544Z",
+    "updatedAt": "2026-10-08T12:50:13.540544Z"
+  },
+  {
+    "id": 17,
+    "sourceName": "SSI (Safe Superintelligence)",
+    "status": "needs_review",
+    "reviewReason": "\"SSI\" is only 3 characters long, so a news search for it would mostly match unrelated text.",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "SSI",
+      "aliases": [
+        "Safe Superintelligence"
+      ],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:50:13.549114Z",
+    "updatedAt": "2026-10-08T12:50:13.549114Z"
+  },
+  {
+    "id": 18,
+    "sourceName": "xAI",
+    "status": "needs_review",
+    "reviewReason": "\"xAI\" is only 3 characters long, so a news search for it would mostly match unrelated text.",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "xAI",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:50:13.559090Z",
+    "updatedAt": "2026-10-08T12:50:13.559090Z"
+  },
+  {
+    "id": 19,
+    "sourceName": "Island",
+    "status": "needs_review",
+    "reviewReason": "\"Island\" is a common English word, so a news search for it would mostly return unrelated articles.",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Island",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:50:13.565056Z",
+    "updatedAt": "2026-10-08T12:50:13.565056Z"
+  },
+  {
+    "id": 20,
+    "sourceName": "Velotix",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Velotix",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:50:16.777295Z",
+    "updatedAt": "2026-10-08T21:16:15.128879Z"
+  },
+  {
+    "id": 21,
+    "sourceName": "Databricks",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": true,
+    "profile": {
+      "displayName": "Databricks",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:50:20.452900Z",
+    "updatedAt": "2026-10-08T19:35:06.062153Z"
+  },
+  {
+    "id": 22,
+    "sourceName": "Ayar Labs",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Ayar Labs",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:50:24.148589Z",
+    "updatedAt": "2026-10-08T19:05:29.593500Z"
+  },
+  {
+    "id": 23,
+    "sourceName": "RepAir Carbon",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "RepAir Carbon",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:50:28.270956Z",
+    "updatedAt": "2026-10-08T12:50:28.270956Z"
+  },
+  {
+    "id": 24,
+    "sourceName": "Kardome",
+    "status": "needs_review",
+    "reviewReason": "Common English word with unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Kardome",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:50:31.537013Z",
+    "updatedAt": "2026-10-08T12:50:31.537013Z"
+  },
+  {
+    "id": 25,
+    "sourceName": "Omnix Medical",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Omnix Medical",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:50:34.310160Z",
+    "updatedAt": "2026-10-08T20:03:23.419729Z"
+  },
+  {
+    "id": 26,
+    "sourceName": "Kodiak Robotics",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Kodiak Robotics",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:50:38.565294Z",
+    "updatedAt": "2026-10-08T19:55:10.500731Z"
+  },
+  {
+    "id": 27,
+    "sourceName": "Scale AI",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": true,
+    "profile": {
+      "displayName": "Scale AI",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:50:42.725228Z",
+    "updatedAt": "2026-10-09T04:28:28.842619Z"
+  },
+  {
+    "id": 28,
+    "sourceName": "Spot AI",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": true,
+    "profile": {
+      "displayName": "Spot AI",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:50:45.848749Z",
+    "updatedAt": "2026-10-08T20:44:41.645164Z"
+  },
+  {
+    "id": 29,
+    "sourceName": "Siteaware",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Siteaware",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:50:49.009497Z",
+    "updatedAt": "2026-10-08T20:18:29.173020Z"
+  },
+  {
+    "id": 30,
+    "sourceName": "Ukko",
+    "status": "needs_review",
+    "reviewReason": "Common Finnish name and word",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Ukko",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:50:52.011223Z",
+    "updatedAt": "2026-10-08T12:50:52.011223Z"
+  },
+  {
+    "id": 31,
+    "sourceName": "Groq",
+    "status": "needs_review",
+    "reviewReason": "Common English word with unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Groq",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:50:55.671526Z",
+    "updatedAt": "2026-10-08T12:50:55.671526Z"
+  },
+  {
+    "id": 32,
+    "sourceName": "Anthropic",
+    "status": "needs_review",
+    "reviewReason": "Common English word with unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Anthropic",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:50:59.119544Z",
+    "updatedAt": "2026-10-08T12:50:59.119544Z"
+  },
+  {
+    "id": 33,
+    "sourceName": "Bites",
+    "status": "needs_review",
+    "reviewReason": "\"Bites\" is a common English word, so a news search for it would mostly return unrelated articles.",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Bites",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:50:59.133837Z",
+    "updatedAt": "2026-10-08T12:50:59.133837Z"
+  },
+  {
+    "id": 34,
+    "sourceName": "Atlas Obscura",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Atlas Obscura",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:51:02.254724Z",
+    "updatedAt": "2026-10-08T19:05:01.128489Z"
+  },
+  {
+    "id": 35,
+    "sourceName": "Stoke Space",
+    "status": "needs_review",
+    "reviewReason": "Common English word with unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Stoke Space",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:51:05.614985Z",
+    "updatedAt": "2026-10-08T12:51:05.614985Z"
+  },
+  {
+    "id": 36,
+    "sourceName": "SeeTree",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "SeeTree",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:51:08.924460Z",
+    "updatedAt": "2026-10-08T20:17:29.174390Z"
+  },
+  {
+    "id": 37,
+    "sourceName": "OneAI",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "OneAI",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:51:12.238495Z",
+    "updatedAt": "2026-10-08T20:03:31.329231Z"
+  },
+  {
+    "id": 38,
+    "sourceName": "Edity Therapeutics",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Edity Therapeutics",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:51:17.049246Z",
+    "updatedAt": "2026-10-08T19:39:54.815856Z"
+  },
+  {
+    "id": 39,
+    "sourceName": "Carrar",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Carrar",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:51:20.320945Z",
+    "updatedAt": "2026-10-08T12:51:20.320945Z"
+  },
+  {
+    "id": 40,
+    "sourceName": "Quidnet Energy",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Quidnet Energy",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:51:23.170009Z",
+    "updatedAt": "2026-10-08T20:12:39.221223Z"
+  },
+  {
+    "id": 41,
+    "sourceName": "Lano",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Lano",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:51:26.211751Z",
+    "updatedAt": "2026-10-08T12:51:26.211751Z"
+  },
+  {
+    "id": 42,
+    "sourceName": "Flash Forest",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Flash Forest",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:51:28.800155Z",
+    "updatedAt": "2026-10-08T19:42:48.865154Z"
+  },
+  {
+    "id": 43,
+    "sourceName": "Kando",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Kando",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:51:31.943756Z",
+    "updatedAt": "2026-10-08T12:51:31.943756Z"
+  },
+  {
+    "id": 44,
+    "sourceName": "NT-Tao",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "NT-Tao",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:51:34.505973Z",
+    "updatedAt": "2026-10-08T20:03:12.539663Z"
+  },
+  {
+    "id": 45,
+    "sourceName": "Neolithics",
+    "status": "needs_review",
+    "reviewReason": "Common English word; also refers to ancient history",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Neolithics",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:51:38.152792Z",
+    "updatedAt": "2026-10-08T12:51:38.152792Z"
+  },
+  {
+    "id": 46,
+    "sourceName": "Arrow Global",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Arrow Global",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:51:41.279760Z",
+    "updatedAt": "2026-10-08T12:51:41.279760Z"
+  },
+  {
+    "id": 47,
+    "sourceName": "Air EV",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Air EV",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:51:45.186612Z",
+    "updatedAt": "2026-10-08T12:51:45.186612Z"
+  },
+  {
+    "id": 48,
+    "sourceName": "Ursa Major",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Ursa Major",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:51:48.765292Z",
+    "updatedAt": "2026-10-08T21:04:31.722959Z"
+  },
+  {
+    "id": 49,
+    "sourceName": "Quai.MD",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Quai.MD",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:51:51.844059Z",
+    "updatedAt": "2026-10-08T20:11:30.763896Z"
+  },
+  {
+    "id": 50,
+    "sourceName": "Cyfirma",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Cyfirma",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:51:56.096360Z",
+    "updatedAt": "2026-10-08T12:51:56.096360Z"
+  },
+  {
+    "id": 51,
+    "sourceName": "Ludeo (formerly Edge)",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": true,
+    "profile": {
+      "displayName": "Ludeo",
+      "aliases": [
+        "Edge"
+      ],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:51:59.218966Z",
+    "updatedAt": "2026-10-09T04:21:08.552852Z"
+  },
+  {
+    "id": 52,
+    "sourceName": "Lightico",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Lightico",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:52:02.657275Z",
+    "updatedAt": "2026-10-08T19:55:21.649479Z"
+  },
+  {
+    "id": 53,
+    "sourceName": "3d Signals",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "3d Signals",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:52:05.772787Z",
+    "updatedAt": "2026-10-08T18:59:46.834540Z"
+  },
+  {
+    "id": 54,
+    "sourceName": "IQM",
+    "status": "needs_review",
+    "reviewReason": "\"IQM\" is only 3 characters long, so a news search for it would mostly match unrelated text.",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "IQM",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:52:05.784501Z",
+    "updatedAt": "2026-10-08T12:52:05.784501Z"
+  },
+  {
+    "id": 55,
+    "sourceName": "Kini",
+    "status": "needs_review",
+    "reviewReason": "Common Hebrew word; also a surname",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Kini",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:52:09.912250Z",
+    "updatedAt": "2026-10-08T12:52:09.912250Z"
+  },
+  {
+    "id": 56,
+    "sourceName": "Liquid Instruments",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Liquid Instruments",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:52:13.114619Z",
+    "updatedAt": "2026-10-08T19:55:36.215046Z"
+  },
+  {
+    "id": 57,
+    "sourceName": "Sotero",
+    "status": "needs_review",
+    "reviewReason": "Common Hebrew surname",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Sotero",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:52:16.054087Z",
+    "updatedAt": "2026-10-08T12:52:16.054087Z"
+  },
+  {
+    "id": 58,
+    "sourceName": "Connected Energy",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Connected Energy",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:52:20.057285Z",
+    "updatedAt": "2026-10-08T19:28:50.779920Z"
+  },
+  {
+    "id": 59,
+    "sourceName": "BetterSeeds",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "BetterSeeds",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:52:23.307487Z",
+    "updatedAt": "2026-10-08T19:06:10.541776Z"
+  },
+  {
+    "id": 60,
+    "sourceName": "Oshi (formerly Plantish)",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Oshi",
+      "aliases": [
+        "Plantish"
+      ],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:52:26.752960Z",
+    "updatedAt": "2026-10-08T12:52:26.752960Z"
+  },
+  {
+    "id": 61,
+    "sourceName": "Genopore",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Genopore",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:52:29.643601Z",
+    "updatedAt": "2026-10-08T19:46:46.934461Z"
+  },
+  {
+    "id": 62,
+    "sourceName": "Mermade Seafoods",
+    "status": "needs_review",
+    "reviewReason": "Common English word 'made' used in many contexts",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Mermade Seafoods",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:52:33.179633Z",
+    "updatedAt": "2026-10-08T12:52:33.179633Z"
+  },
+  {
+    "id": 63,
+    "sourceName": "ProFuse",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "ProFuse",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:52:36.262815Z",
+    "updatedAt": "2026-10-08T20:11:19.558596Z"
+  },
+  {
+    "id": 64,
+    "sourceName": "AEYE Health",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "AEYE Health",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:52:39.135732Z",
+    "updatedAt": "2026-10-08T18:59:49.896476Z"
+  },
+  {
+    "id": 65,
+    "sourceName": "Workspot",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Workspot",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:52:42.360058Z",
+    "updatedAt": "2026-10-08T12:52:42.360058Z"
+  },
+  {
+    "id": 66,
+    "sourceName": "Spectrum Labs",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Spectrum Labs",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:52:45.747705Z",
+    "updatedAt": "2026-10-08T20:43:42.081636Z"
+  },
+  {
+    "id": 67,
+    "sourceName": "Anodot",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Anodot",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:52:48.939870Z",
+    "updatedAt": "2026-10-08T19:01:51.606727Z"
+  },
+  {
+    "id": 68,
+    "sourceName": "Xage Security",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Xage Security",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:52:51.657345Z",
+    "updatedAt": "2026-10-08T21:16:56.635476Z"
+  },
+  {
+    "id": 69,
+    "sourceName": "IronVest",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "IronVest",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:52:55.341888Z",
+    "updatedAt": "2026-10-08T19:54:06.477218Z"
+  },
+  {
+    "id": 70,
+    "sourceName": "The EVERY Company",
+    "status": "needs_review",
+    "reviewReason": "Common English word used in many unrelated stories",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "The EVERY Company",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:52:59.938175Z",
+    "updatedAt": "2026-10-08T12:52:59.938175Z"
+  },
+  {
+    "id": 71,
+    "sourceName": "InsideTracker",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "InsideTracker",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:53:03.267928Z",
+    "updatedAt": "2026-10-08T19:53:26.858548Z"
+  },
+  {
+    "id": 72,
+    "sourceName": "CarDekho",
+    "status": "needs_review",
+    "reviewReason": "Common English word with unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "CarDekho",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:53:07.040779Z",
+    "updatedAt": "2026-10-08T12:53:07.040779Z"
+  },
+  {
+    "id": 73,
+    "sourceName": "One Zero Digital Bank Ltd.",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "One Zero Digital Bank",
+      "aliases": [
+        "One Zero Digital Bank Ltd."
+      ],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:53:11.130152Z",
+    "updatedAt": "2026-10-08T20:03:24.887240Z"
+  },
+  {
+    "id": 74,
+    "sourceName": "Binah.ai",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Binah.ai",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:53:14.261417Z",
+    "updatedAt": "2026-10-08T19:13:38.031816Z"
+  },
+  {
+    "id": 75,
+    "sourceName": "Eko Health",
+    "status": "needs_review",
+    "reviewReason": "Common English word with unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Eko Health",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:53:18.775697Z",
+    "updatedAt": "2026-10-08T12:53:18.775697Z"
+  },
+  {
+    "id": 76,
+    "sourceName": "Cycuity (formerly Tortuga Logic)",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Cycuity",
+      "aliases": [
+        "Tortuga Logic"
+      ],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:53:22.056114Z",
+    "updatedAt": "2026-10-08T19:33:27.936970Z"
+  },
+  {
+    "id": 77,
+    "sourceName": "Peak",
+    "status": "needs_review",
+    "reviewReason": "\"Peak\" is a common English word, so a news search for it would mostly return unrelated articles.",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Peak",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:53:22.066513Z",
+    "updatedAt": "2026-10-08T12:53:22.066513Z"
+  },
+  {
+    "id": 78,
+    "sourceName": "Oriient",
+    "status": "needs_review",
+    "reviewReason": "Common English word; also orientation and orient",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Oriient",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:53:25.636881Z",
+    "updatedAt": "2026-10-08T12:53:25.636881Z"
+  },
+  {
+    "id": 79,
+    "sourceName": "Tabnine",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Tabnine",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:53:29.373743Z",
+    "updatedAt": "2026-10-08T20:52:31.113805Z"
+  },
+  {
+    "id": 80,
+    "sourceName": "InZiv",
+    "status": "needs_review",
+    "reviewReason": "Common Hebrew word; also a hospital name",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "InZiv",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:53:32.804994Z",
+    "updatedAt": "2026-10-08T12:53:32.804994Z"
+  },
+  {
+    "id": 81,
+    "sourceName": "BlueTree Technologies",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "BlueTree Technologies",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:53:35.418878Z",
+    "updatedAt": "2026-10-08T19:19:48.479264Z"
+  },
+  {
+    "id": 82,
+    "sourceName": "BioLumic",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "BioLumic",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:53:38.195509Z",
+    "updatedAt": "2026-10-08T19:19:37.869132Z"
+  },
+  {
+    "id": 83,
+    "sourceName": "Orchard",
+    "status": "needs_review",
+    "reviewReason": "\"Orchard\" is a common English word, so a news search for it would mostly return unrelated articles.",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Orchard",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:53:38.203432Z",
+    "updatedAt": "2026-10-08T12:53:38.203432Z"
+  },
+  {
+    "id": 84,
+    "sourceName": "Tailor Brands",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Tailor Brands",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:53:41.523712Z",
+    "updatedAt": "2026-10-08T12:53:41.523712Z"
+  },
+  {
+    "id": 85,
+    "sourceName": "Flytrex",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Flytrex",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:53:44.079632Z",
+    "updatedAt": "2026-10-08T19:43:00.966811Z"
+  },
+  {
+    "id": 86,
+    "sourceName": "Quantum Machines",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Quantum Machines",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:53:46.778699Z",
+    "updatedAt": "2026-10-08T20:12:08.740015Z"
+  },
+  {
+    "id": 87,
+    "sourceName": "Sufresca",
+    "status": "needs_review",
+    "reviewReason": "Common English word with unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Sufresca",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:53:49.733581Z",
+    "updatedAt": "2026-10-08T12:53:49.733581Z"
+  },
+  {
+    "id": 88,
+    "sourceName": "Guild",
+    "status": "needs_review",
+    "reviewReason": "\"Guild\" is a common English word, so a news search for it would mostly return unrelated articles.",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Guild",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:53:49.741800Z",
+    "updatedAt": "2026-10-08T12:53:49.741800Z"
+  },
+  {
+    "id": 89,
+    "sourceName": "Sfara",
+    "status": "needs_review",
+    "reviewReason": "Common Hebrew word; also a brand name",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Sfara",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:53:53.271726Z",
+    "updatedAt": "2026-10-08T12:53:53.271726Z"
+  },
+  {
+    "id": 90,
+    "sourceName": "Zippin",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Zippin",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:53:57.203348Z",
+    "updatedAt": "2026-10-08T12:53:57.203348Z"
+  },
+  {
+    "id": 91,
+    "sourceName": "Privateer",
+    "status": "needs_review",
+    "reviewReason": "\"Privateer\" is a common English word, so a news search for it would mostly return unrelated articles.",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Privateer",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:53:57.211792Z",
+    "updatedAt": "2026-10-08T12:53:57.211792Z"
+  },
+  {
+    "id": 92,
+    "sourceName": "Cordio Medical",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Cordio Medical",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:54:00.047495Z",
+    "updatedAt": "2026-10-08T19:29:09.494206Z"
+  },
+  {
+    "id": 93,
+    "sourceName": "wefox",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "wefox",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:54:03.915228Z",
+    "updatedAt": "2026-10-08T12:54:03.915228Z"
+  },
+  {
+    "id": 94,
+    "sourceName": "Moodify",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Moodify",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:54:07.436621Z",
+    "updatedAt": "2026-10-08T20:02:46.469416Z"
+  },
+  {
+    "id": 95,
+    "sourceName": "Polaris Quantum Biotech",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Polaris Quantum Biotech",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:54:10.459749Z",
+    "updatedAt": "2026-10-08T20:10:55.485877Z"
+  },
+  {
+    "id": 96,
+    "sourceName": "Alloy Therapeutics",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Alloy Therapeutics",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:54:14.385907Z",
+    "updatedAt": "2026-10-08T19:00:00.306054Z"
+  },
+  {
+    "id": 97,
+    "sourceName": "Ynsect",
+    "status": "needs_review",
+    "reviewReason": "Common English word with unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Ynsect",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:54:18.159325Z",
+    "updatedAt": "2026-10-08T12:54:18.159325Z"
+  },
+  {
+    "id": 98,
+    "sourceName": "Treedom",
+    "status": "needs_review",
+    "reviewReason": "Common English word with unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Treedom",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:54:21.436391Z",
+    "updatedAt": "2026-10-08T12:54:21.436391Z"
+  },
+  {
+    "id": 99,
+    "sourceName": "MaterialsZone",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "MaterialsZone",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:54:24.370059Z",
+    "updatedAt": "2026-10-08T20:02:12.271214Z"
+  },
+  {
+    "id": 100,
+    "sourceName": "BrightInsight",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "BrightInsight",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:54:27.299478Z",
+    "updatedAt": "2026-10-08T19:20:02.235077Z"
+  },
+  {
+    "id": 101,
+    "sourceName": "Launchpad",
+    "status": "needs_review",
+    "reviewReason": "\"Launchpad\" is a common English word, so a news search for it would mostly return unrelated articles.",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Launchpad",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:54:27.306172Z",
+    "updatedAt": "2026-10-08T12:54:27.306172Z"
+  },
+  {
+    "id": 102,
+    "sourceName": "Sequentify",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Sequentify",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:54:30.123442Z",
+    "updatedAt": "2026-10-08T20:18:20.646665Z"
+  },
+  {
+    "id": 103,
+    "sourceName": "Tamar Robotics",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Tamar Robotics",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:54:33.455035Z",
+    "updatedAt": "2026-10-08T20:54:23.026310Z"
+  },
+  {
+    "id": 104,
+    "sourceName": "Entangled Networks",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Entangled Networks",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:54:36.108105Z",
+    "updatedAt": "2026-10-08T19:39:58.479614Z"
+  },
+  {
+    "id": 105,
+    "sourceName": "Dandelion Energy",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Dandelion Energy",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:54:39.527037Z",
+    "updatedAt": "2026-10-08T19:33:43.717027Z"
+  },
+  {
+    "id": 106,
+    "sourceName": "Shield",
+    "status": "needs_review",
+    "reviewReason": "\"Shield\" is a common English word, so a news search for it would mostly return unrelated articles.",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Shield",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:54:39.534071Z",
+    "updatedAt": "2026-10-08T12:54:39.534071Z"
+  },
+  {
+    "id": 107,
+    "sourceName": "People.ai",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple unrelated uses",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "People.ai",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:54:42.784486Z",
+    "updatedAt": "2026-10-08T12:54:42.784486Z"
+  },
+  {
+    "id": 108,
+    "sourceName": "H2Pro",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "H2Pro",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:54:45.376919Z",
+    "updatedAt": "2026-10-08T19:46:54.675662Z"
+  },
+  {
+    "id": 109,
+    "sourceName": "JumpCloud",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "JumpCloud",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:54:48.566274Z",
+    "updatedAt": "2026-10-08T19:54:14.356412Z"
+  },
+  {
+    "id": 110,
+    "sourceName": "Future Family",
+    "status": "needs_review",
+    "reviewReason": "Common phrase in English",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Future Family",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:54:51.402368Z",
+    "updatedAt": "2026-10-08T12:54:51.402368Z"
+  },
+  {
+    "id": 111,
+    "sourceName": "Remilk",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Remilk",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:54:54.489785Z",
+    "updatedAt": "2026-10-08T20:12:41.506997Z"
+  },
+  {
+    "id": 112,
+    "sourceName": "Ordergroove",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Ordergroove",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:54:58.014424Z",
+    "updatedAt": "2026-10-08T20:10:35.466166Z"
+  },
+  {
+    "id": 113,
+    "sourceName": "Clinch",
+    "status": "needs_review",
+    "reviewReason": "\"Clinch\" is a common English word, so a news search for it would mostly return unrelated articles.",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Clinch",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:54:58.032507Z",
+    "updatedAt": "2026-10-08T12:54:58.032507Z"
+  },
+  {
+    "id": 114,
+    "sourceName": "BlueGreen Water Technologies",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "BlueGreen Water Technologies",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:55:01.976519Z",
+    "updatedAt": "2026-10-08T19:19:45.353740Z"
+  },
+  {
+    "id": 115,
+    "sourceName": "Classiq",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Classiq",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:55:05.628743Z",
+    "updatedAt": "2026-10-08T12:55:05.628743Z"
+  },
+  {
+    "id": 116,
+    "sourceName": "Diagnostic Robotics",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Diagnostic Robotics",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:55:09.636132Z",
+    "updatedAt": "2026-10-08T19:39:47.309082Z"
+  },
+  {
+    "id": 117,
+    "sourceName": "Overtime",
+    "status": "needs_review",
+    "reviewReason": "\"Overtime\" is a common English word, so a news search for it would mostly return unrelated articles.",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Overtime",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:55:09.645005Z",
+    "updatedAt": "2026-10-08T12:55:09.645005Z"
+  },
+  {
+    "id": 118,
+    "sourceName": "Dataloop",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Dataloop",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:55:12.903918Z",
+    "updatedAt": "2026-10-08T19:39:28.979286Z"
+  },
+  {
+    "id": 119,
+    "sourceName": "Greenlight",
+    "status": "needs_review",
+    "reviewReason": "\"Greenlight\" is a common English word, so a news search for it would mostly return unrelated articles.",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Greenlight",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:55:12.915421Z",
+    "updatedAt": "2026-10-08T12:55:12.915421Z"
+  },
+  {
+    "id": 120,
+    "sourceName": "Cyabra",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Cyabra",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:55:16.137056Z",
+    "updatedAt": "2026-10-08T19:30:06.544168Z"
+  },
+  {
+    "id": 121,
+    "sourceName": "C2A Security",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "C2A Security",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:55:20.183287Z",
+    "updatedAt": "2026-10-08T19:20:04.165459Z"
+  },
+  {
+    "id": 122,
+    "sourceName": "MasterClass",
+    "status": "needs_review",
+    "reviewReason": "Common English word with unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "MasterClass",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:55:23.595310Z",
+    "updatedAt": "2026-10-08T12:55:23.595310Z"
+  },
+  {
+    "id": 123,
+    "sourceName": "HEQA Security (formerly QuantLR)",
+    "status": "needs_review",
+    "reviewReason": "Common English acronym",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "HEQA Security",
+      "aliases": [
+        "QuantLR"
+      ],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:55:26.144789Z",
+    "updatedAt": "2026-10-08T12:55:26.144789Z"
+  },
+  {
+    "id": 124,
+    "sourceName": "CytoReason",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "CytoReason",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:55:28.848058Z",
+    "updatedAt": "2026-10-08T19:33:33.810977Z"
+  },
+  {
+    "id": 125,
+    "sourceName": "Tovala",
+    "status": "needs_review",
+    "reviewReason": "Common English word with unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Tovala",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:55:32.126143Z",
+    "updatedAt": "2026-10-08T12:55:32.126143Z"
+  },
+  {
+    "id": 126,
+    "sourceName": "Ro",
+    "status": "needs_review",
+    "reviewReason": "\"Ro\" is only 2 characters long, so a news search for it would mostly match unrelated text.",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Ro",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:55:32.134839Z",
+    "updatedAt": "2026-10-08T12:55:32.134839Z"
+  },
+  {
+    "id": 127,
+    "sourceName": "MigVax",
+    "status": "needs_review",
+    "reviewReason": "Common English word; also a surname",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "MigVax",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:55:35.317377Z",
+    "updatedAt": "2026-10-08T12:55:35.317377Z"
+  },
+  {
+    "id": 128,
+    "sourceName": "Skillz",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Skillz",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:55:38.093902Z",
+    "updatedAt": "2026-10-08T20:19:17.218424Z"
+  },
+  {
+    "id": 129,
+    "sourceName": "BlueCircle (formerly Trellis)",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "BlueCircle",
+      "aliases": [
+        "Trellis"
+      ],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:55:41.329616Z",
+    "updatedAt": "2026-10-08T12:55:41.329616Z"
+  },
+  {
+    "id": 130,
+    "sourceName": "Near",
+    "status": "needs_review",
+    "reviewReason": "\"Near\" is a common English word, so a news search for it would mostly return unrelated articles.",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Near",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:55:41.341816Z",
+    "updatedAt": "2026-10-08T12:55:41.341816Z"
+  },
+  {
+    "id": 131,
+    "sourceName": "CyberX",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "CyberX",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:55:43.974011Z",
+    "updatedAt": "2026-10-08T19:33:26.084180Z"
+  },
+  {
+    "id": 132,
+    "sourceName": "Celeno",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Celeno",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:55:46.725385Z",
+    "updatedAt": "2026-10-08T19:20:08.588663Z"
+  },
+  {
+    "id": 133,
+    "sourceName": "Kenna Security",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Kenna Security",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:55:51.235535Z",
+    "updatedAt": "2026-10-08T19:55:05.117598Z"
+  },
+  {
+    "id": 134,
+    "sourceName": "Wayup",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Wayup",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:55:55.756034Z",
+    "updatedAt": "2026-10-08T12:55:55.756034Z"
+  },
+  {
+    "id": 135,
+    "sourceName": "Nanorep",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Nanorep",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:55:59.171799Z",
+    "updatedAt": "2026-10-08T20:03:01.191401Z"
+  },
+  {
+    "id": 136,
+    "sourceName": "Taranis",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Taranis",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:56:02.773438Z",
+    "updatedAt": "2026-10-08T20:54:34.333096Z"
+  },
+  {
+    "id": 137,
+    "sourceName": "Momentis Surgical (formerly Memic)",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Momentis Surgical",
+      "aliases": [
+        "Memic"
+      ],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:56:06.675946Z",
+    "updatedAt": "2026-10-08T20:02:28.717185Z"
+  },
+  {
+    "id": 138,
+    "sourceName": "Argus Cyber Security",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Argus Cyber Security",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:56:11.226812Z",
+    "updatedAt": "2026-10-08T19:04:09.170204Z"
+  },
+  {
+    "id": 139,
+    "sourceName": "The Bouqs",
+    "status": "needs_review",
+    "reviewReason": "Common English phrase; also bouquets",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "The Bouqs",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:56:16.259577Z",
+    "updatedAt": "2026-10-08T12:56:16.259577Z"
+  },
+  {
+    "id": 140,
+    "sourceName": "Zoomcar",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Zoomcar",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:56:21.508546Z",
+    "updatedAt": "2026-10-08T21:18:06.856377Z"
+  },
+  {
+    "id": 141,
+    "sourceName": "Sweetch",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Sweetch",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:56:26.772137Z",
+    "updatedAt": "2026-10-08T12:56:26.772137Z"
+  },
+  {
+    "id": 142,
+    "sourceName": "TechSee",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "TechSee",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:56:30.021087Z",
+    "updatedAt": "2026-10-08T20:55:34.014130Z"
+  },
+  {
+    "id": 143,
+    "sourceName": "Replay Technologies",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Replay Technologies",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:56:33.633339Z",
+    "updatedAt": "2026-10-08T20:13:00.206856Z"
+  },
+  {
+    "id": 144,
+    "sourceName": "NooBaa",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "NooBaa",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:56:36.489615Z",
+    "updatedAt": "2026-10-08T20:03:04.903619Z"
+  },
+  {
+    "id": 145,
+    "sourceName": "mPrest",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "mPrest",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:56:39.658025Z",
+    "updatedAt": "2026-10-08T12:56:39.658025Z"
+  },
+  {
+    "id": 146,
+    "sourceName": "Amitree",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Amitree",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:56:42.729370Z",
+    "updatedAt": "2026-10-08T12:56:42.729370Z"
+  },
+  {
+    "id": 147,
+    "sourceName": "Wave",
+    "status": "needs_review",
+    "reviewReason": "\"Wave\" is a common English word, so a news search for it would mostly return unrelated articles.",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Wave",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:56:42.737747Z",
+    "updatedAt": "2026-10-08T12:56:42.737747Z"
+  },
+  {
+    "id": 148,
+    "sourceName": "Firefly Neuroscience (formerly ElMindA)",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Firefly Neuroscience",
+      "aliases": [
+        "ElMindA"
+      ],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:56:45.440446Z",
+    "updatedAt": "2026-10-08T19:41:37.537496Z"
+  },
+  {
+    "id": 149,
+    "sourceName": "Syqe",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Syqe",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:56:48.488044Z",
+    "updatedAt": "2026-10-08T12:56:48.488044Z"
+  },
+  {
+    "id": 150,
+    "sourceName": "Ubimo",
+    "status": "needs_review",
+    "reviewReason": "Common English word with unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Ubimo",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:56:51.412636Z",
+    "updatedAt": "2026-10-08T12:56:51.412636Z"
+  },
+  {
+    "id": 151,
+    "sourceName": "BIScience",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "BIScience",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:56:54.469624Z",
+    "updatedAt": "2026-10-08T19:19:39.107356Z"
+  },
+  {
+    "id": 152,
+    "sourceName": "Verse.ai",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Verse.ai",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:56:57.922496Z",
+    "updatedAt": "2026-10-08T21:16:46.720513Z"
+  },
+  {
+    "id": 153,
+    "sourceName": "Global Kinetics",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Global Kinetics",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:57:01.076057Z",
+    "updatedAt": "2026-10-08T19:46:47.505779Z"
+  },
+  {
+    "id": 154,
+    "sourceName": "Zebra Medical Vision",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Zebra Medical Vision",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:57:04.058004Z",
+    "updatedAt": "2026-10-08T21:17:49.372721Z"
+  },
+  {
+    "id": 155,
+    "sourceName": "Corephotonics",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Corephotonics",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:57:07.374660Z",
+    "updatedAt": "2026-10-08T19:29:10.098268Z"
+  },
+  {
+    "id": 156,
+    "sourceName": "JUMP Bikes",
+    "status": "needs_review",
+    "reviewReason": "Common English verb and brand name",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "JUMP Bikes",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:57:10.677441Z",
+    "updatedAt": "2026-10-08T12:57:10.677441Z"
+  },
+  {
+    "id": 157,
+    "sourceName": "UPnRIDE",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "UPnRIDE",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:57:14.780456Z",
+    "updatedAt": "2026-10-08T21:03:15.162282Z"
+  },
+  {
+    "id": 158,
+    "sourceName": "Appforma",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Appforma",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:57:18.534663Z",
+    "updatedAt": "2026-10-08T19:01:53.482716Z"
+  },
+  {
+    "id": 159,
+    "sourceName": "Nextpeer",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Nextpeer",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:57:22.023314Z",
+    "updatedAt": "2026-10-08T20:03:04.241741Z"
+  },
+  {
+    "id": 160,
+    "sourceName": "Parko",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Parko",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:57:25.777439Z",
+    "updatedAt": "2026-10-08T12:57:25.777439Z"
+  },
+  {
+    "id": 161,
+    "sourceName": "PulmOne",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "PulmOne",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:57:29.536524Z",
+    "updatedAt": "2026-10-08T12:57:29.536524Z"
+  },
+  {
+    "id": 162,
+    "sourceName": "Shopial",
+    "status": "needs_review",
+    "reviewReason": "Common English word with unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Shopial",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:57:32.627765Z",
+    "updatedAt": "2026-10-08T12:57:32.627765Z"
+  },
+  {
+    "id": 163,
+    "sourceName": "Fireblade",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Fireblade",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:57:35.509840Z",
+    "updatedAt": "2026-10-08T19:40:26.599740Z"
+  },
+  {
+    "id": 164,
+    "sourceName": "Freightos",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Freightos",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:57:39.191670Z",
+    "updatedAt": "2026-10-08T19:44:13.072508Z"
+  },
+  {
+    "id": 165,
+    "sourceName": "The Trendlines Group",
+    "status": "needs_review",
+    "reviewReason": "Common English phrase used in various contexts",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "The Trendlines Group",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:57:42.629023Z",
+    "updatedAt": "2026-10-08T12:57:42.629023Z"
+  },
+  {
+    "id": 166,
+    "sourceName": "Viewbix",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Viewbix",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:57:45.365215Z",
+    "updatedAt": "2026-10-08T21:16:47.880460Z"
+  },
+  {
+    "id": 167,
+    "sourceName": "eVigilo",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "eVigilo",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:57:48.314048Z",
+    "updatedAt": "2026-10-08T19:39:59.997204Z"
+  },
+  {
+    "id": 168,
+    "sourceName": "Appdome",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Appdome",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:57:51.047172Z",
+    "updatedAt": "2026-10-08T19:01:52.857295Z"
+  },
+  {
+    "id": 169,
+    "sourceName": "enVerid",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "enVerid",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:57:54.426123Z",
+    "updatedAt": "2026-10-08T19:39:59.172206Z"
+  },
+  {
+    "id": 170,
+    "sourceName": "Crosswise",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Crosswise",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:57:58.565421Z",
+    "updatedAt": "2026-10-08T12:57:58.565421Z"
+  },
+  {
+    "id": 171,
+    "sourceName": "Abes Market",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Abes Market",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:58:02.265921Z",
+    "updatedAt": "2026-10-08T12:58:02.265921Z"
+  },
+  {
+    "id": 172,
+    "sourceName": "Surgical Theater",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Surgical Theater",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:58:06.368697Z",
+    "updatedAt": "2026-10-08T20:52:20.237736Z"
+  },
+  {
+    "id": 173,
+    "sourceName": "MST",
+    "status": "needs_review",
+    "reviewReason": "\"MST\" is only 3 characters long, so a news search for it would mostly match unrelated text.",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "MST",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:58:06.380903Z",
+    "updatedAt": "2026-10-08T12:58:06.380903Z"
+  },
+  {
+    "id": 174,
+    "sourceName": "Bizzabo",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Bizzabo",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:58:10.423316Z",
+    "updatedAt": "2026-10-08T12:58:10.423316Z"
+  },
+  {
+    "id": 175,
+    "sourceName": "Neverware",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Neverware",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:58:14.308872Z",
+    "updatedAt": "2026-10-08T20:03:03.575444Z"
+  },
+  {
+    "id": 176,
+    "sourceName": "BioCatch",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "BioCatch",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:58:17.982615Z",
+    "updatedAt": "2026-10-08T19:14:41.337491Z"
+  },
+  {
+    "id": 177,
+    "sourceName": "Sight Diagnostics",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Sight Diagnostics",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:58:21.550824Z",
+    "updatedAt": "2026-10-08T20:18:25.375665Z"
+  },
+  {
+    "id": 178,
+    "sourceName": "Consumer Physics",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Consumer Physics",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:58:24.856917Z",
+    "updatedAt": "2026-10-08T19:29:06.873763Z"
+  },
+  {
+    "id": 179,
+    "sourceName": "StackIQ",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "StackIQ",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:58:28.459850Z",
+    "updatedAt": "2026-10-08T20:49:31.908970Z"
+  },
+  {
+    "id": 180,
+    "sourceName": "Mentad",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Mentad",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:58:32.267114Z",
+    "updatedAt": "2026-10-08T12:58:32.267114Z"
+  },
+  {
+    "id": 181,
+    "sourceName": "CropX",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "CropX",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:58:36.295761Z",
+    "updatedAt": "2026-10-08T19:29:16.103302Z"
+  },
+  {
+    "id": 182,
+    "sourceName": "Powwow",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Powwow",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:58:39.842367Z",
+    "updatedAt": "2026-10-08T12:58:39.842367Z"
+  },
+  {
+    "id": 183,
+    "sourceName": "Apploi",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Apploi",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:58:43.522031Z",
+    "updatedAt": "2026-10-08T19:01:55.960778Z"
+  },
+  {
+    "id": 184,
+    "sourceName": "Lifeward (formerly known as ReWalk)",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Lifeward",
+      "aliases": [
+        "ReWalk"
+      ],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:58:48.060906Z",
+    "updatedAt": "2026-10-08T12:58:48.060906Z"
+  },
+  {
+    "id": 185,
+    "sourceName": "Cimagine",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Cimagine",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:58:51.378074Z",
+    "updatedAt": "2026-10-08T19:28:29.531257Z"
+  },
+  {
+    "id": 186,
+    "sourceName": "Boatsetter",
+    "status": "needs_review",
+    "reviewReason": "Common English word with unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Boatsetter",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:58:55.920959Z",
+    "updatedAt": "2026-10-08T12:58:55.920959Z"
+  },
+  {
+    "id": 187,
+    "sourceName": "Stringify",
+    "status": "needs_review",
+    "reviewReason": "Common English word with various unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Stringify",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:59:00.205541Z",
+    "updatedAt": "2026-10-08T12:59:00.205541Z"
+  },
+  {
+    "id": 188,
+    "sourceName": "BriefCam",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "BriefCam",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:59:03.418009Z",
+    "updatedAt": "2026-10-08T19:19:53.894095Z"
+  },
+  {
+    "id": 189,
+    "sourceName": "BillGuard",
+    "status": "needs_review",
+    "reviewReason": "Common English first name",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "BillGuard",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:59:06.583309Z",
+    "updatedAt": "2026-10-08T12:59:06.583309Z"
+  },
+  {
+    "id": 190,
+    "sourceName": "Xsense (formerly BT9)",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Xsense",
+      "aliases": [
+        "BT9"
+      ],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:59:09.922490Z",
+    "updatedAt": "2026-10-08T21:17:19.397525Z"
+  },
+  {
+    "id": 191,
+    "sourceName": "Astra",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Astra",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:59:13.861635Z",
+    "updatedAt": "2026-10-08T12:59:13.861635Z"
+  },
+  {
+    "id": 192,
+    "sourceName": "NeuReality",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "NeuReality",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:59:17.219027Z",
+    "updatedAt": "2026-10-08T20:03:03.018990Z"
+  },
+  {
+    "id": 193,
+    "sourceName": "EquipmentShare",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "EquipmentShare",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:59:21.590244Z",
+    "updatedAt": "2026-10-08T12:59:21.590244Z"
+  },
+  {
+    "id": 194,
+    "sourceName": "Hub Security",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Hub Security",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:59:25.644632Z",
+    "updatedAt": "2026-10-08T12:59:25.644632Z"
+  },
+  {
+    "id": 195,
+    "sourceName": "BlueNalu",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "BlueNalu",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:59:28.989416Z",
+    "updatedAt": "2026-10-08T19:19:47.858494Z"
+  },
+  {
+    "id": 196,
+    "sourceName": "Medisafe",
+    "status": "needs_review",
+    "reviewReason": "Common English word with unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Medisafe",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:59:32.614915Z",
+    "updatedAt": "2026-10-08T12:59:32.614915Z"
+  },
+  {
+    "id": 197,
+    "sourceName": "Ravin AI",
+    "status": "needs_review",
+    "reviewReason": "Common English word; also surname",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Ravin AI",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:59:36.223907Z",
+    "updatedAt": "2026-10-08T12:59:36.223907Z"
+  },
+  {
+    "id": 198,
+    "sourceName": "Kemtai",
+    "status": "needs_review",
+    "reviewReason": "Distinctive invented name unlikely to match other topics",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Kemtai",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:59:40.787014Z",
+    "updatedAt": "2026-10-08T12:59:40.787014Z"
+  },
+  {
+    "id": 199,
+    "sourceName": "Kryon Systems",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Kryon Systems",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:59:44.410963Z",
+    "updatedAt": "2026-10-08T19:55:20.397601Z"
+  },
+  {
+    "id": 200,
+    "sourceName": "TubiTV",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "TubiTV",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:59:47.777222Z",
+    "updatedAt": "2026-10-08T21:03:12.754824Z"
+  },
+  {
+    "id": 201,
+    "sourceName": "NetOp",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "NetOp",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:59:50.851455Z",
+    "updatedAt": "2026-10-08T12:59:50.851455Z"
+  },
+  {
+    "id": 202,
+    "sourceName": "CorrActions",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "CorrActions",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:59:53.855706Z",
+    "updatedAt": "2026-10-08T19:29:10.670887Z"
+  },
+  {
+    "id": 203,
+    "sourceName": "SaNOtize",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "SaNOtize",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T12:59:57.333635Z",
+    "updatedAt": "2026-10-08T20:13:03.372910Z"
+  },
+  {
+    "id": 204,
+    "sourceName": "Stellar Cyber",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Stellar Cyber",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:00:00.343958Z",
+    "updatedAt": "2026-10-08T20:49:45.752401Z"
+  },
+  {
+    "id": 205,
+    "sourceName": "SeeTrue",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "SeeTrue",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:00:03.869301Z",
+    "updatedAt": "2026-10-08T20:17:40.640102Z"
+  },
+  {
+    "id": 206,
+    "sourceName": "Perception Point",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Perception Point",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:00:07.627062Z",
+    "updatedAt": "2026-10-08T20:10:50.718464Z"
+  },
+  {
+    "id": 207,
+    "sourceName": "Innovalve",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Innovalve",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:00:11.144913Z",
+    "updatedAt": "2026-10-08T19:48:10.069934Z"
+  },
+  {
+    "id": 208,
+    "sourceName": "Tala",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Tala",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:00:15.663865Z",
+    "updatedAt": "2026-10-08T13:00:15.663865Z"
+  },
+  {
+    "id": 209,
+    "sourceName": "Signals Analytics",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Signals Analytics",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:00:19.469872Z",
+    "updatedAt": "2026-10-08T20:18:28.532614Z"
+  },
+  {
+    "id": 210,
+    "sourceName": "PlaySight",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "PlaySight",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:00:22.851083Z",
+    "updatedAt": "2026-10-08T20:10:54.325227Z"
+  },
+  {
+    "id": 211,
+    "sourceName": "EduNav",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "EduNav",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:00:26.192280Z",
+    "updatedAt": "2026-10-08T19:39:55.404107Z"
+  },
+  {
+    "id": 212,
+    "sourceName": "Barcode Nanotech",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Barcode Nanotech",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:00:29.589006Z",
+    "updatedAt": "2026-10-08T19:06:08.662483Z"
+  },
+  {
+    "id": 213,
+    "sourceName": "Ride Vision",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Ride Vision",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:00:32.605320Z",
+    "updatedAt": "2026-10-08T20:13:02.835459Z"
+  },
+  {
+    "id": 214,
+    "sourceName": "Frontier Car Group",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Frontier Car Group",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:00:36.125516Z",
+    "updatedAt": "2026-10-08T19:46:46.319825Z"
+  },
+  {
+    "id": 215,
+    "sourceName": "Autobrains",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Autobrains",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:00:39.123467Z",
+    "updatedAt": "2026-10-08T19:05:13.088541Z"
+  },
+  {
+    "id": 216,
+    "sourceName": "DailyPay",
+    "status": "needs_review",
+    "reviewReason": "Common English word with unrelated uses",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "DailyPay",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:00:42.273432Z",
+    "updatedAt": "2026-10-08T13:00:42.273432Z"
+  },
+  {
+    "id": 217,
+    "sourceName": "Sayata",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Sayata",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:00:45.272927Z",
+    "updatedAt": "2026-10-08T20:13:03.992601Z"
+  },
+  {
+    "id": 218,
+    "sourceName": "Locusview",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Locusview",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:00:48.295130Z",
+    "updatedAt": "2026-10-08T19:55:55.459024Z"
+  },
+  {
+    "id": 219,
+    "sourceName": "Juganu",
+    "status": "needs_review",
+    "reviewReason": "Common Hebrew word; also a surname",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Juganu",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:00:51.711257Z",
+    "updatedAt": "2026-10-08T13:00:51.711257Z"
+  },
+  {
+    "id": 220,
+    "sourceName": "Nanomedic",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Nanomedic",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:00:56.126021Z",
+    "updatedAt": "2026-10-08T13:00:56.126021Z"
+  },
+  {
+    "id": 221,
+    "sourceName": "Incredo (formerly known as DouxMatok)",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Incredo",
+      "aliases": [
+        "DouxMatok"
+      ],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:00:59.419095Z",
+    "updatedAt": "2026-10-08T19:48:09.441161Z"
+  },
+  {
+    "id": 222,
+    "sourceName": "Casper",
+    "status": "needs_review",
+    "reviewReason": "\"Casper\" is a common first name, so a news search for it would mostly return unrelated people.",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Casper",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:00:59.427261Z",
+    "updatedAt": "2026-10-08T13:00:59.427261Z"
+  },
+  {
+    "id": 223,
+    "sourceName": "CB4",
+    "status": "needs_review",
+    "reviewReason": "\"CB4\" is only 3 characters long, so a news search for it would mostly match unrelated text.",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "CB4",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:00:59.437858Z",
+    "updatedAt": "2026-10-08T13:00:59.437858Z"
+  },
+  {
+    "id": 224,
+    "sourceName": "Foretellix",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Foretellix",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:01:03.737561Z",
+    "updatedAt": "2026-10-08T19:43:45.184213Z"
+  },
+  {
+    "id": 225,
+    "sourceName": "Neura",
+    "status": "needs_review",
+    "reviewReason": "Common English word with unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Neura",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:01:07.813918Z",
+    "updatedAt": "2026-10-08T13:01:07.813918Z"
+  },
+  {
+    "id": 226,
+    "sourceName": "ItsMine",
+    "status": "needs_review",
+    "reviewReason": "Common phrase 'its mine' in quotes",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "ItsMine",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:01:12.387685Z",
+    "updatedAt": "2026-10-08T13:01:12.387685Z"
+  },
+  {
+    "id": 227,
+    "sourceName": "Tevel",
+    "status": "needs_review",
+    "reviewReason": "Common Hebrew word; also meaning universe",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Tevel",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:01:16.629674Z",
+    "updatedAt": "2026-10-08T13:01:16.629674Z"
+  },
+  {
+    "id": 228,
+    "sourceName": "Trusona",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Trusona",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:01:20.204103Z",
+    "updatedAt": "2026-10-08T21:03:05.923119Z"
+  },
+  {
+    "id": 229,
+    "sourceName": "Beyond Meat",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": true,
+    "profile": {
+      "displayName": "Beyond Meat",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:01:23.916304Z",
+    "updatedAt": "2026-10-08T19:07:11.867755Z"
+  },
+  {
+    "id": 230,
+    "sourceName": "HoneyBook",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "HoneyBook",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:01:27.468803Z",
+    "updatedAt": "2026-10-08T19:47:38.874265Z"
+  },
+  {
+    "id": 231,
+    "sourceName": "RealView Imaging",
+    "status": "needs_review",
+    "reviewReason": "Common English word with unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "RealView Imaging",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:01:31.040130Z",
+    "updatedAt": "2026-10-08T13:01:31.040130Z"
+  },
+  {
+    "id": 232,
+    "sourceName": "CyberMDX",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "CyberMDX",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:01:34.503407Z",
+    "updatedAt": "2026-10-08T19:33:24.842526Z"
+  },
+  {
+    "id": 233,
+    "sourceName": "Alpha Tau",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Alpha Tau",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:01:37.726451Z",
+    "updatedAt": "2026-10-08T19:00:49.141177Z"
+  },
+  {
+    "id": 234,
+    "sourceName": "ThetaRay",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "ThetaRay",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:01:40.854977Z",
+    "updatedAt": "2026-10-08T20:55:54.777005Z"
+  },
+  {
+    "id": 235,
+    "sourceName": "VAYAVISION",
+    "status": "needs_review",
+    "reviewReason": "Common Hebrew word; also a brand name",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "VAYAVISION",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:01:44.332049Z",
+    "updatedAt": "2026-10-08T13:01:44.332049Z"
+  },
+  {
+    "id": 236,
+    "sourceName": "Insightec",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Insightec",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:01:48.204319Z",
+    "updatedAt": "2026-10-08T19:53:43.868416Z"
+  },
+  {
+    "id": 237,
+    "sourceName": "Cognigo",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Cognigo",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:01:51.870773Z",
+    "updatedAt": "2026-10-08T19:28:30.150887Z"
+  },
+  {
+    "id": 238,
+    "sourceName": "Ossio",
+    "status": "needs_review",
+    "reviewReason": "Common English surname",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Ossio",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:01:55.979145Z",
+    "updatedAt": "2026-10-08T13:01:55.979145Z"
+  },
+  {
+    "id": 239,
+    "sourceName": "MeMed",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "MeMed",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:02:00.461697Z",
+    "updatedAt": "2026-10-08T13:02:00.461697Z"
+  },
+  {
+    "id": 240,
+    "sourceName": "Arbe Robotics",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Arbe Robotics",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:02:04.741056Z",
+    "updatedAt": "2026-10-08T19:02:26.882932Z"
+  },
+  {
+    "id": 241,
+    "sourceName": "Lemonade",
+    "status": "needs_review",
+    "reviewReason": "\"Lemonade\" is a common English word, so a news search for it would mostly return unrelated articles.",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Lemonade",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:02:04.757628Z",
+    "updatedAt": "2026-10-08T13:02:04.757628Z"
+  },
+  {
+    "id": 242,
+    "sourceName": "Hailo",
+    "status": "needs_review",
+    "reviewReason": "Common English word with unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Hailo",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:02:09.381909Z",
+    "updatedAt": "2026-10-08T13:02:09.381909Z"
+  },
+  {
+    "id": 243,
+    "sourceName": "Sense Education",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Sense Education",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:02:13.990459Z",
+    "updatedAt": "2026-10-08T13:02:13.990459Z"
+  },
+  {
+    "id": 244,
+    "sourceName": "Unispectral",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Unispectral",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:02:17.865552Z",
+    "updatedAt": "2026-10-08T21:03:13.342098Z"
+  },
+  {
+    "id": 245,
+    "sourceName": "Klook",
+    "status": "needs_review",
+    "reviewReason": "Common English word with unrelated uses",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Klook",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:02:22.195189Z",
+    "updatedAt": "2026-10-08T13:02:22.195189Z"
+  },
+  {
+    "id": 246,
+    "sourceName": "Innoviz",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Innoviz",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:02:26.509586Z",
+    "updatedAt": "2026-10-08T19:48:52.206745Z"
+  },
+  {
+    "id": 247,
+    "sourceName": "Rewire",
+    "status": "needs_review",
+    "reviewReason": "\"Rewire\" is a common English word, so a news search for it would mostly return unrelated articles.",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Rewire",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:02:26.538221Z",
+    "updatedAt": "2026-10-08T13:02:26.538221Z"
+  },
+  {
+    "id": 248,
+    "sourceName": "YuLife",
+    "status": "needs_review",
+    "reviewReason": "Common English word with multiple unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "YuLife",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:02:30.982965Z",
+    "updatedAt": "2026-10-08T13:02:30.982965Z"
+  },
+  {
+    "id": 249,
+    "sourceName": "Edgybees",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Edgybees",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:02:34.395954Z",
+    "updatedAt": "2026-10-08T19:39:54.214250Z"
+  },
+  {
+    "id": 250,
+    "sourceName": "DreaMed Diabetes",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "DreaMed Diabetes",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:02:38.669730Z",
+    "updatedAt": "2026-10-08T19:39:53.353057Z"
+  },
+  {
+    "id": 251,
+    "sourceName": "Magisto",
+    "status": "needs_review",
+    "reviewReason": "Common English word with unrelated meanings",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Magisto",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:02:41.856721Z",
+    "updatedAt": "2026-10-08T13:02:41.856721Z"
+  },
+  {
+    "id": 252,
+    "sourceName": "Virgin Hyperloop One",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Virgin Hyperloop One",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:02:44.731894Z",
+    "updatedAt": "2026-10-08T21:16:49.940024Z"
+  },
+  {
+    "id": 253,
+    "sourceName": "Airobotics",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Airobotics",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:02:47.738304Z",
+    "updatedAt": "2026-10-08T18:59:55.499730Z"
+  },
+  {
+    "id": 254,
+    "sourceName": "Scopio Labs",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Scopio Labs",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:02:51.266092Z",
+    "updatedAt": "2026-10-08T20:17:27.854947Z"
+  },
+  {
+    "id": 255,
+    "sourceName": "BeetleSat",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "BeetleSat",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:02:54.475144Z",
+    "updatedAt": "2026-10-08T19:06:09.307919Z"
+  },
+  {
+    "id": 256,
+    "sourceName": "Silo",
+    "status": "needs_review",
+    "reviewReason": "\"Silo\" is a common English word, so a news search for it would mostly return unrelated articles.",
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Silo",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:02:54.489257Z",
+    "updatedAt": "2026-10-08T13:02:54.489257Z"
+  },
+  {
+    "id": 257,
+    "sourceName": "BrainQ Technologies",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "BrainQ Technologies",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:02:57.783052Z",
+    "updatedAt": "2026-10-08T19:19:49.636212Z"
+  },
+  {
+    "id": 258,
+    "sourceName": "Intuition Robotics",
+    "status": "active",
+    "reviewReason": null,
+    "coverageCapped": false,
+    "profile": {
+      "displayName": "Intuition Robotics",
+      "aliases": [],
+      "domain": null,
+      "description": null,
+      "searchTerms": []
+    },
+    "createdAt": "2026-10-08T13:03:00.769368Z",
+    "updatedAt": "2026-10-08T19:54:04.034825Z"
+  }
+]

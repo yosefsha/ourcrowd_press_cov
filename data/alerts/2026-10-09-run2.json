@@ -1,0 +1,1176 @@
+{
+  "id": 1,
+  "runId": 2,
+  "createdAt": "2026-10-09T04:42:32.691Z",
+  "acknowledgedAt": null,
+  "companies": [
+    {
+      "companyId": 9,
+      "displayName": "Cerebras",
+      "mentions": [
+        {
+          "candidateId": 2543,
+          "sentiment": "negative",
+          "title": "$Cerebras Systems (CBRS.US)$ Insiders have recently been selling off hundreds of thousands to over a million shares in a frenzy—do you really think the stock is going to rise?",
+          "outletName": "Moomoo",
+          "url": "https://www.moomoo.com/community/feed/cerebras-systems-cbrs-us-insiders-have-recently-been-selling-off-117399248830869",
+          "publishedAt": "2026-10-07T10:52:54.000Z"
+        },
+        {
+          "candidateId": 2563,
+          "sentiment": "negative",
+          "title": "Cerebras: I Was Right To Sell (Rating Upgrade) (NASDAQ:CBRS)",
+          "outletName": "Seeking Alpha",
+          "url": "https://seekingalpha.com/article/4952030-cerebras-i-was-right-to-sell-upgrade",
+          "publishedAt": "2026-10-05T17:34:38.000Z"
+        },
+        {
+          "candidateId": 2574,
+          "sentiment": "negative",
+          "title": "Cerebras Systems: Adam Johnson warns the AI chip stock is too expensive",
+          "outletName": "Fox Business",
+          "url": "https://www.foxbusiness.com/video/6406248425112",
+          "publishedAt": "2026-10-05T14:21:20.000Z"
+        },
+        {
+          "candidateId": 2593,
+          "sentiment": "negative",
+          "title": "$Cerebras Systems (CBRS.US)$ Amid a panic-driven crash accompanied by heavy outflows of institutional capital, all indicators are pointing to strong selling pressure. Although short-term short covering (a rebound toward filling the gap) may occur, upside pot",
+          "outletName": "Moomoo",
+          "url": "https://www.moomoo.com/community/feed/cerebras-systems-cbrs-us-in-a-panic-driven-plunge-accompanied-117387758469126",
+          "publishedAt": "2026-10-05T10:10:45.000Z"
+        },
+        {
+          "candidateId": 2609,
+          "sentiment": "negative",
+          "title": "Cerebras Stock Crashes 20% as Nvidia Pressure Mounts",
+          "outletName": "The Tech Buzz",
+          "url": "https://www.techbuzz.ai/articles/cerebras-stock-crashes-20-as-nvidia-pressure-mounts",
+          "publishedAt": "2026-10-02T23:35:00.000Z"
+        },
+        {
+          "candidateId": 2611,
+          "sentiment": "negative",
+          "title": "Cerebras Hits Post-IPO Low as Nvidia Pressure Mounts",
+          "outletName": "The Tech Buzz",
+          "url": "https://www.techbuzz.ai/articles/cerebras-hits-post-ipo-low-as-nvidia-pressure-mounts",
+          "publishedAt": "2026-10-02T22:35:00.000Z"
+        },
+        {
+          "candidateId": 2613,
+          "sentiment": "negative",
+          "title": "Cerebras Stock Crashes to Post-IPO Low Amid Nvidia Pressure",
+          "outletName": "The Tech Buzz",
+          "url": "https://www.techbuzz.ai/articles/cerebras-stock-crashes-to-post-ipo-low-amid-nvidia-pressure",
+          "publishedAt": "2026-10-02T22:07:00.000Z"
+        },
+        {
+          "candidateId": 2536,
+          "sentiment": "positive",
+          "title": "Front-Running the AI Hardware Shift with Cerebras",
+          "outletName": "MarketBeat",
+          "url": "https://www.marketbeat.com/articles/front-running-the-ai-hardware-shift-with-cerebras/",
+          "publishedAt": "2026-10-08T13:23:10.000Z"
+        },
+        {
+          "candidateId": 2549,
+          "sentiment": "positive",
+          "title": "Why Cerebras speed could be worth billions",
+          "outletName": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/video/why-cerebras-speed-could-worth-162800526.html",
+          "publishedAt": "2026-10-06T16:28:00.000Z"
+        },
+        {
+          "candidateId": 2551,
+          "sentiment": "positive",
+          "title": "Cerebras Rebounds 9% as Sam Altman Calls It a Close Partner",
+          "outletName": "Business Chief",
+          "url": "https://businesschief.com/news/cerebras-rebounds-9-as-sam-altman-calls-it-a-close-partner",
+          "publishedAt": "2026-10-06T14:02:03.000Z"
+        },
+        {
+          "candidateId": 2552,
+          "sentiment": "positive",
+          "title": "Cerebras stock jumps 9%; Q3 sales guide sets a harder test",
+          "outletName": "Techi",
+          "url": "https://www.techi.com/cerebras-stock-openai-rebound-q3-core-revenue-test/",
+          "publishedAt": "2026-10-06T08:15:59.000Z"
+        },
+        {
+          "candidateId": 2554,
+          "sentiment": "positive",
+          "title": "Cerebras shares rebound more than 8% as CEO Altman defends the company as a \"close partner\"",
+          "outletName": "BigGo Finance",
+          "url": "https://finance.biggo.com/news/691c4fa5-7ce4-4471-8c27-55c31af743fd",
+          "publishedAt": "2026-10-06T01:35:00.000Z"
+        },
+        {
+          "candidateId": 2555,
+          "sentiment": "positive",
+          "title": "Cerebras Shares Jump 9% After OpenAI CEO Calls Company a \"Close Partner\"",
+          "outletName": "Briefs Finance",
+          "url": "https://www.briefs.co/news/cerebras-shares-jump-9-after-openai-ceo-calls-company-a-clos/",
+          "publishedAt": "2026-10-05T23:39:18.000Z"
+        },
+        {
+          "candidateId": 2562,
+          "sentiment": "positive",
+          "title": "Cerebras Systems Jumps as OpenAI Partnership Reassurance Lifts Sentiment",
+          "outletName": "Quiver Quantitative",
+          "url": "https://www.quiverquant.com/news/Cerebras+Systems+Jumps+as+OpenAI+Partnership+Reassurance+Lifts+Sentiment",
+          "publishedAt": "2026-10-05T17:36:00.000Z"
+        },
+        {
+          "candidateId": 2564,
+          "sentiment": "positive",
+          "title": "OpenAI CEO Sam Altman Called Cerebras a 'Close Partner.' Its Stock Surged.",
+          "outletName": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/technology/ai/articles/openai-ceo-sam-altman-called-173433353.html",
+          "publishedAt": "2026-10-05T17:34:33.000Z"
+        },
+        {
+          "candidateId": 2566,
+          "sentiment": "positive",
+          "title": "Cerebras Systems Ord Shs Class A (Proposed) Stock (CBRS) Moved Up by 7.44% on Oct 5: Key Drivers Unveiled",
+          "outletName": "TradingKey",
+          "url": "https://www.tradingkey.com/news/market-movers/262200513-market-movers-cbrs-20261005",
+          "publishedAt": "2026-10-05T17:15:29.000Z"
+        },
+        {
+          "candidateId": 2567,
+          "sentiment": "positive",
+          "title": "Why is Cerebras Systems stock surging today?",
+          "outletName": "Investing.com",
+          "url": "https://www.investing.com/news/stock-market-news/why-is-cerebras-systems-stock-surging-today-93CH-4931393",
+          "publishedAt": "2026-10-05T17:08:06.000Z"
+        },
+        {
+          "candidateId": 2568,
+          "sentiment": "positive",
+          "title": "Cerebras Systems shares jump in premarket after Altman comments",
+          "outletName": "Investing.com",
+          "url": "https://www.investing.com/news/stock-market-news/cerebras-systems-shares-jump-in-premarket-after-altman-comments-93CH-4931397",
+          "publishedAt": "2026-10-05T17:08:06.000Z"
+        },
+        {
+          "candidateId": 2569,
+          "sentiment": "positive",
+          "title": "Cerebras Stock Surges After OpenAI CEO Calls Chipmaker a ‘Close Partner’",
+          "outletName": "Investopedia",
+          "url": "https://www.investopedia.com/market-update-cerebras-stock-surges-after-openai-ceo-calls-chipmaker-a-close-partner-12159674",
+          "publishedAt": "2026-10-05T16:49:23.000Z"
+        },
+        {
+          "candidateId": 2570,
+          "sentiment": "positive",
+          "title": "CBRS Stock Holds Ground As Cerebras Shows Cash-Fueled Growth Push",
+          "outletName": "StocksToTrade",
+          "url": "https://stockstotrade.com/news/cerebras-systems-inc-cbrs-news-2026_10_05/",
+          "publishedAt": "2026-10-05T16:33:00.000Z"
+        },
+        {
+          "candidateId": 2571,
+          "sentiment": "positive",
+          "title": "Cerebras jumps 10% following Altman's remarks",
+          "outletName": "Breakingthenews.net",
+          "url": "https://breakingthenews.net/Article/Cerebras-jumps-10-following-Altman's-remarks/67235951",
+          "publishedAt": "2026-10-05T15:21:00.000Z"
+        },
+        {
+          "candidateId": 2572,
+          "sentiment": "positive",
+          "title": "Cerebras Systems (NASDAQ:CBRS) Stock Jumps 8.8% After Analyst Upgrade",
+          "outletName": "MarketBeat",
+          "url": "https://www.marketbeat.com/instant-alerts/price-cerebras-systems-nasdaq-cbrs-stock-jumps-88-after-analyst-upgrade-2026-10-05/",
+          "publishedAt": "2026-10-05T14:25:37.000Z"
+        },
+        {
+          "candidateId": 2573,
+          "sentiment": "positive",
+          "title": "Cerebras Stock Surges After Altman Calls Company 'Close Partner'",
+          "outletName": "Benzinga",
+          "url": "https://www.benzinga.com/trading-ideas/movers/26/10/62164555/cerebras-stock-surges-after-altman-calls-them-close-partner",
+          "publishedAt": "2026-10-05T14:24:55.000Z"
+        },
+        {
+          "candidateId": 2577,
+          "sentiment": "positive",
+          "title": "Nvidia stock hits record, SpaceX gets a bullish call, Cerebras rises on Altman comments",
+          "outletName": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/video/nvidia-stock-hits-record-spacex-gets-a-bullish-call-cerebras-rises-on-altman-comments-135014052.html",
+          "publishedAt": "2026-10-05T13:50:14.000Z"
+        },
+        {
+          "candidateId": 2580,
+          "sentiment": "positive",
+          "title": "Cerebras stock rises after Sam Altman calls it a 'close partner'",
+          "outletName": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/cerebras-stock-rises-sam-altman-111543004.html",
+          "publishedAt": "2026-10-05T11:15:43.000Z"
+        },
+        {
+          "candidateId": 2582,
+          "sentiment": "positive",
+          "title": "Cerebras Shares Rebound as OpenAI’s Sam Altman Calls Chipmaker a Close Partner",
+          "outletName": "AskTraders",
+          "url": "https://www.asktraders.com/analysis/cerebras-shares-rebound-as-openais-sam-altman-calls-chipmaker-a-close-partner/",
+          "publishedAt": "2026-10-05T11:13:07.000Z"
+        },
+        {
+          "candidateId": 2587,
+          "sentiment": "positive",
+          "title": "Cerebras Stock Rises Pre-Bell Monday as OpenAI's Sam Altman Calls it 'Close Partner'",
+          "outletName": "marketscreener.com",
+          "url": "https://www.marketscreener.com/news/cerebras-stock-rises-pre-bell-monday-as-openai-s-sam-altman-calls-it-close-partner-ce785ddbd08df424",
+          "publishedAt": "2026-10-05T10:53:23.000Z"
+        },
+        {
+          "candidateId": 2588,
+          "sentiment": "positive",
+          "title": "Cerebras stock pops after OpenAI CEO Altman lauds 'close partner'",
+          "outletName": "AOL.com",
+          "url": "https://www.aol.com/articles/cerebras-stock-pops-openai-ceo-105240000.html",
+          "publishedAt": "2026-10-05T10:52:40.000Z"
+        },
+        {
+          "candidateId": 2591,
+          "sentiment": "positive",
+          "title": "Cerebras Systems Shares Rise After Altman Comments on OpenAI Partnership",
+          "outletName": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/technology/ai/articles/cerebras-systems-shares-rise-altman-101940424.html",
+          "publishedAt": "2026-10-05T10:19:40.000Z"
+        },
+        {
+          "candidateId": 2592,
+          "sentiment": "positive",
+          "title": "Cerebras shares rise after OpenAI's Altman calls chipmaker a “close partner”",
+          "outletName": "Proactive financial news",
+          "url": "https://www.proactiveinvestors.com/companies/news/1099593/cerebras-shares-rise-after-openai-s-altman-calls-chipmaker-a-close-partner-1099593.html",
+          "publishedAt": "2026-10-05T10:15:00.000Z"
+        },
+        {
+          "candidateId": 2596,
+          "sentiment": "positive",
+          "title": "AM Markets Need to Know: Iran sets Hormuz conditions, Cerebras gains on OpenAI ties, and more (SPX:)",
+          "outletName": "Seeking Alpha",
+          "url": "https://seekingalpha.com/news/4650093-am-markets-need-to-know-iran-sets-hormuz-conditions-cerebras-gains-on-openai-ties-and-more",
+          "publishedAt": "2026-10-05T09:56:50.000Z"
+        },
+        {
+          "candidateId": 2597,
+          "sentiment": "positive",
+          "title": "OpenAI's Sam Altman calls Cerebras 'close partner' in speed, boosting chipmaker's stock (CBRS:NASDAQ)",
+          "outletName": "Seeking Alpha",
+          "url": "https://seekingalpha.com/news/4650091-openais-sam-altman-calls-cerebras-close-partner-in-speed-boosting-chipmakers-stock",
+          "publishedAt": "2026-10-05T09:41:27.000Z"
+        },
+        {
+          "candidateId": 2598,
+          "sentiment": "positive",
+          "title": "OpenAI's Sam Altman calls Cerebras 'close partner' in speed, boosting chipmaker's stock",
+          "outletName": "TradingView",
+          "url": "https://www.tradingview.com/news/seekingalpha:75384f644094b:0-openai-s-sam-altman-calls-cerebras-close-partner-in-speed-boosting-chipmaker-s-stock/",
+          "publishedAt": "2026-10-05T09:41:27.000Z"
+        },
+        {
+          "candidateId": 2607,
+          "sentiment": "positive",
+          "title": "Cathie Wood’s ARK stock trades: Cerebras and BWX Technologies lead buys",
+          "outletName": "Investing.com",
+          "url": "https://www.investing.com/news/company-news/cathie-woods-ark-stock-trades-cerebras-and-bwx-technologies-lead-buys-93CH-4930580",
+          "publishedAt": "2026-10-03T00:10:12.000Z"
+        },
+        {
+          "candidateId": 2612,
+          "sentiment": "positive",
+          "title": "OpenAI's Altman Says Cerebras Is A Close Partner, Have \"Deep Engagement\"",
+          "outletName": "TradingView",
+          "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN45O0AU:0-openai-s-altman-says-cerebras-is-a-close-partner-have-deep-engagement/",
+          "publishedAt": "2026-10-02T22:23:15.000Z"
+        },
+        {
+          "candidateId": 2615,
+          "sentiment": "positive",
+          "title": "General Compute signs multi-year agreement with Cerebras",
+          "outletName": "Data Center Dynamics",
+          "url": "https://www.datacenterdynamics.com/en/news/general-compute-signs-multi-year-agreement-with-cerebras/",
+          "publishedAt": "2026-10-02T16:37:03.000Z"
+        },
+        {
+          "candidateId": 2616,
+          "sentiment": "positive",
+          "title": "Bullish on Sustained Growth in AI Inference Demand, Freedom Upgrades Cerebras (CBRS.US) to “Buy”; Wafer-Scale Chip Advantages Draw Attention",
+          "outletName": "Moomoo",
+          "url": "https://www.moomoo.com/news/post/1000562391/bullish-on-sustained-growth-in-ai-inference-demand-freedom-upgrades",
+          "publishedAt": "2026-10-02T15:51:45.000Z"
+        },
+        {
+          "candidateId": 2617,
+          "sentiment": "positive",
+          "title": "Cerebras Systems Analyst Turns Bullish As Stock Tanks, Calls Nvidia Competition 'Exaggerated'",
+          "outletName": "Benzinga",
+          "url": "https://www.benzinga.com/analyst-stock-ratings/upgrades/26/10/62136926/this-cerebras-systems-analyst-bullish-nvidia-exaggerated",
+          "publishedAt": "2026-10-02T14:47:25.000Z"
+        },
+        {
+          "candidateId": 2618,
+          "sentiment": "positive",
+          "title": "Why is Cerebras Systems stock rising today?",
+          "outletName": "Investing.com",
+          "url": "https://www.investing.com/news/stock-market-news/why-is-cerebras-systems-stock-rising-today-93CH-4930093",
+          "publishedAt": "2026-10-02T14:46:18.000Z"
+        },
+        {
+          "candidateId": 2619,
+          "sentiment": "positive",
+          "title": "Cerebras Systems rebounds as Freedom Capital calls selloff overdone",
+          "outletName": "Investing.com",
+          "url": "https://www.investing.com/news/stock-market-news/cerebras-systems-rebounds-as-freedom-capital-calls-selloff-overdone-4930079",
+          "publishedAt": "2026-10-02T14:23:40.000Z"
+        },
+        {
+          "candidateId": 2622,
+          "sentiment": "positive",
+          "title": "Freedom Capital Markets upgrades Cerebras Systems to Buy, sets $209 price target",
+          "outletName": "TradingView",
+          "url": "https://www.tradingview.com/news/tradingview:b62348995ca39:0-freedom-capital-markets-upgrades-cerebras-systems-to-buy-sets-209-price-target/",
+          "publishedAt": "2026-10-02T11:54:51.000Z"
+        },
+        {
+          "candidateId": 2623,
+          "sentiment": "positive",
+          "title": "Cerebras Systems stock rating upgraded to buy on valuation by Freedom Capital",
+          "outletName": "Investing.com",
+          "url": "https://www.investing.com/news/analyst-ratings/cerebras-systems-stock-rating-upgraded-to-buy-on-valuation-by-freedom-capital-93CH-4929457",
+          "publishedAt": "2026-10-02T11:40:48.000Z"
+        },
+        {
+          "candidateId": 2535,
+          "sentiment": "neutral",
+          "title": "Cerebras Stock Has Been a Bust Since Its IPO. That Could Be About to Change.",
+          "outletName": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/technology/ai/articles/cerebras-stock-bust-since-ipo-173658573.html",
+          "publishedAt": "2026-10-08T17:36:58.000Z"
+        },
+        {
+          "candidateId": 2538,
+          "sentiment": "neutral",
+          "title": "Cerebras Stock Tanks After Earnings, But Wall Street Sees A Buying Opportunity",
+          "outletName": "Stocktwits",
+          "url": "https://stocktwits.com/news-articles/markets/equity/cbrs-stock-drops-post-earnings-but-ubs-calls-sell-off-a-compelling-buying-opportunity-amid-wall-street-split/cZoqWwoRJL7",
+          "publishedAt": "2026-10-08T07:10:50.000Z"
+        },
+        {
+          "candidateId": 2541,
+          "sentiment": "neutral",
+          "title": "Cerebras: Back At Its IPO Price, With A Much Bigger Story (NASDAQ:CBRS)",
+          "outletName": "Seeking Alpha",
+          "url": "https://seekingalpha.com/article/4952478-cerebras-back-at-its-ipo-price-with-a-much-bigger-story",
+          "publishedAt": "2026-10-07T13:52:26.000Z"
+        },
+        {
+          "candidateId": 2542,
+          "sentiment": "neutral",
+          "title": "CBRS Stock Slumps After First Earnings Post IPO – But Analysts Reaffirm Bull Case On Cerebras Over Favorable Demand Landscape",
+          "outletName": "Stocktwits",
+          "url": "https://stocktwits.com/news-articles/markets/equity/cbrs-stock-slumps-after-first-earnings-post-ipo-but-analysts-reaffirm-bull-case-on-cerebras-over-favorable-demand-landscape/cZKyKf0R7fx",
+          "publishedAt": "2026-10-07T11:25:12.000Z"
+        },
+        {
+          "candidateId": 2544,
+          "sentiment": "neutral",
+          "title": "Cerebras Systems Inc. Price Today | xCBRS Live Price, Chart & Market Cap",
+          "outletName": "OKX",
+          "url": "https://www.okx.com/en-us/price/cerebras-systems-inc--xcbrs",
+          "publishedAt": "2026-10-07T10:00:33.000Z"
+        },
+        {
+          "candidateId": 2547,
+          "sentiment": "neutral",
+          "title": "Lightning Round: Cerebras is a good company, but stock is too expensive, says Jim Cramer",
+          "outletName": "CNBC",
+          "url": "https://www.cnbc.com/video/2026/10/06/lightning-round-cerebras-is-a-good-company-but-stock-is-too-expensive-says-jim-cramer.html",
+          "publishedAt": "2026-10-06T23:52:11.000Z"
+        },
+        {
+          "candidateId": 2550,
+          "sentiment": "neutral",
+          "title": "A full breakdown of the OpenAI–Cerebras chip controversy",
+          "outletName": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/video/full-breakdown-openai-cerebras-chip-150115995.html",
+          "publishedAt": "2026-10-06T15:01:15.000Z"
+        },
+        {
+          "candidateId": 2557,
+          "sentiment": "neutral",
+          "title": "CBRS Stock Holds Gains As Cerebras Tightens Cash And Charts Base",
+          "outletName": "StocksToTrade",
+          "url": "https://stockstotrade.com/news/cerebras-systems-inc-cbrs-news-2026_10_05-3/",
+          "publishedAt": "2026-10-05T20:47:00.000Z"
+        },
+        {
+          "candidateId": 2575,
+          "sentiment": "neutral",
+          "title": "Cerebras vs Nvidia: The AI Inference Fight - NVIDIA (NASDAQ:NVDA), Cerebras Systems (NASDAQ:CBRS)",
+          "outletName": "Benzinga",
+          "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/10/62164160/cerebras-vs-nvidia-inference",
+          "publishedAt": "2026-10-05T14:15:40.000Z"
+        },
+        {
+          "candidateId": 2579,
+          "sentiment": "neutral",
+          "title": "Cerebras Rebounds as Altman Touts It a ‘Close Partner,’ but Cash Burn Looms",
+          "outletName": "NAI500",
+          "url": "https://nai500.com/blog/2026/10/cerebras-rebounds-as-altman-touts-it-a-close-partner-but-cash-burn-looms/",
+          "publishedAt": "2026-10-05T12:23:47.000Z"
+        },
+        {
+          "candidateId": 2590,
+          "sentiment": "neutral",
+          "title": "Mizuho reiterates Cerebras Systems stock rating on inference growth",
+          "outletName": "Investing.com",
+          "url": "https://www.investing.com/news/analyst-ratings/mizuho-reiterates-cerebras-systems-stock-rating-on-inference-growth-93CH-4931452",
+          "publishedAt": "2026-10-05T10:27:48.000Z"
+        },
+        {
+          "candidateId": 2600,
+          "sentiment": "neutral",
+          "title": "Cerebras Systems stock Analysis closes at $166.43",
+          "outletName": "The Cryptonomist",
+          "url": "https://en.cryptonomist.ch/2026/10/05/cerebras-systems-stock-analysis-166/",
+          "publishedAt": "2026-10-05T07:59:58.000Z"
+        },
+        {
+          "candidateId": 2605,
+          "sentiment": "neutral",
+          "title": "Cerebras Systems vs. Innodata: Which AI Infrastructure Stock Is a Better Buy in 2026?",
+          "outletName": "The Motley Fool",
+          "url": "https://www.fool.com/coverage/better-buy/2026/10/04/cerebras-systems-vs-innodata-which-ai-infrastructure-stock-is-a-better-buy-in-2026/",
+          "publishedAt": "2026-10-04T18:40:00.000Z"
+        },
+        {
+          "candidateId": 2606,
+          "sentiment": "neutral",
+          "title": "Cerebras Systems vs. Innodata: Which AI Infrastructure Stock Is a Better Buy in 2026?",
+          "outletName": "The Globe and Mail",
+          "url": "https://www.theglobeandmail.com/investing/markets/markets-news/motley/4952328/cerebras-systems-vs-innodata-which-ai-infrastructure-stock-is-a-better-buy-in-2026/",
+          "publishedAt": "2026-10-04T18:29:58.000Z"
+        },
+        {
+          "candidateId": 2621,
+          "sentiment": "neutral",
+          "title": "Here Are Friday’s Top Wall Street Analyst Research Calls: Abbott Laboratories, Airbnb, Cerebras Systems, Coinbase Global, Edison International, Northrop Grumman, Pershing Square, Robinhood Markets, and More",
+          "outletName": "24/7 Wall St.",
+          "url": "https://247wallst.com/investing/2026/10/02/here-are-fridays-top-wall-street-analyst-research-calls-abbott-laboratories-airbnb-cerebras-systems-coinbase-global-edison-international-northrop-grumman-pershing-square-robinhood-mar/",
+          "publishedAt": "2026-10-02T11:59:00.000Z"
+        }
+      ]
+    },
+    {
+      "companyId": 14,
+      "displayName": "SpaceX",
+      "mentions": [
+        {
+          "candidateId": 3051,
+          "sentiment": "negative",
+          "title": "Musk Loses Trillionaire Status As SpaceX And Tesla Drop Wipes Out $36 Billion",
+          "outletName": "Forbes",
+          "url": "https://www.forbes.com/sites/fionariley/2026/10/08/musk-loses-trillionaire-status-as-spacex-and-tesla-drop-wipes-out-36-billion/",
+          "publishedAt": "2026-10-08T17:41:21.000Z"
+        },
+        {
+          "candidateId": 3074,
+          "sentiment": "negative",
+          "title": "SpaceX credit risk jumps on worries over its borrowing spree",
+          "outletName": "Financial Times",
+          "url": "https://www.ft.com/content/4f2417d3-3de6-4f62-bd3a-8c8f740a4b29?syn-25a6b1a6=1",
+          "publishedAt": "2026-10-07T18:05:37.000Z"
+        },
+        {
+          "candidateId": 3076,
+          "sentiment": "negative",
+          "title": "Elon Musk Loses $21 Billion On Wednesday Morning As SpaceX Shares Dip",
+          "outletName": "Forbes",
+          "url": "https://www.forbes.com/sites/fionariley/2026/10/07/elon-musk-loses-21-billion-in-a-morning-as-spacex-shares-slip/",
+          "publishedAt": "2026-10-07T15:44:59.000Z"
+        },
+        {
+          "candidateId": 3090,
+          "sentiment": "negative",
+          "title": "SpaceX Stock Keeps Getting ‘Cheaper and Cheaper’",
+          "outletName": "Barron's",
+          "url": "https://www.barrons.com/articles/spacex-stock-is-cheap-576fe803",
+          "publishedAt": "2026-10-06T20:15:00.000Z"
+        },
+        {
+          "candidateId": 3117,
+          "sentiment": "negative",
+          "title": "How SpaceX stock went from $225 to $158 in less than 4 months",
+          "outletName": "Yahoo Finance UK",
+          "url": "https://uk.finance.yahoo.com/news/spacex-stock-went-225-158-071600774.html",
+          "publishedAt": "2026-10-04T07:16:00.000Z"
+        },
+        {
+          "candidateId": 3040,
+          "sentiment": "positive",
+          "title": "SpaceX Makes Big Play to Become a Wireless Carrier",
+          "outletName": "WSJ",
+          "url": "https://www.wsj.com/business/telecom/spacex-makes-big-play-to-become-a-wireless-carrier-a90b2a1b",
+          "publishedAt": "2026-10-09T00:45:00.000Z"
+        },
+        {
+          "candidateId": 3041,
+          "sentiment": "positive",
+          "title": "SpaceX's 'Very Big Deal' Slams Verizon, AT&T, T-Mobile",
+          "outletName": "Investor's Business Daily",
+          "url": "https://www.investors.com/news/spacex-buys-wireless-spectrum-starlink-elon-musk-verizon-att-t-mobile-tumble/",
+          "publishedAt": "2026-10-09T00:10:00.000Z"
+        },
+        {
+          "candidateId": 3042,
+          "sentiment": "positive",
+          "title": "Elon Musk's SpaceX just made a huge play to challenge the phone industry and stocks like AT&T, T-Mobile and Verizon are getting crushed",
+          "outletName": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/stocks/article/elon-musks-spacex-just-made-a-huge-play-to-challenge-the-phone-industry-and-stocks-like-att-t-mobile-and-verizon-are-getting-crushed-230647771.html",
+          "publishedAt": "2026-10-08T23:06:47.000Z"
+        },
+        {
+          "candidateId": 3043,
+          "sentiment": "positive",
+          "title": "SpaceX's Starlink Now Closer to Becoming a Major Mobile Carrier Rival",
+          "outletName": "Business Insider",
+          "url": "https://www.businessinsider.com/spacex-wins-fcc-approval-for-15-000-starlink-satellites-2026-10",
+          "publishedAt": "2026-10-08T22:55:00.000Z"
+        },
+        {
+          "candidateId": 3046,
+          "sentiment": "positive",
+          "title": "SpaceX announces plan to become a ‘major mobile carrier’",
+          "outletName": "The Verge",
+          "url": "https://www.theverge.com/science/1008467/spacex-announces-plan-to-become-a-major-mobile-carrier",
+          "publishedAt": "2026-10-08T21:23:31.000Z"
+        },
+        {
+          "candidateId": 3049,
+          "sentiment": "positive",
+          "title": "SpaceX takes aim at US wireless carriers with spectrum acquisition",
+          "outletName": "Reuters",
+          "url": "https://www.reuters.com/business/media-telecom/spacex-acquire-spectrum-that-enables-starlink-mobile-services-2026-10-08/",
+          "publishedAt": "2026-10-08T20:19:00.000Z"
+        },
+        {
+          "candidateId": 3055,
+          "sentiment": "positive",
+          "title": "NASA’s SpaceX Crew-12 Prepares for Deorbit Burn",
+          "outletName": "NASA (.gov)",
+          "url": "https://www.nasa.gov/blogs/commercialcrew/2026/10/08/nasas-spacex-crew-12-prepares-for-deorbit-burn/",
+          "publishedAt": "2026-10-08T14:24:17.000Z"
+        },
+        {
+          "candidateId": 3059,
+          "sentiment": "positive",
+          "title": "SpaceX Just Got Permission to Compete With AT&T and Verizon From Orbit",
+          "outletName": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/technology/articles/spacex-just-got-permission-compete-111543313.html",
+          "publishedAt": "2026-10-08T11:15:43.000Z"
+        },
+        {
+          "candidateId": 3066,
+          "sentiment": "positive",
+          "title": "NASA Sets Coverage for SpaceX 35th Station Resupply Launch, Arrival",
+          "outletName": "NASA (.gov)",
+          "url": "https://www.nasa.gov/news-release/nasa-sets-coverage-for-spacex-35th-station-resupply-launch-arrival/",
+          "publishedAt": "2026-10-07T21:18:25.000Z"
+        },
+        {
+          "candidateId": 3068,
+          "sentiment": "positive",
+          "title": "SpaceX Seeks $40 Billion To Buy Nvidia AI Chips, Starlink Wins New FCC Approval",
+          "outletName": "Investor's Business Daily",
+          "url": "https://www.investors.com/news/spacex-stock-elon-musk-nvidia-ai-chips-40-billion-starlink-fcc-approval-cellular-grok-bot/",
+          "publishedAt": "2026-10-07T20:40:00.000Z"
+        },
+        {
+          "candidateId": 3070,
+          "sentiment": "positive",
+          "title": "NASA’s SpaceX 35th Commercial Resupply Mission Overview",
+          "outletName": "NASA (.gov)",
+          "url": "https://www.nasa.gov/general/nasas-spacex-35th-commercial-resupply-mission-overview/",
+          "publishedAt": "2026-10-07T20:17:16.000Z"
+        },
+        {
+          "candidateId": 3072,
+          "sentiment": "positive",
+          "title": "FCC Grants SpaceX Approval for 15,000 Direct-to-Device Satellites in MSS Spectrum",
+          "outletName": "Via Satellite",
+          "url": "https://www.satellitetoday.com/connectivity/2026/10/07/fcc-grants-spacex-approval-for-15000-direct-to-device-satellites-in-mss-spectrum/",
+          "publishedAt": "2026-10-07T19:42:06.000Z"
+        },
+        {
+          "candidateId": 3073,
+          "sentiment": "positive",
+          "title": "SpaceX's recovered Starship after Flight 13 splashdown returns to Texan port",
+          "outletName": "Florida Today",
+          "url": "https://www.floridatoday.com/story/tech/science/space/spacex/2026/10/07/spacex-brings-home-first-recovered-starship-to-texas-starbase-flight-13/92137434007/",
+          "publishedAt": "2026-10-07T18:34:00.000Z"
+        },
+        {
+          "candidateId": 3077,
+          "sentiment": "positive",
+          "title": "אילון מאסק חוזר לרף טריליון הדולר כאשר מניית SpaceX מזנקת.",
+          "outletName": "Vietnam.vn",
+          "url": "https://www.vietnam.vn/he/elon-musk-tro-lai-moc-tai-san-1-000-ty-usd-khi-co-phieu-spacex-tang-vot",
+          "publishedAt": "2026-10-07T14:22:44.000Z"
+        },
+        {
+          "candidateId": 3094,
+          "sentiment": "positive",
+          "title": "SpaceX Just Reached Orbit With Starship. Here's What a $1,000 Investment Could Be Worth by 2030",
+          "outletName": "The Motley Fool",
+          "url": "https://www.fool.com/investing/2026/10/06/spacex-just-reached-orbit-with-starship-here-s-what-a-usd1-000-investment-could-be-worth-by-2030/",
+          "publishedAt": "2026-10-06T12:31:00.000Z"
+        },
+        {
+          "candidateId": 3096,
+          "sentiment": "positive",
+          "title": "SpaceX stock is taking off again, but with one key difference this time",
+          "outletName": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/06/spacex-stock-is-taking-off-again-but-with-one-key-difference-this-time.html",
+          "publishedAt": "2026-10-06T11:44:11.000Z"
+        },
+        {
+          "candidateId": 3097,
+          "sentiment": "positive",
+          "title": "מניית SpaceX מזנקת, והופכת את אילון מאסק שוב לטריליונר.",
+          "outletName": "Vietnam.vn",
+          "url": "https://www.vietnam.vn/he/co-phieu-spacex-tang-kich-noc-elon-musk-lai-la-ti-phu-nghin-ti-usd",
+          "publishedAt": "2026-10-06T10:02:20.000Z"
+        },
+        {
+          "candidateId": 3106,
+          "sentiment": "positive",
+          "title": "SpaceX stock climbs to highest since June, returning Musk to trillionaire status",
+          "outletName": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/05/spacex-stock-climbs-highest-since-june-returning-musk-to-trillionaire.html",
+          "publishedAt": "2026-10-05T20:04:38.000Z"
+        },
+        {
+          "candidateId": 3108,
+          "sentiment": "positive",
+          "title": "SpaceX Stock Surges as Morgan Stanley Says Stock ‘Cheap and Getting Cheaper’",
+          "outletName": "Investopedia",
+          "url": "https://www.investopedia.com/spacex-stock-surges-as-morgan-stanley-says-stock-cheap-and-getting-cheaper-spcx-12159683",
+          "publishedAt": "2026-10-05T16:54:53.000Z"
+        },
+        {
+          "candidateId": 3110,
+          "sentiment": "positive",
+          "title": "SpaceX gains after Morgan Stanley flags AI, Starship upside (SPCX:NASDAQ)",
+          "outletName": "Seeking Alpha",
+          "url": "https://seekingalpha.com/news/4650198-spacex-gains-after-morgan-stanley-flags-ai-starship-upside",
+          "publishedAt": "2026-10-05T14:16:36.000Z"
+        },
+        {
+          "candidateId": 3116,
+          "sentiment": "positive",
+          "title": "חברת החלל שקוראת תיגר על SpaceX רושמת עסקת ענק",
+          "outletName": "C14",
+          "url": "https://www.c14.co.il/article/1722062",
+          "publishedAt": "2026-10-04T07:34:58.000Z"
+        },
+        {
+          "candidateId": 3120,
+          "sentiment": "positive",
+          "title": "Station Crew Expands as NASA’s SpaceX Crew-12 Prepares to Depart",
+          "outletName": "NASA (.gov)",
+          "url": "https://www.nasa.gov/blogs/spacestation/2026/10/02/station-crew-expands-as-nasas-spacex-crew-12-prepares-to-depart/",
+          "publishedAt": "2026-10-02T18:14:13.000Z"
+        },
+        {
+          "candidateId": 3121,
+          "sentiment": "positive",
+          "title": "Why SpaceX Stock Popped on Friday",
+          "outletName": "The Motley Fool",
+          "url": "https://www.fool.com/investing/2026/10/02/why-spacex-stock-popped-on-friday/",
+          "publishedAt": "2026-10-02T16:31:00.000Z"
+        },
+        {
+          "candidateId": 3128,
+          "sentiment": "positive",
+          "title": "SpaceX, analysts satisfied with latest Starship flight",
+          "outletName": "SpaceNews",
+          "url": "https://spacenews.com/spacex-analysts-satisfied-with-latest-starship-flight/",
+          "publishedAt": "2026-10-02T10:13:49.000Z"
+        },
+        {
+          "candidateId": 3044,
+          "sentiment": "neutral",
+          "title": "יורקוויל אייבס מוסיפה את מנית סטוק של דל ו-SpaceX לרשימת 30 הבינה המלאכותית מאת Investing.com",
+          "outletName": "Investing.com",
+          "url": "https://il.investing.com/news/analyst-ratings/article-93CH-988125",
+          "publishedAt": "2026-10-08T22:05:46.000Z"
+        },
+        {
+          "candidateId": 3045,
+          "sentiment": "neutral",
+          "title": "SpaceX calls for better coordination in orbit after near-misses with Starlink",
+          "outletName": "Ars Technica",
+          "url": "https://arstechnica.com/space/2026/10/spacex-calls-for-better-coordination-in-orbit-after-near-misses-with-starlink/",
+          "publishedAt": "2026-10-08T21:37:32.000Z"
+        },
+        {
+          "candidateId": 3047,
+          "sentiment": "neutral",
+          "title": "Trump purchased up to $5 million of SpaceX bonds days before major space order",
+          "outletName": "CNN",
+          "url": "https://www.cnn.com/2026/10/08/investing/trump-5-million-dollars-spacex-bonds",
+          "publishedAt": "2026-10-08T20:51:01.000Z"
+        },
+        {
+          "candidateId": 3050,
+          "sentiment": "neutral",
+          "title": "Trump disclosed millions in new trades in SpaceX and Microsoft. Today, he gave medals to their CEOs.",
+          "outletName": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/stocks/article/trump-disclosed-millions-in-new-trades-in-spacex-and-microsoft-today-he-gave-medals-to-their-ceos-182614694.html",
+          "publishedAt": "2026-10-08T18:26:14.000Z"
+        },
+        {
+          "candidateId": 3054,
+          "sentiment": "neutral",
+          "title": "Live NASA SpaceX Crew-12 return to Earth after undocking from the ISS",
+          "outletName": "NBC News",
+          "url": "https://www.nbcnews.com/video/watch-live-nasa-spacex-crew-12-return-to-earth-271240773897",
+          "publishedAt": "2026-10-08T14:26:24.000Z"
+        },
+        {
+          "candidateId": 3065,
+          "sentiment": "neutral",
+          "title": "Broadcom, Oracle, and SpaceX pursue blockbuster debt deals amid AI buildout - WSJ",
+          "outletName": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/technology/ai/articles/broadcom-oracle-spacex-pursue-blockbuster-215828392.html",
+          "publishedAt": "2026-10-07T21:58:28.000Z"
+        },
+        {
+          "candidateId": 3067,
+          "sentiment": "neutral",
+          "title": "Exclusive | Oracle, Broadcom and SpaceX Seek Blockbuster Debt Deals to Pay for AI Chips",
+          "outletName": "WSJ",
+          "url": "https://www.wsj.com/tech/oracle-broadcom-and-spacex-seek-blockbuster-debt-deals-to-pay-for-ai-chips-848e8032",
+          "publishedAt": "2026-10-07T21:01:00.000Z"
+        },
+        {
+          "candidateId": 3071,
+          "sentiment": "neutral",
+          "title": "FCC to vote on auctioning 25MHz of 'prime spectrum' in move that could benefit Amazon, SpaceX",
+          "outletName": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/07/fcc-spectrum-auction-spacex-amazon.html",
+          "publishedAt": "2026-10-07T20:03:50.000Z"
+        },
+        {
+          "candidateId": 3080,
+          "sentiment": "neutral",
+          "title": "SpaceX Wants to Borrow $40 Billion to Buy Nvidia Chips",
+          "outletName": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-wants-borrow-40-billion-111514908.html",
+          "publishedAt": "2026-10-07T11:15:14.000Z"
+        },
+        {
+          "candidateId": 3087,
+          "sentiment": "neutral",
+          "title": "SPCX Stock Slips After-Hours As SpaceX Reportedly Seeks $40B For Nvidia Chips",
+          "outletName": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/spcx-stock-slips-hours-spacex-234823505.html",
+          "publishedAt": "2026-10-06T23:48:23.000Z"
+        },
+        {
+          "candidateId": 3103,
+          "sentiment": "neutral",
+          "title": "SpaceX To Reattempt SDA Mission, Rally Continues Amid Busy Launch Schedule",
+          "outletName": "Investor's Business Daily",
+          "url": "https://www.investors.com/news/spacex-stock-sda-mission-pwsa-satellite-constellation-falcon-9-spcx/",
+          "publishedAt": "2026-10-05T20:46:00.000Z"
+        },
+        {
+          "candidateId": 3107,
+          "sentiment": "neutral",
+          "title": "SpaceX Proposes Gas Pipeline to Supply Cape Canaveral Rockets",
+          "outletName": "Bloomberg.com",
+          "url": "https://www.bloomberg.com/news/articles/2026-10-05/spacex-proposes-gas-pipeline-to-supply-cape-canaveral-rockets",
+          "publishedAt": "2026-10-05T18:18:40.000Z"
+        },
+        {
+          "candidateId": 3109,
+          "sentiment": "neutral",
+          "title": "SpaceX’s stock could actually be a bargain, according to this metric",
+          "outletName": "MarketWatch",
+          "url": "https://www.marketwatch.com/story/spacexs-stock-could-actually-be-a-bargain-according-to-this-metric-ac3ddf45",
+          "publishedAt": "2026-10-05T15:45:00.000Z"
+        },
+        {
+          "candidateId": 3111,
+          "sentiment": "neutral",
+          "title": "SpaceX's Crew-13 astronaut launch in infrared | Space photo of the day for Oct. 5, 2026",
+          "outletName": "Space",
+          "url": "https://www.space.com/space-exploration/human-spaceflight/spacexs-crew-13-astronaut-launch-in-infrared-space-photo-of-the-day-for-oct-5-2026",
+          "publishedAt": "2026-10-05T14:00:00.000Z"
+        },
+        {
+          "candidateId": 3112,
+          "sentiment": "neutral",
+          "title": "תמונות מרשימות: ארה\"ב שיגרה את \"כוח הביון העל\", SpaceX שלחה את חללית החלל Starship למסלול, הצפות נרחבות בבירת תאילנד.",
+          "outletName": "Vietnam.vn",
+          "url": "https://www.vietnam.vn/he/anh-an-tuong-my-khoi-dong-luc-luong-sieu-tri-tue-spacex-dua-starship-len-quy-dao-ngap-tren-dien-rong-tai-thu-do-thai-lan",
+          "publishedAt": "2026-10-05T09:23:44.000Z"
+        },
+        {
+          "candidateId": 3113,
+          "sentiment": "neutral",
+          "title": "How to Invest In SpaceX (SPCX) — And How Not To",
+          "outletName": "NerdWallet",
+          "url": "https://www.nerdwallet.com/investing/news/how-to-invest-in-spacex-or-not",
+          "publishedAt": "2026-10-05T07:00:00.000Z"
+        },
+        {
+          "candidateId": 3114,
+          "sentiment": "neutral",
+          "title": "SpaceX (SPCX) vs Rocket Lab (RKLB): Which is a Better Stock to Buy?",
+          "outletName": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-spcx-vs-rocket-lab-220052462.html",
+          "publishedAt": "2026-10-04T22:00:52.000Z"
+        },
+        {
+          "candidateId": 3118,
+          "sentiment": "neutral",
+          "title": "SpaceX's Third Quarter Just Ended. Here Are the 3 Numbers That Matter Most for the Stock.",
+          "outletName": "The Motley Fool",
+          "url": "https://www.fool.com/investing/2026/10/02/spacex-s-third-quarter-just-ended-here-are-the-3-numbers-that-matter-most-for-the-stock/",
+          "publishedAt": "2026-10-03T00:41:00.000Z"
+        },
+        {
+          "candidateId": 3122,
+          "sentiment": "neutral",
+          "title": "Musk's SpaceX Could Target Airlines, Maritime Before Taking On Big Wireless Firms",
+          "outletName": "Investor's Business Daily",
+          "url": "https://www.investors.com/news/technology/spacex-stock-musk-starlink-target-aviation-maritime-wireless-firms/",
+          "publishedAt": "2026-10-02T15:20:00.000Z"
+        },
+        {
+          "candidateId": 3123,
+          "sentiment": "neutral",
+          "title": "Musk’s Remarks Don’t Mean SpaceX Cut Its Starship Launch Guidance",
+          "outletName": "Barron's",
+          "url": "https://www.barrons.com/articles/elon-musk-spacex-stock-price-68a00b4e",
+          "publishedAt": "2026-10-02T14:51:00.000Z"
+        },
+        {
+          "candidateId": 3125,
+          "sentiment": "neutral",
+          "title": "Goldman Reaps Windfall From Cut of Clients’ Early SpaceX Bets",
+          "outletName": "Bloomberg.com",
+          "url": "https://www.bloomberg.com/news/articles/2026-10-02/goldman-reaps-windfall-from-cut-of-clients-early-spacex-bets",
+          "publishedAt": "2026-10-02T14:41:28.000Z"
+        },
+        {
+          "candidateId": 3127,
+          "sentiment": "neutral",
+          "title": "3 Numbers Every SpaceX Investors Should Know",
+          "outletName": "The Motley Fool",
+          "url": "https://www.fool.com/investing/2026/10/02/3-numbers-every-spacex-investors-should-know/",
+          "publishedAt": "2026-10-02T13:45:00.000Z"
+        }
+      ]
+    },
+    {
+      "companyId": 229,
+      "displayName": "Beyond Meat",
+      "mentions": [
+        {
+          "candidateId": 2509,
+          "sentiment": "negative",
+          "title": "Beyond Meat Inc. stock falls Wednesday, underperforms market",
+          "outletName": "MarketWatch",
+          "url": "https://www.marketwatch.com/data-news/beyond-meat-inc-stock-falls-wednesday-underperforms-market-bc9577f0-0e8cc198648d?mod=goog_fin_scmw",
+          "publishedAt": "2026-10-07T21:19:00.000Z"
+        },
+        {
+          "candidateId": 2510,
+          "sentiment": "negative",
+          "title": "Beyond Meat (BYND) Slides 5.07% to $7.58 as Shares Test Key Support Zone - IPO Entry Watch",
+          "outletName": "https://www.siam.in/",
+          "url": "https://www.siam.in/aticles-market/Beyond-Meat-BYND-Slides-507-to-758-as-Shares-Test-Key-Support-Zone-65-4689",
+          "publishedAt": "2026-10-07T16:44:37.000Z"
+        },
+        {
+          "candidateId": 2516,
+          "sentiment": "negative",
+          "title": "Beyond Meat Inc. stock falls Monday, underperforms market",
+          "outletName": "MarketWatch",
+          "url": "https://www.marketwatch.com/data-news/beyond-meat-inc-stock-falls-monday-underperforms-market-529b16dc-2c80a133b007",
+          "publishedAt": "2026-10-05T21:20:00.000Z"
+        },
+        {
+          "candidateId": 2517,
+          "sentiment": "negative",
+          "title": "Beyond Meat COO Krishnaswamy starts. Beyond Meat stock falls 2.05 percent",
+          "outletName": "AD HOC NEWS",
+          "url": "https://www.ad-hoc-news.de/boerse/news/nebenwerte/beyond-meat-coo-krishnaswamy-starts-beyond-meat-stock-falls-2-05-percent/70237383",
+          "publishedAt": "2026-10-05T20:58:27.000Z"
+        },
+        {
+          "candidateId": 2502,
+          "sentiment": "positive",
+          "title": "Beyond Meat (BYND) Expands Health-Focused Product Line Amid Fina",
+          "outletName": "GuruFocus",
+          "url": "https://www.gurufocus.com/news/9116060/beyond-meat-bynd-expands-healthfocused-product-line-amid-financial-challenges",
+          "publishedAt": "2026-10-08T20:14:41.000Z"
+        },
+        {
+          "candidateId": 2513,
+          "sentiment": "positive",
+          "title": "Beyond Meat, Quorn & Food Industry Urge EU to Reject Extension of Plant-Based Labelling Ban",
+          "outletName": "Green Queen Media",
+          "url": "https://www.greenqueen.com.hk/beyond-meat-quorn-food-industry-urge-eu-to-reject-extension-of-plant-based-labelling-ban/",
+          "publishedAt": "2026-10-07T11:24:53.000Z"
+        },
+        {
+          "candidateId": 2519,
+          "sentiment": "positive",
+          "title": "MILLENNIUM MANAGEMENT LLC Adds Beyond Meat Inc (BYND) -- Shares Look 58% Undervalued on GF Value",
+          "outletName": "GuruFocus",
+          "url": "https://www.gurufocus.com/news/9108397/millennium-management-llc-adds-beyond-meat-inc-bynd-shares-look-58-undervalued-on-gf-value",
+          "publishedAt": "2026-10-03T02:25:30.000Z"
+        },
+        {
+          "candidateId": 2503,
+          "sentiment": "neutral",
+          "title": "Beyond Meat broadens product lineup as it seeks to revive sales (BYND:NASDAQ)",
+          "outletName": "Seeking Alpha",
+          "url": "https://seekingalpha.com/news/4651534-beyond-meat-broadens-product-lineup-as-it-seeks-to-revive-sales",
+          "publishedAt": "2026-10-08T19:43:12.000Z"
+        },
+        {
+          "candidateId": 2504,
+          "sentiment": "neutral",
+          "title": "Beyond Meat (BYND) Rebrands as Beyond the Plant Protein Company Amid Strategic Shift",
+          "outletName": "GuruFocus",
+          "url": "https://www.gurufocus.com/news/9115999/beyond-meat-bynd-rebrands-as-beyond-the-plant-protein-company-amid-strategic-shift",
+          "publishedAt": "2026-10-08T19:16:27.000Z"
+        },
+        {
+          "candidateId": 2512,
+          "sentiment": "neutral",
+          "title": "Beyond Meat, Inc. Tokenized Stock (Coinbase) price today, BYNDc to USD live price, marketcap and chart",
+          "outletName": "CoinMarketCap",
+          "url": "https://coinmarketcap.com/currencies/beyond-meat-inc-tokenized-stock-coinbase/",
+          "publishedAt": "2026-10-07T11:28:57.000Z"
+        },
+        {
+          "candidateId": 2520,
+          "sentiment": "neutral",
+          "title": "High Short Interest in Consumer Staples Highlights Beyond Meat (BYND) at 29.62%",
+          "outletName": "GuruFocus",
+          "url": "https://www.gurufocus.com/news/9107939/high-short-interest-in-consumer-staples-highlights-beyond-meat-bynd-at-2962",
+          "publishedAt": "2026-10-02T18:15:01.000Z"
+        },
+        {
+          "candidateId": 2522,
+          "sentiment": "neutral",
+          "title": "Beyond Meat, Vital Farms lead most shorted consumer staples stocks below $2B (GO:NASDAQ)",
+          "outletName": "Seeking Alpha",
+          "url": "https://seekingalpha.com/news/4649723-beyond-meat-vital-farms-leads-most-shorted-consumer-staples-stocks-below-2b",
+          "publishedAt": "2026-10-02T17:15:44.000Z"
+        }
+      ]
+    },
+    {
+      "companyId": 246,
+      "displayName": "Innoviz",
+      "mentions": [
+        {
+          "candidateId": 2721,
+          "sentiment": "negative",
+          "title": "Goldman Sachs Maintains Innoviz Technologies(INVZ.US) With Hold Rating, Maintains Target Price $0.4",
+          "outletName": "Moomoo",
+          "url": "https://www.moomoo.com/news/post/1000645979/goldman-sachs-maintains-innoviz-technologies-invzus-with-hold-rating-maintains",
+          "publishedAt": "2026-10-07T06:30:32.000Z"
+        }
+      ]
+    },
+    {
+      "companyId": 21,
+      "displayName": "Databricks",
+      "mentions": [
+        {
+          "candidateId": 2667,
+          "sentiment": "positive",
+          "title": "V2 Strategic Advisors Establishes Dedicated Databricks Practice to Transform Media & Ad Sales Revenue Operations",
+          "outletName": "PR Newswire",
+          "url": "https://www.prnewswire.com/news-releases/v2-strategic-advisors-establishes-dedicated-databricks-practice-to-transform-media--ad-sales-revenue-operations-302901223.html",
+          "publishedAt": "2026-10-07T14:30:00.000Z"
+        },
+        {
+          "candidateId": 2669,
+          "sentiment": "positive",
+          "title": "How Optus, Bupa and others are using Databricks",
+          "outletName": "Computer Weekly",
+          "url": "https://www.computerweekly.com/news/366651872/How-Optus-Bupa-and-others-are-using-Databricks",
+          "publishedAt": "2026-10-07T02:30:04.000Z"
+        },
+        {
+          "candidateId": 2684,
+          "sentiment": "positive",
+          "title": "List of 23 Acquisitions by Databricks (Oct 2026)",
+          "outletName": "Tracxn",
+          "url": "https://tracxn.com/d/acquisitions/acquisitions-by-databricks/__h71WlGEvmuefCzSdZogxaGihmuCYu0rBKj3hkmJQF7M",
+          "publishedAt": "2026-10-02T04:50:25.000Z"
+        },
+        {
+          "candidateId": 2661,
+          "sentiment": "neutral",
+          "title": "News | Sale of Databricks hub in Silicon Valley highlights AI's growing influence on office values",
+          "outletName": "CoStar",
+          "url": "https://www.costar.com/article/94813269/sale-of-databricks-hub-in-silicon-valley-highlights-ais-growing-influence-on-office-values",
+          "publishedAt": "2026-10-08T20:25:48.000Z"
+        },
+        {
+          "candidateId": 2662,
+          "sentiment": "neutral",
+          "title": "Analytics and Data Science News for the Week of October 9; Updates from ClicData, Databricks, Qlik & More",
+          "outletName": "Solutions Review",
+          "url": "https://solutionsreview.com/business-intelligence/analytics-and-data-science-news-for-the-week-of-october-9-updates-from-clicdata-databricks-qlik-more/",
+          "publishedAt": "2026-10-08T20:11:42.000Z"
+        },
+        {
+          "candidateId": 2681,
+          "sentiment": "neutral",
+          "title": "Databricks ai_decide Explained.",
+          "outletName": "YouTube",
+          "url": "https://youtu.be/9YwY-2GNTnc?is=n3kd0C-nkZxW4eiW",
+          "publishedAt": "2026-10-04T22:54:04.000Z"
+        }
+      ]
+    },
+    {
+      "companyId": 27,
+      "displayName": "Scale AI",
+      "mentions": [
+        {
+          "candidateId": 2936,
+          "sentiment": "positive",
+          "title": "Stuut Secures $52.5M Series B Led by Insight Partners to Scale AI Agents for Order-to-Cash",
+          "outletName": "AI Insider",
+          "url": "https://theaiinsider.tech/2026/10/08/stuut-secures-52-5m-series-b-led-by-insight-partners-to-scale-ai-agents-for-order-to-cash/",
+          "publishedAt": "2026-10-08T16:02:02.000Z"
+        },
+        {
+          "candidateId": 2944,
+          "sentiment": "positive",
+          "title": "Meet Alexandr Wang, MIT dropout who built Scale AI, caught Mark Zuckerberg's attention, became Meta's 29-y",
+          "outletName": "The Economic Times",
+          "url": "https://economictimes.indiatimes.com/world/business/meet-alexandr-wang-mit-dropout-who-built-scale-ai-caught-mark-zuckerbergs-attention-became-metas-29-year-old-ai-chief-turned-muse-into-an-app-store-hit/articleshow/134791140.cms",
+          "publishedAt": "2026-10-08T12:53:59.000Z"
+        }
+      ]
+    },
+    {
+      "companyId": 10,
+      "displayName": "Together AI",
+      "mentions": [
+        {
+          "candidateId": 3184,
+          "sentiment": "positive",
+          "title": "Together AI Revenue 2024: $44M Est., $3.3B Valuation",
+          "outletName": "GetLatka",
+          "url": "https://getlatka.com/companies/together",
+          "publishedAt": "2026-10-05T07:00:00.000Z"
+        },
+        {
+          "candidateId": 3186,
+          "sentiment": "positive",
+          "title": "Together AI Advances Team Productivity Tools and Low-Cost Open-Model Infrastructure",
+          "outletName": "TipRanks",
+          "url": "https://www.tipranks.com/news/private-companies/together-ai-advances-team-productivity-tools-and-low-cost-open-model-infrastructure",
+          "publishedAt": "2026-10-03T13:58:43.000Z"
+        }
+      ]
+    },
+    {
+      "companyId": 140,
+      "displayName": "Zoomcar",
+      "mentions": [
+        {
+          "candidateId": 3211,
+          "sentiment": "positive",
+          "title": "Zoomcar partners with Bureau to strengthen real-time user verification and fraud risk assessment",
+          "outletName": "PR Newswire",
+          "url": "https://www.prnewswire.com/news-releases/zoomcar-partners-with-bureau-to-strengthen-real-time-user-verification-and-fraud-risk-assessment-302902694.html",
+          "publishedAt": "2026-10-08T15:46:00.000Z"
+        },
+        {
+          "candidateId": 3210,
+          "sentiment": "neutral",
+          "title": "Zoomcar Extends Timeline for Ongoing Securities Offering",
+          "outletName": "TipRanks",
+          "url": "https://www.tipranks.com/news/company-announcements/zoomcar-extends-timeline-for-ongoing-securities-offering",
+          "publishedAt": "2026-10-08T20:42:16.000Z"
+        }
+      ]
+    },
+    {
+      "companyId": 233,
+      "displayName": "Alpha Tau",
+      "mentions": [
+        {
+          "candidateId": 2466,
+          "sentiment": "neutral",
+          "title": "Alpha Tau to Participate in October Investor Conferences",
+          "outletName": "GlobeNewswire",
+          "url": "https://www.globenewswire.com/news-release/2026/10/05/3374686/0/en/alpha-tau-to-participate-in-october-investor-conferences.html",
+          "publishedAt": "2026-10-05T13:45:04.000Z"
+        }
+      ]
+    },
+    {
+      "companyId": 120,
+      "displayName": "Cyabra",
+      "mentions": [
+        {
+          "candidateId": 2647,
+          "sentiment": "positive",
+          "title": "Cyabra Awarded Positions on FBI Multi-Award IDIQ Contract for Specialized Open-Source Intelligence (OSINT) Tools",
+          "outletName": "The Manila Times",
+          "url": "https://www.manilatimes.net/2026/10/05/tmt-newswire/globenewswire/cyabra-awarded-positions-on-fbi-multi-award-idiq-contract-for-specialized-open-source-intelligence-osint-tools/2439093",
+          "publishedAt": "2026-10-05T12:46:47.000Z"
+        }
+      ]
+    },
+    {
+      "companyId": 105,
+      "displayName": "Dandelion Energy",
+      "mentions": [
+        {
+          "candidateId": 2655,
+          "sentiment": "positive",
+          "title": "Dandelion Energy and Vermont Gas launch geothermal partnership for 44 affordable homes",
+          "outletName": "energynews.pro",
+          "url": "https://energynews.pro/en/dandelion-energy-and-vermont-gas-launch-geothermal-partnership-for-44-affordable-homes",
+          "publishedAt": "2026-10-06T15:34:28.000Z"
+        }
+      ]
+    },
+    {
+      "companyId": 109,
+      "displayName": "JumpCloud",
+      "mentions": [
+        {
+          "candidateId": 2728,
+          "sentiment": "neutral",
+          "title": "New JumpCloud Research Finds AI Access Is Outpacing Enterprise Governance",
+          "outletName": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/technology/ai/articles/jumpcloud-research-finds-ai-access-170400660.html",
+          "publishedAt": "2026-10-07T17:04:00.000Z"
+        }
+      ]
+    }
+  ]
+}
