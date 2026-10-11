@@ -151,7 +151,7 @@ export function CompanyTable({
                         onClick={(event) => {
                           event.stopPropagation();
                         }}
-                        style={{ color: '#0b69a3' }}
+                        style={{ color: '#007bb1' }}
                       >
                         {row.latestHeadline.title}
                       </a>

@@ -2,9 +2,9 @@
 
 export const primaryButtonStyle: React.CSSProperties = {
   padding: '6px 14px',
-  border: '1px solid #2251b0',
+  border: '1px solid #006895',
   borderRadius: 4,
-  background: '#2f6fde',
+  background: '#007bb1',
   color: '#ffffff',
   cursor: 'pointer',
 };

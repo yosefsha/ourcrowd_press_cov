@@ -18,7 +18,7 @@ export function AsOfIndicator(_props: Props): React.JSX.Element | null {
 
   if (runs.isError) {
     return (
-      <span style={{ fontSize: 13, color: '#b42318' }} title="The Run history could not be loaded">
+      <span style={{ fontSize: 13, color: '#ff8a80' }} title="The Run history could not be loaded">
         As of: unavailable
       </span>
     );
@@ -27,7 +27,7 @@ export function AsOfIndicator(_props: Props): React.JSX.Element | null {
 
   const asOf = latestCompletedRunAt(runs.data);
   return (
-    <span style={{ fontSize: 13, color: '#486581' }}>
+    <span style={{ fontSize: 13, color: '#d6d6d6' }}>
       {asOf === null ? 'No completed Run yet' : `As of ${formatDateTime(asOf)}`}
     </span>
   );

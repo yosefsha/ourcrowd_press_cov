@@ -12,7 +12,7 @@ interface Props {
 
 const STATUS_COLORS: Readonly<Record<RunStatus, string>> = {
   queued: '#486581',
-  running: '#2563eb',
+  running: '#007bb1',
   completed: '#1f7a35',
   completed_with_errors: '#b54708',
   failed: '#b42318',

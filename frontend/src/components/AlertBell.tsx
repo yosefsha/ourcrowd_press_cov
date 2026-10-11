@@ -61,9 +61,10 @@ export function AlertBell(): React.JSX.Element {
           gap: 6,
           padding: '4px 10px',
           fontSize: 14,
-          background: '#ffffff',
-          border: '1px solid #bcccdc',
-          borderRadius: 6,
+          background: '#4a4a4a',
+          color: '#ffffff',
+          border: '1px solid #6b6b6b',
+          borderRadius: 4,
           cursor: 'pointer',
         }}
       >
@@ -73,7 +74,7 @@ export function AlertBell(): React.JSX.Element {
         </svg>
         <span aria-hidden="true">Alerts</span>
         {alerts.isError ? (
-          <span aria-hidden="true" style={{ color: '#b42318', fontWeight: 700 }}>
+          <span aria-hidden="true" style={{ color: '#ff8a80', fontWeight: 700 }}>
             !
           </span>
         ) : count > 0 ? (
@@ -103,6 +104,7 @@ export function AlertBell(): React.JSX.Element {
             maxHeight: '70vh',
             overflowY: 'auto',
             background: '#ffffff',
+            color: '#333333',
             border: '1px solid #d9e2ec',
             borderRadius: 8,
             boxShadow: '0 8px 24px rgba(16, 42, 67, 0.15)',

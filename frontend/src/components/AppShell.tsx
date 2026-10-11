@@ -1,9 +1,11 @@
 import { NavLink, Outlet, useSearchParams } from 'react-router';
 
 import { COVERAGE_WINDOW_PARAM, useCoverageWindow } from '../hooks/useCoverageWindow.ts';
+import { theme } from '../theme.ts';
 import { AlertBell } from './AlertBell.tsx';
 import { AsOfIndicator } from './AsOfIndicator.tsx';
 import { CoverageWindowSelector } from './CoverageWindowSelector.tsx';
+import { OurCrowdLogo } from './OurCrowdLogo.tsx';
 
 interface NavItem {
   readonly to: string;
@@ -36,22 +38,38 @@ export function AppShell(): React.JSX.Element {
           flexWrap: 'wrap',
           alignItems: 'center',
           gap: 24,
-          padding: '12px 24px',
-          background: '#ffffff',
-          borderBottom: '1px solid #d9e2ec',
+          padding: '10px 24px',
+          background: theme.headerBackground,
+          color: theme.headerText,
+          borderBottom: `3px solid ${theme.brandBlue}`,
         }}
       >
-        <span style={{ fontSize: 18, fontWeight: 600 }}>Press Coverage</span>
-        <nav aria-label="Main" style={{ display: 'flex', gap: 16 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
+          <OurCrowdLogo height={30} />
+          <span
+            style={{
+              paddingLeft: 14,
+              borderLeft: `1px solid ${theme.headerTextMuted}`,
+              fontSize: 15,
+              fontWeight: 600,
+              letterSpacing: 0.3,
+            }}
+          >
+            Press Coverage
+          </span>
+        </div>
+        <nav aria-label="Main" style={{ display: 'flex', gap: 20 }}>
           {NAV_ITEMS.map((item) => (
             <NavLink
               key={item.to}
               to={{ pathname: item.to, search }}
               end={item.to === '/'}
               style={({ isActive }) => ({
-                color: isActive ? '#102a43' : '#486581',
+                color: isActive ? theme.headerText : theme.headerTextMuted,
                 fontWeight: isActive ? 600 : 400,
                 textDecoration: 'none',
+                padding: '4px 0',
+                borderBottom: `2px solid ${isActive ? theme.brandBlue : 'transparent'}`,
               })}
             >
               {item.label}
