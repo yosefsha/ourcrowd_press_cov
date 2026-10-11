@@ -1,3 +1,6 @@
+
+
+
 # Press Coverage Monitor
 
 This tool monitors press coverage of OurCrowd portfolio and fund companies. It collects news about
@@ -16,6 +19,8 @@ Words in **bold** are defined in [CONTEXT.md](CONTEXT.md). The README uses them 
 The brief is in [docs/TASKS.md](docs/TASKS.md).
 
 ---
+# Project video Demo
+https://github.com/user-attachments/assets/7d8b21c7-c4c2-4bf1-bfed-160a583ee324
 
 **New to the codebase?** Read the [technical specification](docs/TECHNICAL_SPEC.md) first. It
 covers the architecture, modules and ports, data model, pipeline, LLM integration, API, frontend
