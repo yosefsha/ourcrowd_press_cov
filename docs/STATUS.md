@@ -1,6 +1,6 @@
 # Project status and working notes for coding agents
 
-Read this before starting work. Updated 2026-10-08. User-facing behaviour is in the
+Read this before starting work. Updated 2026-10-11. User-facing behaviour is in the
 [README](../README.md); the vocabulary in [CONTEXT.md](../CONTEXT.md); decisions in
 [docs/adr/](adr/); the design in [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md).
 
@@ -8,13 +8,13 @@ Read this before starting work. Updated 2026-10-08. User-facing behaviour is in 
 
 - **M0 (scaffold) and M1 (pipeline & API) are merged.** So are the frontend, the README (#38),
   the Compose fix (#39), classifier validation (#40) and parallel classification (#41).
-- **Open issues (M3 — Delivery):**
-  - **#20 Full real run and `data/` snapshot.** Start the stack, review the Needs Review companies,
-    run a full Backfill, commit `data/`, then fill in `data/README.md`.
-  - **#19 README.** It was merged with "Refs". Close it in #20's PR, after replacing "pending #20" in
-    the README with the run date and counts and removing the Status note at the top.
-  - **#18 Validation.** Done: the labels, `docs/validation-report.md` and the README results.
-    Close it together with #19 and #20.
+- **M3 (Delivery) is done; no issues are open.** The `data/` snapshot of a full real run (exported
+  2026-10-09) is committed and described in `data/README.md`, and its `import-data` round-trip was
+  verified on a fresh database (#20). The README (#19) and classifier validation (#18) are closed.
+  The 111 Needs Review companies were not reviewed before that run, so they have no coverage in
+  the snapshot.
+- **Every Run overwrites `data/`.** Running the stack locally rewrites the committed snapshot.
+  Never commit `data/` from a casual local Run; `git checkout data/` restores it.
 - **Follow-ups not yet filed as issues (ask the user before opening them):**
   - an Origin/CSRF check on mutating endpoints;
   - `import-data` should stop the collector first;

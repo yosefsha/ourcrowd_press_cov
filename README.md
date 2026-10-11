@@ -15,11 +15,6 @@ dashboard has three parts:
 Words in **bold** are defined in [CONTEXT.md](CONTEXT.md). The README uses them in that exact sense.
 The brief is in [docs/TASKS.md](docs/TASKS.md).
 
-> **Status.** One piece this README describes is still in progress: the committed `data/`
-> snapshot of a full real run (#20).
->
-> Sections that depend on them say so.
-
 ---
 
 **New to the codebase?** Read the [technical specification](docs/TECHNICAL_SPEC.md) first. It
@@ -329,8 +324,9 @@ Keep `--build`: the image tag is shared, so without it Compose may start an olde
 lacks the `import-data` command. Without a committed export, the command stops with
 `import-data failed: The export has no manifest.json`.
 
-> The snapshot itself is **pending #20** (a full real run). Until it is committed, `data/` holds
-> only what your own Runs exported.
+> The committed snapshot was exported on 2026-10-09 (see [`data/README.md`](data/README.md)). Your
+> own Runs overwrite the files in `data/` with their own export. `git checkout data/` restores the
+> snapshot.
 
 ---
 
@@ -707,10 +703,13 @@ atomically, and the manifest is written last.
 | `mentions.csv` | One row per Mention: company, date, Outlet, title, URL, sentiment. Opens in a spreadsheet |
 | `alerts/<date>-run<id>.json` | One file per Alert Digest |
 
-**Committed snapshot: pending #20.** A full real run will be committed here: all active companies
-backfilled with a cutoff, then a Daily Check, so the snapshot contains a real Alert Digest. Its date,
-duration, counts and the companies still in Needs Review will be described in `data/README.md`. To
-load it into the dashboard, see [Viewing the committed snapshot](#viewing-the-committed-snapshot).
+**Committed snapshot** (exported 2026-10-09). This is a full real run: a Backfill of all 147 active
+companies (2 h 25 min), then the next morning's scheduled Daily Check (41 min). Together they hold
+1,092 Mentions (712 positive, 277 neutral, 103 negative) across 58 companies, Mention Status for all
+258 Tracked Companies, and a real Alert Digest of 137 New Mentions. The 111 companies still in Needs
+Review were not searched. [`data/README.md`](data/README.md) lists the run details, counts and the
+Needs Review companies. To load the snapshot into the dashboard, see
+[Viewing the committed snapshot](#viewing-the-committed-snapshot).
 
 ---
 
