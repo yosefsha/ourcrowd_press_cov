@@ -7,6 +7,10 @@ export const REPO_ROOT = fileURLToPath(new URL('../../', import.meta.url));
 
 export const DEFAULT_OLLAMA_MODEL = 'qwen2.5:7b';
 
+/** Postgres's port inside its container, and its preferred host port. */
+export const POSTGRES_CONTAINER_PORT = 5432;
+export const DEFAULT_POSTGRES_PORT = 5432;
+
 /**
  * Ollama's port on the host. Fixed rather than configurable because the
  * collector container reaches it at host.docker.internal:11434 (ADR-007).
@@ -21,6 +25,8 @@ export const DEV_VITE_PORT = 5173;
 /**
  * @typedef {object} RunConfig
  * @property {number} postgresPort Host port Postgres is published on.
+ * @property {boolean} postgresPortPinned Whether POSTGRES_HOST_PORT was set;
+ *   if not, `npm start` may publish Postgres on another free port.
  * @property {number} apiPort Host port the compose API is published on.
  * @property {number} frontendPort Host port the dashboard is published on.
  * @property {string} ollamaModel Model the collector classifies with.
@@ -55,7 +61,8 @@ function readPort(env, name, fallback) {
 export function resolveConfig(env) {
   const model = (env.OLLAMA_MODEL ?? '').trim();
   return {
-    postgresPort: readPort(env, 'POSTGRES_HOST_PORT', 5432),
+    postgresPort: readPort(env, 'POSTGRES_HOST_PORT', DEFAULT_POSTGRES_PORT),
+    postgresPortPinned: (env.POSTGRES_HOST_PORT ?? '') !== '',
     apiPort: readPort(env, 'API_HOST_PORT', 8000),
     frontendPort: readPort(env, 'FRONTEND_HOST_PORT', 8080),
     ollamaModel: model === '' ? DEFAULT_OLLAMA_MODEL : model,

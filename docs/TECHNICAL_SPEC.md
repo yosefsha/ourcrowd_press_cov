@@ -425,8 +425,8 @@ The follow-ups not yet filed as issues are listed in [STATUS.md](STATUS.md).
 ## 10. Onboarding checklist
 
 1. Read CONTEXT.md, then ADR-001 to ADR-010, in about 30 minutes.
-2. Run `npm run setup && npm start`. Port 5432 is busy if a native Postgres is running; use
-   `POSTGRES_HOST_PORT=5433`.
+2. Run `npm run setup && npm start`. If a native Postgres holds 5432, `npm start` publishes
+   the stack's Postgres on the next free port and prints it.
 3. In `/companies`, review a few Needs Review companies. In `/operations`, run a Backfill of about 5
    companies up to 3 days ago, then a Daily Check, and watch an Alert Digest appear.
 4. Read `pipeline/company-collection.service.ts`, `runs/worker/run-worker.service.ts` and
