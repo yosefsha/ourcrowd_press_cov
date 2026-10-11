@@ -63,8 +63,8 @@ Then open **http://localhost:8080**.
 2. **Operations** → **Start Backfill**. A full Backfill takes hours (see
    [throughput](#throughput)); the dashboard fills company by company while it runs.
 
-If `npm start` reports port 5432 busy, a Postgres already runs on your machine; see
-[busy ports](#busy-ports).
+A Postgres already running on your machine (port 5432) is fine: `npm start` publishes the stack's
+Postgres on the next free port and prints it. See [busy ports](#busy-ports).
 
 To see an alert within minutes, follow the [quick path](#quick-path-see-an-alert-in-minutes).
 To browse the committed real run without collecting anything, see
@@ -187,15 +187,16 @@ The Docker stack does not need step 5, but every command run on the host does (`
 
 ### `npm start`
 
-1. Runs the same prerequisite checks. It also checks that ports 5432, 8000 and 8080 are free, or
-   already held by this stack.
+1. Runs the same prerequisite checks. It also checks that ports 8000 and 8080 are free, or already
+   held by this stack. Postgres's host port is chosen, not checked: the port a running stack
+   Postgres already has, else 5432 if free, else the next free port (see [busy ports](#busy-ports)).
 2. Makes sure Ollama is serving and the model is pulled. It never downloads the model; it tells you
    to run `npm run setup`.
 3. Runs `docker compose up --build --detach`. The first build takes a few minutes. Startup order is
    `postgres` (healthy) → `migrate` (`npm run migration:run`, exits) → `api` + `collector` →
    `frontend`.
 4. Waits up to 180 s for `http://localhost:8080/health`, which proves that both nginx and the API
-   are up. Then it prints the URL.
+   are up. Then it prints the dashboard URL and the Postgres connection string for host-side tools.
 
 Run it as often as you like: it reuses a running Ollama, and Compose only recreates what changed.
 
@@ -226,19 +227,31 @@ same variable:
 |---|---|---|
 | `FRONTEND_HOST_PORT` | `8080` | dashboard |
 | `API_HOST_PORT` | `8000` | API |
-| `POSTGRES_HOST_PORT` | `5432` | Postgres |
+| `POSTGRES_HOST_PORT` | `5432`, or the next free port (`npm start` only) | Postgres |
 
 ```bash
-FRONTEND_HOST_PORT=8081 POSTGRES_HOST_PORT=5433 npm start      # macOS/Linux
-$env:FRONTEND_HOST_PORT=8081; npm start                          # PowerShell
+FRONTEND_HOST_PORT=8081 npm start      # macOS/Linux
+$env:FRONTEND_HOST_PORT=8081; npm start  # PowerShell
 ```
 
-**Why 5432 is often busy.** Postgres runs inside Docker, but Compose also publishes the container's
-port on the host as `localhost:5432`, so host-side tools (`npm run dev`, migrations and e2e tests
-run from a terminal, a database GUI) can reach it. A Postgres installed natively, e.g. Homebrew's
-`postgresql@18` service, already holds that port. The containers themselves are unaffected: they
-reach the database as `postgres:5432` on Docker's network. Either move the published port
-(`POSTGRES_HOST_PORT=5433 npm start`) or stop the native server
+**Postgres needs no setting with `npm start`.** Postgres runs inside Docker, but Compose also
+publishes the container's port on the host so host-side tools (migrations and e2e tests run from a
+terminal, a database GUI) can reach it. A Postgres installed natively, e.g. Homebrew's
+`postgresql@18` service, often holds 5432 already. The containers themselves never use the
+published port: they reach the database as `postgres:5432` on Docker's network. So when
+`POSTGRES_HOST_PORT` is not set, `npm start` picks the port itself:
+
+1. If the stack's Postgres is already running, it keeps the port it has, so Compose does not
+   recreate it.
+2. Otherwise it uses 5432 if that is free, else the next free port (5433, 5434, …), and says so:
+   `Port 5432 is in use, so Postgres is published on 127.0.0.1:5433`.
+
+When it is up, `npm start` prints the connection string, e.g.
+`postgresql://app:app@localhost:5433/app`. Set `POSTGRES_HOST_PORT` only to pin a specific port;
+then `npm start` uses exactly that port and stops with a fix if it is busy.
+
+`npm run dev` and plain `docker compose` commands do not pick a port. With 5432 taken, prefix them
+with a free one, e.g. `POSTGRES_HOST_PORT=5433 npm run dev`, or stop the native server
 (`brew services stop postgresql@18`; its data is kept).
 
 Every port is published on `127.0.0.1` only. Ollama's port 11434 is fixed, because the collector
@@ -311,6 +324,7 @@ npm run setup                                  # once
 npm stop                                       # if the stack is running
 docker compose down --volumes                  # DELETES the local database volume, for a fresh start
 docker compose up --build --detach --wait api  # postgres + migrate + api only, no collector
+                                               # (5432 taken? prefix POSTGRES_HOST_PORT=5433)
 npm run import-data                            # loads data/ into the empty database
 npm start                                      # starts the rest, including the collector
 ```
@@ -403,8 +417,8 @@ be set.
 | `DATA_EXPORT_DIR` | `../data` | Where the export is written (relative to `backend/`). Compose sets `/app/data`, bind-mounted from `./data` |
 | `SEED_LIST_PATH` | `../docs/ourcrowd_companies.txt` | Seed List read on the first start. Compose sets `/app/seed/…`, mounted read-only |
 
-Root-script variables: `FRONTEND_HOST_PORT`, `API_HOST_PORT`, `POSTGRES_HOST_PORT` (see
-[Busy ports](#busy-ports)) and `OLLAMA_MODEL`, which selects the model `setup` pulls and that
+Root-script variables: `FRONTEND_HOST_PORT`, `API_HOST_PORT`, `POSTGRES_HOST_PORT` (optional for
+`npm start`, which picks a free port; see [Busy ports](#busy-ports)) and `OLLAMA_MODEL`, which selects the model `setup` pulls and that
 `start`/`dev` check for.
 
 **Where to set them.** Under `npm run dev`, the backend processes inherit your shell environment,

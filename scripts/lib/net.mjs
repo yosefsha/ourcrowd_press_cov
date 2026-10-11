@@ -21,6 +21,20 @@ export function isPortFree(port) {
 }
 
 /**
+ * The first free port at or above `preferred`, trying `attempts` ports in order.
+ *
+ * @param {number} preferred
+ * @param {{ attempts?: number, isFree?: (port: number) => Promise<boolean> }} [options]
+ * @returns {Promise<number | null>} null when every port tried is taken.
+ */
+export async function findFreePort(preferred, { attempts = 100, isFree = isPortFree } = {}) {
+  for (let port = preferred; port < preferred + attempts && port <= 65535; port += 1) {
+    if (await isFree(port)) return port;
+  }
+  return null;
+}
+
+/**
  * Fetches a URL and reports whether it answered 2xx within the timeout.
  *
  * @param {string} url

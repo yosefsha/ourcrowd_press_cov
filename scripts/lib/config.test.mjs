@@ -8,6 +8,7 @@ describe('resolveConfig', () => {
   it('uses the compose defaults when nothing is set', () => {
     assert.deepEqual(resolveConfig({}), {
       postgresPort: 5432,
+      postgresPortPinned: false,
       apiPort: 8000,
       frontendPort: 8080,
       ollamaModel: DEFAULT_OLLAMA_MODEL,
@@ -22,14 +23,16 @@ describe('resolveConfig', () => {
       OLLAMA_MODEL: 'llama3.1:8b',
     });
     assert.equal(config.postgresPort, 55432);
+    assert.equal(config.postgresPortPinned, true);
     assert.equal(config.apiPort, 58000);
     assert.equal(config.frontendPort, 58080);
     assert.equal(config.ollamaModel, 'llama3.1:8b');
   });
 
   it('treats empty values as unset', () => {
-    const config = resolveConfig({ FRONTEND_HOST_PORT: '', OLLAMA_MODEL: '  ' });
+    const config = resolveConfig({ FRONTEND_HOST_PORT: '', POSTGRES_HOST_PORT: '', OLLAMA_MODEL: '  ' });
     assert.equal(config.frontendPort, 8080);
+    assert.equal(config.postgresPortPinned, false);
     assert.equal(config.ollamaModel, DEFAULT_OLLAMA_MODEL);
   });
 

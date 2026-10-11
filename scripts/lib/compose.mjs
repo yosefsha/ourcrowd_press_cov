@@ -35,6 +35,33 @@ export function runningServices() {
 }
 
 /**
+ * The host port in `docker compose port` output (`127.0.0.1:5433`, `[::1]:5433`).
+ *
+ * @param {string} output
+ * @returns {number | null}
+ */
+export function parsePublishedPort(output) {
+  const match = /:(\d+)\s*$/.exec(output.trim());
+  return match ? Number(match[1]) : null;
+}
+
+/**
+ * The host port a running service publishes for `containerPort`, or null when
+ * the service is not running or does not publish it.
+ *
+ * @param {string} service
+ * @param {number} containerPort
+ * @returns {number | null}
+ */
+export function publishedPort(service, containerPort) {
+  const result = capture('docker', ['compose', 'port', service, String(containerPort)], {
+    cwd: REPO_ROOT,
+  });
+  if (result.status !== 0) return null;
+  return parsePublishedPort(result.stdout);
+}
+
+/**
  * @typedef {object} PortClaim
  * @property {number} port
  * @property {string} label What listens there, for the error message.

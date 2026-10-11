@@ -3,12 +3,13 @@
 // dashboard can reach the API, and prints its URL. Safe to run repeatedly:
 // a running Ollama is reused and `compose up` only recreates what changed.
 import { ok, runCli, step } from './lib/cli.mjs';
-import { compose, ensurePortsAvailable, overrideFix, runningServices } from './lib/compose.mjs';
-import { resolveConfig } from './lib/config.mjs';
+import { compose, ensurePortsAvailable, overrideFix, publishedPort, runningServices } from './lib/compose.mjs';
+import { POSTGRES_CONTAINER_PORT, resolveConfig } from './lib/config.mjs';
 import { ensureDataDir } from './lib/data-dir.mjs';
 import { PrerequisiteError } from './lib/errors.mjs';
-import { waitForOk } from './lib/net.mjs';
+import { findFreePort, waitForOk } from './lib/net.mjs';
 import { ensureOllamaServing, requireModel } from './lib/ollama.mjs';
+import { choosePostgresPort } from './lib/postgres-port.mjs';
 import { checkHostPrerequisites } from './lib/prerequisites.mjs';
 
 const HEALTH_TIMEOUT_MS = 180_000;
@@ -18,14 +19,26 @@ await runCli(async () => {
 
   step('Checking prerequisites (Node, Docker, Ollama)');
   checkHostPrerequisites();
+  const running = runningServices();
+  // Postgres's host port is only for host-side tools, so unless it is pinned
+  // it moves to a free port rather than failing on a native Postgres.
+  const postgres = await choosePostgresPort(config, {
+    running,
+    publishedPort: () => publishedPort('postgres', POSTGRES_CONTAINER_PORT),
+    findFreePort,
+  });
   await ensurePortsAvailable(
     [
-      {
-        port: config.postgresPort,
-        label: 'Postgres',
-        service: 'postgres',
-        fix: overrideFix('POSTGRES_HOST_PORT', config.postgresPort, 'npm start'),
-      },
+      ...(postgres.reason === 'pinned'
+        ? [
+            {
+              port: postgres.port,
+              label: 'Postgres',
+              service: 'postgres',
+              fix: overrideFix('POSTGRES_HOST_PORT', postgres.port, 'npm start'),
+            },
+          ]
+        : []),
       {
         port: config.apiPort,
         label: 'API',
@@ -39,9 +52,12 @@ await runCli(async () => {
         fix: overrideFix('FRONTEND_HOST_PORT', config.frontendPort, 'npm start'),
       },
     ],
-    runningServices(),
+    running,
   );
   ok('Prerequisites met and ports available');
+  if (postgres.reason === 'fallback') {
+    ok(`Port ${config.postgresPort} is in use, so Postgres is published on 127.0.0.1:${postgres.port}`);
+  }
 
   step('Making sure Ollama is serving');
   await ensureOllamaServing();
@@ -52,7 +68,10 @@ await runCli(async () => {
 
   step('Building and starting the stack (docker compose up --build -d)');
   // The collector must use the model requireModel() just checked on the host.
-  compose(['up', '--build', '--detach', '--remove-orphans'], { OLLAMA_MODEL: config.ollamaModel });
+  compose(['up', '--build', '--detach', '--remove-orphans'], {
+    OLLAMA_MODEL: config.ollamaModel,
+    POSTGRES_HOST_PORT: String(postgres.port),
+  });
 
   // /health through nginx proves both the dashboard and the API are up.
   const dashboard = `http://localhost:${config.frontendPort}`;
@@ -68,5 +87,6 @@ await runCli(async () => {
   }
 
   step(`Dashboard is up: ${dashboard}`);
+  console.log(`    Postgres (for host-side tools): postgresql://app:app@localhost:${postgres.port}/app`);
   console.log('    Stop the stack with `npm stop` (Ollama keeps running).');
 });

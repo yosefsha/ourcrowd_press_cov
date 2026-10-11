@@ -40,7 +40,8 @@ Read this before starting work. Updated 2026-10-11. User-facing behaviour is in 
   bug.
 - **Port 5432 is often taken** by a native Postgres (on the user's Mac, the Homebrew
   `postgresql@18` service). The compose Postgres publishes to the host for host-side tools only.
-  Use `POSTGRES_HOST_PORT=5433 npm start`. Never stop the user's native Postgres without asking.
+  `npm start` moves the stack's Postgres to the next free port by itself; `npm run dev` and raw
+  `docker compose` still need `POSTGRES_HOST_PORT=5433`. Never stop the user's native Postgres without asking.
 - **Host-side commands need `npm ci`** in `backend/` (and `frontend/`) of the checkout you run them
   from. A fresh worktree has no `node_modules`; symlinking the primary checkout's works.
 - **Image tags are per compose project** (`press-coverage-backend:<project>`). Pass `--build` when
