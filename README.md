@@ -20,7 +20,12 @@ The brief is in [docs/TASKS.md](docs/TASKS.md).
 
 ---
 # Project video Demo
-https://github.com/user-attachments/assets/7d8b21c7-c4c2-4bf1-bfed-160a583ee324
+
+
+https://github.com/user-attachments/assets/a3b8ff0c-52b8-43f4-89b0-990141d63691
+
+
+
 
 **New to the codebase?** Read the [technical specification](docs/TECHNICAL_SPEC.md) first. It
 covers the architecture, modules and ports, data model, pipeline, LLM integration, API, frontend
